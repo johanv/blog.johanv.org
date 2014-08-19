@@ -68,7 +68,7 @@ blockquote p, blockquote {
 
 ul.bricks > li {
     display: inline;
-    background-color: lightblue;
+    background-color: #eee;
     padding: 8px;
     border-radius: 5px;
     line-height: 3;
