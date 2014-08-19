@@ -8,16 +8,16 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"
-BLOG_TITLE = "Demo Site"
+BLOG_AUTHOR = "Johan Vervloet"
+BLOG_TITLE = "blog.johanv.org"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://getnikola.com/"
+SITE_URL = "http://blog.johanv.org/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."
+BLOG_EMAIL = "johanv@johanv.org"
+BLOG_DESCRIPTION = "Clueless, as always."
 
 # Nikola is multilingual!
 #
@@ -56,7 +56,7 @@ BLOG_DESCRIPTION = "This is a demo site for Nikola."
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "en"
+DEFAULT_LANG = "nl"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
