@@ -703,7 +703,7 @@ a.text-error:focus {
 }
 
 .text-info {
-  color: #3a87ad;
+  color: #bb0614;
 }
 
 a.text-info:hover,
@@ -1574,7 +1574,7 @@ input[type="checkbox"][readonly] {
 .control-group.info .control-label,
 .control-group.info .help-block,
 .control-group.info .help-inline {
-  color: #3a87ad;
+  color: #bb0614;
 }
 
 .control-group.info .checkbox,
@@ -1582,13 +1582,13 @@ input[type="checkbox"][readonly] {
 .control-group.info input,
 .control-group.info select,
 .control-group.info textarea {
-  color: #3a87ad;
+  color: #bb0614;
 }
 
 .control-group.info input,
 .control-group.info select,
 .control-group.info textarea {
-  border-color: #3a87ad;
+  border-color: #bb0614;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1605,9 +1605,9 @@ input[type="checkbox"][readonly] {
 
 .control-group.info .input-prepend .add-on,
 .control-group.info .input-append .add-on {
-  color: #3a87ad;
+  color: #bb0614;
   background-color: #d9edf7;
-  border-color: #3a87ad;
+  border-color: #bb0614;
 }
 
 input:focus:invalid,
@@ -3914,13 +3914,13 @@ input[type="submit"].btn.btn-mini {
 }
 
 .alert-info {
-  color: #3a87ad;
+  color: #bb0614;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
 
 .alert-info h4 {
-  color: #3a87ad;
+  color: #bb0614;
 }
 
 .alert-block {
@@ -5686,7 +5686,7 @@ a.badge:focus {
 
 .label-info,
 .badge-info {
-  background-color: #3a87ad;
+  background-color: #bb0614;
 }
 
 .label-info[href],
