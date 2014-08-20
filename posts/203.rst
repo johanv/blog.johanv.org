@@ -84,13 +84,8 @@ well. Maybe with a working camera. I still have to try this out.
 -  `login </user/login?destination=comment%2Freply%2F203%23comment-form>`__
    om te reageren
 
-Reacties
---------
-
-`About the SD-card problems </node/203#comment-243>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Submitted by johanv on zo, 24/03/2013 - 15:48.
+About the SD-card problems
+--------------------------
 
 There are some issues with the SD-card, but I im unsure which ones.
 
@@ -111,10 +106,4 @@ To install Mustard, I did the following:
 -  install mustard
 -  open app management, show the apps on SD-card, and uncheck mustard. I
    had to be very quick, before the crash.
-
--  `login </user/login?destination=comment%2Freply%2F203%23comment-form>`__
-   om te reageren
-
-Flattr dit artikel
-------------------
 
