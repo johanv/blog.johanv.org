@@ -1,0 +1,10 @@
+.. title: Drupal standaardthema
+.. slug: node-10
+.. date: 2008-06-11 12:18:13
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Even het standaardthema van Drupal teruggezet, want anders zijn de
+comments niet zichtbaar...

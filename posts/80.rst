@@ -1,0 +1,22 @@
+.. title: Bing valt een half uurtje uit door een foutje bij het testen
+.. slug: node-80
+.. date: 2009-12-07 12:16:25
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Afgelopen vrijdag zouden er tussen 15.30 en 16.00 uur `problemen geweest
+zijn met Microsofts zoekmachine,
+Bing <http://www.theregister.co.uk/2009/12/04/bing_outage_december_09/>`__.
+Het probleem ontstond toen een configuratie die als test bedoeld was,
+plots van toepassing was op de ‘live omgeving’.
+
+Ironisch genoeg
+doen de problemen zich voor net nadat
+` <http://www.zdnet.be/news/110683/bing-maps-toont-rijkere-beelden>`__\ de
+nieuwe mogelijkheden Bing Maps overal in het IT-nieuws opdoken.
+
+Zie
+ook `deze Blogpost over het probleem op
+bing.com <http://www.bing.com/community/blogs/search/archive/2009/12/04/a-note-about-today-s-outage.aspx>`__.

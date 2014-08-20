@@ -1,0 +1,13 @@
+.. title: Windows mobile gebruikers krijgen inbox van onbekenden te zien
+.. slug: node-112
+.. date: 2010-02-18 21:22:35
+.. tags: microsoft,beveiliging
+.. link:
+.. description: 
+.. type: text
+
+Het zit Microsoft niet mee. Er zijn blijkbaar gevallen gerapporteerd van
+Windows Mobile gebruikers
+ `die de inbox van iemand anders te zien
+kregen <http://www.techzine.nl/nieuws/22543/microsoft-blunderde-met-windows-live-hotmail.html>`__
+na zich aan te melden bij Hotmail. Spijtig toch.

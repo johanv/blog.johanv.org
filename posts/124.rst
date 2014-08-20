@@ -1,0 +1,16 @@
+.. title: Microsoft onderzoekt kinderarbeid bij onderaannemer
+.. slug: node-124
+.. date: 2010-04-19 12:25:39
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Eind vorige week kwam Microsoft in het nieuws omdat een van zijn
+onderaannemers, `het Chinese KYE Systems, kinderen in erbarmelijke
+omstandigheden te werk zou
+stellen <http://www.zdnet.be/news/115025/wantoestanden-bij-chinese-microsoft-leverancier/>`__.
+KYE Systems maakt hardware voor Microsoft, voornamelijk
+muizen.
+
+Microsoft zou de zaak onderzoeken.

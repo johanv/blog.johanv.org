@@ -1,0 +1,23 @@
+.. title: zandhoven.org
+.. slug: node-156
+.. date: 2010-12-17 17:33:44
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Lang geleden toen de dieren nog praatten, en ik pas begon in de
+Jeugdraad, heb ik de domeinnaam zandhoven.org geregistreerd. Omdat de
+gemeente (Zandhoven) toen geen zandhoven.be-subdomein kon/wou arrangeren
+voor de website van de jeugdraad. Vandaar dat ik het maar zelf opgezet
+heb onder
+`jeugdraad.zandhoven.org <http://jeugdraad.zandhoven.org>`__.
+
+Voor
+de rest heb ik weinig nuttigs gedaan met die domeinnaam. Maar ik heb hem
+nog altijd.
+
+De website van de gemeente Zandhoven vind je op
+`www.zandhoven.be <http://www.zandhoven.be>`__.
+
+

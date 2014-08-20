@@ -1,0 +1,14 @@
+.. title: Duitsland raadt gebruik van Internet Explorer af
+.. slug: node-98
+.. date: 2010-01-19 09:36:06
+.. tags: microsoft,beveiliging
+.. link:
+.. description: 
+.. type: text
+
+Het Duitse ‘Bündesamt für Sicherheit in der Informationstechnologie’
+`raadt internetters af Internet
+Explorer <http://www.express.be/business/nl/technology/duitsland-stop-het-gebruik-van-internet-explorer/120066.htm>`__
+te gebruiken. Dit naar aanleiding van de Chinese aanvallen op Google via
+`een lek in Microsofts
+webbrowser <http://webwereld.nl/nieuws/64880/chinese-ie-exploit-duikt-op-in-hacktool-metasploit.html>`__.

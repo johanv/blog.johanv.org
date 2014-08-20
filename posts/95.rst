@@ -1,0 +1,36 @@
+.. title: Stop softwarepatenten (opnieuw)!
+.. slug: node-95
+.. date: 2010-01-08 13:31:13
+.. tags: overheid,patenten
+.. link:
+.. description: 
+.. type: text
+
+In 2005 werd een Europees voorstel om softwarepatenten rechtsgeldig te
+maken door het Europees parlement richting prullenbak verwezen, maar
+vandaag is de dreiging van softwarepatenten er opnieuw.
+
+Nu Europa
+moet beslissen over zogenaamde ‘Community Patenten’, bestaat de vrees
+dat softwarepatenten die in sommige lidstaten zijn goedgekeurd, toch
+rechtsgeldig worden in heel Europa.
+
+Via softwarepatents.eu kan je
+alvast `een nieuwe petitie tekenen tegen softwarepatenten in
+Europa <http://petition.stopsoftwarepatents.eu/971002810185/>`__.
+Doen!
+
+Zie ook:
+
+
+
+`Wat is er mis met
+softwarepatenten? <http://softwarepatenten.be/faq.html#2>`__
+
+
+`Hoe de softwarepatenten Europa opnieuw
+bedreigen <http://www.computerworlduk.com/toolbox/open-source/blogs/index.cfm?entryid=2721&blogid=14>`__
+(in het Engels).
+
+
+

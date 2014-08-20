@@ -1,0 +1,21 @@
+.. title: Microsoft, Google, Yahoo,... springen op de Open Web Foundation agreement
+.. slug: node-64
+.. date: 2009-11-18 10:16:48
+.. tags: microsoft,openstandaarden,google
+.. link:
+.. description: 
+.. type: text
+
+Gisteren `kondigde de Open Web Foundation haar ‘Open Web Foundation
+agreement (OWFa)’
+aan <http://openwebfoundation.org/2009/11/introducing-the-open-web-foundation-agreement.html>`__,
+een soort van overeenkomst die gebruikt kan worden om open specificaties
+vrij beschikbaar te stellen, zodat gebruikers zich geen zorgen hoeven te
+maken over patenten e.d.
+
+Opmerkelijk is dat `zowel Microsoft als
+Google al specificaties onder de agreement hebben
+vrijgegeven <http://www.theregister.co.uk/2009/11/18/open_web_foundation_agreement/>`__.
+
+Informatie
+in het Nederlands heb ik jammer genoeg nog niet.

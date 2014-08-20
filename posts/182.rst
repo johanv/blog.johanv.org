@@ -1,0 +1,120 @@
+.. title: Backing up your remote website using sshfs and rsnapshot
+.. slug: node-182
+.. date: 2011-08-23 23:19:08
+.. tags: linux,internet
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/182>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/385849/Backing-up-a-remote-website-using-sshfs-and-rsnapshot>`__
+
+
+
+Recently, I was introduced to rsnapshot, which is a great tool for
+simple backup. It uses rsync to backup files. And it also uses hard
+links, so it can provide hourly 'snapshots' while it stores unchanged
+files only once. I wanted to use rsnapshot for backing up the files I
+have on my website at my hosting providers' server, but sadly enough, my
+hosting provider doesn't provide rsync support - damn cheap hosting
+;-(.
+
+Luckily I do have ssh access to my files, and using sshfs you
+can work around the missing rsync on the server. (Probably much slower
+than with rsync, and I am also unable to keep the permissions of the
+files, but hey - it's better than nothing.)
+
+If your home server is
+Debian-based, you can install the required packages using
+apt:\ ``\napt-get install sshfs fuse-utils rsnapshot``
+(otherwise use
+yum or pacman or whatever tool your distribution provides.)
+
+First
+you want to make sure that the root user of your home server can ssh to
+my web server without password, so that the remote file system can
+automatically be mounted onto your own computer. This can be done with
+public key authentication.
+
+Check whether the root user has a file
+``~/.ssh/id_rsa.pub`` in it's home directory. If the file is there,
+that's great. If not, you shoulde generate it, issuing the
+command\ ``\nssh-keyhgen -t rsa``
+Don't enter a password, and store
+the file on the default location.
+
+Now you have to add the contents
+of the ``id_rsa.pub`` on your computer at home to the
+``~/.ssh/authorized_keys`` file in your home directory on the remote web
+server. If the remote file doesn't exist, just create it.
+
+This
+should enable you ssh'ing from your computer at home to your web server
+without having to enter a password.
+
+The following step is using
+sshfs to access your remote files via a mount point on your home server.
+Create a mount point:\ ``\nmkdir /mnt/webserver``
+and add a line to
+``/etc/fstab``: (change remote username, server name and homedir to your
+situation)\ ``\nsshfs#remoteuser@your.webserver.org:/your/homedir\t/mnt/webserver fuse\tdefaults,idmap=none,uid=root,gid=root\t0 0``
+If
+you now enter the command\ ``\nmount /mnt/webserver``
+you should be
+able to find your remote files en directories under the
+``/mnt/webserver`` mount point. The remote files have root as user and
+group, this is OK since rsnapshot will be run as root.
+
+The next
+step is configuring rsnapshot. Open ``/etc/rsnapshot.conf``, and read
+the part about trailing slashes and tabs: if you change the
+configuration file, you should put a slash after each directory name,
+and use tabs between elements on a line. So make sure your text editor
+saves tabs as tabs!
+
+Search the line that starts with
+``rsnapshot_root``, and change it to
+``\nsnapshot_root   /path/to/backup/location/\n``
+Important:
+
+
+-  Make sure to put a tab between the parts, and add a trailing slash
+-  The file system of rsnapshot\_root should support hard links (ext3,
+   ext4 are fine)
+
+
+
+Then search for lines starting with 'backup'. There are some
+examples for backing up ``/home``, ``/etc`` and ``/usr/local``. If you
+want to back up them as well, then you can leave them. If not, just
+comment them out. The important thing is adding this
+line:\ ``\nbackup  /mnt/webserver/        localhost/``
+
+If you now
+issue the command\ ``\nrsnapshot hourly``
+a folder ``hourly.0`` will
+be created under your rsnapshot root, containing a copy of the files on
+your webserver. If after that you type\ ``\nrsnapshot hourly``
+again,
+this folder is renamed to ``hourly.1``, and a new folder ``hourly.0`` is
+created with the current files on your server. This second backup won't
+take a lot of disk space though, because the files which are the same in
+``hourly.0`` and ``hourly.1`` will only be stored once on the file
+system.
+
+Now open ``/etc/cron.d/rsnapshot``. If you uncomment the
+cron lines in there, rsnapshot will be run automatically. The monthly
+backups will be taken the first of the month, the weekly backups on
+wednesday, the daily backups every morning at 3:30, and the hourly
+backups every 4 hours.
+
+Now I still have to figure out how I can
+backup my database. I don't have command line mysql on the server, so I
+will have to use the mysql web interface. I will keep you informed when
+I get this working automatically :)
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

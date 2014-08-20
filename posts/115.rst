@@ -1,0 +1,30 @@
+.. title: Gebruik open source en kom op de zwarte lijst
+.. slug: node-115
+.. date: 2010-02-25 13:18:54
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+Volgens de Amerikaanse lobbygroep International Intellectual Property
+Alliance (IIPA), `moeten Indonesië, Brazilië en
+India <http://webwereld.nl/nieuws/65277/lobbygroep--open-source-bedreigt-kapitalisme.html''>`__
+op een zwarte lijst geplaatst worden, omdat ze het gebruik van open
+source software aanbevelen.
+
+De IIPA is een koepelorganisatie boven
+o.a. de MPAA en de RIAA, organisaties die zich onder meer bezig houden
+met het piraterijbestrijding op het vlak van (respectievelijk) films en
+muziek.
+
+De IIPA stelt dat open source software de
+concurrentiekracht van softwarebedrijven in gevaar brengt, omdat mensen
+voor open source gaan kiezen, in plaats van voor software van
+commerciële bedrijven.
+
+Waaruit blijkt dat ze het weer niet begrepen
+hebben. Het is namelijk perfect mogelijk om tegelijkertijd een
+commercieel bedrijf te zijn, én open source software aan te bieden.
+Voorbeelden zijn er te over: Red Hat, Novell, Canonical, Wordpress,
+Google,... Zelfs `Microsoft sprong een aantal jaren geleden op de
+open-sourcetrein <http://www.codeplex.com/>`__.

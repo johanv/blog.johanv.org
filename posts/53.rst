@@ -1,0 +1,34 @@
+.. title: Windows 7 hotspot functie gevaar voor bedrijven?
+.. slug: node-53
+.. date: 2009-11-05 09:33:24
+.. tags: beveiliging,windows
+.. link:
+.. description: 
+.. type: text
+
+Blijkbaar is het mogelijk om met Windows 7 een PC met draadloze
+netwerkkaart te gebruiken als ‘access point’ voor een draadloos netwerk.
+Security.nl stelt dat `dit een gevaar inhoudt voor
+bedrijven <http://www.security.nl/artikel/31357/1/Windows_7_hotspot_functie_gevaar_voor_bedrijven.html?utm_source=rssfeed&utm_medium=rss&utm_campaign=rssfeed>`__.
+Via deze ‘hotspot feature’ kan een werknemer een onbeveiligde draadloze
+toegang tot het bedrijfsnetwerk opzetten.
+
+Ik ben het er niet mee
+eens dat dit mogelijk beveiligingsprobleem te wijten is aan Windows 7.
+Om de hotspotfunctionaliteit te activeren, moet de gebruiker
+beheerdersrechten hebben op zijn/haar PC. Als je als bedrijf
+beheerdersrechten geeft aan mensen die een onbeveiligde draadloze
+toegang tot het bedrijfsnetwerk willen openzetten, dan ben je verkeerd
+bezig.
+
+En natuurlijk is het mogelijk dat mensen bijv. via een eigen
+laptop beveiligingsproblemen mee naar binnen nemen in een bedrijf. Maar
+door features uit één bepaald OS te verwijderen, los je dat probleem
+niet op. Een kwaadwillig of onwetend iemand kan even goed met een
+wireless router binnen stappen, en die aan het bedrijfsnetwerk
+hangen.
+
+Je beveiligt je netwerk niet door features uit een
+besturingssysteem te verwijderen. Er bestaan betere oplossingen om te
+vermijden dat een niet-geautoriseerde personen van je netwerk gebruik
+maken.

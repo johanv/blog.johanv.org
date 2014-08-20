@@ -1,0 +1,17 @@
+.. title: Geen cookies meer zonder toestemming in Europa?
+.. slug: node-60
+.. date: 2009-11-13 19:25:09
+.. tags: overheid,bigbrother
+.. link:
+.. description: 
+.. type: text
+
+In het Nederlands heb ik hierover nog weinig informatie gevonden, maar
+blijkbaar heeft `de raad van Europa stiekem beslist dat websites enkel
+nog cookies mogen gebruiken als de gebruiker daar expliciet toestemming
+voor geeft <http://www.out-law.com/page-10510>`__.
+
+Ik zie al voor
+me hoe surfers duizend keer op ‘I agree’ moeten klikken vooraleer ze een
+website te zien krijgen. `Waar hebben we dat nog
+meegemaakt? <http://www.pcmweb.nl/artikel.jsp?id=2288455>`__

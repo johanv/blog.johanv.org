@@ -1,0 +1,18 @@
+.. title: BSOD v2
+.. slug: node-76
+.. date: 2009-12-01 13:27:45
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+'t Is de laatste tijd stilletjes wat IT-nieuws betreft. Of anders mis ik
+gewoon alwat de moeite waard is. Laat ons dan nog maar eens lachen met
+Microsoft.
+
+Volgens sommige bronnen, die het allemaal over namen van
+Prevx, `zouden verschillende Windowsvarianten niet meer opstarten na het
+installeren van de recentste
+updates <http://www.zdnet.be/news/110606/microsoft-onderzoekt-zwart-scherm-des-doods/>`__.
+Na het `Blue Screen Of Death <http://nl.wikipedia.org/wiki/BSOD>`__ nu
+dus ook het Black Screen Of Death.

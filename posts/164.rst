@@ -1,0 +1,184 @@
+.. title: Booting an existing Windows 7 installation from Fedora using Virtualbox.
+.. slug: node-164
+.. date: 2011-02-16 13:05:31
+.. tags: windows,linux,fedora
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.losderover.be/node/164>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/171077/Booting-an-existing-Windows-7-installation-from-Fedora-using-Virtualbox->`__
+
+
+
+\ **WARNING:** After a month, I ran into problems with the windows
+activation. I couldn't activate the virtual and the physical windows at
+the same time. I tried what's on
+http://forums.virtualbox.org/viewtopic.php?t=9697 under 2. Bios
+Settings, but it didn't work.
+
+My laptop is a dual boot system with
+Windows 7 and Fedora. Now I want to create a virtual machine in Fedora,
+which boots the existing Windows 7 installation. It worked for me (TM)
+on a Dell Precision M4500, with the native Windows. This is how I did
+it, starting from a completely updated Fedora 14.
+
+
+
+-  Surf to http://www.virtualbox.org/wiki/Linux\_Downloads, and download
+   the .repo file at the bottom of the page.
+-  Put the .repo file in /etc/yum.repos.d and install VirtualBox-4.0.
+-  Install the kernel source: ``yum install kernel-devel gcc``
+-  Install the vboxdrv kernel module issuing
+   ``/etc/init.d/vboxdrv setup``.This didn't seem to work the first
+   time, so i issued the command again until I got
+   ``Starting VirtualBox kernel modules [ OK ]``.
+-  Create a directory to store the virtual disk file: ``mkdir ~/vm``
+-  A typical Windows Vista installation exists of 2 partitions: a small
+   boot partition, and a big one for the rest. You need to identify
+   them. In my case, the partitions are /dev/sda2 and /dev/sda3
+   respectively.
+-  I want to run virtualbox under my normal user account. So I had to
+   add myself to the group vboxusers:
+   ``usermod -a -G vboxusers johanv``. I will also need read/write
+   access to /dev/sda2 and /dev/sda3. But every time I change something
+   to the security settings of these block devices, some time later
+   Fedora changes it back for me. I'm not sure how to handle this, so
+   for the moment, I did\ ``\nusermod -a -G disk johanv\n``\ which
+   grants me r/w access to all raw disks and partitions. Which is very
+   unsafe! Any suggestion of a better way to arrange this, is more than
+   welcome.
+-  We need to generate an mbr which our virtual machine will use.
+
+
+   -  Debian based distributions contain a package ‘mbr’, which can be
+      used to create such a mbr. But it isn't availiable for Fedora. So
+      let's build it from source.
+   -  We need to install dev86: ``yum install dev86``.
+   -  The source for mbr is available at
+      http://www.chiark.greenend.org.uk/~neilt/mbr/mbr.tar.gz. Unpack
+      the archive, and compile and install mbr issuing these
+      commands:\ ``\n./configure\nmake\nsu -c "make install"\n``
+
+   -  Create a mbr as follows: (change the 23 to the numbers of your
+      Windows partitions. 23 is for /dev/sda2 and
+      /dev/sda3.)\ ``\n/usr/local/sbin/install-mbr -e23 --force ~/vm/vm.mbr\n``\ This
+      creates a file ~/vm/vm.mbr of 512 bytes, containing our mbr.
+
+
+   
+
+-  Now create the virtual disk for your virtual machine. I did this as
+   root. Remember to adapt the partition numbers to your
+   needs:\ ``\nVBoxManage internalcommands createrawvmdk -filename /home/johanv/vm/win7.vmdk -rawdisk /dev/sda -partitions 3,2 -mbr /home/johanv/vm/vm.mbr -relative ``
+I
+   typed ‘-partitions 3,2’ instead of ‘-partitions 2,3’, because I think
+   that otherwise the OS-partition will get the drive letter D instead
+   of C. I'm not sure of this.
+
+-  At last: create the virtual machine using VirtualBox Manager:
+
+
+   -  Click ‘New’.
+   -  Name your machine, and choose an OS (in my case Windows 7 64 bit)
+   -  Assign memory
+   -  Choose ‘Use existing hard disk’ and browse to the vmdk.
+   -  When the virtual machine is created, click ‘System’, ‘Motherbord’,
+      and disable IO APIC
+   -  
+
+   -  Read what's under ‘DMI BIOS settings’ on
+      http://forums.virtualbox.org/viewtopic.php?f=28&p=149094. It seems
+      that for OEM versions, you need to copy some of your real bios
+      information to your virtual machine. I just did it as told on the
+      page, although I'm not sure it is necessary for Windows 7.
+
+   
+
+-  The virtual machine doesn't boot right now. You need to insert a
+   Windows 7 installation CD, choose 'Repair computer', and let it fix
+   the Windows boot loader.
+-  After this, my system booted, I got the Windows 7 splash screen, and
+   then the computer crashed with the following
+   BSOD:\ ``\nA problem has been detected and windows has been shut down to prevent damage\nto your computer.``
+\ ``\nIf this is the first time you've seen this stop error screen,\nrestart your comptuer. If this screen appears again, follow\nthese steps:``
+\ ``\nCheck for viruses on your computer. Remove any newly installed\nhard drives or hard drive controllers. Check your hard drive\nto make sure it is properly configured and terminated.\nRun CHKDSK /F to check for hard drive corruption, and then\nrestart your computer.``
+\ ``\nTechnical information:``
+\ ``\n*** STOP: 0x0000007B (0xFFFFF880009A9928, 0xFFFFFFFFC0000034, 0x0000000000000000, 0\nx0000000000000000)\n``
+It
+   seems Windows doesn't like it when the type of your hard drives
+   changes. I managed to fix this problem as follows:
+
+
+   -  Boot in your original Windows 7
+   -  (Backup your registry)
+   -  Download
+      `MergeIDE.zip <http://www.virtualbox.org/attachment/wiki/Migrate_Windows/MergeIDE.zip>`__,
+      unpack it, and import the .reg file
+   -  Reboot to Fedora
+   -  Open VirtualBox manager, Select your virtual machine, Click
+      'Settings'
+   -  Click 'Storage', remove your hard disk from the SATA controller,
+      and add it to the IDE controller
+   -  (Not sure this is needed:) For the IDE controller, choose 'PIIX3'
+      as type, and disable host I/O cache.
+
+   
+
+-  If you boot up your virtual machine now, it should just work (TM).
+
+
+
+
+references:
+
+
+-  http://www.rajatarya.com/website/taming-windows-virtualbox-vm
+-  http://forums.virtualbox.org/viewtopic.php?f=28&p=149094
+-  http://www.virtualbox.org/wiki/Migrate\_Windows
+-  http://froebe.net/blog/2009/12/21/how-to-convert-a-laptop-running-microsoft-windows-7-to-a-virtualbox-virtual-machine/
+
+
+
+
+
+UPDATE: Fixing the security
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+As mentioned, the security of the above implementation is very
+bad. I improved it a little, creating a dedicated user to run
+virtualbox.
+(uid 899 is arbitrary, but less than 1000, to prevent the
+user from showing up in
+gdm)
+\ ``\nuseradd -u 899 -m -g vboxusers -G disk vboxuser\npasswd vboxuser\ncd /home\n#replace 'johanv' by your own login below\ncp -rp johanv/VirtualBox\\ VMs/ vboxuser/\ncp -rp johanv/.VirtualBox/ vboxuser/\ncp -rp johanv/vm vboxuser/\nchown -R vboxuser vboxuser\nsed -i 's/johanv/vboxuser/' vboxuser/.VirtualBox/VirtualBox.xml\nsed -i 's/johanv/vboxuser/' vboxuser/VirtualBox\\ VMs/win7/win7.vbox\n# replace 'win7' by the name of your virtual machine above.``
+Enter
+``visudo``, and add the following
+line:\ ``\njohanv ALL=(vboxuser) NOPASSWD: /usr/bin/virtualbox``
+(Change
+the account name as appropriate.)
+
+If you want to enable sound for
+your virtual computer, download and install
+paprefs:\ ``\nyum install paprefs``
+Run paprefs, click on the ‘Network
+Server’ tab and enable network access to local sound devices. (Again,
+probably not the most safe way to do this, but it works.)
+
+Now you
+can run virtualbox as
+follows:\ ``\nxhost +si:localuser:vboxuser\nsudo -H -u vboxuser virtualbox``
+!
+Don't forget to remove your ‘normal user account’ from the ‘disk’ group
+!
+
+You can comment on this post via `this identi.ca
+conversation <http://test.johanv.org/StatusThread/?controller=conversation&id=81417727>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

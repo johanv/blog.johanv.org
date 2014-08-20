@@ -1,0 +1,18 @@
+.. title: Mozilla blokkeert Microsofts stiekeme Firefox add-on
+.. slug: node-34
+.. date: 2009-10-19 16:09:22
+.. tags: opensource,microsoft
+.. link:
+.. description: 
+.. type: text
+
+Toen `Microsoft via een
+update <http://www.security.nl/artikel/29259/1/Microsoft_installeert_stiekem_add-on_in_Firefox.html>`__
+stiekem een add-on installeerde voor
+`Firefox <http://www.mozilla-europe.org/nl/firefox/>`__, veroorzaakte
+dat heel wat opschudding. Dit weekend kwam de beruchte add-on opnieuw in
+het nieuws, omdat `Mozilla de add-on van Microsoft nu
+blokkeert <http://techworld.nl/technologie/11984/mozilla-blokkeert-microsoft-plugin.html>`__.
+Voor gebruikers die niet de laatste versie van Internet Explorer
+gebruiken, veroorzaakt de add-on namelijk een beveiligingsprobleem.
+

@@ -1,0 +1,24 @@
+.. title: Gimp verdwijnt uit standaardinstallatie Ubuntu
+.. slug: node-67
+.. date: 2009-11-20 15:53:36
+.. tags: opensource,linux
+.. link:
+.. description: 
+.. type: text
+
+Opschudding in de Ubuntu community, sinds gisteren bekend raakte dat
+`Gimp niet meer mee opgenomen wordt in de standaard
+Ubuntu-installatie <http://digitizor.com/2009/11/19/gimp-to-be-dropped-from-ubuntu-10-04-lucid-lynx/>`__.
+
+\ `Gimp <http://www.gimp.org/>`__
+is een open source programma voor fotobewerking. Het wordt nu weggelaten
+omdat slechts weinigen het zouden gebruiken, en omdat de interface te
+moeilijk is.
+
+Zelf vind ik de interface van Gimp ook niet geweldig
+geslaagd. Mijn favoriete fotobewerkingsprogramma is
+`Paint.NET <http://www.getpaint.net/>`__, maar helaas werkt dat enkel
+onder Windows. Voor Linux blijf ik Gimp het betere werk vinden. Ik ben
+er ook niet van overtuigd dat F-Spot, het door Ubuntu voorgestelde
+alternatief voor fotobewerking, mijn ‘fotobewerkbehoeften’ zal kunnen
+inlossen.

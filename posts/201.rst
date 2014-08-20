@@ -1,0 +1,26 @@
+.. title: Git met grafische tools voor Windowsgebruikers
+.. slug: node-201
+.. date: 2013-02-28 20:36:25
+.. tags: opensource,development
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/201>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/1154664/Git-met-grafische-tools-voor-Windowsgebruikers>`__
+
+Sommige mensen houden niet van de command line. Wat lastig is, als je
+git moet gebruiken. Gelukkig geraak je tegenwoordig vrij ver met de git
+extensions. Een demo, specifiek voor het GAP van de Chiro, maar ook
+interessant in het algemeen (hoop
+ik).
+
+[video:http://youtu.be/n-WbItytu0U]
+
+Reacties via deze
+`twitterdiscussie <https://twitter.com/vohanj/status/307216735990317056>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

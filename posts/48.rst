@@ -1,0 +1,16 @@
+.. title: Cyberaanval op Zwitserland
+.. slug: node-48
+.. date: 2009-10-30 09:01:49
+.. tags: beveiliging,overheid
+.. link:
+.. description: 
+.. type: text
+
+Het Zwitserse ministerie van buitenlandse zaken zou slachtoffer geworden
+zijn van een cyberaanval. Volgens `het artikel op
+ZDNet <http://www.zdnet.be/news/109636/cyberaanval-op-zwitsers-ministerie/>`__
+werd het probleem mee vastgesteld door Microsoft.
+
+Het zal dus
+waarschijnlijk niet aan een Linuxserver gelegen hebben :)
+

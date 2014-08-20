@@ -1,0 +1,86 @@
+.. title: Crunchbang Linux on the Acer Aspire One
+.. slug: node-16
+.. date: 2008-12-14 19:58:59
+.. tags: linux,aspireone
+.. link:
+.. description: 
+.. type: text
+
+I did the following to install `Crunchbang <http://crunchbang.org/>`__
+(8.10) on my Acer Aspire One (SSD). (Most is taken from
+https://help.ubuntu.com/community/AspireOne, which has more detailed
+information. This is just a reminder for myself.)
+
+
+
+-  Create a bootable usb stick from the iso image using
+   `unetbootin <http://unetbootin.sourceforge.net/>`__.
+-  Install crunchbang, choosing ext2 file systems.
+-  Download, compile and install
+   `madwifi <http://snapshots.madwifi-project.org/madwifi-hal-0.10.5.6/madwifi-hal-0.10.5.6-r3835-20080801.tar.gz>`__,
+   and add ``ath_pci`` to ``/etc/modules``.
+-  Add the following to ``/etc/rc.local`` to enable the wireless
+   led:
+\ ``\nsysctl -w dev.wifi0.ledpin=3\nsysctl -w dev.wifi0.softled=1\n``
+
+-  Install ``luvcview`` to use the webcam. This doesn't work yet.
+-  Download `acerfand <http://electronpusher.org/~rachel/acerfand>`__
+   and
+   `acer\_ec.pl <http://aceracpi.googlecode.com/svn/trunk/acer_ec/acer_ec.pl>`__
+   into ``/usr/local/bin``, and make ``acerfand`` executable. Check
+   wether ``sudo perl acer_ec.pl ?= 58`` returns something that could be
+   the cpu temperature (hexacecimal), and add this line to
+   ``/etc/rc.local`` to keep the fan down if the CPU temperature is
+   below 70°:
+\ ``/usr/local/bin/acerfand``
+
+-  Edit ``/etc/fstab`` and change the the option “relatime” to
+   “noatime”.
+-  Add ``elevator=noop`` as boot option for the current kernel, and to
+   the ``# defoptions`` line.
+-  Add the following to
+   ``/etc/fstab``:
+``\ntmpfs      /tmp            tmpfs        defaults           0    2\ntmpfs      /var/tmp        tmpfs        defaults           0    2\n``
+
+-  Change ``concurrency=none`` into ``concurrency=shell`` in
+   ``/etc/init.d/rc``
+-  For power saving, create a file ``/etc/sysctl.d/60-aspireone.conf``
+   with the following
+   content:
+\ ``\n###################################################################\n# Settings for the Acer Aspire One\n#\n# Strongly discourage swapping\nvm.swappiness = 1\n# As suggested by PowerTOP\nvm.dirty_writeback_centisecs = 1500\n# Suggested by https://help.ubuntu.com/community/AspireOne\nvm.vfs_cache_pressure = 0\nvm.dirty_ratio = 20\nvm.dirty_background_ratio = 10\nvm.laptop_mode = 5\n``
+Add
+   the following to
+   ``/etc/rc.local``:
+``\necho ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\necho ondemand > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor\ncat /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate_max > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate\n\necho 1 > /sys/devices/system/cpu/sched_smt_power_savings\necho 10 > /sys/module/snd_hda_intel/parameters/power_save\n\n### Decrease power usage of USB while idle\n## commented out; doesn't seem to work\n# [ -w /sys/bus/usb/devices/1-5/power/level ] && echo auto > /sys/bus/usb/devices/1-5/power/level\n# [ -w /sys/bus/usb/devices/5-5/power/level ] && echo auto > /sys/bus/usb/devices/5-5/power/level\n``
+
+-  
+Add the following line to
+   ``/etc/profile``:
+``\nexport INTEL_BATCH=1\n``
+
+-  Change the section 'Device' in
+   ``/etc/X11/xorg.conf``.
+\ ``\nSection "Device"\n        Identifier      "Configured Video Device"\n#       Driver          "vesa"\n        Option          "MonitorLayout" "LVDS,VGA"\n        Option          "Clone" "True"\n        Option          "AccelMethod" "EXA"\n        Option          "MigrationHeuristic" "greedy"\n        VideoRam        229376\n        Option          "CacheLines" "1980"\n        Option "NoDDC" \nEndSection\n``
+and
+   add this line to the 'Monitor'
+   section:
+\ ``\n        DisplaySize 195 113\n``
+
+
+
+
+Interesting firefox add-ons:
+
+
+-  `stop or reload
+   button <https://addons.mozilla.org/en-US/firefox/addon/313>`__
+-  `personal
+   menu <https://addons.mozilla.org/en-US/firefox/addon/3895>`__
+-  `autohide status
+   bar <https://addons.mozilla.org/en-US/firefox/addon/1530>`__
+
+
+
+Add the string ``browser.cache.disk.parent_directory`` to
+Firefox's about:config, and assign the value ``/tmp/firefox``. In
+'options', 'security' disable the phishing filter. (dangerous!)

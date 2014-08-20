@@ -1,0 +1,47 @@
+.. title: Blog geüpgraded naar Drupal 6
+.. slug: node-159
+.. date: 2010-12-27 07:39:19
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Nu binnen enkele weken Drupal 7 gereleaset zal worden, wordt het tijd om
+zelf over te schakelen naar Drupal 6. Ik blijf graag een versie achter,
+omdat ik op die manier minder updates moet installeren.
+
+Ik beheer
+een aantal Drupalsites, waaronder deze blog. Dat was dan ook de eerste
+die er aan moest geloven. Aangezien het niet om een uitblinker gaat qua
+bezoekersaantallen, en omdat ik op deze blog geen speciale modules
+gebruik, dacht ik de upgrade in de gauwte even rechtstreeks op de server
+te doen. Ik had gauw de `handleiding voor de
+upgrade <http://drupal.org/node/340073>`__ gelezen, en het leek me niet
+zo moeilijk.
+
+Niet dus. Het updatescript bleef hangen, en ik kreeg
+heel wat foutmeldingen over het ontbreken van een tabel 'menu\_router'.
+(Table 'menu\_router.blabla' doesn't exist.) Het was niet direct
+duidelijk wat precies het probleem was, en ik vond ook niet direct een
+oplossing op het internet.
+
+Uiteindelijk heb ik het in orde gekregen
+door de upgrade op een andere server te doen. Ik vermoed dat het
+probleem te maken heeft met de versie van mysql (4.1.22) en php (5.2.13)
+van mijn hosting provider. Op mijn testerver heb ik mysql 5.0.51a en php
+5.2.6, en daar liep de upgrade naadloos.
+
+Wat ik nog wel vergeten
+was, was de Nederlandse vertaling te installeren. Die was wel
+geïnstalleerd voor mijn site onder Drupal 5, en omdat die bij Drupal 6
+ontbrak, kreeg ik hier en daar nog een foutmelding. Door de vertaling te
+installeren, was ook dat probleem van de baan.
+
+En tenslotte moest
+ik nog eens naar de instellingenpagina surfen waar de plaats voor de
+tijdelijke bestanden gedefinieerd is, en die bestaande instelling
+blijkbaar opnieuw bewaren, om nog van een andere foutmelding af te
+geraken.
+
+Waarmee nu hopelijk deze blog probleemloos zal verder
+draaien onder Drupal 6.

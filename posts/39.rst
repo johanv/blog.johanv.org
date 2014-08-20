@@ -1,0 +1,25 @@
+.. title: Aandelenkoers Red Hat stijgt boven die van Microsoft
+.. slug: node-39
+.. date: 2009-10-23 09:01:24
+.. tags: linux,microsoft
+.. link:
+.. description: 
+.. type: text
+
+Vorige week `steeg de prijs van een Red Hat aandeel boven de prijs van
+een aandeel van
+Microsoft <http://www.cio.com.au/article/322855/red_hat_passes_microsoft_stock_price_now_what?fp=4&fpid=13>`__.
+`Red Hat <http://www.europe.redhat.com/belgium/nl/>`__ is vooral bekend
+als verkoper van `Red Had Enterprise
+Linux <http://www.europe.redhat.com/rhel/>`__.
+
+
+
+Zie ook:
+
+
+-  `huidige koers Microsoft
+   (MSFT) <http://www.euroinvestor.nl/Stock/ShowStockInfo.aspx?StockId=356834>`__
+-  `huidige koers Red Hat
+   (RHT) <http://www.euroinvestor.nl/Stock/ShowStockInfo.aspx?StockId=356834>`__
+

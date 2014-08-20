@@ -1,0 +1,53 @@
+.. title: SFD 2012: Linux mint vanop een USB-stick
+.. slug: node-198
+.. date: 2012-09-12 21:27:41
+.. tags: opensource,linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/198>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/882915/Linux-mint-vanop-een-USB-stick>`__
+Deze zaterdag, 15 september, is het weer software freedom day! Dit jaar
+installeren we geen Linuxdistributie op je harde schijf, want dat deden
+we vorig jaar al :-)
+
+Dit jaar maken we een draagbare
+linuxdistributie op een USB-stick, die je dan kunt gebruiken op zo goed
+als iedere conventionele computer of laptop. We kiezen voor `Linux
+Mint <http://linuxmint.com/>`__, en installeren dat op een usb-stick met
+behulp van `Unetbootin <http://unetbootin.sourceforge.net/>`__.
+
+De
+video is naar mooie traditie minder professioneel, met hier en daar
+onhandig knipwerk, een plots einde, en commentaar in lelijk
+verkavelingsvlaams. Maar als tegenprestatie mag je de stick die ik
+maakte komen lenen om uit te proberen. Op voorwaarden dat je hem zelf
+komt halen, en dat ik hem nog niet aan iemand anders gegeven heb
+:-)
+
+\ **Update:** 1 GB schrijfbare ruimte op de USB-stick is te
+weinig om de updates te kunnen installeren. (Mint 13 is al een aantal
+maanden uit, en er staan wel wat updates te wachten.) Onderaan zal ik
+een howto voorzien om je systeem opnieuw stabiel te krijgen, als je het
+probeerde te upgraden met te weinig schrijfbare ruimte. Maar beter is
+dat je bij het opzetten van je systeem 2 GB (2048 MB) vrije ruimte
+voorziet, in plaats van de 1 GB in de
+video.
+
+[video:http://youtu.be/zcjDD\_\_Jfg8]
+
+Als aardigheidje
+heb ik ook nog een fotootje van ‘the making of’, dat ik jullie niet wou
+onthouden:
+
+\ |the making of|
+
+Reageren kan via `deze
+identi.ca-discussie <https://identi.ca/conversation/95937011>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
+.. |the making of| image:: https://lh5.googleusercontent.com/-4ozV8at00bA/UFDiVgxiBdI/AAAAAAAADQU/f5yIaKgWdxA/s720/IMG_20120908_191616.jpg

@@ -1,0 +1,48 @@
+.. title: Enable multiple user accounts on a Linux powered Asus Aspire one
+.. slug: node-13
+.. date: 2008-10-23 21:02:29
+.. tags: linux,aspireone
+.. link:
+.. description: 
+.. type: text
+
+Enabling multiple user accounts for the
+`Linpus <http://distrowatch.com/table.php?distribution=linpus>`__
+distribution on my `Acer Aspire One <http://www.acer.com/aspireone>`__
+was not trivial. After booting, the user 'user' is logged on
+automatically, and this user was the only one which could use sound and
+the links to documents, music,... This is why I wrote a quick
+howto.
+
+\ **Before you start:** Make sure you have a bootable
+usb-stick handy, in case your system refuses to boot after changing a
+file. I used Debian Lenny beta 2, with an updated kernel.
+
+To
+display an xterm, press Alt+f2, and enter 'xterm'. You can enable the
+right-click menu launching 'xfce-setting-show' from the command line,
+and unchecking 'show desktop menu on right click' under desktop
+behaviour. (Click the left arrow on your task bar if it is hiding the
+'Close' button of the settings dialog.)
+
+Edit /etc/inittab: replace
+the
+line
+\ ``\n#1:2345:respawn:/sbin/mingetty --autologin user tty1\n``
+by
+\ ``\n1:2345:respawn:/sbin/mingetty tty1\n``
+And
+decomment
+\ ``\nx:5:respawn:/etc/X11/prefdm -nodaemon\n``
+
+(I
+commented out the lines for virtual consoles 2-6 as well, but
+ctrl+alt+f\ *x* seems disabled somehow.)
+
+In '/etc/rc.d/rc.S',
+comment out the
+line
+\ ``\n#   /usr/bin/xinit -- -br>/dev/null 2>&1 &\n``
+
+That
+should do it.

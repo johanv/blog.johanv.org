@@ -1,0 +1,53 @@
+.. title: Printing to a HP Laserjet CP1025 on a Linux print server with CUPS
+.. slug: node-209
+.. date: 2013-06-28 10:58:58
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/209>`__
+
+Almost 2 years ago, I bought
+a [HP Laserjet
+CP1025](http://h10010.www1.hp.com/wwpc/us/en/sm/WF10a/18972-18972-3328060-15077-3328070-4052955.html?jumpid=in\_r2515\_us/en/smb/psg/psc404redir-ot-xx-xx-/chev/).
+It was rather cheap. And it has crappy Linux support. Damn.
+
+Every
+time I install a new Linux distribution, I have forgotten how to use
+this printer. So I might as well document it here.
+
+If you want to
+attach your printer to your PC using the USB cable. It's not that
+difficult. You can install the
+[hplip](http://hplipopensource.com/hplip-web/index.html) package, which
+is available in the Debian and Fedora repositories. Probably other
+distributions' as well. When you run \`hp-setup\`, you get an ugly gui
+tool to configure your printer, that downloads the correct freedom
+hating driver. But it works. (You can also run it in the console:
+\`hp-setup -i\`)
+
+Now, where I live, I don't have room for a printer
+in the living room. So the printer is in the attic, attached to a
+[Raspberry Pi print server](/node/195). But for that to work, I need a
+client side printer driver. And that is a problem. The hplip tools don't
+want to believe me that there is a HP Laserjet CP1025 on the network.
+And I could not find out how to configure a CUPS network printer with
+the hplip drivers.
+
+What you need, is the 'foo2zjs' printer driver.
+Which might be in your package repository. Which might even be already
+installed on your system. \*\*But don't use the one from the
+repositories!\*\* It does not work. I don't know why either.
+
+So
+uninstall foo2zjs from your system, and compile it yourself. It is not
+hard to do. Go to the [foo2zjs](http://foo2zjs.rkkda.com/) website, and
+scroll down to 'Download and install'. You only need to download the
+firmware for your printer model (in this case 1025).
+
+Be careful now
+when you add your printer. The driver name is: \`HP LaserJet Pro
+CP1025nw Foomatic/foo2zjs-z3 (en)\`. Which is, becasuse of the Pro in
+the name, on a completely different place in the alphabetical list than
+the other (nonfunctional) cp1025 drivers, which don't mention 'Pro'.

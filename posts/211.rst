@@ -1,0 +1,86 @@
+.. title: The set of prime numbers is infinite
+.. slug: node-211
+.. date: 2014-05-14 21:53:31
+.. tags: wiskunde
+.. link:
+.. description: 
+.. type: text
+
+(This article is more or less a transcript of a `show I sent to hacker
+public radio <http://hackerpublicradio.org/eps.php?id=1517>`__.)
+
+In
+this short article I want to talk about prime numbers. In praticular:
+about the fact that there exist an infinite number of prime numbers.
+This has been proven more than 2000 years ago, but I noticed that a lot
+of my friends that don't have a mathematical background, aren't aware of
+this fact.
+
+Yet it is rather easy to prove. So that is what I'll be
+doing in this article. If you are afraid of math, don't worry, it won't
+take more than 10 minutes.
+
+First of all I am going to define a
+prime number. I won't go into technical details, but a positive integer
+is a prime number if it has exactly 2 positive divisors: 1 and the
+number itself.
+
+For the proof that the sequence of prime numbers is
+infinite, I am going to cheat a little. I am going to use the
+fundamental theorem of arithmetic. This theorem states that every
+integer greater than 1 is either a prime number itself, or it can be
+written as the product of prime numbers. This product of prime number is
+unique, apart from the
+order of the factors.
+
+An example. Take the
+number 42. 42 can be written as a product of prime numbers: 2x3x7. Apart
+from the order of the factors 2, 3 and 7, there is no other way to write
+42 as a product of prime numbers. And this is true for every integer
+greater than 1.
+
+This seems a trivial thing, but in fact it is not.
+Nevertheless, to keep this discussion on topic, I will assume that the
+fundamental theorem of arithmetic is valid.
+
+Now. The proof that
+there are infinitely many prime numbers.
+
+We will show that for any
+finite set of prime numbers, there exists at least one prime number not
+contained in this set. If I can prove this, it follows that the set of
+all prime numbers must be infinite.
+
+So we take a random set of n
+prime numbers, we call those prime numbers p\_1, p\_2, p\_3, and so on.
+The last one is called p\_n.
+
+Now we construct a new number, let's
+say q. We construct q by multiplying all those prime numbers, and add
+one.
+
+Is p\_1 is a divisor of q? When you divide q by p\_1, the
+quotient equals p\_2 times p\_3 times p\_4 and so on times p\_n. The
+remainder is 1. This follows from how we constructed q. So p\_1 is not a
+divisor of q.
+
+The same is true for p\_2, p\_3, and so on. None of
+our n prime numbers is a divisor of q.
+
+What if we apply the
+fundamental theorem of arithmetic to q? It says that we can write q as a
+product of prime numbers. So let's do that. None of those prime numbers
+is contained in our original set of n prime numbers, because the prime
+numbers in our product are divisors of q, and a\_1, a\_2 and so on are
+not. So there exists at least one other prime number, not in our finite
+set, which is a divisor of q.
+
+There we are. We just proved that if
+you take a finite set of random prime numbers, there is always at least
+one prime number not contained in this set. This means the set of prime
+numbers is infinite.
+
+I hope you enjoyed this proof. It is not
+impossible that I made a mistake, because I didn't do a lot of math for
+the last 10 years. If you have any comments, please let me know.
+

@@ -1,0 +1,26 @@
+.. title: Microsoft verwijdert Windows-7-tool om wille van mogelijke GPL-problemen
+.. slug: node-57
+.. date: 2009-11-11 09:13:19
+.. tags: opensource,microsoft,windows
+.. link:
+.. description: 
+.. type: text
+
+De pagina van Microsofts `Windows 7 USB/DVD download
+tool <http://store.microsoft.com/Help/ISO-Tool>`__, een tooltje om bijv.
+opstartbare CD's/DVD's om te zetten naar opstartbare USB-disks, `is
+verdwenen van de Microsoft
+Store <http://arstechnica.com/microsoft/news/2009/11/microsoft-pulls-windows-7-tool-after-gpl-violation-claims.ars>`__.
+Vermoedelijk maakte de tool gebruik van
+`ImageMaster <http://www.codeplex.com/ImageMaster>`__, een ander
+project, waarop de
+`GPL <http://nl.wikipedia.org/wiki/GNU_General_Public_License>`__\ v2-licentie
+rust (zijnde een bekende open-sourcelicentie). Als je code onder de GPL
+gebruikt in een afgeleid softwareproject, mag je dit nieuwe project
+enkel verder verspreiden als je ook van het nieuwe project de code
+beschikbaar stelt. Dit laatste was alvast niet het geval.
+
+Het
+grappige aan de zaak, is dat de ImageMaster-code gehost wordt bij
+`CodePlex <http://www.codeplex.com>`__, Microsofts eigen website om
+open-sourceprojecten te hosten.

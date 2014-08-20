@@ -1,0 +1,28 @@
+.. title: Facebook chat nu via open XMPP-standaard
+.. slug: node-106
+.. date: 2010-02-11 11:36:11
+.. tags: openstandaarden
+.. link:
+.. description: 
+.. type: text
+
+In de website van Facebook is een chattoepassing geïntegreerd, die
+toelaat om directe berichten te sturen naar je Facebookvrienden die op
+dit moment online zijn.
+
+Sinds gisteren `is dat
+instant-messagingsysteem van Facebook ook toegankelijk via
+XMPP <http://www.facebook.com/sitetour/chat.php>`__, een open standaard
+die ook gebruikt wordt door bijv. `Google
+Talk <http://www.google.com/talk/intl/nl/>`__. Op deze manier wordt
+`XMPP <http://nl.wikipedia.org/wiki/XMPP>`__, het voormalige Jabber, een
+van de meest gebruikte protocols voor instant messaging.
+
+Dus, beste
+Windowsgebruikers, `download en installeer
+Pidgin <http://www.pidgin.im/download/windows/>`__, `stel je
+facebookaccount in <http://www.facebook.com/sitetour/chat.php>`__, en
+dumpen maar die MSN! ;-)
+
+(En zij die MSN echt niet kunnen missen,
+kunnen ook hun MSN-account configureren met Pidgin. Oef.)

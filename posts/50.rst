@@ -1,0 +1,13 @@
+.. title: EC schrapt stiekem open standaarden voor interoperabiliteit
+.. slug: node-50
+.. date: 2009-11-02 08:21:05
+.. tags: overheid,openstandaarden
+.. link:
+.. description: 
+.. type: text
+
+Volgens webwereld.nl `schrapt de Europese Commissie in stilte open
+standaarden voor
+interoperabiliteit <http://webwereld.nl/nieuws/64145/ec-wil-af-van-open-standaarden.html>`__.
+Dit zou ik een heel slechte zaak vinden, maar ik vind het bericht op
+geen enkele andere site. In het oog te houden alleszins.

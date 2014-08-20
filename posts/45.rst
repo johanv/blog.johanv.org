@@ -1,0 +1,23 @@
+.. title: Live@edu in stedelijk onderwijs Antwerpen
+.. slug: node-45
+.. date: 2009-10-28 09:50:28
+.. tags: microsoft,onderwijs
+.. link:
+.. description: 
+.. type: text
+
+Het Nieuwsblad meldt dat `het Antwerps stedelijk
+onderwijs <http://www.nieuwsblad.be/Article/Detail.aspx?articleId=0F2H75A1>`__
+‘Live@edu’ gaat gebruiken. Als ik het goed begrijp krijgen de
+leerkrachten en leerlingen een account voor e-mail, instant messaging en
+webruimte van Microsoft.
+
+Volgens mij zetten
+scholen/scholengemeenschappen hun mailservers e.d. beter zelf op, in
+plaats van de gegevens van hun personeel/leerlingen te parkeren op
+servers van een Amerikaans bedrijf.
+
+Microsoft heeft dat goed
+bekeken, uiteraard. Met `vendor
+lock-in <http://nl.wikipedia.org/wiki/Vendor_lock-in>`__ kan je niet
+vroeg genoeg beginnen.

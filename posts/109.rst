@@ -1,0 +1,27 @@
+.. title: Rootkit die blauw scherm veroorzaakte is gepatcht
+.. slug: node-109
+.. date: 2010-02-15 13:14:50
+.. tags: microsoft,beveiliging,windows
+.. link:
+.. description: 
+.. type: text
+
+Bij de updates voor Windows XP die op 9 februari vrijgegeven werden,
+`zat er eentje dat je PC onbruikbaar maakte </node/107>`__, tenminste
+als je computer geïnfecteerd was door de TDL3-rootkit (of TDSS,
+alnaargelang de bron).
+
+Zo'n rootkit verandert je PC in een
+zogenaamde ‘zombie’, die door criminelen allerhande gebruikt wordt voor
+louche activiteiten. Zelf zal je er weinig van merken, behalve misschien
+dat je PC wat traag wordt.
+
+Als je geïnfecteerde PC niet meer start
+na een Windows update, is dat natuurlijk vervelend voor jou, maar
+uiteraard ook voor mogelijke ‘users’ van je rootkit. Vandaar dat TDL3 nu
+blijkbaar `overal gepatcht wordt, zodanig dat ze compatibel wordt met de
+betreffende Update voor
+Windows <http://www.security.nl/artikel/32421/1/Rootkit_patcht_Windows_XP_Blue_Screen_of_Death.html>`__.
+
+Als
+dat geen snelle service is :)

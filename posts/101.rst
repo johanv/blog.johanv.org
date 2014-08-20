@@ -1,0 +1,26 @@
+.. title: Voor eens en voor altijd: open source ≠ vrijwilligerswerk
+.. slug: node-101
+.. date: 2010-01-26 08:09:49
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Omdat Linux open source software is, en gratis verkrijgbaar, leeft bij
+veel mensen het misverstand dat Linux door vrijwilligers geschreven
+wordt.
+
+Op het Linuxcongres linux.conf.au stelde Jonathan Corbet,
+zelf Linuxontwikkelaar, nog eens duidelijk dat `75 procent van de
+Linuxcode werd geschreven door betaalde
+beroepskrachten <http://www.pcmweb.nl/artikel.jsp?id=2528197>`__. Dat
+kan al tellen als bewijs dat ook met open source software geld verdiend
+kan worden.
+
+Meer info:
+
+
+-  http://www.theregister.co.uk/2010/01/22/linux\_developers\_pay/
+
+
+

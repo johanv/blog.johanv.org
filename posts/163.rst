@@ -1,0 +1,89 @@
+.. title: Wild idee: bierherkenningssoftware
+.. slug: node-163
+.. date: 2011-02-02 20:50:22
+.. tags: opensource,bier,android,wildidee
+.. link:
+.. description: 
+.. type: text
+
+(`Click here for info in English </node/162>`__.)
+
+Onlangs zat ik
+met een aantal collega’s op café (in de
+`Kulminator <http://www.antwerpenstudentenstad.be/stadsgids/uitgaan/kulminator>`__
+nog wel), en daar kwam `remembeer <http://remembeer.info/>`__ ter
+sprake. Remembeer is een toepassing op mijn telefoon, die ik kan
+gebruiken om de bieren te loggen die ik drink, en om ze een score te
+geven.
+
+Maar remembeer heeft zijn beperkingen. De database is niet
+genormaliseerd, ik mis integratie met identi.ca, en vooral: het is een
+beetje een gedoe om alle gegevens van een bier in te geven.
+
+En toen
+kwam iemand met dit idee op de proppen: Je zou een foto moeten kunnen
+nemen van het etiket, en dan zou het programma automatisch moeten kunnen
+bepalen over welk bier het gaat.
+
+Wel, ik heb daar een nachtje over
+geslapen, en dat lijkt me een geweldig idee. Ik wil zoiets
+implementeren. Ik wil een soort van webservice maken die op basis van
+een foto van een etiket (of stopje bij gebrek aan etiket) de informatie
+over het bier en bijhorende brouwerij oplevert.
+
+Dat gaat natuurlijk
+niet gemakkelijk zijn. Bovendien zal het in mijn vrije tijd moeten
+gebeuren. Dus een bruikbaar afgewerkt resultaat zal nog niet voor de
+eerste jaren zijn. Maar het lijkt me een geweldig ‘pet project’. Dus ik
+maak er meteen werk van.
+
+En nu het goede nieuws: als je
+geïnteresseerd bent, mag je mij helpen met dit project :-)
+
+Er is
+nog weinig van concrete planning. Maar het zal alleszins open source
+zijn. Dat houdt het leuk.
+
+Waarschijnlijk zullen afbeeldingen getest
+moeten worden op kenmerken, en zal het programma getraind moeten worden.
+Dus een eerste iets dat ik nodig heb, zijn afbeeldingen van etiketten.
+Dat is al een zaak waarbij je kunt helpen. Bij deze een oproep: als je
+nog eens een bier drinkt, neem een foto van het etiket. (Of van het
+stopke bij gebrek aan etiket.) Bij voorkeur upload je die foto's naar
+identi.ca met hashtag `#beerlabel <http://identi.ca/tag/beerlabel>`__.
+Vermeld de naam van het bier, en de brouwerij. Heb je geen
+identi.ca-account, en wil je er geen aanmaken, mail ze me dan. (Mijn
+e-mailadres vind je elders op deze site.)
+
+Wat moet er verder nog
+gebeuren:
+
+Er moet een database opgesteld worden die bieren (met
+info over alcoholpercentage, soort bier, enz.) verbindt met brouwerijen
+en foto's. Ik speel met het idee om dat met Drupal te doen; uiteindelijk
+heb ik daar wat ervaring mee. Ik vermoed dat we wel node types ‘beer’ en
+‘brewery’ of zoiets kunnen definiëren.
+
+Dan moet er onderzocht
+worden welke tools er beschikbaar zijn om afbeeldingen te ‘bekijken’ en
+met elkaar te vergelijken. Een uitdaging, zeg maar. Ik heb al wat
+rondgekeken, en er zijn een aantal zaken die uitgeprobeerd kunnen
+worden. Misschien zitten er wel bruikbare algoritmes in
+`OpenCV <http://opencv.willowgarage.com/wiki/>`__? (uiteraard heb ik dit
+nog niet bekeken :)). Misschien zijn er webservices in de stijl van
+`TinEye <http://tineye.com>`__ die gebruikt kunnen worden? Ik weet het
+nog niet. Weet jij het wel? Of heb je suggesties? Laat het
+weten.
+
+Verder is er nog een website nodig, om alle info over het
+project te verzamelen. Dat zal het minste werk zijn; hier mag je
+binnenkort een update over verwachten.
+
+Nu er nog geen website is,
+is er al wel een ander communicatiekanaal: de identi.ca group
+`!beerscan <http://identi.ca/group/beerscan>`__. Momenteel ben ik de
+enige niet-bot in die groep, dus als je geïnteresseerd bent, sluit je
+gerust aan. Zit je niet op identi.ca, kun je altijd de rss-feed van
+`!beerscan <http://identi.ca/group/beerscan>`__ volgen.
+
+

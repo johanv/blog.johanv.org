@@ -1,0 +1,43 @@
+.. title: De websites van de politieke partijen
+.. slug: node-133
+.. date: 2010-05-20 14:14:19
+.. tags: opensource,linux,microsoft,overheid,internet
+.. link:
+.. description: 
+.. type: text
+
+Ik heb het al op facebook gezet, maar dit is eigenlijk wel de moeite
+waard voor een blog post.
+
+Op 13 juni zijn het verkiezingen. Grote
+thema's zullen waarschijnlijk zijn: BHV en de besparingen waar we voor
+staan. Daar ga ik het even niet over hebben.
+
+Wat me nu
+interesseert, is welke software de politieke partijen gebruiken voor hun
+publieke website. `Netcraft <http://uptime.netcraft.com/up/graph>`__
+heeft een handig tooltje om dit na te gaan: je tikt een website in, en
+je krijgt te zien wat er op de server draait.
+
+Ziehier het
+resultaat: (in alfabetische volgorde)
+
+
+
+-  `CD&V <http://uptime.netcraft.com/up/graph?site=www.cdenv.be>`__:
+   Apache op Debian (Linux)
+-  `Groen! <http://uptime.netcraft.com/up/graph?site=www.groen.be>`__:
+   IIS op Windows Server 2008
+-  `LDD <http://uptime.netcraft.com/up/graph?site=www.lijstdedecker.com>`__:
+   Apache op Debian (Linux)
+-  `SP.A <http://uptime.netcraft.com/up/graph?site=www.s-p-a.be>`__:
+   Apache op Debian (Linux)
+-  `VB <http://uptime.netcraft.com/up/graph?site=www.vlaamsbelang.org>`__:
+   Apache op Fedora (Linux)
+-  `OpenVLD <http://uptime.netcraft.com/up/graph?site=www.vld.be>`__:
+   Apache op CentOS (Linux)
+
+
+
+Opvallend is dat SP.A en LDD onlangs IIS inruilden voor Apache,
+terwijl Groen! in 2003 de omgekeerde beweging maakte.

@@ -1,0 +1,16 @@
+.. title: IBM en Ubuntu samen tegen Windows 7
+.. slug: node-37
+.. date: 2009-10-21 10:20:48
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+IBM en Ubuntu zullen in de VS `samen Linuxgebaseerde desktops
+verkopen <http://techworld.nl/technologie/12070/ibm-samen-met-ubuntu-tegen-windows-7.html>`__.
+Ze willen op deze manier een goedkoop alternatief zijn voor bedrijven
+die een upgrade naar Windows 7 te duur vinden.
+
+Zie ook `het
+persbericht van
+IBM. <http://www-03.ibm.com/press/us/en/pressrelease/28649.wss>`__

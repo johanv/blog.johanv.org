@@ -1,0 +1,12 @@
+.. title: Foutenanalyse voor arctan
+.. slug: node-153
+.. date: 2010-12-13 17:04:12
+.. tags: cant
+.. link:
+.. description: 
+.. type: text
+
+Deze tekst beschrijft een foutenanalyse voor de evaluatie van de
+arctan
+functie in floating-pointaritmetiek.
+

@@ -1,0 +1,28 @@
+.. title: 25% van softwarepakketten in Belgische bedrijven zonder geldige licentie
+.. slug: node-29
+.. date: 2009-10-14 08:00:52
+.. tags: portemonnee
+.. link:
+.. description: 
+.. type: text
+
+Volgens `dit artikel in De
+Morgen <http://www.demorgen.be/dm/nl/991/Multimedia/article/detail/1014918/2009/10/13/Gebruik-illegale-software-kost-bedrijven-gemiddeld-36-600-euro.dhtml>`__
+meldt `Business Software Alliance <http://www.bsa.org>`__ (BSA) dat 25%
+van de softwarepakketten in Belgische bedrijven geïnstalleerd is zonder
+geldige licentie. Dat zou de 'lokale' software-industrie 182 miljoen
+Euro kosten.
+
+Ik vraag me af over welke software het gaat. Het
+artikel toont een aantal screenshots van Microsoft Office 2007. Ik snap
+niet waarom illegale gebruikers van Microsoft Office niet overschakelen
+naar `OpenOffice.org <http://nl.openoffice.org/>`__. Je moet hiervoor
+niet via-via aan de software komen, je kan het gewoon downloaden. Je
+moet geen registratiekeys van 25 tekens of meer zitten overtikken. En je
+krijgt de geldige licentie er gratis bij.
+
+Eigenlijk mag de BSA blij
+zijn dat er zoveel software zonder geldige licentie in omloop is. Anders
+zouden de vrije alternatieve veel bekender zijn, en zouden Belgische
+bedrijven hun geld aan nuttigere dingen kunnen besteden als dure
+softwarelicenties.

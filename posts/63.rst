@@ -1,0 +1,19 @@
+.. title: Microsoft opensourcet .NET Micro
+.. slug: node-63
+.. date: 2009-11-17 10:02:05
+.. tags: opensource,microsoft
+.. link:
+.. description: 
+.. type: text
+
+`Microsoft zal .NET Micro
+vrijgeven <http://port25.technet.com/archive/2009/11/16/microsoft-to-open-source-the-net-micro-framework.aspx>`__
+onder een
+`Apache2 <http://nl.wikipedia.org/wiki/Apache_License#Apache_License_v2.0>`__-licentie.
+.NET Micro is een minimale versie van Microsofts
+`.NET-framework <http://nl.wikipedia.org/wiki/.NET>`__, die vooral
+bedoeld is voor toestellen met weinig geheugen of rekenkracht.
+
+.NET
+is oorspronkelijk ontstaan als Microsofts tegenhanger van
+`Java <http://nl.wikipedia.org/wiki/Java_(programmeertaal)>`__.

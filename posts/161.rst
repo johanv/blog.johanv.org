@@ -1,0 +1,21 @@
+.. title: initrd.img opnieuw genereren (Debian)
+.. slug: node-161
+.. date: 2011-01-26 14:32:10
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Debian tip van de dag:
+
+Als je je bootpartitie read-only maakt, en
+je vergeet ze writable te remounten voor een ‘\ ``apt-get upgrade``\ ’,
+dan wordt het ‘initramfs’ niet opnieuw gegenereerd. Soms wordt de
+upgrade hierdoor niet afgebroken, en dan zit je daar met een systeem met
+een ‘verkeerd’ initramfs.
+
+Een manier om initramfs opnieuw te laten
+genereren, is de
+volgende:\ ``\nmount -o rw,remount /boot       #niet vergeten deze keer\ndpkg-reconfigure linux-image-`uname -r`\n``
+
+

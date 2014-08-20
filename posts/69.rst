@@ -1,0 +1,42 @@
+.. title: Twitteren is woord van het jaar
+.. slug: node-69
+.. date: 2009-11-23 08:10:21
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Op een congres in Utrecht verkoos het genootschap Onze Taal het woord
+`‘twitteren’ tot woord van het jaar
+2009 <http://www.demorgen.be/dm/nl/991/Multimedia/article/detail/1032350/2009/11/22/Twitteren-woord-van-het-jaar.dhtml>`__.
+
+Met
+‘twitteren’ bedoelt men eigenlijk ‘microbloggen’. Het idee is dat
+microbloggers korte berichtjes posten die door iedereen te lezen zijn.
+Je kan berichten aan een specifiek persoon adresseren, maar dat is
+louter informatief. Iedereen kan in principe mee lezen.
+
+Op die
+manier krijg je natuurlijk een massa berichtjes bij elkaar. Daarom heeft
+iedere gebruiker ook een persoonlijk overzicht, waarop enkel de
+berichtjes van door hem gekozen personen te lezen zijn. Ook kunnen
+gebruikers berichten in een categorie plaatsen, zodat je de
+berichtenstroom per categorie kan raadplegen.
+
+Microblogging gebruik
+je om kort wereldkundig te maken waarmee je op dit moment bezig bent,
+maar je kan ook al microbloggend discussiëren. Verder bestaat het
+concept van ‘groepen’: als je lid bent van een groep, komen alle
+berichten die naar een groep gepost worden in je persoonlijk overzicht
+terecht.
+
+Het posten van berichtjes en het lezen van je persoonlijk
+overzicht, gebeurt typisch via een webbrowser. Maar het kan ook via
+e-mail, sms of instant messaging.
+
+Het werkwoord ‘twitteren’ is
+afkomstig van `Twitter <http://twitter.com/>`__, het bekendste
+microbloggingsysteem. Het zal echter niemand verbazen dat ikzelf liever
+`identi.ca <http://identi.ca>`__ gebruik, een open source tegenhanger
+van Twitter. Mijn gebruikersnaam op identi.ca is
+`johanv <http://identi.ca/johanv>`__.

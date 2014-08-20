@@ -1,0 +1,12 @@
+.. title: Propagatie van afrondingsfouten door afleidbare functies
+.. slug: node-149
+.. date: 2010-12-13 16:29:01
+.. tags: cant
+.. link:
+.. description: 
+.. type: text
+
+Dit kort tekstje beschrijft hoe afrondingsfouten zich
+propageren
+doorheen afleidbare-functie-evaluaties.
+

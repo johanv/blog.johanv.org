@@ -1,0 +1,60 @@
+.. title: Microsoftontwikkelaar waagt zich aan een equivalent voor apt/yum.
+.. slug: node-121
+.. date: 2010-04-12 13:29:35
+.. tags: opensource,microsoft
+.. link:
+.. description: 
+.. type: text
+
+Als er iets is dat Linux superieur maakt aan Windows, is het de manier
+om software te installeren. Iedere Linuxdistributie heeft wel een soort
+van ‘pakketbeheerder’, die de installatie van software op zich neemt. De
+pakketbeheerder geeft je toegang tot een grote softwarecollectie
+(‘repository’) van allerlei programma's voor je Linuxdistributie, en
+waarbij de versies van die verschillende softwarepakketten zodanig zijn
+gekozen dat ze niet in elkaars weg lopen.
+
+Als je aan de
+pakketbeheerder vraagt om bepaalde software te installeren, zal de
+pakketbeheerder deze software ophalen uit de repository, samen met
+eventuele andere programma's of bibliotheken die nodig zijn om de
+software te kunnen gebruiken (‘dependencies’). Uiteraard houdt de
+pakketbeheerder in de gaten dat er geen software dubbel geïnstalleerd
+wordt.
+
+Het feit dat Linuxdistributies zo goed als volledig uit
+vrije software bestaan, vergemakkelijkt deze manier van werken
+aanzienlijk. Vrije software mag je immers naar believen aanpassen,
+kopiëren en verdelen, en op die manier kan je ervoor zorgen dat de
+softwarepakketten in je repository steeds goed met elkaar
+samenwerken.
+
+In een Windowsomgeving zit je vaak met software die je
+enkel gratis mag downloaden van de site van de verdeler zelf, of nog
+erger, helemaal niet gratis mag downloaden. Ook het aanpassen van
+software is zeker niet altijd vanzelfsprekend. Dit maakt het quasi
+onmogelijk om voor niet-open-sourcesoftware de typische repository's te
+creeren.
+
+Er bestaat natuurlijk wel open-sourcesoftware onder
+Windows. Maar de installatie van deze software is soms niet gemakkelijk,
+net door het gebrek aan pakketbeheerder.
+
+Ik geef een voorbeeld.
+`Gimp <http://www.gimp.org/>`__, een bekend open-source
+fotobewerkingsprogramma, en `Pidgin <http://www.pidgin.im/>`__, een
+open-source chatprogramma, maken beiden gebruik van
+`GTK <http://www.gtk.org/>`__. Van Gimp, Pidgin en GTK bestaan
+Windowsvarianten, maar als je pech hebt, heeft Pidgin een andere versie
+van GTK nodig als Gimp. Om dit soort problemen op te lossen, moet je
+typisch door een ‘dependency hell’, omdat er geen algemene repository
+bestaat met softwarepakketten waarvan de versies goed met elkaar
+samenwerken.
+
+Nu blijkt dat een zekere `Garreth Serack, een
+werknemer bij Microsoft, een soort pakketbeheerder en repository voor
+Windows wil
+ontwikkelen <http://techworld.nl/technologie/21330/apt-get-achtige-tools-voor-windows-in-ontwikkeling.html>`__,
+die de installatie van open-sourcesoftware moet vergemakkelijken. En
+blijkbaar vindt zijn werkgever het OK als hij dat tijdens de werkuren
+doet. Het zou een goede zaak zijn, denk ik.

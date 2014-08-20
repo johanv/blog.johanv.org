@@ -1,0 +1,144 @@
+.. title: Upgrade HTC Magic van CyanogenMod 6.0 naar CyanogenMod 6.1
+.. slug: node-157
+.. date: 2010-12-20 17:04:22
+.. tags: opensource,android
+.. link:
+.. description: 
+.. type: text
+
+Vorige week upgradede ik mijn telefoon door er de rom van
+`CyanogenMod <http://www.cyanogenmod.com/about>`__ 6.0 op te 'flashen'.
+Nu ik er een week mee gewerkt heb, is het tijd voor een kleine
+review.
+
+\ **Updated:** Ik ben geüpgradet naar 6.1, en niet naar
+6.2, zoals er oorspronkelijk verkeerdelijk stond vermeld.
+
+De
+overschakeling van CyanogenMod 6.0 naar 6.1 verliep een pak eenvoudiger
+dan een eerste installatie van CyanogenMod. Als je op zoek bent naar een
+howto voor de eerste installatie van CyanogenMod, dan vind je meer
+informatie in ‘\ `HTC magic van Android 1.5 naar Android
+2.2 </node/140>`__\ ’. Deze uitleg kan je net zo goed gebruiken voor de
+installatie van 6.1 als van 6.0. Let er wel op dat het allemaal nogal
+hardware-afhankelijk is. Ik heb het geluk een ‘oude’ HTC Magic te
+hebben, waarmee het OS vervangen nog lukt. De nieuwere modellen van HTC
+zijn hier naar verluidt tegen beveiligd, awoe!!
+
+Ik had op identi.ca
+gelezen dat het upgraden naar een nieuwe versie van CyanogenMod heel
+gemakkelijk kon via de toepassing ‘ROM manager’. Ik wou dat wel eens
+proberen. Rom manager laat toe je huidige OS te back-uppen zonder
+daarvoor eerst naar recovery mode over te schakelen. Maar ik kreeg de
+boodschap dat ik hiervoor de ClockworkMod recovery image moest
+installeren. Dat had ik al gedaan bij de vorige upgrade van mijn OS,
+maar dat kon ROM manager blijkbaar niet detecteren. Er was wel een optie
+voorzien om de gevraagde ROM te downloaden en te installeren, dus dat
+vormde geen te groot probleem. Ik ben ook eens naar recovery mode
+gereboot, en het zag er inderdaad een beetje anders uit dan daarvoor.
+Waarschijnlijk verschilt de versie; wie zal het zeggen.
+
+Na de
+installatie van ClockworkMod kon ik een backup maken van het huidige OS,
+wat ik dan ook gedaan heb.
+
+Toen ik daarna ‘Check for ROM updates’
+aanklikte, kreeg ik de melding dat die feature enkel beschikbaar was
+voor ‘premium users’. Ik had geen zin om uit te zoeken wat premium users
+waren, laat staan om er zelf een te worden, dus daar stopte het gebruik
+van ROM manager. Ik besloot om de installatie gewoon te doen via de
+recovery image, zoals de vorige keer.
+
+Hiervoor downloadde ik net
+zoals de vorige keer de recentste versie van CyanogenMod en die van de
+EBI1-kernel, en blijkbaar waren die nog te vinden op dezelfde
+plaats:
+
+
+
+#. http://wiki.cyanogenmod.com/index.php?title=Latest\_version#HTC\_Magic
+#. http://wiki.cyanogenmod.com/index.php?title=Latest\_version#EBI1
+
+
+
+Installeren was gemakkelijk. Rebooten naar recovery, alles wipen,
+en dan de images in volgorde flashen. Na een volgende reboot kreeg ik
+het welkomscherm van CyanogenMod 6.1, en kon ik de gegevens van mijn
+Google-account ingeven.
+
+En dan ging het mis. Misschien een fout
+getypt in het wachtwoord. Alleszins was het niet mogelijk om mijn mail,
+contacten,... te syncen. En nog erger: ik vond niet waar ik mijn
+credentials opnieuw kon ingeven. Ik heb dan ook niet hard gezocht; ik
+ben terug naar recovery geboot, en ik heb de user settings opnieuw
+weggegooid. Bij een volgende reboot heb ik mij extra goed geconcentreerd
+bij het ingeven van mijn gebruikersnaam en wachtwoord, en toen lukte het
+wel.
+
+Ik gebruik CyanogenMod 6.1 nu een week, en dit zijn mijn
+bevindingen:
+
+Twee vervelende bugs zijn alleszins gefixt. Een eerste
+heeft te maken met het bekijken van foto's in de galerij. Als ik een
+foto op mijn scherm had met CyanogenMod 6.0, en ik draaide mijn
+telefoon, om de foto in ‘landscape’ te bekijken, dan gebeurde er wel
+iets met die foto, maar draaien was het alleszins niet. Je kreeg dan een
+gekke vervorming van het beeld, waarop enkel de kleuren nog te herkennen
+waren. Dat is nu dus verleden tijd. Oef.
+
+Een ander probleem had te
+maken met de gmail client. Een bijlage in Microsofts freedom-hating
+docx-formaat, kon ik niet downloaden, en het voorbeeld bekijken lukte
+evenmin. Vandaar dat ik een 2de mail client geïnstalleerd had (K-9
+mail), om waar nodig documenten te downloaden. In het algemeen denk ik
+dat er nog altijd een probleem is met bijlagen die niet gewoon getoond
+kunnen worden. Zo kan je bijvoorbeeld nog steeds geen csv-bestanden
+downloaden of bekijken, wat jammer is. K-9 mail mag dus gerust nog wat
+blijven staan.
+
+Er zijn ook een aantal nieuwe bugs. Waarvan ik nog
+niet nagekeken heb of ze al gerapporteerd zijn. Dat is dus nog te
+doen.
+
+Een opvallend probleem heeft te maken met draadloos internet
+en WPA: ik kan met mijn geüpgradede telefoon niet connecteren op het
+draadloos netwerk van een bepaalde router (DLink nog-iets; nog op te
+zoeken), die beveiligd is met WPA. Mijn telefoon is het enige toestel
+waarmee ik dit probleem ondervind, en met 6.0 stelde het zich
+niet.
+
+En dan is er nog een probleem met de notificaties van gmail.
+Als linksboven het icoontje van nieuwe mail verschijnt, en je ‘klikt’ op
+de bijhorende melding, dan gebeurt het dat de gmailtoepassing niet wordt
+gestart. Dat is vervelend, want hoewel het starten van de mail client
+niet geweldig lang duurt, voelt het toch aan als
+tijdverlies.
+
+Tenslotte zijn er nog een aantal features die ik
+vervelend vind. Ten eerste, en dat heb ik waarschijnlijk zelf ergens
+geconfigureerd, downloadt de telefoon automagisch opnieuw de
+toepassingen die voor de upgrade geïnstalleerd waren. Op zich een
+aardige feature, maar niet als dat zonder enige waarschuwing gebeurt
+wanneer er geen wifi-connectie is. Gelukkig heeft mijn provider van
+mobiel internet mijn limieten onlangs wat verhoogd :)
+
+Gelijkaardig
+worden er om de X tijd updates gedownload voor ROM manager. Vermoedelijk
+kun je die ook afzetten, maar ik heb nog niet onderzocht hoe.
+
+Nog
+in verband met de mobiele downloads stond er bij CyanogenMod 6.0 op de
+‘eerste desktop rechts‘ een widget geïnstalleerd waarmee je wifi, gps,
+synchronisatie, bluetooth en geluid kon aan- en uitzetten. Nu zit dat
+bij in het ‘pull down menu’, maar de synchronisatie zit daar niet meer
+bij. Dat is jammer, want in het buitenland wil je dat vaak gemakkelijk
+uit kunnen zetten. Op zich ook niet onoverkomelijk, want ik heb nu een
+app geïnstalleerd van mijn mobiele provider, waarmee mobiel internet ook
+aan- en uitgezet kan worden.
+
+Conclusie: Omdat de overgang van mijn
+stock Android 1.5 naar CyanogenMod 6.0 (Android 2.2) zo goed meeviel,
+waren mijn verwachtingen waarschijnlijk wat hoog. Van 6.0 naar 6.1
+(Android 2.2.1) is natuurlijk een minder grote stap. Maar het is toch
+jammer van die stomme bugs. Ik kijk dus al uit naar 6.2, in de hoop op
+beterschap.

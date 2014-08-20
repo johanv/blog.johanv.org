@@ -1,0 +1,60 @@
+.. title: Ubuntu Hardy on my Acer Aspire One
+.. slug: node-15
+.. date: 2008-12-02 21:00:39
+.. tags: linux,aspireone
+.. link:
+.. description: 
+.. type: text
+
+I installed Ubuntu Hardy on my Acer Aspire One. Accidentally in
+fact.
+
+I wanted to install the Ubuntu Netbook remix on an external
+USB disk on my AAO, using the image I found here
+http://oem-images.canonical.com/unr/. I booted the USB image. It warned
+me it would wipe my hard disk. Nevertheless I booted, and indeed, it
+started erasing my internal harddisk instead of my external one :-/ (I
+thought I would be able to choose a target hard disk; I
+wasn't.)
+
+After the installation, my system wouldn't boot. So I
+decided to manually install Ubuntu, using the procedure on
+https://help.ubuntu.com/community/AspireOne.
+
+Everything seemed to
+work, except the webcam. And even after applying the various tweaks in
+the wiki article, the system still was slow.
+
+I stil had a copy of
+the kernel configuration of the original Linpus installation. So I used
+that one to compile a new kernel, using the old kernel configuration.
+(See
+https://help.ubuntu.com/community/Kernel/Compile#Alternate%20Build%20Method:%20The%20Old-Fashioned%20Debian%20Way
+) I enabled LVM, because I use this on my external hard disk, for
+flexible partition management.
+
+Booting the new kernel resulted in
+two problems. First of all klogd didn't start. Apparently kernel logging
+was not enabled in the original kernel. So I removed the klogd package,
+which removed sysklogd and ubuntu-minimal as well.
+
+Sound didn't
+work either. I guess Ubuntu uses alsa, and linpus uses OSS or something.
+So I added alsa support to my kernel configuration, including the
+intel-hda sound thing. After adding this to /etc/modprobe.d/alsa-base,
+sound was
+working:
+
+\ ``\noptions snd-hda-intel model=toshiba\n``
+
+Now the
+system boots. To speed it up a little more, I installed xubuntu-desktop,
+so I can log on into an xubuntu session. I clicked 'Applications',
+'Preferences', 'Configuration Manager', 'Autostarted Apps', and only
+left energy manager, volume management and network manager checked. (My
+printer isn't supported anyway.)
+
+That's how the system is
+configured right now. The webcam is not working, and there is probably
+room for a lot of improvements. My current kernel config is attached.
+

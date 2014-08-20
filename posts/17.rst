@@ -1,0 +1,38 @@
+.. title: Combinatie Outlook en netiquette
+.. slug: node-17
+.. date: 2009-02-02 14:00:42
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Sommige mensen worden op een of andere manier verplicht om Outlook te
+gebruiken als e-mailclient. Aangezien Outlook niet uitblinkt wat betreft
+netiquette (correct quoten, plain text e-mails,...), hier een kleine
+howto om de grootste problemen op te vangen met Outlook
+2003:
+
+\ **Correct quoten**
+
+
+
+-  Klik 'Extra', 'Opties' in de menubalk.
+-  Klik onder het flapje 'Voorkeuren' op de knop 'E-mailopties'
+-  Onder 'Bij het beantwoorden van een bericht' kies je voor 'Aanduiding
+   voor elke regel van oorspronkelijk bericht.
+-  Vink 'Alle normale e-mail lezen als tekst zonder opmaak' en 'Alle
+   digitaal ondertekende e-mail lezen als tekst zonder opmaak' aan,
+   zodat je plain text kan antwoorden op htmlberichten.
+
+
+
+\ **Platte tekst voor e-mails**
+
+
+
+-  Opnieuw onder 'Extra', 'Opties'
+-  Klik op het flapje 'E-mailindeling'
+-  Kies 'Tekst zonder opmaak' achter 'Deze berichtindeling gebruiken'
+
+
+

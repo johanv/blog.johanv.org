@@ -1,0 +1,37 @@
+.. title: De petitie tegen Word-attachments
+.. slug: node-6
+.. date: 2008-05-01 14:54:44
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Van maart 2002 tot nu had ik een petitie on-line staan die de mensen
+opriep om geen Word te gebruiken voor elektronische communicatie. Een
+750tal personen hebben hun naam onder die petitie gezet, waarvoor
+dank.
+
+Ik heb besloten om vandaag de petitie af te sluiten, omdat de
+begeleidende tekst niet meer up to date was. Mijn voornaamste argument
+om Word-documenten te bannen, was dat het Word-formaat geheim werd
+gehouden door Microsoft.
+
+Maar sinds Microsoft de `specificaties van
+zijn
+documentformaten <http://www.microsoft.com/interop/docs/OfficeBinaryFormats.mspx>`__
+vrijgaf, en Microsofts `OOXML-documentformaat een ISO-standaard
+werd <http://arstechnica.com/news.ars/post/20080401-microsofts-office-open-xml-now-an-official-iso-standard.html>`__,
+is de situatie enigszins veranderd.
+
+Ik ben mij ervan bewust dat er
+heel wat
+`kritiek <http://arstechnica.com/news.ars/post/20080403-ooxml-critics-iso-approval-demonstrates-the-need-for-reform.html>`__
+is op het toekennen van de ISO-standaard, en dat er meer dan
+waarschijnlijk een aantal `addertjes onder Microsofts Open Specification
+Promise <http://www.softwarefreedom.org/resources/2008/osp-gpl.html>`__
+zitten. Maar zelf ben ik (nog?) niet genoeg op de hoogte om hierover een
+geïnformeerd pleidooi te kunnen houden.
+
+De petitie gaat dus
+off-line. Maar dat neemt natuurlijk niet weg dat ik documenten nog
+altijd liever als pdf of odf ontvang. Het is maar dat je het weet.

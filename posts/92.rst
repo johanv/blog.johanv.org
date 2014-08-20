@@ -1,0 +1,24 @@
+.. title: België blokkeert buitenlandse goksites?
+.. slug: node-92
+.. date: 2009-12-30 08:44:09
+.. tags: beleid,overheid
+.. link:
+.. description: 
+.. type: text
+
+De volgende in de categorie van domme Belgische wetten: `België wil alle
+goksites zonder Belgische vergunning
+blokkeren <http://www.demorgen.be/dm/nl/5403/Internet/article/detail/1047761/2009/12/30/Belgie-blokkeert-alle-buitenlandse-goksites.dhtml>`__.
+Weer een wetgevende instantie die niet begrijpt hoe het Internet werkt.
+Ik zie al direct twee problemen:
+
+
+
+#. Dit krijgen ze technisch nooit gedaan. Ik durf ervoor wedden dat ik
+   nog wel buitenlandse goksites kan bezoeken waarvan men denkt dat ze
+   geblokkeerd zijn.
+#. Wie controleert de lijst van geblokkeerde sites? Hoe vermijden we dat
+   sites die niets met gokken te maken hebben, maar inhoud aanbieden
+   waarvan ‘men’ vindt dat ze niet geschikt is voor het Belgische
+   publiek, China-gewijze ook geblokkeerd worden?
+

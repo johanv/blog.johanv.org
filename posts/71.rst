@@ -1,0 +1,36 @@
+.. title: Microsoft stelt open source release van Windows 7 USB/DVD tool uit
+.. slug: node-71
+.. date: 2009-11-24 12:57:55
+.. tags: opensource,microsoft,windows
+.. link:
+.. description: 
+.. type: text
+
+Het vervolg van de USB/DVD-tool saga. The story so far:
+
+
+
+-  6 november: `Within Windows ontdekt dat Microsoft onrechtmatig code
+   van een GPL gebruikt in de Windows 7
+   USB/DVD-tool <http://www.withinwindows.com/2009/11/06/microsoft-lifts-gpl-code-uses-in-microsoft-store-tool/>`__.
+-  9 november: `Microsoft haalt de website voor de tool
+   offline </node/57>`__.
+-  13 november: `Microsoft erkent dat er op onrechtmatige manier
+   GPL-code gebruikt werd </node/61>`__, en belooft de USB/DVD-tool
+   onder een open-sourcelicentie vrij te geven.
+
+
+
+Maar zover zijn we 10 dagen later nog altijd niet. `Volgens
+Microsoft is de vertraging te wijten aan de testperiode, die langer is
+dan
+verwacht <http://arstechnica.com/microsoft/news/2009/11/microsoft-delays-open-sourcing-windows-7-tool.ars?utm_source=rss&utm_medium=rss&utm_campaign=rss>`__.
+
+Uiteraard
+doet dit vermoeden dat Microsoft de code van de USB/DVD-tool niet
+‘zomaar’ opensourcet, maar dat men er eerst nog stukken uit
+verwijderde/verving die het grote publiek niet mag zien.
+
+Zie ook:
+`De blogpost van Microsoft over dit
+onderwerp <http://port25.technet.com/archive/2009/11/20/update-on-the-windows-7-usb-dvd-tool.aspx>`__.

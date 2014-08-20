@@ -1,0 +1,32 @@
+.. title: Amazon betaalt Microsoft om Linux te mogen gebruiken
+.. slug: node-114
+.. date: 2010-02-23 12:42:14
+.. tags: linux,microsoft,patenten
+.. link:
+.. description: 
+.. type: text
+
+`Amazon heeft met Microsoft een deal gesloten, die inhoudt dat Microsoft
+Amazon niet zal vervolgen omdat Amazon Linux
+gebruikt. <http://webwereld.nl/nieuws/65249/amazon-betaalt-microsoft-voor-linux-patenten.html>`__
+
+Microsoft
+beweert dat Linux honderden patenten schendt waarvan Microsoft de
+eigenaar is. Dat beweren ze al langer dan vandaag: in 2009 heeft
+Microsoft TomTom ook al eens voor de rechter gedaagd, omwille van een
+mogelijk patentenprobleem. Een uitspraak is er nooit geweest; TomTom
+heeft een onbekend bedrag aan Microsoft betaald, en de kous was
+af.
+
+Ook nu betaalt Amazon een onbekend bedrag aan Microsoft, en
+alweer is er geen duidelijkheid of Linux werkelijk softwarepatenten van
+Microsoft schendt.
+
+Ik zou precies eens graag hebben dat het echt
+ergens tot een rechtszaak komt, en dat er een uitspraak volgt. Zodat we
+te weten komen over welke patenten Microsoft het heeft, en of de claims
+van Microsoft stand houden voor de rechter. Want ik denk dat nu iedereen
+maar rap betaalt aan Microsoft, om een dure gerechterlijke procedure te
+vermijden.
+
+

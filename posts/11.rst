@@ -1,0 +1,13 @@
+.. title: identi.ca
+.. slug: node-11
+.. date: 2008-08-29 18:19:19
+.. tags: opensource,johan
+.. link:
+.. description: 
+.. type: text
+
+Om te bloggen heb ik praktisch geen tijd. Maar microbloggen daarentegen:
+http://identi.ca/johanv.
+
+(Uiteraad blijft deze site ook bestaan,
+als middel om snel dingen online te krijgen.)

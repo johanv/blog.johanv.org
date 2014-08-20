@@ -1,0 +1,28 @@
+.. title: Microsoft wordt meer en meer 'patent troll'
+.. slug: node-129
+.. date: 2010-04-28 13:30:45
+.. tags: opensource,linux,microsoft,patenten
+.. link:
+.. description: 
+.. type: text
+
+`Microsoft beweert dat Android, het telefoonbesturingssysteem van
+Google, patenten van Microsoft
+schendt <http://www.zdnet.be/news/115491/microsoft-android-schendt-onze-patenten/>`__.
+Zoals gewoonlijk wordt er niet bij vermeld over welke patenten het
+gaat.
+
+HTC, een producent van Androidtelefoons, heeft al een deal
+met Microsoft gesloten, om zich te beschermen tegen vervolging. Als ik
+het had geweten, dan had ik een andere telefoon gekocht :/
+
+Ik heb
+de indruk dat Microsoft tegenwoordig liever geld verdient door het af te
+troggelen van anderen o.w.v. zogezegde patenten (`Amazon </node/114>`__,
+`TomTom <http://tweakers.net/nieuws/59356/linux-gemeenschap-ongelukkig-met-tomtom-microsoft-schikking.html>`__,...)
+dan door zelf iets productief te doen :-/
+
+Jammer genoeg kwam het
+alweer niet tot een uitspraak van een rechter. Het wordt volgens mij
+hoog tijd dat een rechtbank eens uitzoekt of Microsoft inderdaad
+patenten heeft die hen het recht geven andere bedrijven te pluimen.

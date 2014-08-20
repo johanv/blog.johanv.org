@@ -1,0 +1,29 @@
+.. title: Vijf jaar Mozilla Firefox
+.. slug: node-56
+.. date: 2009-11-10 08:46:29
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+Op 9 november 2004, toen vrijwel iedereen dacht dat Internet Explorer de
+browser wars had gewonnen, werd `Firefox 1.0
+vrijgegeven <http://tweakers.net/nieuws/63633/firefox-viert-eerste-lustrum.html>`__.
+Vandaag, precies vijf jaar later, is Firefox de op één na meest
+gebruikte browser ter wereld, met een marktaandeel dat afhankelijk van
+de bron `varieert tussen de 20 en 25
+procent <http://www.google.be/search?q=firefox+marktaandeel>`__.
+
+Ik
+stel voor dat we daar vanavond een pint op drinken :-)
+
+Zie
+ook:
+
+
+
+-  `De website van
+   Firefox <http://www.mozilla-europe.org/nl/firefox/>`__
+-  `De ‘release notes’ van Firefox
+   1.0 <http://www.mozilla.com/en-US/firefox/releases/1.0.html>`__
+

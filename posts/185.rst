@@ -1,0 +1,23 @@
+.. title: Commentaar op posts nu vanaf identi.ca
+.. slug: node-185
+.. date: 2011-09-16 14:19:04
+.. tags: johan
+.. link:
+.. description: 
+.. type: text
+
+Ik heb zonet alle gebruikers van mijn blog gegooid, behalve mijzelf. De
+administratie van gebruikersaccounts bestond voornamelijk uit ħet
+deleten van accounts gemaakt door spambots, vandaar.
+
+Wil dat zeggen
+dat je vanaf nu niet meer kunt reageren op mijn posts? Neen.
+:-)
+
+Voor elke post zal er een conversatie aangemaakt worden op
+identi.ca. In die conversatie kun je je reacties dan kwijt. (Dat
+veronderstelt dat je een identi.ca-account hebt, maar die is uiteraard
+gauw geregistreerd.)
+
+Je kunt reageren op deze blog post via `deze
+identi.ca-discussie <http://test.johanv.org/StatusThread/?controller=conversation&id=81414434>`__.

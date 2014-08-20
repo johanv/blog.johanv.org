@@ -1,0 +1,260 @@
+.. title: Installatie van cyanogenmod 7.1 op de Xperia Mini Pro
+.. slug: node-196
+.. date: 2012-07-16 16:59:35
+.. tags: opensource,android
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/196>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/758504/Installatie-van-cyanogenmod-7-1-op-de-Xperia-Mini-Pro>`__
+
+Ik kocht me een nieuwe telefoon. Een Sony Ericsson Mini Pro met Android.
+Een fijn toestel met hardwarekeyboard, maar helaas ook met een hele hoop
+crap voorgeïnstalleerd, die ik allemaal niet nodig heb. Gelukkig bestaat
+er een oplossing, en die heet
+`cyanogenmod <http://www.cyanogenmod.com/>`__.
+
+Cyanogenmod is
+alternatieve firmware voor Androidtelefoons, en het toeval wil dat er
+`ondersteuning is voor de Xperie Mini
+Pro <http://www.cyanogenmod.com/devices/sony-ericsson-xperia-mini-pro>`__.
+('t Is te zeggen, zo toevallig is dat niet. Een belangrijke vereiste
+voor mijn nieuwe telefoon was dat cyanogenmod erop moest kunnen
+draaien.)
+
+Een aantal opmerkingen vooraf:
+
+
+
+#. Je moet je stock-os niet rooten om cyanogenmod te kunnen installeren:
+   de Xperia Mini Pro laat toe om de bootloader te unlocken, en dan kun
+   je eigenlijk doen wat je wilt.
+#. Op de
+   `cyanogenmod-wiki <http://wiki.cyanogenmod.com/wiki/Latest_Version>`__
+   staat als recentste stable versie voor de Xperia Mini Pro cyanogenmod
+   7.1.0.2. Maar op de
+   `downloadpagina <http://download.cyanogenmod.com/?type=stable&device=mango>`__
+   vind je ook de 7.2-versie. Kies die laatste, want die is recenter, en
+   bovendien zorgt een bug in 7.1.0.2 dat het `systeem niet
+   boot <http://forum.cyanogenmod.com/topic/45375-bootlooping-even-after-troubleshooting/>`__
+   na de installatie.
+#. Cyanogenmod 7.2 is gebaseerd op Android 2.3. Dat is natuurlijk nog
+   niet zo hip als Android 4. `Cyanogenmod
+   9 <http://download.cyanogenmod.com/?type=RC&device=mango>`__ is ook
+   beschikbaar maar dat is blijkbaar nog een release candidate. Met
+   cyanogenmod 9 heb je wel Android 4, maar ik dacht dat het geen slecht
+   idee zou zijn om in eerste instantie gewoon de stable rom te
+   installeren.
+#. Op de cyanogenmod-wiki staat een erg goede howto voor de `installatie
+   van cyanogenmod op de xperia mini
+   pro <http://wiki.cyanogenmod.com/wiki/Sony_Ericsson_Xperia_Mini_Pro:_Full_Update_Guide>`__.
+   Daar kom je al heel ver mee. De bedoeling van dit artikeltje is een
+   howto in het Nederlands te zijn, met wat extra info over hoe je het
+   hardwarekeyboard configureert.
+
+
+
+
+
+Backup
+------
+
+
+
+Wat ik niet gedaan heb, is vooraf een backup maken van mijn
+systeem. Het was immers een nieuwe telefoon, en ik had er nog niet veel
+mee gedaan. Als alles om zeep zou zijn, kon ik tijdelijk mijn oude
+telefoon nog gebruiken, en ik was er behoorlijk zeker van dat ik er wel
+in zou slagen om mijn telefoon terug werkende te krijgen. Maar uiteraard
+beveel ik voor de rest iedereen aan om een backup te maken van het
+systeem op je telefoon, vooraleer je nieuwe roms begint te flashen.
+Vermoedelijk lukt dat met de `PC
+companion <http://www.sonymobile.com/global-en/tools/pc-companion/>`__,
+die je op een Windows-PC kunt installeren door je telefoon in te
+pluggen.
+
+
+
+Bestanden downloaden
+--------------------
+
+
+
+Download het volgende, en plaats de zip-bestanden in de
+root-folder van je SD-kaart:
+
+
+-  Een cyanogenmod-zip voor de telefoon, bijvoorbeeld `de stable
+   versie <http://download.cyanogenmod.com/?type=stable&device=mango>`__.
+-  Het overeenkomstige zip-bestand voor de `Google
+   Apps <http://wiki.cyanogenmod.com/wiki/Latest_Version#Google_Apps>`__.
+-  Als je een AZERTY-toetsenbord hebt (de kans is groot als je je
+   toestel in België kocht), download dan ook het `zip-bestand met de
+   AZERTY-keymap <http://forum.xda-developers.com/attachment.php?attachmentid=1207927&d=1342681335>`__.
+
+
+De zip van cyanogenmod bevat een bestand ‘boot.img’. Dat moet je
+extraheren, en ergens op je de harde schijf van je computer
+zetten.
+
+
+
+Bootloader unlocken
+-------------------
+
+
+
+Om met je telefoon te kunnen prutsen, heb je de
+`android-sdk <https://developer.android.com/sdk/index.html>`__ nodig.
+Gelukkig had ik die ooit geïnstalleerd op een oude Linuxinstallatie die
+ik nog ergens had, want de installatie van de sdk's `heeft heel wat
+32-bit-pakketten
+nodig <http://stackoverflow.com/questions/2710499/android-sdk-on-a-64-bit-linux-machine>`__,
+en ik vind het altijd zo stom om heel die boterham op mijn ‘main system’
+te moeten installeren.
+
+Verder moet je de
+`IMEI <’http://nl.wikipedia.org/wiki/International_Mobile_Equipment_Identity’>`__
+van je telefoon opvragen, die krijg je te zien als je het ‘nummer’
+\*#06# draait. Noteer deze IMEI, want dat heb je zodadelijk
+nodig.
+
+Er is nog zo'n exotisch nummer dat je eens kunt vormen:
+\*#\*#7378423#\*#\*. Hiermee tover je het ‘service menu’ te voorschijn.
+Kies achtereenvolgens ‘Service info’, ‘Configuration’ en ‘Rooting
+Status’, en hopelijk staat er dan ergens ‘Bootloader unlock
+allowed:Yes’.
+
+Als dat het geval is, kun je eraan beginnen. Schakel
+de telefoon uit. Houd de knop om het volume te verhogen ingeduwd, en
+connecteer tegelijkertijd de telefoon aan de computer. Normaalgezien
+gaat er een ledlampje aan op je telefoon, maar gebeurt er voor de rest
+niets.
+
+Op de computer open je een terminalvenster, zorg ervoor dat
+de map ‘platform-tools’ van de Android-SDK in je zoekpad staat (of geef
+het pad mee in onderstaand commando), en tik
+in:\ ``\nfastboot -i 0x0fce getvar version``
+Je krijgt hopelijk iets
+in deze aard:\ ``\nversion: 0.3\nfinished. total time: 0.001s``
+Als je
+in de plaats daarvan ‘waiting for device’ krijgt, is er iets mis, en zul
+je moeten troubleshooten.
+
+Surf nu naar
+http://unlockbootloader.sonyericsson.com/instructions. Klik
+achtereenvolgens ‘Start unlocking the boot loader’, ‘Continue’ en ‘Yes,
+I'm sure’. Klik aan dat je je garantie verliest (bla bla yada yada) en
+dat het extra veel zal kosten om de telefoon te repareren (precies of
+het flashen van de stock image is moeilijk). Vervolgens klik je ‘I
+accept ’.
+Op het volgende formulier geef je je naam in, je IMEI-code
+zonder het laatste cijfer, en je e-mailadres. Klik op ‘Submit’, en je
+krijgt je unlock-code te zien.
+
+Tik nu het volgende in het
+terminalvenster ``\nfastboot -i 0x0fce oem unlock 0xKEY``
+waarbij je
+‘KEY’ vervangt door je unlock-code. (Vergeet de ‘0x’ niet te typen voor
+je code, anders werkt het niet. 't Is hex hé.) Je krijgt wat
+angstaanjagende tekst te zien (‘Erasing block...’), die eindigt met
+‘OKAY’. Je bootloader is unlocked. Nu kun je hem vervangen.
+
+
+
+
+Een nieuwe bootloader flashen
+-----------------------------
+
+
+
+Geef je het volgende commando
+in:\ ``\nfastboot -i 0xfce flash boot boot.img``
+Ik weet niet precies
+wat dit doet. Het vervangt volgens mij de bootloader, en installeert ook
+de `ClockworkMod recovery
+image <http://www.addictivetips.com/mobile/what-is-clockworkmod-recovery-and-how-to-use-it-on-android-complete-guide/>`__.
+Of de recovery image al dan niet onderdeel is van de bootloader, dat is
+me niet helemaal duidelijk. Het voornaamste is dat je de recovery image
+kunt oproepen, en wel als volgt:
+
+
+
+Het nieuwe OS flashen
+---------------------
+
+
+
+Reboot de telefoon. Dat kan nog met fastboot:
+``\nfastboot -i 0xfce reboot``
+Je krijgt de nieuwe bootloader te zien.
+Op dat moment moet je wat op de volumecontroleknoppen drukken, dan wordt
+de recovery image geboot. Als je dat niet doet, of je wacht te lang, dan
+loopt je systeem vast, en moet je de batterij er uit nemen (en even
+wachten) om opnieuw te proberen.
+
+Als alles goed gelopen is, ben je
+nu in recovery mode geboot, op slechts een paar stappen verwijderd van
+cyanogenmod. De recoverymode is menugebaseerd, en je kunt het menu
+aansturen met de volumecontroleknoppen en de home button van je
+telefoon.
+
+
+
+
+
+Kies 'Wipe data/factory reset,' en bevestig.
+
+
+
+
+Idem voor 'Wipe cache partition.'
+
+
+
+
+Vervolgens kies je 'Install zip from sd-card', selecteer je de zip voor
+cyanogenmod, en bevestig je.
+
+
+
+
+Hetzelfde doe je voor de Google-appszip...
+
+
+
+
+... en de keyboard-layoutzip.
+
+
+
+
+Kies dan ‘back,’ en ‘reboot.’
+
+
+
+
+Fingers crossed.
+
+
+
+
+
+Met wat geluk heb je nu een nieuw en cool OS op je telefoon, zodat je
+kunt uitpakken bij al je vrienden :)
+
+
+
+Reageren?
+---------
+
+
+... via deze
+`identi.ca-conversatie <http://identi.ca/conversation/94981702>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

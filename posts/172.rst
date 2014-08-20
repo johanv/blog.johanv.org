@@ -1,0 +1,134 @@
+.. title: Wat is microblogging?
+.. slug: node-172
+.. date: 2011-04-22 12:32:24
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Microblogging is in essentie niets meer dan het posten van korte
+berichtjes, die dan gepubliceerd worden op een website. Zo goed als elk
+sociaal netwerk biedt dit in mindere of meerdere mate aan, denk maar aan
+de statusupdates bij Twitter en Facebook.
+
+Maar microblogging is ook
+meer dan dat. Ik probeer een overzicht te schetsen, op basis van
+voorbeelden op de identi.ca-website
+
+
+
+Publieke tijdslijn
+------------------
+
+
+
+Zoals gezegd is het basisidee achter microblogging bijzonder
+eenvoudig. Een microbloggingsysteem heeft een groot aantal gebruikers.
+En al die gebruikers kunnen korte berichtjes (typisch niet langer dan
+140 tekens) posten. De stroom van al die berichten vormen de ‘publieke
+tijdslijn’. Als je surft naar http://identi.ca, dan zie je de berichten
+van de publieke tijdslijn passeren.
+
+
+
+Persoonlijke tijdslijn
+----------------------
+
+
+
+Dat wordt natuurlijk al gauw onoverzichtelijk. Vandaar dat iedere
+gebruiker ook een persoonlijke tijdslijn heeft. Die bevat slechts een
+beperkt aantal berichten. Er worden bijvoorbeeld de berichten getoond
+van je ‘vrienden’, een beperkt aantal gebruikers die je zelf kiest. Bij
+wijze van voorbeeld: mijn persoonlijke tijdslijn vind je op
+http://identi.ca/johanv/all.
+
+
+
+@-reply's
+---------
+
+
+
+Als je een berichtje wilt posten dat bedoeld is voor een bepaalde
+andere gebruiker, dan doe je dat door in je bericht de naam van die
+gebruiker te zetten, voorafgegaan door een @-symbool.
+Bijvoorbeeld:\ ``\n@johanv Zin in een terrasje?\n``
+
+Als je
+bovenstaand berichtje post, dan wordt het ook opgenomen in de
+persoonlijke tijdslijn van de gebruiker ‘johanv’. (Tenzij de gebruiker
+johanv jouw berichten blokkeert.) Bovendien kun je gemakkelijk al je
+@-reply's opzoeken. De @-replies gericht aan @johanv zijn
+http://identi.ca/johanv/replies.
+
+
+
+Conversaties
+------------
+
+
+
+Je hebt ook de mogelijkheid om een antwoord te formuleren op
+eender welk bericht in de tijdslijn. En andere gebruikers kunnen daar
+dan weer op antwoorden. Voor je het weet, heb je een hele conversatie.
+In de tijdslijn is het niet altijd gemakkelijk om te zien welke
+berichten nu precies een antwoord zijn op welke andere, maar identi.ca
+heeft de mogelijkheid om dat min of meer overzichtelijk voor te stellen.
+Als je bijvoorbeeld de publieke tijdslijn op http://identi.ca bekijkt,
+dan zal je zien dat bij sommige berichten een link ‘in context’ staat.
+Door op die link te klikken, kom je op een pagina met heel de discussie
+terecht. Discusies worden wel eens heel uitgebreid, zoals bijvoorbeeld
+hier: http://identi.ca/conversation/68616326
+
+
+
+Hashtags
+--------
+
+
+
+Je kunt in je berichten hashtages gebruiken. Hashtags zijn niets
+anders dan trefwoorden waar je het symbool # voor plakt. Op die manier
+geef je aan dat je berichtje iets te maken heeft met de gegeven
+trefwoorden.
+Bijvoorbeeld:\ ``\nIk zal eerst eens #koffie zetten.``
+
+Door het
+#-symbool voor ‘koffie’ te plaatsen, maak je duidelijk dat het trefwoord
+‘koffie’ van toepassing is op bovenstaand bericht. Je kunt ook
+gemakkelijk alle berichten die gelabeld zijn met een trefwoord opzoeken;
+voor het trefwoord ‘koffie’ vind je ze op
+http://identi.ca/tag/koffie.
+
+
+
+Privacy
+-------
+
+
+
+Privacy bij microblogging is heel duidelijk: er is er geen. Alle
+berichten die je post, zijn voor heel de wereld leesbaar. Daar moet je
+dus rekening mee houden. Vaak bestaat er ook wel een mogelijkheid om
+privéberichten naar bepaalde gebruikers te sturen, maar in mijn ogen doe
+je dat beter niet. Ik vind dat je er best vanuit gaat dat alle berichten
+die je naar eender welk sociaal netwerk stuurt, ooit publiek kunnen
+worden. Wil je iemand iets persoonlijk laten weten, dan gebruik je beter
+geëncrypteerde e-mail, of (revolutionair): je kan het ook gewoon
+vertellen.
+
+
+
+Dat was het voornaamste
+-----------------------
+
+
+
+Hiermee heb ik het voornaamste nu wel vermeld. Ik heb nog niets
+gezegd over groepen, favoriete berichten, of over berichten herhalen,
+maar dat is op dit moment wat minder relevant. Hoe dat werkt, daar kom
+je wel achter tegen dat je zelf begint te microbloggen :-)
+
+[`terug
+naar het overzicht </node/171>`__\ ]

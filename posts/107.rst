@@ -1,0 +1,18 @@
+.. title: Windows update voor 17 jaar oud probleem veroorzaakt blauw scherm
+.. slug: node-107
+.. date: 2010-02-12 19:27:12
+.. tags: microsoft,windows
+.. link:
+.. description: 
+.. type: text
+
+Op 9 februari verspreidde Microsoft een update voor Windows, die een `17
+jaar oud
+beveiligingsprobleem <http://tweakers.net/nieuws/65409/microsoft-repareert-17-jaar-oude-bug-in-windows.html>`__
+moest fixen.
+
+Met deze fix herintroduceerde Microsoft echter bij een
+deel van zijn gebruikers een andere - vroeger veel vaker voorkomende -
+‘feature’: `het blauwe scherm des
+doods <http://tweakers.net/nieuws/65541/patch-voor-17-jaar-oude-bug-blijkt-oorzaak-van-bsods-in-xp.html>`__
+(BSOD).

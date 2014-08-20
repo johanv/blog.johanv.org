@@ -1,0 +1,23 @@
+.. title: Microsoft erkent schending van de GPL
+.. slug: node-61
+.. date: 2009-11-15 11:25:00
+.. tags: opensource,microsoft
+.. link:
+.. description: 
+.. type: text
+
+Eerder deze week `haalde Microsoft de Windows 7 USB/DVD tool van het
+internet </node/57>`__, nadat `Within
+Windows <http://www.withinwindows.com/2009/11/06/microsoft-lifts-gpl-code-uses-in-microsoft-store-tool/>`__
+ontdekte dat er waarschijnlijk broncode onder de GPL in gebruikt werd.
+Als je software onder de
+`GPL <http://nl.wikipedia.org/wiki/GNU_General_Public_License>`__-licentie
+gebruikt in een nieuw softwareproject, mag je dat nieuwe softwareproject
+enkel verder verspreiden als je alle broncode mee beschikbaar
+maakt.
+
+\ `Peter Galli, Microsofts ‘open source community
+manager’ <http://webwereld.nl/nieuws/64285/microsoft-erkent-gpl-schending.html>`__
+erkent nu dat er GPL-code gebruikt werd voor de betreffende tool, en
+kondigt aan dat de tool binnenkort dan ook beschikbaar wordt gesteld
+onder de voorwaarden van de GPL2 licentie.

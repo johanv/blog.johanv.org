@@ -1,0 +1,170 @@
+.. title: Arch Linux with encrypted LVM on 2 physical volumes
+.. slug: node-179
+.. date: 2011-06-10 16:28:03
+.. tags: linux,beveiliging,arch
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/179>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/312647/Arch-Linux-with-encrypted-LVM-on-2-physical-volumes>`__
+
+
+
+In this howto, I explain how I installed Arch Linux, with an
+encrypted LVM setup. The tricky part is that I have 2 physical volumes
+for my volume group, which required some hacking to get it
+working.
+
+(I did all this on a virtual machine, as a proof of
+concept. I want to do something similar on my laptop, which already has
+an encrypted LVM system, and on which I want to install Arch beside the
+other installed OS'es.)
+
+\ **disclaimer:** I am an Arch newbie. This
+is the first time a setup Arch, so I might explain things wrong. I've
+used LVM on other distributions though, and I have used encrypted LVM on
+Fedora (where the installer did al the work for me, without me
+completely understanding how it worked.)
+
+
+
+Setting up the encrypted LVM system
+-----------------------------------
+
+
+
+Boot your machine from the installation iso, and use e.g. cfdisk
+to create the partitions.
+
+My partitioning scheme looks like
+this:
+\ ``\nsda1  510 MB ext2 (boot)\nsda5 2048 MB Linux LVM\nsda6 6029 MB Linux LVM\n``
+
+The
+boot partition cannot be inside LVM, and cannot be encrypted either,
+because it should be accessable by grub. All other file systems will be
+on logical LVM volumes, which will be in one volume group. I set this up
+like
+this:
+\ ``\nmodprobe dm-mod\n \ncryptsetup -y -c aes-xts-plain -s 512 luksFormat /dev/sda5\ncryptsetup -y -c aes-xts-plain -s 512 luksFormat /dev/sda6\n \ncryptsetup luksOpen /dev/sda5 crypt1\ncryptsetup luksOpen /dev/sda6 crypt2\n \npvcreate /dev/mapper/crypt1\npvcreate /dev/mapper/crypt2\n \nvgcreate vgroup /dev/mapper/crypt1\nvgextend vgroup /dev/mapper/crypt2\n \nlvcreate -L 1G -n swap vgroup\nlvcreate -L 6G -n root vgroup\nlvcreate -l 100%FREE -n home vgroup\n``
+
+The
+``aes-xts-plain`` defines the used encryption method. I don't know
+anything about that, so I just copied something from yet another howto.
+``crypt1`` and ``crypt2`` are just arbitrary names, which allow access
+to the unecrypted partitions on ``/dev/mapper/crypt1`` and
+``/dev/mapper/crypt2``.
+
+
+
+Reactivating the LVM volumes after reboot
+-----------------------------------------
+
+
+
+At this point, you can just start the installation procedure. But,
+if something goes wrong, and you have to reboot, you obviously don't
+have to recreate your encrypted partitions. This is how you can
+reactivate
+them:
+\ ``\nmodprobe dm-mod\ncryptsetup luksOpen /dev/sda5 crypt1\ncryptsetup luksOpen /dev/sda5 crypt2\n \nvgchange -ay\n``
+
+(The
+last line just activates all available logical volumes.)
+
+
+
+Setting up arch
+---------------
+
+
+
+To setup arch, just run ``/arch/setup``, as usual. For the step
+‘prepare hard drive’, choose option 3: manually configure block devices,
+file systems, mount points.
+
+Choose the physical partition as boot
+partition, and the correct logical partitions for root, home, swap, or
+whatever partitions you created.
+
+In order to use two (or more)
+encrypted physical volumes, you have to apply a hack to the encrypt
+hook. You do this when the installer shows you the different
+configuration files you can edit. At this point, just press CTRL+ALT+F2,
+log in as root again, and apply the `changes in this
+patch </sites/johan.zandhoven.org/files/encrypt.patch>`__ to
+``/mnt/lib/initcpio/hooks/encrypt``. I obviously didn't invent this
+myself, I just shamelessly stole it from `this post on the arch linux
+forums <https://bbs.archlinux.org/viewtopic.php?pid=827495#p828784>`__.
+
+
+Once
+you've done that, press CTRL+ALT+F1 again, to switch back to the
+installer.
+Edit ``rc.conf``: change ``USELVM="no"`` into
+``USELVM="yes"``.
+
+
+Edit ``mkinitcpio.conf``: search for
+``HOOKS``, and add ``encrypt lvm2`` directly before ``filesystems``. In
+my case, the HOOKS-line looks like
+this:\ ``\nHOOKS="base udev autodetect pata scsi sata encrypt lvm2 filesystems"\n``
+
+That's
+all you have to change in the configuration files. Continue the
+installation until the step you have to configure grub. For the menu
+entries 'Arch Linux' and 'Arch Linux Fallback' you should make sure that
+the kernel line looks as
+follows:\ ``\nkernel /vmlinuz27 root=/dev/mapper/vgroup-root cryptdevice=/dev/sda5:crypt1,/dev/sda6:crypt2 ro\n``
+Of
+course you should change ``vgroup-root`` to the name of your root
+volume, and choose the correct partitions after ``cryptdevice=``. I
+chose the same names for the unencrypted devices (``crypt1`` and
+``crypt2``) as above, but I am not sure this is a
+requirement.
+
+Adding two partitions after ``cryptdevice=`` is
+non-standard, this is why you had to hack the ``encrypt``
+hook.
+
+
+That's all. It should work. During bootup, you will be
+asked for the passphrases to decrypt your physical LVM partition. After
+entering these, your system will boot.
+
+
+
+Things to be done
+-----------------
+
+
+
+Although this setup works, it isn't perfect yet. In my situation,
+both encrypted partitions can be unlocked with the same password. It
+would be nice if entering the password one time, would decrypt both
+partitions at once; this is e.g. the case with Fedora.
+
+I guess I
+will have to modify the encrypt hook again, such that it would try the
+first entered password for decrypting all the volumes. Only if this
+fails, it should ask to enter another password. This should be perfectly
+doable, but I wasn't able to try this out. Yet. ;-)
+
+
+
+References
+----------
+
+
+
+
+-  https://bbs.archlinux.org/viewtopic.php?pid=827495#p828784
+-  https://wiki.archlinux.org/index.php/System\_Encryption\_with\_LUKS#LVM.26dm-crypt\_manually\_.28short\_version.29
+-  http://www.pindarsign.de/webblog/?p=767
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

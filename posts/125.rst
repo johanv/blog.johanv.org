@@ -1,0 +1,20 @@
+.. title: Microsoft en Facebook werken samen aan Google-docs-tegenhanger
+.. slug: node-125
+.. date: 2010-04-22 13:51:19
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Microsoft en Facebook gaan samenwerken aan een `tegenhanger voor Google
+Docs <http://www.zdnet.be/news/115265/officebestanden-delen-via-facebook/>`__,
+en dat onder de noemer `docs.com <http://docs.com>`__.
+
+Momenteel is
+de toepassing in beta, maar je kan ze enkel gebruiken als je een
+uitnodiging krijgt.
+
+Ik vraag me dan af hoe lang het nog gaat duren
+vooraleer je met je ‘Microsoft Passport’ kan aanmelden op Facebook, en
+hoe lang de `XMPP-ondersteuning voor Facebook Chat </node/116>`__ zal
+blijven bestaan.

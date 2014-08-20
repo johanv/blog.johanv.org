@@ -1,0 +1,39 @@
+.. title: Sending e-mail from mutt using an Exchange server
+.. slug: node-206
+.. date: 2013-06-10 20:01:51
+.. tags: tips,linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/206>`__
+My favourite mail client is
+mutt. At work we have an Exchange mail server, and I wanted to use mutt
+for my work e-mail. Today it works. (I am using Fedora 19 beta)
+
+Our
+mail server supports IMAP access, so reading mail is easy. But the
+difficult part, is sending e-mails.
+
+In a first attempt, I tried
+this in the mutt
+configuration:\ ``\nset smtp_url="smtp://mylogin@our.local.mailserver:587"\nset smtp_pass="mySecretPassword"\n``
+
+I
+think this has worked for me somewhere in the past, but now I get the
+error message 'No authenticators available.' So I had to try something
+else.
+
+Now I am using msmtp to send my e-mails. I installed it from
+the repositories:\ ``\nyum install mstmtp``
+
+I created a
+configuration file:
+``~/.msmtprc``:``\naccount myaccount\nhost webmail.our.domain\nfrom my.email@our.domain\nauth ntlm\ntls on\ntls_trust_file /etc/ssl/certs/ca-bundle.crt\nuser mylogin\nntlmdomain MYDOMAIN\npassword "mySecretPassword"\nport 587\naccount default : myaccount\n``
+
+In
+the mutt configuration, I removed the smtp-setttings, and added
+``\nset sendmail="/usr/bin/msmtp"\n``
+
+And guess what. It just
+worked (TM) :-)

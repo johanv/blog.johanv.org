@@ -1,0 +1,14 @@
+.. title: Site verhuisd en terug online
+.. slug: node-141
+.. date: 2010-12-10 17:41:16
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+De site is er terug. Na problemen met de vorige hosting provider
+(b-smarthosting), is ze offline gegaan. Dan is ze verscheidene weken
+offline gebleven, omdat er geweldig veel gebeurd is, zodat ik weinig
+tijd had aan de site te hacken. Maar nu is ze er weer. De hosting heb ik
+verhuisd naar `bhosted.nl <http://www.bhosted.nl/>`__, met dank aan
+`@schwarzprod <http://identi.ca/schwarzprod>`__ voor de tip.

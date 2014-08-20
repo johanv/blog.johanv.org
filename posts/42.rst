@@ -1,0 +1,17 @@
+.. title: Witte huis gebruikt voortaan Drupal
+.. slug: node-42
+.. date: 2009-10-26 19:47:07
+.. tags: opensource,overheid
+.. link:
+.. description: 
+.. type: text
+
+Het `witte huis gebruikt voortaan
+Drupal <http://webwereld.nl/nieuws/64080/witte-huis-stapt-over-op-open-source-cms.html>`__
+voor `zijn website <http://www.whitehouse.gov>`__.
+`Drupal <http://drupal.be/>`__ is een zogenaamd ‘content management
+system’, een soort van framework waarmee je je website maakt. Het
+IT-kwartiertje is trouwens ook gebouwd op Drupal. Het nieuws is ook te
+lezen op `de blog van Dries
+Buytaert <http://buytaert.net/whitehouse-gov-using-drupal>`__, de
+(Belgische) ontwikkelaar van Drupal.

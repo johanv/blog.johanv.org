@@ -1,0 +1,19 @@
+.. title: Een geprecompileerde .NET-toepassing deployen
+.. slug: node-205
+.. date: 2013-04-26 22:33:37
+.. tags: microsoft,.NET
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/205>`__
+
+Hoe installeer ik een
+geprecompileerde .NET-toepassing op een bestaande IIS-server?
+
+Ik
+maakte hierover een screencast in lelijke tussentaal en met slechte
+geluidskwaliteit. Donanaties van fatsoenlijke headsets worden
+geapprecieerd ;-)
+
+[video:http://youtu.be/gQ\_dWp-R4fs]

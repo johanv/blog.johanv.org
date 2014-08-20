@@ -1,0 +1,93 @@
+.. title: Cyanogenmod on the Samsung Galaxy S wifi 5 (Samsung Galaxy Player 5)
+.. slug: node-203
+.. date: 2013-03-20 22:56:49
+.. tags: android
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/203>`__
+
+I had the chance to buy a
+Samsung Galaxy S wifi 5: It's not a phone, it 's not a tablet, it's
+something in between. I got a special price ;-) so I could buy it just
+to mess with it. If I break it, so be it.
+
+Of course, I wanted to
+replace the default firmware by a clean system: CyanogenMod.
+Unfortunately, there is no official CyanogenMod version for this device.
+I thought there was, but I was confused. There are a lot of devices
+called 'Samsung Galaxy S', and they all use incompatible hardware. So
+the installation was a little harder than I expected.
+
+
+## Replace
+the recovery image
+
+I found this very useful walkthrough to replace
+the recovery image: 
+
+\* [How to root and install ClockWorkMod
+recovery on Galaxy Player
+5.0](http://www.androidegis.com/how-to/how-to-root-and-install-clockworkmod-recovery-cwm-on-galaxy-player-5-0-any-variant-expect-korean/#comment-25222)
+
+I
+did install the [Samsung USB drivers for mobile
+phones](http://forum.xda-developers.com/showthread.php?t=961956) on
+beforehand, I am not sure this was necessary, but it is likely it is.
+(Remember: I am clueless, as always.)
+
+If you went throught the
+steps, you can boot into the ClockWorkMod recovery by pressing the
+volume-up button while turning on the device.
+
+## Download and flash
+the images for CM9
+
+I found a lot of ROMS for the Samsung Galaxy
+Player on
+[theunlockr.com](http://theunlockr.com/category/roms-2/android-roms-2/samsung-galaxy-player-roms/).
+I picked 'CM9 for Galaxy Player 5.0 ROM' (because I am not in the USA),
+and I followed the links to
+
+\* [CM9 for Galaxy Player 5.0 INTL, USA
+and KOR
+devices](http://forum.xda-developers.com/showthread.php?t=1679957).
+
+Download
+the \*\*stable\*\* version. Which I did not notice, because the link was
+in red. Probably to draw the attention. Which did not work for me :-). I
+first installed an old version, so I lost a lot of time.
+
+The
+extra's seem to be useful as well. I installed all of them. For the
+GApps, I took the most recent for ics (gapps-ics-20120429-signed.zip),
+and for the 'home fix for INTL users', I took version 2.
+
+I put all
+the zips on the sd-card. I rebooted into recovery, created a backup, and
+installed all images. (Cyanogenmod first, then all the rest.) Factory
+reset, clear cache, reboot, done.
+
+## What does not work:
+
+\*
+Camera
+\* Transferring files via USB from/to the sd-card.
+\* The
+hardware button in the middle under the screen doesn't seem to do
+anything.
+\* Installing apps on the SD-card.
+
+## Other
+versions?
+
+There is a [thread about
+CM10](http://forum.xda-developers.com/showthread.php?t=2077671) on the
+xda-developers forum, but this [does not
+work](http://forum.xda-developers.com/showpost.php?p=39353117&postcount=1025),
+and development on this version seems to have stopped.
+
+There is a
+[ROM for CM7](http://theunlockr.com/2012/03/15/cm7-for-player-5-0-rom/)
+as well. Maybe with a working camera. I still have to try this out.

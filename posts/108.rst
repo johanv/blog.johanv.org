@@ -1,0 +1,14 @@
+.. title: Testbericht Twitterfeed
+.. slug: node-108
+.. date: 2010-02-13 13:29:46
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Ik heb net een account gemaakt bij
+`twitterfeed <http://twitterfeed.com>`__, met de bedoeling de posts op
+deze site meteen te publiceren op
+`facebook <http://facebook.com/johan.vervloet>`__ en
+`identi.ca <http://identi.ca/johanv>`__. En met dit bericht ga ik
+uitproberen of dat werkt :-)

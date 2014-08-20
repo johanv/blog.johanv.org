@@ -1,0 +1,22 @@
+.. title: Gelukkige Data Protection Day!
+.. slug: node-103
+.. date: 2010-01-28 12:29:18
+.. tags: privacy
+.. link:
+.. description: 
+.. type: text
+
+Vandaag is het blijkbaar `Data Protection
+Day <http://www.theregister.co.uk/2010/01/28/data_protection/>`__. Data
+Protection Day is blijkbaar een Europees initiatief om de aandacht te
+vestigen op de privacy. Ik vind er echter weinig informatie over terug,
+en zelfs op `de website van Data Protection
+Day <http://dpd.eun.org/web/guest/parents>`__ vind ik niet direct
+verhelderende info.
+
+Maar blijkbaar is er naar aanleiding van Data
+Protection Day ook `in ons land een website gelanceerd om privacy onder
+de aandacht te
+krijgen <http://www.zdnet.be/news/111881/privacywebsite-moet-jeugd-sensibiliseren/>`__.
+Helaas vind ik `www.ikbeslis.be <http://www.ikbeslis.be/>`__ al even
+onduidelijk.

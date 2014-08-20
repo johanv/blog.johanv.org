@@ -1,0 +1,16 @@
+.. title: Bill gates ontdekt Twitter
+.. slug: node-100
+.. date: 2010-01-20 12:31:02
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+`Bill gates ontdekt
+Twitter <http://www.telegraaf.nl/digitaal/5833030/__Bill_Gates_ontdekt_Twitter__.html>`__.
+Het had me verbaasd moest hij `identi.ca <http://identi.ca>`__ ontdekt
+hebben.
+
+Zie:
+`http://www.twitter.com/billgates <http://twitter.com/billgates>`__. (Ik
+snap niet dat er nooit iemand anders die username gekozen heeft.)

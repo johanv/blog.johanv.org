@@ -1,0 +1,45 @@
+.. title: Integratie met Facebook en Twitter
+.. slug: node-176
+.. date: 2011-04-30 14:40:33
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Het is jammer genoeg vaak het geval dat de meeste van je vrienden niet
+actief zijn op identi.ca, maar wel op Facebook of Twitter. Jij wilt
+natuurlijk wel identi.ca gebruiken, maar het zou wel erg jammer zijn
+voor je vrienden dat zij daardoor jouw geweldig intelligente bijdragen
+moeten missen :-)
+
+Geen nood, je kunt je identi.ca account koppelen
+aan een account op Facebook of Twitter. Op die manier komen je ‘dents’
+(berichten op identi.ca) ook automatisch op je Facbook- of Twitterpagina
+terecht.
+
+
+
+Twitter
+-------
+
+
+Om te koppelen met Twitter, surf je naar je persoonlijke pagina op
+identi.ca. Klik vervolgens op ‘Instellingen’, en ‘Twitter’. Je komt op
+de pagina http://identi.ca/settings/twitter terecht, en daar kun je de
+koppeling instellen.
+
+
+
+Facebook
+--------
+
+
+Voor Facebook is er een toepassing die ‘identi.ca’ heet. Ik gebruik
+ze zelf, ze werkt nog steeds, maar ik weet niet meer hoe ik ze
+geïnstalleerd heb. :-$ Ik vind zelfs de instellingen niet terug. Maar ik
+heb al wel vaker problemen geweten met de ‘Facebook identi.ca app’,
+misschien is er vandaag ook wel weer iets mis mee.
+
+[`terug naar het
+overzicht </node/171>`__\ ]
+

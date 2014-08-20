@@ -1,0 +1,22 @@
+.. title: Overstap Nederlandse overheid naar ODF verloopt moeizaam
+.. slug: node-41
+.. date: 2009-10-26 08:52:28
+.. tags: overheid
+.. link:
+.. description: 
+.. type: text
+
+In 2007 was er bijkbaar al sprake van dat `de Nederlandse overheid ODF
+zou gebruiken als
+documentformaat <http://tweakers.net/nieuws/49361/odf-volgend-jaar-gemeengoed-bij-overheid.html>`__,
+maar blijkbaar `verloopt die omschakeling niet van een leien
+dakje <http://webwereld.nl/nieuws/64076/gebruikers-rijksoverheid-laten-odf-links-liggen.html>`__.
+
+\ `ODF <http://nl.wikipedia.org/wiki/Odf>`__
+is een open standaard voor het bewaren en uitwisselen van zogenaamde
+‘officedocumenten’. (tekstbestanden, rekenbladen, presentaties,...) Deze
+standaard wordt voornamelijk gebruikt door
+`OpenOffice.org <http://nl.openoffice.org>`__, maar ook voor Microsoft
+office zijn er
+`plug-ins <http://www.sun.com/software/star/odf_plugin/>`__ beschikbaar
+om met ODF te werken.

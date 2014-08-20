@@ -1,0 +1,10 @@
+.. title: Effect van de argumentreductie op de foutenanalyse van arctan
+.. slug: node-150
+.. date: 2010-12-13 16:30:59
+.. tags: cant
+.. link:
+.. description: 
+.. type: text
+
+Een fijne presentatie uit 2003 over hoe de afrondingsfout bij de
+berekening van de boogtangens onder controle gehouden kan worden.

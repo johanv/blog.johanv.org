@@ -1,0 +1,225 @@
+.. title: Setting up a wireless virtualisation host with Debian Squeeze and KVM
+.. slug: node-190
+.. date: 2012-02-03 12:05:49
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/190>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/482747/Setting-up-a-wireless-virtualisation-host-with-Debian-Squeeze-and-KVM>`__
+
+
+
+At the moment, I have two 'servers' on my attic. A file server,
+which is an old laptop running Freenas 8, and a server for `printing,
+scanning </node/160>`__ and backups, which is a 10 year old PC running
+Ubuntu Server 10.04.
+
+Since I don't have ethernet cables to the
+attic, the print server is accessable via wifi. I connected the print
+server to the file server with a cable, and to access the file server, I
+just route the traffic through the print server.
+
+Now I want to
+replace those two servers on the attic by one virtualization host, which
+will at first just run a virtual copy of the servers I have right
+now.
+
+For this virtual host, I have a 6 year old PC with 64-bit AMD
+processor, 1 GB ram and 150 GB disk space. This should be enough for my
+needs atm. I can always add more ram over time if
+needed.
+
+\ **UPDATE:**\ Freenas used to be a lightweight file
+server. It isn't any more since version 8. Certainly don't use zfs as
+file system on your low end machine. `Open Media
+Vault <http://openmediavault.org>`__ is probably a better file server
+solution.
+
+\ **UPDATE:** I have upgraded to a 3.2-kernel, which
+makes adding a non-access-point wireless interface to a bridge
+impossible. So I created another subnet for the virtual machines, as
+described in the remarks below. Which makes the ebtables thing
+irrelevant.
+
+\ **UPDATE:** Although it worked quite well (at last),
+I connected my virtual host to the wired network some day ago. Which
+makes things a lot easier and more stable. See comment below.
+
+I'm
+not sure wheter it will work. Right now I have one virtual server ready
+to use, I'm still experiencing some network problems, and I am not sure
+whether what I am trying will actually work. But I'll keep you updated.
+This is what I did so far:
+
+
+
+Setting up the Debian server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+I set up a very basic Debian installation for the virtualization
+host. I used the 64-bit netinstall CD, to install only the basic system
+tools. No graphical environment, since the resources of my 'server' are
+limited. I created a large partition for virtual disk files, which I
+mounted under ``/vdisks``.
+
+My server has no space for PCI-cards
+(only mini-PCI), I don't have a mini-PCI wireless card, so I will be
+using a `Linksys
+WUSB54GC <http://homesupport.cisco.com/en-us/wireless/lbc/WUSB54GC>`__
+usb wireless adapter I had lying around.
+
+(Note: I will have to
+search for something else, because after some time the wireless card
+just stops working.)
+
+To enable wireless networking, I had to
+install ``wireless-tools`` and ``wpasupplicant``, because my network is
+secured with WPA-PSK authentication. I also needed a driver for the
+network card, so I had to `enable the non-free
+repositories <http://blog.mypapit.net/2011/08/how-to-add-contrib-and-non-free-repository-in-debian-gnulinux.html>`__,
+and after that I could install ``firmware-ralink``. With all those
+packages installed, `enabling the wireless
+networking <http://wiki.debian.org/WiFi/HowToUse#WPA-PSK_and_WPA2-PSK>`__
+was a piece of cake.
+
+Then I installed the tools for running and
+managing virtual machines on the command line: ``qemu-kvm``,
+``libvirt-bin`` and ``virtinst``. Because the virtual hosts will be
+accessed using the wireless network, we will also need
+``ebtables``.
+
+
+
+Setting up the bridge
+~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Because the virtual machines will have to be accessible from my
+wireless lan, I need to configure a network bridge on the host, which
+will bridge the wireless card on the host to the virtual network
+interfaces of the guests. `Configuring a bridge on a Debian
+system <http://wiki.debian.org/BridgeNetworkConnections#Configuring_bridging_in_.2BAC8-etc.2BAC8-network.2BAC8-interfaces>`__
+is very easy, but not if one of the interfaces has to use WPA-PSK. After
+a lot of trial and error, I got it working with this
+``/etc/network/interfaces``:``\n# The loopback network interface\nauto lo\niface lo inet loopback\n\n# The primary network interface\n#allow-hotplug eth0\niface eth0 inet dhcp\n\nauto wlan0\niface wlan0 inet static\n\twpa-ssid **MySsid**\n\twpa-psk **MyPsk**\n\taddress 192.168.1.201\n\tnetmask 255.255.255.0\n\tgateway 192.168.1.1\n\niface br0 inet static\n\tbridge_ports wlan0\n\tbridge-stp off\n\tbridge-maxwait 5\n\taddress 192.168.1.200\n\tnetmask 255.255.255.0\n\tgateway 192.168.1.1``
+
+As
+you can see, I used static IP-addresses, I think I had troubles when
+using dhcp. I had to start wlan0 first, and then br0, probably because
+the network card has to associate to the access point. The configuration
+above only starts wlan0, but I start br0 in ``/etc/rc.local``, by adding
+the following line: ``\nifup br0``
+
+
+
+Installing a virtual FreeNAS server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+To set up the virtual file server, I used this
+command:\ ``\nvirt-install --connect qemu:///system -n gobelijn -r 256 --disk path=/vdisks/gobelijn/gobelijn01.img,size=2 --disk path=/vdisks/gobelijn/gobelijn02.img,size=40 -c /vdisks/iso/FreeNAS-8.0.3-RELEASE-x64.iso --vnc --noautoconsole --os-type unix --os-variant freebsd7 --network=bridge:br0 --hvm``
+
+This
+creates a system with 256 MB ram, a disk of 2 GB for the OS and a disk
+of 40 GB for the data. It boots from the FreeNAS-iso, which I placed on
+``/vdisks/iso/FreeNAS-8.0.3-RELEASE-x64.iso``. The virtual server is
+called ‘Gobelijn’, I tend to choose characters of comic strips as server
+names at home. I ran the command as root, because it didn't work with a
+user in the kvm-group.
+
+Now the new virtual server is booted, but of
+course I couldn't see what was happening. Since there is no graphical
+environment installed on the server, I needed another computer to
+connect to it. I installed ``virt-viewer`` on there, and connected as
+follows:\ ``\nvirt-viewer --connect qemu+ssh://root@192.168.1.200/system gobelijn``.
+For
+some or another reason, I had to enter the password twice. It should
+probably work with a non-root user as well, still have to try it
+out.
+
+After the installation, instead of rebooting, the system just
+shuts down. I restarted it by issuing these commands on the virtual
+machine
+host:\ ``\nvirsh --connect qemu:///system\nstart gobelijn``
+
+... and
+it didn't work. The virtual guests didn't recognize it's virtual network
+card. Luckily, this is a `known
+problem <http://blog.adlibre.org/2011/06/06/freenas-8-under-kvm/>`__,
+you can fix it by changing the network device type in the appropriate
+configuration file in ``/etc/libvirt/qemu``. I had to replace the line
+``\n      <model type='ne2k_pci'/>\n`` in the xml (under devices,
+interface), and change it
+to\ ``\n      <model type='rtl8139'/>\n``
+After rebooting the virtual
+machine, it had a network interface.
+
+
+
+ebtables
+~~~~~~~~
+
+
+
+... but it still didn't work. I could connect from the virtual
+guest to the virtual host and vice versa, but I couldn't connect the
+virtual host from other machines in the same subnet. The cause seems to
+be that `wireless routers reject network packages with source
+mac-addresses that didn't
+authenticate <http://wiki.debian.org/BridgeNetworkConnections#Bridging_with_a_wireless_NIC>`__.
+
+This
+can be fixed with ebtables, as described in the Debian wiki. I just did
+what's described in there: I
+entered\ ``\nebtables -t nat -A POSTROUTING -o wlan0 -j snat --to-src $MAC_OF_BRIDGE --snat-arp --snat-target ACCEPT``
+and
+used the script
+``addcomputer.sh``:``\n #!/bin/bash\n # addcomputer\n # Will Orr - 2009\n\n INIF="wlan0"\n\n function add_ebtables () {\n   COMPIP=$1\n   COMPMAC=$2\n\n   ebtables -t nat -A PREROUTING -i $INIF -p IPv4 --ip-dst $COMPIP -j \
+   dnat --to-dst $COMPMAC --dnat-target ACCEPT\n   ebtables -t nat -A PREROUTING -i $INIF -p ARP --arp-ip-dst $COMPIP \
+   -j dnat --to-dst $COMPMAC --dnat-target ACCEPT\n }\n\n if [[ $# -ne 2 ]]; then\n   echo "Usage: $0 ip mac"\n elif [[ $(whoami) != "root" ]]; then \n   echo "Error: must be root"\n else\n   add_ebtables $1 $2\n fi``
+to
+change the source mac address from source packages from the virtual
+guest. I saved the rules using
+``\nEBTABLES_ATOMIC_FILE=/root/ebtables-atomic ebtables -t nat --atomic-save``
+and
+load them at boot time by adding this to
+``/etc/rc.local``:``\nEBTABLES_ATOMIC_FILE=/root/ebtables-atomic ebtables -t nat --atomic-commit``.
+
+Now
+I still want to start the guest automatically when the host boots.
+Normally this can be done with ``virsh autostart gobelijn``, but that
+doesn't work, probably because the hack of starting the bridge in
+``/etc/rc.local``. So I just start the virtual guest in
+``/etc/rc.local`` as well, by adding
+``\nsleep 4\nvirsh start gobelijn``.
+
+
+
+References
+~~~~~~~~~~
+
+
+
+
+
+-  `Debian wiki: WPA-PSK and
+   WPA2-PSK <http://wiki.debian.org/WiFi/HowToUse#WPA-PSK_and_WPA2-PSK>`__
+-  `Debian wiki: KVM <http://wiki.debian.org/KVM>`__
+-  `HowtoForge: Installing KVM guests with virt-install on Ubuntu
+   8.10-server <http://www.howtoforge.com/installing-kvm-guests-with-virt-install-on-ubuntu-8.10-server>`__
+-  `Adlibitum: Freenas 8 under
+   KVM <http://blog.adlibre.org/2011/06/06/freenas-8-under-kvm/>`__
+-  `Debian wiki: Bridging with a wireless
+   NIC <http://wiki.debian.org/BridgeNetworkConnections#Bridging_with_a_wireless_NIC>`__
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

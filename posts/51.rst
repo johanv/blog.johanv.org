@@ -1,0 +1,19 @@
+.. title: OpenERP duikt op in De Morgen
+.. slug: node-51
+.. date: 2009-11-03 08:53:16
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+Bij `de release van Ubuntu 9.10 vorige week </node/47>`__, was daarover
+niets te lezen in De Morgen. (Dat lag wel even anders bij `Windows
+7 <http://www.google.be/search?hl=nl&q="windows+7"+site:demorgen.be&btnG=Zoeken&meta=&aq=f&oq=>`__.)
+Groot was dus mijn verbazing toen ik gisteren in De Morgen `een artikel
+las over
+openERP <http://www.demorgen.be/dm/nl/3824/Binnenland/video/detail/1024358/Belg-is-nieuwe-Bill-Gates.dhtml>`__,
+een Belgisch open-sourceproject.
+
+Vooral de titel ‘Belg is nieuwe
+Bill Gates’ vind ik geweldig. Iedereen herinnert zich uiteraard levendig
+hoe Bill Gates ook altijd een fan van open source was. :-]

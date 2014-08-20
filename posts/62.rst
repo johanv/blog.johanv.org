@@ -1,0 +1,19 @@
+.. title: Microsoft onderhandelt met Europese kranten
+.. slug: node-62
+.. date: 2009-11-16 21:05:22
+.. tags: microsoft,bigbrother
+.. link:
+.. description: 
+.. type: text
+
+Het feit dat Google krantenberichten opneemt in zijn zoekresultaten, is
+sommige uitgevers een doorn in het oog. En als er arme uitgevers slecht
+behandeld worden door het boze Google, dan `snelt Microsof natuurlijk
+met plezier te
+hulp <http://weblogs.nrc.nl/media/2009/11/14/bing-ontfermt-zich-over-uitgevers-die-google-willen-verlaten/>`__.
+Microsoft toonde zich al eerder voorstander van
+`ACAP <http://en.wikipedia.org/wiki/Automated_Content_Access_Protocol>`__,
+een omstreden systeem dat toegang van zoekmachines tot inhoud moet
+beperken. Nu zou Microsoft verdere ontwikkeling naar ACAP financieel
+ondersteunen. Op die manier probeert Microsoft de kranten van Google weg
+te halen naar zijn eigen zoekmachine, Bing.

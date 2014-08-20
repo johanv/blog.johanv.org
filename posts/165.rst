@@ -1,0 +1,67 @@
+.. title: Log on to Fedora 14 with your active directory credentials
+.. slug: node-165
+.. date: 2011-02-22 12:27:51
+.. tags: windows,linux,fedora
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/165>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/173078/Log-on-to-Fedora-14-with-your-active-directory-credentials>`__
+
+
+
+You can use your active directory username and password to login
+to a PC running Fedora 14. This is how I did it:
+
+Install pam\_krb5
+and samba-winbind:\ ``\nyum install pam_krb5 samba-winbind``
+
+Click
+‘System’, ‘Administration’, ‘Authentication’. Enter the root
+password.
+
+Enter the following settings (adapt ‘MYDOMAIN’,
+‘EXAMPLE.COM’, and ‘mydc\ *n*\ ’ to your situation)
+
+
+-  User Account Database: Winbind
+-  Winbind Domain: MYDOMAIN
+-  Security Model: ads
+-  Winbind ADS Realm: EXAMPLE.COM
+-  Winbind Domain Controllers: mydc1, mydc2
+-  Template Shell: /bin/bash
+-  Check ‘Allow offline login’
+
+
+
+Click ‘Join Domain’, and enter username and password of a domain
+account.
+
+Under ‘Advanced options’, Password Hashing Algorithm
+should be ‘MD5’, and ‘Create home directories on the first login’ should
+be checked.
+
+Click Apply, and close the window.
+
+Now you should
+be able to logon with username ‘MYDOMAIN\\\\myuser’, and your domain
+password. If you don't want the prefix ‘MYDOMAIN\\\\’, edit
+``/etc/samba/smb.conf``. In the section ``[global]`` change
+``\nwinbind use default domain = false``
+to
+``\nwinbind use default domain = true``
+and reboot (or restart winbind
+and/or samba).
+
+
+References:
+
+
+-  http://spiralbound.net/blog/2007/04/11/rhel-winbind-authentication-against-active-directory
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

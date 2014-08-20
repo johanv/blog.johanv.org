@@ -1,0 +1,34 @@
+.. title: Favoriete firefox add-ons
+.. slug: node-21
+.. date: 2009-09-15 12:29:34
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+\* Aardvark: https://addons.mozilla.org/en-US/firefox/addon/4111
+ \*
+Delicious bookmarks:
+https://addons.mozilla.org/en-US/firefox/addon/3615
+ \* Distrust:
+https://addons.mozilla.org/en-US/firefox/addon/1559
+ \* Download
+Statusbar: https://addons.mozilla.org/nl/firefox/addon/26
+ \*
+Downloadhelper: https://addons.mozilla.org/nl/firefox/addon/3006
+ \*
+Foxyproxy: https://addons.mozilla.org/en-US/firefox/addon/2464
+ \*
+Html validator: https://addons.mozilla.org/nl/firefox/addon/249
+ \*
+Multiple tab handler:
+https://addons.mozilla.org/nl/firefox/addon/4838
+ \* Remove it
+permanently: https://addons.mozilla.org/nl/firefox/addon/521
+ \*
+Resizeable textarea:
+https://addons.mozilla.org/en-US/firefox/addon/3818
+ \* Stumbleupon:
+https://addons.mozilla.org/en-US/firefox/addon/138
+ \* Web developer:
+https://addons.mozilla.org/nl/firefox/addon/60

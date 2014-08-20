@@ -1,0 +1,62 @@
+.. title: Improving security of the Acer Aspire One.
+.. slug: node-14
+.. date: 2008-11-09 15:34:31
+.. tags: linux,aspireone
+.. link:
+.. description: 
+.. type: text
+
+By default, every user on my Linux powered Acer Aspire One can sudo any
+command without having to enter a password. I think this is a bad thing,
+because this way anyone (or everything) that can access your computer as
+a local user, can do anything on the system.
+
+The problem is caused
+by the configuration of sudo, which contains these
+lines:
+
+\ ``\n## Allows people in group wheel to run all commands\n %wheel ALL=(ALL)       ALL\n\n## Same thing without a password\n %wheel ALL=(ALL)       NOPASSWD: ALL\n``
+
+(to
+see/edit the sudo config file, issue ``sudo visudo`` in a terminal
+window.) Commenting out the line below 'Same thing without a password'
+is not an option, because the network (and other things) will not start
+after starting xfce.
+
+It seems that when xfce is started, a list of
+commands is executed, some of which are called with 'sudo'. I don't know
+which script is containing these commands, so I turned on sudo logging.
+This can be done adding the following lines to the sudo
+config:
+\ ``\nDefaults loglinelen=0 # disable line wrapping in log.\nDefaults logfile=/var/log/sudo.log # or some other filename.\n``
+
+When
+logging on again, you can see in /var/log/sudo.log the commands that
+were executed with
+sudo:
+\ ``\n/usr/bin/gnome-keyring-daemon\n/bin/mv /usr/bin/xfce-mcs-manager.new /usr/bin/xfce-mcs-manager\n/bin/mv /usr/bin/xfce-mcs-manager /usr/bin/xfce-mcs-manager.new\n/sbin//modprobe ath_pci\n/sbin//modprobe wlan_scan_sta\n/sbin//modprobe wlan_acl\n/sbin//modprobe wlan_wep\n/sbin//modprobe wlan_xauth\n/sbin//modprobe wlan_ccmp\n/sbin//modprobe wlan_tkip\n/usr/local/bin/wlanconfig ath0 create wlandev wifi0 wlanmode sta\n/sbin//ifconfig ath0 up\n/etc/init.d/network start\n/etc/init.d/netfs start\n/etc/init.d/udev-post start\n/etc/init.d/ConsoleKit start\n/etc/init.d/cups start\n/etc/init.d/wpa_supplicant start\n/etc/init.d/NetworkManager start\n/etc/init.d/NetworkManagerDispatcher start\n/etc/init.d/crond start\n/usr/bin/nm-applet\n/sbin/iwpriv ath0 powersave 1\n/sbin//fdisk -l\n/sbin//swapon -a\n/sbin//iwpriv ath0 powersave 1\n``
+
+These
+commands are probably somewhere in a script, but I did not find out yet
+which one.
+
+Anyway, I added the following lines to the sudo
+configuration
+script
+\ ``\nCmnd_Alias JOHAN = /usr/bin/gnome-keyring-daemon,/sbin/modprobe,/usr/local/bin/wlanconfig \
+  ,/sbin/ifconfig,/etc/init.d/network,/etc/init.d/netfs,/etc/init.d/udev-post \
+  ,/etc/init.d/ConsoleKit,/etc/init.d/cups,/etc/init.d/wpa_supplicant,/etc/init.d/NetworkManager \
+  ,/etc/init.d/NetworkManagerDispatcher,/etc/init.d/crond,/usr/bin/nm-applet,/sbin/iwpriv \
+  ,/sbin/swapon\n\n %test ALL=(ALL)        ALL\n %test ALL=NOPASSWD: JOHAN\n``
+
+Now
+every user added to the 'test' group, has to enter a password when
+sudo'ing, except for the commands issued when logging on.
+
+I'm aware
+of the fact that this is still not the most secure solution. Things like
+'swapon' should already be run before the user is logged on. It would
+also be better to group the commands executed when logging on in a
+special script. The test users would then only need passwordless sudo
+rights on this script.
+

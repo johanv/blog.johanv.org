@@ -1,0 +1,21 @@
+.. title: Open source succesverhaal in Nederlands ziekenhuis
+.. slug: node-126
+.. date: 2010-04-23 12:27:11
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+Computable berichtte vandaag over `het Utrechtste
+Sint-Antoniusziekenhuis <http://www.computable.nl/artikel/ict_topics/open_source/3269938/1277105/ziekenhuis-bespaart-met-open-source.html>`__,
+waar vorig jaar begonnen werd met de overstap naar een
+open-sourceomgeving.
+
+Uit het artikel blijkt dat de omschakeling
+vooral een andere invulling van de jobs van de IT-afdeling met zich
+meebracht. Maar de kost van de overschakeling en opleiding werd ruim
+gecompenseerd door de besparingen achteraf.
+
+Zie ook `dit bericht op
+de site van het betreffende
+ziekenhuis <http://www.antoniusziekenhuis.nl/patienten/nieuws/staatssecretarisheemskerk>`__.

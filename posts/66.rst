@@ -1,0 +1,37 @@
+.. title: Paniekknop voor sociale netwerksites?
+.. slug: node-66
+.. date: 2009-11-19 10:01:45
+.. tags: overheid
+.. link:
+.. description: 
+.. type: text
+
+Op de sites van
+`tal <http://www.demorgen.be/dm/nl/991/Multimedia/article/detail/1031130/2009/11/19/Europese-paniekknop-voor-sociale-netwerksites.dhtml>`__
+`van <http://www.standaard.be/artikel/detail.aspx?artikelid=DMF20091119_001>`__
+`Vlaamse <http://www.gva.be/nieuws/media-en-cultuur/aid880093/paniekknop-om-seksuele-intimidatie-op-facebook-te-rapporteren.aspx>`__
+`kranten <http://www.nieuwsblad.be/article/detail.aspx?articleid=DMF20091119_001>`__
+wordt vermeld dat sociale netwerksites zoals
+`Facebook <http://www.facebook.com>`__ van Europa een soort paniekknop
+moeten voorzien, die kinderen en jongeren kunnen aanklikken als ze
+personen met oneerbare bedoelingen tegen komen.
+
+Gek genoeg vind ik
+dit bericht nergens op sites die er ‘officieel Europees’
+uitzien.
+
+Ik vraag me vooral af of dit verplicht wordt voor alle
+sociale netwerksites. En vanaf wanneer je een sociale netwerksite bent.
+Als ik het concept ‘vrienden’ implementeer op deze website, heb ik dan
+ook een sociale netwerksite?
+
+Een mens kan niet zeker genoeg zijn,
+dus hier is alvast mijn
+paniekknop:
+
+\ **`PANIEK! <javascript:void(location.href='http://www.ecops.be?referer='+encodeURIComponent(location.href))>`__**
+
+
+Sleep
+hem naar je bladwijzerwerkbalk, en je hebt meteen een paniekknop voor
+àlle websites.

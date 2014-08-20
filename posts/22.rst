@@ -1,0 +1,50 @@
+.. title: Materiaal voor software freedom day
+.. slug: node-22
+.. date: 2009-09-19 08:04:38
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+Ter ere van software freedom day stelde ik een CD'tje samen met vrije
+software voor Windows:
+
+
+
+-  `Audacity <http://audacity.sourceforge.net/?lang=nl>`__ 1.2.6
+-  `Firefox <http://www.mozilla-europe.org/nl/firefox/>`__ 3.5.3
+-  `Lbreakout2 <http://lgames.sourceforge.net/index.php?project=LBreakout2>`__
+   2.4
+-  `OpenOffice.org <http://nl.openoffice.org/>`__ 3.1.1
+-  `Paint.NET <http://www.getpaint.net/>`__ 3.36
+-  `Pidgin <http://www.pidgin.im/>`__ 2.6.2
+-  `SuperTux <http://supertux.lethargik.org/>`__ 0.3.0
+-  `Thunderbird <http://www.mozilla-europe.org/nl/products/thunderbird/>`__
+   2.0.0.23
+-  `VLC <http://www.videolan.org/vlc/>`__ 1.0.1
+-  `Vuze <http://www.vuze.com/>`__ 4.2.0.8a
+
+
+
+Je kan het iso-bestand en een geweldig amateuristisch covertje
+downloaden:
+
+
+
+-  `sfd.iso <http://johan.zandhoven.org/download/sfd/sfd.iso>`__
+   (MD5sum: 0f8b637215787d4cd75050062d0a1dad)
+-  `sfd-cover.pdf <http://johan.zandhoven.org/download/sfd/sfd-cover.pdf>`__
+-  `sfd-cover.odt <http://johan.zandhoven.org/download/sfd/sfd-cover.odt>`__
+
+
+
+Ik heb ook een mini-howto gemaakt over hoe je Ubuntu kan
+installeren (op voorwaarde dat je al een CD'tje hebt):
+
+
+
+-  `ubuntu-installatie-howto.pdf <http://johan.zandhoven.org/download/sfd/ubuntu-installatie-howto.pdf>`__
+-  `ubuntu-installatie-howto.odt <http://johan.zandhoven.org/download/sfd/ubuntu-installatie-howto.odt>`__
+
+
+

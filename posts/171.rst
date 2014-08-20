@@ -1,0 +1,40 @@
+.. title: One social network to rule them all: identi.ca
+.. slug: node-171
+.. date: 2011-04-22 12:23:40
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/171>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/178329/One-social-network-to-rule-them-all-identi-ca>`__
+
+
+
+Facebook, Twitter, LinkedIn, Netlog, Google Buzz,... er bestaan
+heel wat sociale netwerken op het internet, en meer dan waarschijnlijk
+heb je zelf wel een account bij een of meerdere van deze
+services.
+
+En desondanks ga ik op deze pagina proberen om jou te
+overtuigen om je aan te sluiten bij nog een ander sociaal netwerk:
+identi.ca. Identi.ca is een platform voor microblogging. Zoals Twitter,
+maar dan beter. Lees dus vooral verder:
+
+
+
+-  `Wat is microblogging? </node/172>`__
+-  `Waarom is identi.ca een beter microbloggingplatform dan de andere
+   sociale netwerken? </node/173>`__
+-  `Wat zijn de beperkingen van identi.ca? </node/174>`__
+-  `Aan de slag met identi.ca </node/175>`__
+-  `Integratie met Twitter en Facebook </node/176>`__
+
+
+
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

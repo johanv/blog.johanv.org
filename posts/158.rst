@@ -1,0 +1,25 @@
+.. title: How to install a Citrix client on Fedora
+.. slug: node-158
+.. date: 2010-12-21 11:30:53
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Just a quick howto about installing a Citrix client on Fedora, because I
+didn't find a clear explanation using Google.
+
+The tricy part about
+installing ‘Citrix Receiver’ on Fedora, is that you need openmotif. In
+order to install openmotif, you have to enable the rpmfusion software
+repository. (See http://rpmfusion.org/Configuration)
+
+Then you
+install opnemotif:
+\ ``\nyum install openmotif\n``
+
+Finally, you
+download and install the i386-rpm of the citrix receiver from this page:
+http://www.citrix.com/English/SS/downloads/details.asp?downloadID=3323&productID=-1
+
+

@@ -1,0 +1,15 @@
+.. title: Wel internet op Nederlandse treinen
+.. slug: node-74
+.. date: 2009-11-27 13:13:38
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+'t Zijn soms kwieten, de Nederlanders, maar soms wou ik dat ik er ook
+een was. Bijvoorbeeld bij het nemen van de trein. `Volgend jaar beginnen
+de Nederlandse Spoorwegen met het aanbieden van gratis internet op de
+trein <http://www.demorgen.be/dm/nl/991/Multimedia/article/detail/1034467/2009/11/26/Nederlanders-krijgen-wel-gratis-internet-in-trein.dhtml>`__.
+In België werd die mogelijkheid ook onderzocht, maar daar vond `de NMBS
+dat internet in de trein slechts een ‘secundaire behoefte’
+is <http://tweakers.net/nieuws/63295/nmbs-wil-wifi-in-trein-enkel-invoeren-met-partnerbedrijven.html>`__.

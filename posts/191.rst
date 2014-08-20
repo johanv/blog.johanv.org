@@ -1,0 +1,34 @@
+.. title: Dell Precision M4500, Debian Wheezy en nVidia drivers
+.. slug: node-191
+.. date: 2012-02-27 21:24:11
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/191>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/539557/Dell-Precision-M4500-Debian-Wheezy-en-nVidia-drivers>`__
+Dit weekend installeerde ik Debian Wheezy op mijn Dell Precision M4500
+laptop. Deze laptop heeft een nVidia Corporation GT215 [Quadro FX 1800M]
+grafische kaart, en net zoals bij ongeveer elke mogelijke
+Linuxdistributie, blijft de nouveau-schermdriver iedere X tijd hangen,
+waardoor het systeem niet meer reageert. (Zie deze `bug in
+Fedora <https://bugzilla.redhat.com/show_bug.cgi?id=754882>`__, maar ik
+vermoed dat elke distributie een analoge bug zal hebben.)
+
+Dus ben
+ik wel verplicht om de freedom hating proprietary driver te installeren.
+Ik haalde de inspiratie op de `Debian
+Wiki <http://wiki.debian.org/NvidiaGraphicsDrivers>`__; op deze manier
+werkt het:
+``\napt-get install linux-headers-`uname -r` #dit is misschien niet nodig\napt-get install nvidia-kernel-dkms nvidia-settings``
+en
+zet het volgende in
+``/etc/X11/xorg.conf``:``\nSection "Module"\n    Load        "glx"\nEndSection\nSection "Device"\n    Identifier  "Video Card"\n    Driver              "nvidia"\nEndSection\n``
+Rebooten,
+en dat is dat.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

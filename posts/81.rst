@@ -1,0 +1,23 @@
+.. title: Bing, Google en real time search
+.. slug: node-81
+.. date: 2009-12-08 13:28:59
+.. tags: microsoft,google
+.. link:
+.. description: 
+.. type: text
+
+‘Real time search’ is ‘hot’. Nu er iedere minuut massa's inhoud
+gepubliceerd wordt door o.a. `facebook <http://facebook.com>`__ en
+`twitter <http://twitter.com>`__, willen de grote zoekmachines die
+nieuwe inhoud ook kunnen vinden, en liefst nog à al minute.
+
+Twee
+weken geleden `kondigde Microsoft al aan Bing ook berichten op Twitter
+zal kunnen
+vinden <http://www.bing.com/community/blogs/search/archive/2009/10/21/bing-is-bringing-twitter-search-to-you.aspx>`__,
+`vandaag volgt
+Google <http://www.datanews.be/nl/news/90-5-27487/google-introduceert-realtime-search.html>`__.
+
+We
+kunnen dat uiteraard alleen maar aanmoedigen. Maar de prangende vraag
+is: hoe zit het met `identi.ca <http://identi.ca>`__?

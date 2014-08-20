@@ -1,0 +1,104 @@
+.. title: Installeer eens een Linuxdistributie
+.. slug: node-184
+.. date: 2011-09-14 10:51:02
+.. tags: opensource,linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/184>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/396772/Installeer-eens-een-Linuxdistributie>`__
+
+
+
+Zaterdag 17 september 2011 is het weer software freedom day. Dit
+jaar vieren we dit door een Linuxdistributie te installeren :-)
+
+We
+installeren `Linux Mint <http://linuxmint.com>`__ 11, want dan heb je
+meteen ook java, mp3-ondersteuning, flash, en alwat je achteraf toch
+nodig hebt. Bovendien leunt de user interface van Linux Mint 11 nogal
+dicht aan bij wat je gewoon bent van Windows, en dat is een voordeel
+voor nieuwe gebruikers.
+
+Eerst en vooral heb je een computer (laptop
+of desktop, anders is Mint minder interessant) nodig waarop je Linux
+Mint gaat installeren. Er zijn twee mogelijkheden:
+
+
+
+#. Je hebt niets meer nodig van de harde schijf van je computer
+#. Op je computer staat een besturingssysteem (vaak Windows) dat je
+   achteraf nog wilt kunnen gebruiken
+
+
+
+Als mogelijkheid 1 voor jou van toepassing is, prijs je dan
+gelukkig. Je kunt de installatie dan helemaal zelf doen, op basis van
+wat ik hier zal tonen.
+
+Is mogelijkheid 2 van toepassing, dan ligt
+het anders. Het is technisch zeker mogelijk om Linux te installeren
+naast een bestaande Windowsinstallatie (een 'dual boot-configuratie').
+Maar als er met de Windowsinstallatie niets mis mag gaan, en je hebt
+zelf nog nooit een dual boot-configuratie opgezet, laat je dan helpen
+door iemand die dat al wel gedaan heeft. Ben je uit de buurt van Kessel
+(Nijlen), kom dan bijvoorbeeld eens langs op een meeting van
+`neteLUG <http://netelug.losderover.be>`__, een kleine `Linux User
+Group <http://nl.wikipedia.org/wiki/LUG>`__ waar ik mogelijk wel iets
+mee te maken heb, en neem je computer mee.
+
+Voorlopig ga ik ervan
+uit dat je van de harde schijf van je computer niets meer nodig
+hebt.
+
+Behalve een computer, heb je ook een installatie-CD of -DVD
+nodig. Met de DVD gaat de installatie het gemakkelijkst, dan heb je in
+één keer alle toeters en bellen. Heb je geen DVD, dan krijg je van mij
+een CD. Dan heb je wat meer tijd nodig voor de installatie, maar CD's
+uitdelen is voor mij goedkoper dan DVD's uitdelen :-)
+
+Als je weet
+waar ik werk, dan kun je een CD komen halen op mijn bureau. Er liggen er
+daar, je mag ze zo meenemen. Weet je niet waar ik werk, `contacteer me
+dan </node/155>`__, en zo lang het me niet te veel kost, stuur ik een
+CD'tje op. Als je weet hoe dat moet, kun je natuurlijk zelf `een CD- of
+DVD-image <http://www.linuxmint.com/download.php>`__ downloaden en
+branden.
+
+Let op dat er CD's/DVD's zijn voor 32-bitcomputers en
+64-bitcomputers. Zorg dus dat je weet wat voor processor er in je
+computer zit. (Hoe het werkt voor Windows, vind je
+`hier <http://windows.microsoft.com/nl-BE/windows-vista/32-bit-and-64-bit-Windows-frequently-asked-questions>`__.)
+
+Eenmaal
+je een computer en een CD hebt, stop je de CD in je computer, en start
+je je computer op vanop die CD. Dat is gemakkelijker gezegd dan gedaan,
+want helaas is er hiervoor geen standaardmanier van werken. In
+onderstaand filmpje laat ik zien hoe het zou kunnen
+verlopen:
+
+[video:http://www.youtube.com/watch?v=cnVrXh0Spj0]
+
+Als
+het je gelukt is om van de CD te booten, probeer dan eens uit of je op
+internet kan. Als dat lukt, kun je aan de installatie beginnen. Hiervoor
+is er ook een filmpje: (met excuses voor de slechte geluidskwaliteit. In
+het filmpje steek ik dat op de headset die ik gebruik, maar vermoedelijk
+heeft het meer te maken met mijn gebrek aan ervaring met dit soort van
+dingen.)
+
+[video:http://youtu.be/Y\_aZyHTnt7g]
+
+Succes
+ermee!
+
+Reageer op deze blog post via `deze
+identi.ca-discussie <http://test.johanv.org/StatusThread/?controller=conversation&id=81408498>`__.
+
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

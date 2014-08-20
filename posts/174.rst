@@ -1,0 +1,33 @@
+.. title: De beperkingen van identi.ca
+.. slug: node-174
+.. date: 2011-04-29 13:10:08
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Identi.ca is een microbloggingplatform. Dat maakt dat je het kunt
+gebruiken om te microbloggen. Maar voor de rest zijn de features
+beperkt. Toeters en bellen zoals Facebook die kent, vind je niet op
+identi.ca.
+
+Dus: geen systeem om bij te houden wie er op welk
+evenement aanwezig is, en geen systeem om aan te geven welke personen er
+op welke foto's staan. Voor dit soort zaken zal je sowieso een ander
+platform moeten blijven gebruiken.
+
+Een tweede beperking, is dat
+bijna niemand van je vrienden een account heeft bij identi.ca. Er zijn
+veel meer microbloggers die Twitter gebruiken, dan identi.ca, hoewel
+identi.ca superieure technologie is. Maar dat is natuurlijk niets
+nieuws. Denk maar terug aan VHS versus Betamax, of aan de
+besturingssystemen die geleverd worden bij nieuwe computers.
+;-)
+
+Het zal dus nog wel even duren vooraleer iedereen op identi.ca
+zit, maar in afwachting kun je de berichtjes die je op identi.ca post
+`automatisch laten verschijnen </node/176>`__ op Twitter of
+Facebook.
+
+
+[`terug naar het overzicht </node/171>`__\ ]

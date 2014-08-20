@@ -1,0 +1,44 @@
+.. title: Screencasts, Istanbul and Youtube
+.. slug: node-192
+.. date: 2012-04-13 10:19:23
+.. tags: tips,linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/192>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/626537/Screencasts-Istanbul-and-Youtube>`__
+Suppose you want to make a screencast, and upload the video to Youtube.
+This doesn't sound to hard to do. But I went through a lot of troubles
+before it actually worked. So I decided to write this down, in case
+someone else runs into the same problems. I am using Debian
+Sid.
+
+There are several packages available for creating a
+screencast, and I first tried
+`xvidcap <http://xvidcap.sourceforge.net/>`__. But when trying to record
+the sound as well, I got the message ‘Error accessing sound input from
+/dev/dsp’. I did some Googling, but I couldn't find an easy
+workaround.
+
+So for my next attempt, I used
+`Istanbul <https://live.gnome.org/Istanbul>`__. This allowed me to
+create screencasts with sound, but when uploading the file to Youtube,
+Youtube complained about an unrecognized file format. Damn.
+
+Again,
+if you Google the problem, you will find `some
+tips <http://www.tummy.com/journals/entries/jafo_20110129_184800>`__,
+but none of them worked for me.
+
+At last, after some trial and
+error, it seems that `openshot <http://www.openshotvideo.com/>`__ can do
+the trick. Create a video project with openshot, import the ogg-video
+from Istanbul, put the video on the first track, and export the result
+again with the predefined web template. This creates a .mov-file, which
+youtube will happily show.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

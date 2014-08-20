@@ -1,0 +1,37 @@
+.. title: Dell Precision M4500, fedora, nvidia and dual screen
+.. slug: node-178
+.. date: 2011-05-16 20:06:18
+.. tags: linux,fedora
+.. link:
+.. description: 
+.. type: text
+
+I was experiencing some problems with my dual screen setup on my Dell
+Precision M4500 notebook with Fedora 15. Now that I finally have it up
+and running, I thought I might share my configuration as
+well.
+
+\ **Update:** You have to enable the
+`rpmfusion <http://rpmfusion.org/>`__ repositories.
+
+When using the
+'free as in freedom' nouveau driver, I experienced a lot of system
+hangs. I guess this is due to `Fedora bug
+618143 <https://bugzilla.redhat.com/show_bug.cgi?id=618143>`__. So I
+installed the freedom hating NVidia driver as
+follows:\ ``\nsu -c "yum install akmod-nvidia xorg-x11-drv-nvidia"\n``
+
+I
+think I have to install *akmod-nvidia* instead of *kmod-nvidia* because
+F15 is still in beta, but I am not sure about that.
+
+The
+*nvidia-settings* tool seems very buggy, and I didn't manage to generate
+a *xorg.conf* file. Luckily I had an old file, which worked fine. I put
+the following in
+``/etc/X11/xorg.conf``:
+``\nSection "ServerLayout"\n    Identifier     "Default Layout"\n    Screen      0  "Screen0" 0 0\n    InputDevice    "Keyboard0" "CoreKeyboard"\n    InputDevice    "Mouse0" "CorePointer"\n    Option         "Xinerama" "0"\nEndSection\n\nSection "InputDevice"\n    # generated from data in "/etc/sysconfig/keyboard"\n    Identifier     "Keyboard0"\n    Driver         "kbd"\n    Option         "XkbLayout" "us_intl"\n    Option         "XkbModel" "pc105"\nEndSection\n\nSection "InputDevice"\n    # generated from default\n    Identifier     "Mouse0"\n    Driver         "mouse"\n    Option         "Protocol" "auto"\n    Option         "Device" "/dev/input/mice"\n    Option         "Emulate3Buttons" "no"\n    Option         "ZAxisMapping" "4 5"\nEndSection\n\nSection "Monitor"\n    Identifier     "Monitor0"\n    VendorName     "Unknown"\n    ModelName      "DELL 2009W"\n    HorizSync       30.0 - 83.0\n    VertRefresh     56.0 - 75.0\nEndSection\n\nSection "Device"\n    Identifier     "Videocard0"\n    Driver         "nvidia"\nEndSection\n\nSection "Device"\n    Identifier     "Device0"\n    Driver         "nvidia"\n    VendorName     "NVIDIA Corporation"\n    BoardName      "Quadro FX 1800M"\nEndSection\n\nSection "Screen"\n    Identifier     "Default Screen"\n    Device         "Videocard0"\nEndSection\n\nSection "Screen"\n    Identifier     "Screen0"\n    Device         "Device0"\n    Monitor        "Monitor0"\n    DefaultDepth    24\n    Option         "TwinView" "1"\n    Option         "metamodes" "CRT: nvidia-auto-select +0+0, DFP: nvidia-auto-select +1680+0"\n    SubSection     "Display"\n        Depth       24\n    EndSubSection\nEndSection\n``
+
+(My
+external screen is placed at the left of my laptop. If your
+configuration is different, I guess you'l have to do some tweaking.)

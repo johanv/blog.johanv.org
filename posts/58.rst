@@ -1,0 +1,27 @@
+.. title: Microsoft patenteert ‘sudo’
+.. slug: node-58
+.. date: 2009-11-12 08:27:39
+.. tags: linux,microsoft
+.. link:
+.. description: 
+.. type: text
+
+`Microsoft kreeg eergisteren een
+patent <http://www.kletskous.com/2009/11/11/microsoft-zegt-sudo-bake-me-a-patent-de-gebruiker-betaalt-wel/>`__
+op de volgende ‘technologie’: als je op een systeem aangemeld bent met
+beperkte rechten, en je wil een taak uitvoeren waarvoor je geen rechten
+hebt, kan je dat toch doen door je te identificeren als een gebruiker
+met meer rechten. Geniaal.
+
+Unix en Linux kennen zoiets al van in de
+jaren 80, we noemen dat
+‘\ `sudo <http://en.wikipedia.org/wiki/Sudo>`__\ ’.
+
+Zie ook:
+
+
+-  `het betreffende
+   patent <http://patft1.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=/netahtml/PTO/srchnum.htm&r=1&f=G&l=50&s1=7,617,530.PN.&OS=PN/7,617,530&RS=PN/7,617,530>`__
+-  `een analyse op
+   Groklaw <http://www.groklaw.net/article.php?story=20091111094923390>`__
+

@@ -1,0 +1,16 @@
+.. title: Chinese piraat maakt Windows-lookalike op basis van Linux
+.. slug: node-90
+.. date: 2009-12-28 19:29:19
+.. tags: linux,microsoft,windows
+.. link:
+.. description: 
+.. type: text
+
+De Chinese piraat Ylmf heeft een `lookalike van Windows gemaakt, op
+basis van
+Ubuntu <http://tweakers.net/nieuws/64573/chinese-piraat-bouwt-op-xp-gelijkende-ubuntu-versie.html>`__.
+Een goedkope manier om mensen ‘Windows’ aan de man te brengen
+dus.
+
+Het moet wel gezegd dat het `niet zo moeilijk is om Linux te
+‘Windowsifiëren’ <http://www.youtube.com/watch?v=n4StlvX-kOg>`__.

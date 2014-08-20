@@ -1,0 +1,18 @@
+.. title: Microsoft raadt aan IE 8 te gebruiken, hoewel ook IE 8 kwetsbaar is
+.. slug: node-99
+.. date: 2010-01-19 11:36:56
+.. tags: microsoft,beveiliging
+.. link:
+.. description: 
+.. type: text
+
+Nu ook `Frankrijk het gebruik van Internet Explorer
+afraadt <http://www.hln.be/hln/nl/4125/Internet/article/detail/1055978/2010/01/19/Frankrijk-en-Duitsland-raden-gebruik-Internet-Explorer-af.dhtml>`__,
+raadt Microsoft de gebruikers van Internet Explorer aan om `te upgraden
+naar versie
+8 <http://www.security.nl/artikel/32134/1/Microsoft:_Nu_upgraden_naar_Internet_Explorer_8.html>`__.
+Uit `Microsofts eigen
+rapport <http://www.microsoft.com/technet/security/advisory/979352.mspx>`__
+over het `veelbesproken
+probleem <http://webwereld.nl/nieuws/64880/chinese-ie-exploit-duikt-op-in-hacktool-metasploit.html>`__
+blijkt echter dat ook Internet Explorer 8 kwetsbaar is.

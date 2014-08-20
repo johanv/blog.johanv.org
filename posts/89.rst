@@ -1,0 +1,24 @@
+.. title: Rechter haalt Microsoft Word uit de rekken in de VS
+.. slug: node-89
+.. date: 2009-12-23 10:00:00
+.. tags: microsoft,patenten
+.. link:
+.. description: 
+.. type: text
+
+Vanaf 11 januari mag `Microsoft Word niet meer verkocht worden in de
+VS <http://www.nuzakelijk.nl/e-business/2150108/verkoopverbod-microsoft-word-in-vs.html>`__.
+Volgens de rechter schendt Microsoft een patent van het louche Canadese
+bedrijf `i4i <http://www.i4i.com/>`__.
+
+Het is echter weinig
+waarschijnlijk dat Word daadwerkelijk uit de rekken zal verdwijnen;
+volgens Microsoft wordt er gewerkt aan een `versie van Word zonder de
+betreffende
+technologie <https://www.microsoft.com/presspass/press/2009/dec09/12-22statement.mspx>`__.
+
+Microsoft
+was steeds een groot voorstander van softwarepatenten, en deed in 2005
+veel moeite `om ze er door te krijgen in
+Europa <http://tweakers.mobi/nieuws/36234>`__. Dat is gelukkig niet
+gelukt.

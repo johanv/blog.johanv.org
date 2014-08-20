@@ -1,0 +1,195 @@
+.. title: Word processors are overrated
+.. slug: node-204
+.. date: 2013-04-24 12:20:32
+.. tags: file formats
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/204>`__
+
+(This is the transcript of
+`my second submission for Hacker Public
+Radio <http://www.hackerpublicradio.org/eps.php?id=1238>`__.)
+
+Word
+processors are overrated. Too often they are used instead of better
+alternatives. For example: to write a report, to describe a workflow or
+a vision, a lot of people just grab Microsoft Word. Which is a bad idea.
+Should you use LibreOffice Writer then? OpenOffice? Maybe Google docs?
+They are not much better.
+
+If the focus of your text is on its
+content, if the structure of your text is important, if the way the text
+is laid out is less important than the consistency of the lay-out, or if
+you want to collaborate with other people, you should not use a typical
+mainstream word processor.
+
+## Problems with mainstream word
+processors
+
+### Page layout errors
+
+There are some major issues,
+and the first one is that you will probably end up with page layout
+errors.
+
+If the way your text is laid out is unimportant, you should
+focus on the actual information, not on making your text looking good.
+With a mainstream word processor, you often end up with formatting
+inconsistencies: incorrectly indented list bullets, wrong fonts in a
+text after a copy-paste-operation, or inconsistencies in the formatting
+of section titles. Especially when you have to collaborate with other
+people, the result will be ugly. And if some contributors use a
+different word processor than you are using, all bets are
+loose.
+
+When multiple people work together on a document using a
+mainstream word processor, and if those people don't really care about
+page layout, they will probably create an ugly document. And that's a
+shame. It does not have to be this way
+
+### The underestimated
+learning curve
+
+Another problem with typical word processors, is
+that the learning curve is underestimated. Experienced users of a word
+processor will argue that you can avoid all those layout problems, if
+you use the software the right way. But that means that all the people
+working with you on the same document, should know how to use your word
+processor. Some of them might have to invest in training. And even then,
+it is easy to make mistakes. 
+
+A typical word processor has a
+WYSYWYG interface, which seems to be very easy to use. Even a 3 year old
+child can produce a text. But any advanced user of a certain word
+processor, will agree that there are many ways to use it in a wrong
+way.
+
+### It's not beatiful
+
+The last problem I want to cover
+might be personal, but many texts that are created with software like
+Word are not to say beautiful. It is not difficult to produce ugly texts
+with Word alike systems, and it happens a lot. Some users need to be
+protected against the Comic Sanses of this world.
+
+## Expect
+more
+
+If you don't care about your page layout, you should not spend
+time in laying out your pages.
+
+You have a computer. Your computer
+should take care on the looks of your document, so that you can
+concentrate on what actually matters: the content.
+
+So we have to
+look for are alternatives for Word. Not LibreOffice, not Google Docs not
+Abiword; they have the same problems. We should be looking for something
+completely different. Like for exampel LaTeX.
+
+### LaTeX
+
+LaTeX
+is very good if you need mathematical formulas in your text. If you have
+to write a mathematical text (on your own or together with someone
+else), you obviously choose LaTeX anyway, because there is just nothing
+else. But if your text is not about mathematics, and you have to work
+with someone else, LaTeX is usually not an option. The majority of
+people are easily scared, because a LaTeX source document is rather hard
+to read.
+
+### Plain text
+
+What else can we use? Plain text? It
+is an option as well, but the possibilities to format text are really
+limited. Plain text is good for quickly sending an e-mail, but as soon
+as you need some formatting, it just won't work.
+
+###
+HTML
+
+Maybe HTML is an option. HTML is a whole lot richer than plain
+text. But also it comes with some disadvantages. The source code is
+still quite difficult to read. It requires some work to get a nice
+printout (without e.g. headers and footers from a browsers). And I
+personally find the HTML tags annoying to type.
+
+###
+Markdown
+
+So now I come to the point I want to make: Markdown is a
+great alternative for writing texts. I won't pretend that it is the
+perfect solution, but it has some nice features, it has a decent user
+base, and the learning curve is quite low.
+
+A Markdown file is a
+plain text document. Meta-information about the structure is added using
+symbols like the asterisk or the hash symbol. This way, the source text
+stays very readable, and you can easily see the structure. 
+
+Text
+documents can be opened by virtually everyone. 
+
+And because the
+possibilities to structure the text are limited, the possibilities to
+make mistakes are limited as well.
+
+A Markdown document is a text
+file, but there are a lot of tools that render Markdown to a formatted
+text. A lot of blogs and forums accept Markdown as input format. And so
+does Github. If you work on a text with someone who understands the
+workings of git, Github renders your text, and you can easily look up
+the history of your files.
+
+Next to those web applications, there
+are also some native applications, which show a live preview of the text
+you are typing, like e.g.
+[ReText](http://sourceforge.net/p/retext/home/ReText/) for Linux, and
+[Markdownpad](http://markdownpad.com/) for Windows.
+
+If you are
+comfortable using the command line, then you can use
+[pandoc](http://johnmacfarlane.net/pandoc/) to convert your markdown
+documents to LaTeX (for pretty output), to Word (for conservative
+readers), to HTML and some Wiki formats. There is also a command line
+tool (which is called [mcider](https://github.com/ogom/python-mcider))
+that converts a Markdown document to a html slideshow, but at this
+moment you will probably have to do some hacking to finetune the layout
+of your resulting slides.
+
+## Limitations of markdown
+
+Markdown
+is not ideal, it has some limitations. Like for example: There is no
+clear Markdown standard. Putting tables or images in your document, is
+not always supported. Support for footnotes is often non-existent. And
+so on.
+
+On that level, I think that
+[dokuwiki](https://www.dokuwiki.org/) does a better job. But
+unfortunately: the dokuwiki syntax is less used than Markdown. In fact,
+I don't think it is used anywhere except on dokuwiki
+itself.
+
+Another disadvantage is that most people do not know
+Markdown. And even worse: Windows doesn't know Markdown (or doesn't want
+to). As said, markdown documents just plain text files, but they
+typically get the \`.md\`-extension. And if you try to open such a
+document in Windows, then you get the message that the file format is
+not recognized. So if you work on a document with a Windows user who
+does not know the difference between plain text and binary file formats,
+you probably better use the \`.txt\`-extension for your file name. And
+if you do not use Windows yourself, make sure that your Windows
+colleagues get a text file with Windows line endings, otherwise notepad
+is confused :-)
+
+## Comments
+
+This text is also available [on
+github](https://github.com/johanv/randomtexts/blob/master/wordprocessors.md).
+In markdown format, of course. :-) You can post comments (issues, or
+even pull requests) over there.
+
+

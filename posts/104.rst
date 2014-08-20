@@ -1,0 +1,28 @@
+.. title: Sourceforge en de blokkering van schurkenstaten
+.. slug: node-104
+.. date: 2010-02-09 09:00:01
+.. tags: opensource,overheid
+.. link:
+.. description: 
+.. type: text
+
+Twee weken geleden kwam `SourceForge <http://sourceforge.net/>`__, een
+bekende online verzamelplaats voor open-sourcesoftware, in het nieuws
+`omdat SourceForge ontoegankelijk werd voor zogenaamde
+‘schurkenstaten’ <http://techworld.nl/technologie/16394/sourceforge-sluit-schurkenstaten-af-van-open-source.html>`__.
+Volgens SourceForge was deze ingreep noodzakelijk, om in overeenstemming
+te blijven met de wetten van de Verenigde Staten.
+
+Uiteraard bleef
+kritiek niet achterwege. De
+`opensourcedefinitie <http://www.free-soft.org/mirrors/www.opensource.org/docs/osd-dutch.php>`__
+stelt namelijk dat er geen personen uitgesloten mogen worden voor het
+gebruik van opensourcesoftware. Bovendien hebben niet alle projecten op
+SourceForge hun roots in de Verenigde Staten.
+
+Afgelopen zondag liet
+SourceForge weten `dat ze hun beslissing bijgestuurd
+hebben <http://techworld.nl/technologie/17213/sourceforge-heft-blokkade--schurkenstaten--op.html>`__.
+Nu kunnen de projectbeheerders van de individuele projecten zelf
+beslissen of hun softwareproject beschikbaar mag zijn voor Iran, Syrië,
+en wat heb je zo nog allemaal.

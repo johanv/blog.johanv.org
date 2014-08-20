@@ -1,0 +1,21 @@
+.. title: Windows 7 inspireerde zich op Mac OS X. Of toch niet.
+.. slug: node-59
+.. date: 2009-11-13 08:37:08
+.. tags: microsoft,apple,windows
+.. link:
+.. description: 
+.. type: text
+
+Simon Aldous, een ‘Microsoft partner group manager’, bekende eergisteren
+in een interview met PCR dat de interface van Windows 7 geïnspireerd is
+op Mac OS X. `Microsoft was er snel bij om dat foutje recht te
+zetten. <http://tweakers.net/nieuws/63699/microsoft-manager-windows-7-interface-is-geinspireerd-op-mac-os-x.html>`__
+
+Zie
+ook:
+
+
+-  `het beruchte
+   interview <http://www.pcr-online.biz/features/328/Microsofts-new-vision>`__
+-  de reactie van Microsoft
+

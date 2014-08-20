@@ -1,0 +1,14 @@
+.. title: Krachtigste desktopcomputer ter wereld draait op Linux
+.. slug: node-86
+.. date: 2009-12-15 13:27:20
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Dat de `krachtigste supercomputer ter wereld op Linux
+draait </node/79>`__, dat wisten we al langer. De krachtigste
+desktopcomputer ter wereld staat momenteel op de UA, `en ook daar is
+Linux het gebruikte
+besturingssysteem <http://tweakers.net/nieuws/64302/fastra-ii-pc-weet-met-13-gpus-12-teraflops-te-behalen.html>`__.
+(what else?)

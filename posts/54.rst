@@ -1,0 +1,26 @@
+.. title: Berliner Morgenpost plaatst grote foto van KDE4 bij artikel over Windows 7
+.. slug: node-54
+.. date: 2009-11-06 09:05:56
+.. tags: linux,windows
+.. link:
+.. description: 
+.. type: text
+
+Een oud verhaal, maar nog altijd grappig. De Berliner Morgenpost, een
+Duitse krant, publiceerde begin augustus `een artikel over Windows 7 met
+daarin een grote foto van KDE
+4 <http://linuxundich.de/en/ubuntu/windows-7-fail-und-gratulation-an-kde/>`__.
+`KDE <http://nl.wikipedia.org/wiki/KDE>`__ is een open source grafische
+omgeving, die onder meer gebruikt wordt door Linuxdistributies.
+
+Dit
+verhaal doet terugdenken aan hoe in februari `ZDNet Australia de straat
+op ging met een
+KDE4-laptop <http://www.zdnet.com.au/insight/software/soa/Is-it-Windows-7-or-KDE-4-/0,139023769,339294810,00.htm>`__,
+en de mensen vertelde dat het Windows 7 was.
+
+Ik heb het
+`betreffende
+artikel <http://www.morgenpost.de/printarchiv/wissen/article1144857/Windows_7_mehr_als_Fensterputz.html>`__
+gevonden op de website van de Berliner Morgenpost, maar helaas staan de
+afbeeldingen niet (meer?) on-line.

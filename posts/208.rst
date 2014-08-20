@@ -1,0 +1,34 @@
+.. title: Tax-on-web met fedora 19 beta
+.. slug: node-208
+.. date: 2013-06-25 23:49:38
+.. tags: overheid,fedora
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/208>`__
+
+Wil je met Fedora 19 beta je
+EID-kaartlezer aan de praat krijgen om met Tax-On-Web je
+belastingaangifte te doen? Met wat chance lukt het in vijf
+stappen:
+
+
+
+#. Installeer de
+   `middleware <http://eid.belgium.be/nl/je_eid_gebruiken/de_eid-middleware_installeren/linux/>`__.
+   Ik downloadde die voor Fedora 16. Je krijgt een deel warnings; negeer
+   die maar.
+#. Installeer de
+   `firefox-add-on <https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/>`__.
+#. Zet in about:config
+   security.ssl.allow\_unrestricted\_renego\_everywhere\_\_temporarily\_available\_pref
+   op false.
+#. Herstart Firefox
+#. Plaats je EID in de kaartlezer
+#. Doe de `test <https://test.eid.belgium.be/>`__.
+
+#. Let op: er verschijnt ergens een popup om je pin-code in te tikken.
+   In het slechtste geval verschijnt die 'onder' de browser, en lijkt
+   alles vast te lopen.
+

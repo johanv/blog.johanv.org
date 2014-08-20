@@ -1,0 +1,20 @@
+.. title: Windows 7 phone home
+.. slug: node-110
+.. date: 2010-02-16 12:25:14
+.. tags: microsoft,windows,bigbrother,privacy
+.. link:
+.. description: 
+.. type: text
+
+Nieuwe computer gekocht met Windows 7 als besturingssysteem? Dan zal je
+computer vanaf vandaag `iedere 90 dagen contact opnemen met
+Microsoft <http://www.winmag.nl/artikel/2328006/microsoft-updatet-windows-activation-technology>`__.
+Om na te kijken of je versie van Windows wel legaal is. En misschien nog
+wel voor andere dingen; wie weet dat. Uiteraard zijn hier wel wat
+`privacyvragen <http://www.security.nl/artikel/32431/1/Microsoft_monitort_Windows_7_gebruikers.html>`__
+bij te stellen.
+
+Voor mensen die liever niet hebben dat
+Big-Microsoft-Brother iedere drie maand komt kijken of ze wel braaf
+zijn, zijn er gelukkig alternatieven :-) Het mijne heet tegenwoordig
+`Linux Mint <http://www.linuxmint.com/>`__.

@@ -1,0 +1,20 @@
+.. title: Microsoft lost beveiligingsprobleem op: 'Druk niet op F1'.
+.. slug: node-117
+.. date: 2010-03-02 13:16:03
+.. tags: microsoft,beveiliging
+.. link:
+.. description: 
+.. type: text
+
+Als workaround voor een recent beveiligingsprobleem van Internet
+Explorer onder Windows XP, adviseert Microsoft zijn gebruikers om `niet
+op F1 te
+drukken <http://www.security.nl/artikel/32591/1/Microsoft:_Druk_niet_op_F1.html>`__
+bij het surfen. Dat gaat zeker werken. :-p
+
+De eerlijkheid gebiedt
+te vermelden dat er in `Microsofts
+advies <http://blogs.technet.com/srd/archive/2010/03/01/help-keypress-vulnerability-in-vbscript-enabling-remote-code-execution.aspx>`__
+ook fatsoenlijke workarounds vermeld staan, zoals het uitzetten van het
+‘legacy Windows help system’. Maar we hebben toch weer eens goed kunnen
+lachen :)

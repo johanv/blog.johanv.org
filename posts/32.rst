@@ -1,0 +1,19 @@
+.. title: Londense beurs stapte over van Windows naar Linux
+.. slug: node-32
+.. date: 2009-10-19 09:02:29
+.. tags: linux,microsoft,oudnieuws
+.. link:
+.. description: 
+.. type: text
+
+Een bericht van vorige maand, dat ik nu pas oppikte. De `Londense beurs
+stapt over van Windows naar
+Linux <http://www.nuzakelijk.nl/e-business/2085296/londense-beurs-stapt-af-van-windows.html>`__.
+
+
+Het feit dat de beurs werkte met software van Microsoft, werd nog
+gebruikt in de anti-Linuxcampagne `Get the
+facts <http://www.microsoft.com/uk/getthefacts/lse.mspx>`__. Maar na een
+`softwarefout die de Londense beurs een dag
+platlegde <http://webwereld.nl/nieuws/52667/beurs-london-plat-na-computercrash.html>`__
+klonk de roep naar een Linuxsysteem luider en luider.

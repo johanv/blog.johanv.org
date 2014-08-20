@@ -1,0 +1,27 @@
+.. title: Bing geeft overal ter wereld gecensureerde resultaten voor zoekopdrachten in vereenvoudigd Chinees
+.. slug: node-73
+.. date: 2009-11-26 13:57:20
+.. tags: microsoft,oudnieuws,bigbrother
+.. link:
+.. description: 
+.. type: text
+
+Als je in China in een internetzoekmachine 'Tiananamen' ingeeft, zal je
+een heel ander resultaat krijgen dan buiten China. Het is al langer
+geweten dat internetzoekmachines in China hun zoekresultaten filteren,
+onder druk van de Chinese overheid. (Doen ze dat niet, dan wordt hun
+site in China geblokkeerd door the `Great
+Firewall <http://nl.wikipedia.org/wiki/Great_Firewall>`__).
+
+Microsoft
+Bing gaat hierin blijkbaar nog een stap verder. `Zoekopdrachten in
+vereenvoudigd Chinees krijgen steeds gecensureerde
+resultaten <http://www.express.be/business/nl/technology/zoekmachine-bing-is-propagandamachine-van-de-chinese-communistische-partij/116869.htm>`__,
+waar ook ter wereld ze gelanceerd worden.
+
+Volgens Microsoft betreft
+het een bug, maar dan is het toch een bug die al een half jaar niet
+opgelost geraakt.
+
+Zie ook `deze column op de site van de New York
+Times <http://kristof.blogs.nytimes.com/2009/11/20/boycott-microsoft-bing/>`__.

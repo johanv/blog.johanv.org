@@ -1,0 +1,17 @@
+.. title: Microsoft moet nog veel leren over release party's
+.. slug: node-25
+.. date: 2009-10-09 23:07:28
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Release party's zijn feestjes ter ere van het uitkomen van een nieuwe
+versie van bepaalde software. Zeker voor open-sourceprojecten zijn dit
+soort van feestjes niet ongewoon (Ubuntu, Firefox,...)
+
+Nu probeert
+ook Microsoft zijn gebruikers aan te zetten om feest te vieren bij de
+release van Windows 7. Het voorziet daarvoor 'Windows 7 Party Packs'.
+`PC Pro keek naar de inhoud van zo'n party
+pack <http://www.pcpro.co.uk/blogs/2009/10/09/the-microsoft-windows-7-party-pack-in-pictures/>`__.

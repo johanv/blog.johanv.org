@@ -1,0 +1,35 @@
+.. title: Firefox populairste web browser volgens StatCount
+.. slug: node-88
+.. date: 2009-12-22 13:50:01
+.. tags: mozilla
+.. link:
+.. description: 
+.. type: text
+
+Sinds enkele dagen is `Firefox
+3.5 <http://webwereld.nl/nieuws/64673/-firefox-3-5-nu-populairste-browser-.html>`__
+'s werelds meest gebruikte web browser. Volgens de statistieken van
+StatCount alleszins.
+
+Om statistisch verantwoord te bepalen welke
+webbrowser wereldwijd favoriet is, zou je eigenlijk een goede steekproef
+moeten nemen van alle websurfers ter wereld, die personen ondervragen,
+en daar alles op toepassen wat je ooit leerde in je cursussen
+statistiek. Maar dat doet volgens mij
+niemand.
+
+\ `StatCounter <http://statcounter.com>`__ is eigenlijk
+een bedrijf dat statistieken genereert i.v.m. de bezoekers op de
+websites van zijn klanten. Op die manier krijgen ze heel wat gegevens
+binnen over o.a. de webbrowsers die de bezoekers van deze sites
+gebruiken. Een geweldig willekeurige steekproef zal dat dan wel niet
+zijn, maar het levert wel leuke resultaten op.
+
+Zo zie je dat
+Internet Explorer het `in
+Belgie <http://gs.statcounter.com/#browser_version-BE-weekly-200827-200951>`__
+wel veel beter doet dan in
+`Europa <http://gs.statcounter.com/#browser_version-eu-weekly-200827-200952>`__.
+Misschien toch maar migreren naar Duitsland dan, waar `Firefox al meer
+dan een jaar de populairste
+is <http://gs.statcounter.com/#browser_version-DE-weekly-200827-200952>`__?

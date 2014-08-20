@@ -1,0 +1,27 @@
+.. title: Mozilla topman verkiest Bing boven Google
+.. slug: node-85
+.. date: 2009-12-11 12:26:16
+.. tags: microsoft,privacy,mozilla
+.. link:
+.. description: 
+.. type: text
+
+Als je `Firefox - Mozilla's bekende
+webbrowser <http://www.mozilla-europe.org/nl/firefox/>`__ - installeert,
+dan is de standaard startpagina een aangepast Googlescherm. De deal die
+hiervoor bestaat tussen Google en Mozilla loopt in 2011 ten einde, en
+dat is er nu al aan te merken :-)
+
+Asa Dotzler, ‘community
+coördinator’ bij Mozilla, adviseert in een `blog
+post <http://weblogs.mozillazine.org/asa/archives/2009/12/if_you_have_nothing.html>`__
+om `Bing als zoekmachine te gebruiken in plaats van
+Google <http://webwereld.nl/nieuws/64573/mozilla-adviseert-bing-in-plaats-van-google.html>`__.
+Het privacybeleid van Microsoft is volgens hem minder slecht dan dat van
+Google.
+
+Het is inderdaad maar een griezelig idee dat Google, dat
+alles weet over je zoekgewoonten, de nieuwsbronnen die je volgt, je
+e-mails en je kalender, `het niet zo nauw neemt met de privacy van de
+mensen <http://www.nieuwsblad.be/article/detail.aspx?articleid=20091208110816>`__.
+Of Microsoft dit zo veel beter zal doen, blijft natuurlijk nog de vraag.

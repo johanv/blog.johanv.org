@@ -1,0 +1,9 @@
+.. title: Reliable computation of log 2
+.. slug: node-152
+.. date: 2010-12-13 17:00:30
+.. tags: cant
+.. link:
+.. description: 
+.. type: text
+
+Some implementation details of log\_2 in Arithmos.

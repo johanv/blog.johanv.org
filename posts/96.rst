@@ -1,0 +1,25 @@
+.. title: Microsoft verwijdert zo goed als alle versies van Office uit zijn online winkel
+.. slug: node-96
+.. date: 2010-01-12 11:13:51
+.. tags: microsoft,patenten
+.. link:
+.. description: 
+.. type: text
+
+Sinds gisteren is enkel nog de ‘Ultimate 2007’-versie van Microsoft
+Office beschikbaar in de ‘Microsoft Store’. Eind december besliste een
+rechtbank dat `Microsoft Word een patent van het Canadese i4i
+schendt </node/89>`__, en daarom mag Microsoft Word niet meer verkocht
+worden zolang het gebruik maakt van de betreffende
+technologie.
+
+\ `Het Laatste Nieuws publiceerde hierover een
+artikel <http://hln.be/hln/nl/4124/Multimedia/article/detail/1052718/2010/01/11/Microsoft-mag-geen-Word-meer-verkopen-in-Amerika.dhtml>`__,
+maar ze zijn daar blijkbaar niet goed geïnformeerd. Het is natuurlijk
+niet het XML-formaat dat gepatenteerd is door i4i. Het obscure patent
+heeft te maken met het bewerken van ‘Custom XML’, maar het fijne weet ik
+er natuurlijk ook niet van :)
+
+Meer informatie: `Microsoft pulls
+Office from own online
+store <http://www.computerworld.com/s/article/9143818/Microsoft_pulls_Office_from_own_online_store>`__.

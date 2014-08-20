@@ -1,0 +1,14 @@
+.. title: Voormalige OSDL-medewerker aan het hoofd van CodePlex
+.. slug: node-105
+.. date: 2010-02-10 11:16:31
+.. tags: opensource,microsoft
+.. link:
+.. description: 
+.. type: text
+
+Paula Hunter, ooit medewerker van het OSDL (Open Source Development
+Lab), `is de nieuwe topvrouw van de CodePlex
+foundation <http://webwereld.nl/nieuws/65108/linux-promotor-leidt-open-source-stichting-microsoft.html>`__.
+
+CodePlex
+is Microsofts ‘Open-Sourcestichting’, whatever that means.

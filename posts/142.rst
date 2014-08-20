@@ -1,0 +1,19 @@
+.. title: Oneindig in floating-pointaritmetiek
+.. slug: node-142
+.. date: 2010-12-10 17:50:17
+.. tags: cant
+.. link:
+.. description: 
+.. type: text
+
+In dit korte tekstje wil ik twee problemen bespreken i.v.m.
+oneindig
+in floating-pointaritmetiek. Ten eerste is het resultaat
+‘oneindig’ niets-
+zeggend als het uit een berekening rolt. Ten tweede
+lijkt het teruggeven
+van een oneindige waarde bij deling door nul
+inconsistent te zijn met
+wat we anders van een implementatie zouden
+verwachten.
+

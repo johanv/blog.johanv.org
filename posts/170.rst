@@ -1,0 +1,44 @@
+.. title: How to add flattr buttons to your Drupal site
+.. slug: node-170
+.. date: 2011-04-21 23:51:47
+.. tags: flattr,drupal
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/170>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/172954/How-to-add-flattr-buttons-to-your-Drupal-site>`__
+
+
+Here is a quick and diry way for putting dynamic flattr buttons in
+articles on a Drupal site.
+
+The difficult part is getting the
+javascript thing in the <head> section of your pages. I did it as
+follows:
+
+
+I created a file 'flattr.js', with the following
+content:\ ``\n    (function() {\n        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];\n        s.type = 'text/javascript';\n        s.async = true;\n        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';\n        t.parentNode.insertBefore(s, t);\n    })();\n``
+
+Then
+I added the following php code to a block that is visible on every page
+of the
+site:\ ``\n<?php\ndrupal_add_js('sites/johanv.org/flattr.js');\n?>\n``
+(You
+might use an existing block, or create a new block just for this
+purpose.) Make sure you choose 'php' as input format for the
+block.
+
+Now you just have to paste the code for the button in the
+articles, on the place where it is needed. You need to specify full html
+as input format though.
+
+I know there exists a Drupal module for
+Flattr, but I think it is not ready for easy usage yet.
+
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

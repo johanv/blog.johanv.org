@@ -1,0 +1,13 @@
+.. title: China vs Google
+.. slug: node-97
+.. date: 2010-01-14 12:20:21
+.. tags: google
+.. link:
+.. description: 
+.. type: text
+
+Gisteren maakte Google bekend dat het geen zoekresultaten meer zou
+censureren op de Chinese versie van zijn zoekmachine. Aanleiding zou een
+gerichte aanval vanuit China op de mailservers van Google zijn. `Als de
+Chinese overheid hier moeilijk over doet, dreigt Google China te
+verlaten <http://www.volkskrant.nl/buitenland/article1337816.ece/Google_wil_niet_meer_buigen_in_China>`__.

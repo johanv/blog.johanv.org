@@ -1,0 +1,31 @@
+.. title: Franse assemblée nationale keurt internetfilter goed
+.. slug: node-111
+.. date: 2010-02-18 12:32:58
+.. tags: beleid,bigbrother,privacy
+.. link:
+.. description: 
+.. type: text
+
+In Frankrijk heeft `de assemblée nationale een wetsvoorstel goedgekeurd
+dat de overheid toelaat het internet te ‘filteren’ op
+kinderporno <http://webwereld.nl/nieuws/65189/fransen-keuren-internetfilter-goed.html>`__.
+Kinderporno zou geblokkeerd worden op ‘siteniveau’. Ik weet niet wat dat
+precies wil zeggen, maar voor hetzelfde geld gaat heel facebook down als
+er iemand een ‘foute’ afbeelding post.
+
+Beste Fransen, welkom in de
+21ste eeuw. Als je websites wil blokkeren, dan moet je ook een lijst
+beschikbaar stellen van alle websites die je blokkeert. Want anders kan
+ik niet controleren of de overheid ook niet stiekem websites van de
+oppositie of de neutrale pers afschermt.
+
+Langs de andere kant wil
+je waarschijnlijk ook geen lijst met kinderpornowebsites publiek
+beschikbaar maken, want iedere it'er weet dat er heel wat manieren zijn
+om toch toegang te krijgen tot door de overheid geblokkeerde
+sites.
+
+Mijn advies: Als je dan toch een lijst hebt van websites met
+kinderporno, ga dan achter de verantwoordelijken aan die het materiaal
+aanleveren en/of beschikbaar stellen. En laat het internet het internet.
+Parbleu! :)

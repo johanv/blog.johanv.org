@@ -1,0 +1,289 @@
+.. title: HTC magic van Android 1.5 naar Android 2.2
+.. slug: node-140
+.. date: 2010-10-14 16:00:52
+.. tags: linux,android
+.. link:
+.. description: 
+.. type: text
+
+Een half jaar geleden kocht ik mij een telefoon. Niet zomaar een
+telefoon, maar een `HTC
+Magic <http://www.hotgsm.be/nl/gsm/htc-magic-white.html>`__, met een
+`Android <http://nl.wikipedia.org/wiki/Google_Android>`__-besturingssysteem.
+Met deze telefoon kan je bellen en SMS'en, maar dat is natuurlijk niet
+waarom ik die telefoon kocht. Wel omdat het eigenlijk een zeer draagbaar
+Linuxcomputertje is, waarmee je allerlei leuke dingen kan doen.
+
+Ik
+heb voor een HTC Magic gekozen, omdat dat de enige Androidtelefoon was
+die de telefoonwinkel in de buurt kon bestellen. De HTC Magic kwam met
+Android 1.5. En ik was er heel tevreden mee. Je kan allerlei leuke
+toepassingen op installeren, ook gratis toepassingen, en toepassingen
+waar niet eerst een soort van Big Brother zoals Steve Jobs zijn fiat
+voor moet geven.
+
+Android 1.5 dus. Maar ondertussen bestaat er ook
+al Android 2.2, dat er veel hipper uitziet, en veel leuke nieuwigheden
+heeft. Maar mijn telefoon kwam niet met het voorstel om te upgraden. Ik
+weet niet of dat aan de fabrikant van de telefoon ligt (HTC) of aan de
+provider van telefonie (Proximus), maar upgrades werden niet aangeboden.
+Jammer.
+
+En toen kwam de dag dat ik het licht zag. :-) Ik was aan
+het luisteren naar `episode 176 <http://linuxoutlaws.com/podcast/167>`__
+van `Linux Outlaws <http://linuxoutlaws.com>`__ (geweldige podcast
+overigens). In deze episode vertelde
+`Dan <http://identi.ca/methoddan>`__ hoe hij zijn HTC Desire upgradede
+naar Android 2.2, door
+`CyanogenMod <http://www.cyanogenmod.com/about>`__ 6 op zijn HTC desire
+te 'flashen'. Dat ging naar verluidt vrij vlotjes. Dus ik dacht: dat kan
+ik ook.
+
+Uiteraard kon ik niet dezelfde werkwijze volgen als hij.
+Blijkbaar is het voor ieder type telefoon een beetje anders. Dus moest
+ik op zoek naar informatie op het internet. Ik vond vanalles. Ik moest
+het alleen nog proberen.
+
+Het blijft natuurlijk spannend. Ik heb
+genoeg betaald voor mijn telefoon, het zou jammer zijn moest ik hem om
+zeep helpen. Maar langs de andere kant had ik de telefoon niet gekocht
+om mee te bellen, maar wel om er leuke dingen mee te doen. Er zat niets
+anders op: ik moest upgraden. Een stap-voor-stap-handleiding had handig
+geweest. Maar die was er niet. Vandaar dat ik besloot om te documenteren
+hoe ik het gedaan had, voor het geval het nuttig zou zijn voor iemand
+anders.
+
+Zoals gezegd, is deze procedure zeer hardware-afhankelijk.
+Als je hetzelfde type telefoon hebt als ik, kan je deze handleiding
+volgen. Zo niet, kijk je best naar de links onderaan deze post.
+(Uiteraard kan ik niet aansprakelijk gesteld worden moest er toch iets
+mis gaan. Maar bij mij is het alleszins op deze manier
+gelukt.)
+
+BELANGRIJK: Backup voor de zekerheid eerst alle gegevens
+die je achteraf nog nodig denkt te hebben. Uiteraard was dat het eerste
+dat je deed toen je begon te overwegen je telefoon te upgraden.
+:-)
+
+Eerst moet je dus te weten komen wat het type van je telefoon
+is. Hiervoor zet je hem volledig uit. Dan zet je hem opnieuw aan,
+terwijl je de 'terug'-knop induwt. Als alles goed loopt, krijg je dan
+een schermpje met 'skatende robots', en informatie die er ongeveer als
+volgt
+uitziet:
+
+\ ``\nSAPPHIRE PVT 32A SHIP S-ON H\nHBOOT-1.33.009 (SAPP10000)\nCPLD-12\nRADIO-3.22.20.17\nMAY 8 2009,21:02:32\n``
+
+Wat
+van belang is is de '32A' en de 'H' op de eerste lijn, en ook de
+'RADIO-3.22.x' wat verder naar beneden. Als ik goed begrepen heb wat ik
+op het internet heb gelezen, is dat voldoende om deze procedure te
+gebruiken. Herstart je telefoon.
+
+De upgrade naar Android 2.2 zal in
+2 stappen gebeuren. Eerst 'flashen' we een nieuwe 'recovery image' naar
+de telefoon. Daarna flashen we het 'echte' OS.
+
+Je kan je telefoon
+booten in 'recovery mode'. Dat doe je door de telefoon uit te zetten, en
+tijdens het opnieuw aanzetten de knop met het huisje ('home') ingedrukt
+te houden. Maar je moet dat nu niet per se proberen, want je krijgt
+enkel een of andere afbeelding te zien, en verder doet je telefoon niets
+meer. Misschien omdat ik geen extern toetsenbord heb. Of misschien kan
+je nog wel dingen doen vanop je PC via de Android-SDK. Maar op het
+eerste zicht kreeg ik er geen leven in, en 'van armoe' heb ik dan maar
+de batterij uit de telefoon gehaald om hem terug te starten.
+
+We
+gaan de originele 'recovery image' vervangen door iets zinvoller: de
+'`amon\_ra-recovery <http://forum.xda-developers.com/showthread.php?t=530492>`__\ '.
+Deze image maakt het mogelijk je huidig OS te backuppen (handig) en een
+ander operating system te flashen (ook handig). Ook interessant: je kan
+die recovery image eerst uittesten, alvorens je ze installeert.
+
+Het
+vervangen van de recovery image zullen we doen vanop een PC, waar we de
+telefoon aan koppelen via de USB kabel. Op mijn computer draait Ubuntu
+10.10. Maar als je een ander OS gebruikt, zou het ook moeten
+gaan.
+
+Om dat allemaal in orde te krijgen, moet je eerst je telefoon
+zodanig instellen dat je er goed mee kan prutsen.
+
+
+
+
+
+
+Ga via instellingen naar toepassingen, en vink aan dat er software van
+onbekende bronnen geïnstalleerd mag worden.
+
+
+
+
+Ook onder 'instellingen', 'toepassingen' vind je 'Ontwikkeling'.
+Daaronder zet je ook 'USB-foutopsporing' aan.
+
+
+
+
+
+
+En dan: aan de slag.
+
+
+
+
+
+Download de 'amon\_ra recovery image' van
+http://forum.xda-developers.com/showthread.php?t=530492. Onderaan vind
+je de downloads. Kies een van de recentste, met een 'H' in de naam (om
+wille van de H uit 'SAPPHIRE PVT 32A SHIP S-ON H'). Er zijn er zo 2, ik
+koos de image zonder 'cyan' in de naam.
+
+
+
+
+Download de Android SDK. Die vind je op
+http://developer.android.com/sdk/. In mijn geval had ik het .tgz-bestand
+voor Linux nodig.
+
+
+
+
+Download ook de 'fastboot tool' van
+http://developer.htc.com/adp.html#s2. Voor Linux is dat een zip-bestand
+met daarin een executable.
+
+
+
+
+Pak het tgz-bestand uit, 'cd' naar 'android-sdk-linux\_x86/tools', en
+zet daar de executable uit fastboot.zip
+
+
+
+
+Herstart je telefoon terwijl je op de terugknop drukt, zodat je terug de
+skatende robots te zien krijgt. Connecteer je telefoon aan je PC via het
+USB-kabeltje.
+
+
+
+
+Geef op je PC het volgende commando in vanuit de 'tools'
+directory:
+\ ``\nfastboot boot /path/to/recovery-RA-sapphire-vxxxxH.img\n``
+(het
+juiste pad en de juiste bestandsnaam nemen, uiteraard).
+
+
+
+
+
+Normaalgezien boot je telefoon nu in de nieuwe recovery mode. Je kan
+nu al een backup van je OS maken naar je sd-card. (Nandroid
+backup.)
+
+Nu we gezien hebben dat de amon\_ra image werkt op je
+telefoon, willen we deze image installeren als recovery image. Maar om
+dit te kunnen doen, heb je root-rechten nodig op je telefoon. Standaard
+is dat uitgeschakeld, maar met behulp van
+'`Androot <http://software2tech.com/tag/download-universal-androot/>`__\ '
+is dat gauw gefixt. Herstart je telefoon, download en installeer Androot
+van http://software2tech.com/tag/download-universal-androot/, start het
+op, en klik op de knop 'Root'.
+
+Koppel je telefoon aan je PC via de
+kabel, maar zorg ervoor dat de sd-kaart niet 'gemount' wordt. 'cd' naar
+de 'tools'-folder van de android SDK, en...
+
+
+
+#. ``sudo ./adb devices``
+Je telefoon wordt gedetecteerd.
+   Waarschijnlijk wel, want anders had je daarnet de image ook niet
+   kunnen booten.
+#. ``sudo ./adb push /path/to/recovery-RA-sapphire-vxxxxH.img /sdcard/recovery.img``\ ˙
+(Niet
+   zeker of die sudo hier nodig is.) Dit kopieert gewoon het
+   imagebestand naar je sd-kaart. Maar dat werkt enkel op deze manier
+   als de sd-kaart niet gekoppeld is, vandaar.
+#. ``sudo ./adb shell``
+Dit opent een shell voor je telefoon.
+#. ``su``
+Het lijkt alsof de shell blijft hangen, maar op het
+   schermpje van je telefoon verschijnt de boodschap dat een proces
+   su-rechten wil. Daar zal je moeten bevestigen. Hiervoor heb je een
+   10-tal seconden tijd. Ben je te laat, doe je het gewoon nog eens
+   opnieuw.
+#. ``flash_image recovery /sdcard/recovery.img``
+Dit overschrijft de
+   recovery image van je telefoon.
+
+
+
+
+Als je de telefoon nu reboot terwijl je het huisje ingedrukt
+houdt, zal je telefoon je nieuwe recovery image booten. Hoera!
+
+Nu
+wordt het tijd dat we het OS gaan vervangen. Download het volgende van
+internet, en plaats de zip-bestanden op je sd-card (ofwel via adb push,
+ofwel door de kaart te mounten, en alles te kopieren).
+
+
+
+#. De recentste 'cyanogen mod' van
+   http://wiki.cyanogenmod.com/index.php?title=Latest\_version#HTC\_Magic
+#. De 'EBI1'-kernel van
+   http://wiki.cyanogenmod.com/index.php?title=Latest\_version#EBI1
+
+
+
+Herstart nu de telefoon in recovery mode.
+
+
+
+#. Kies achtereenvolgens 'Wipe', en 'Wipe data/factory reset'. (Volgens
+   wat ik hier en daar las, zou 'wipe dalvik-cache' genoeg zijn, maar
+   dat had ik de eerste keer geprobeerd, en dat lukte niet. Maar toen
+   had ik ook de google apps geflasht, misschien veroorzaakte dat het
+   probleem.)
+#. Daarna kies je 'Flash zip from sdcard', en selecteer je
+   update-cm-blabla.zip (de image van cyanogen mod).
+#. De image wordt gecontroleerd en geflasht. Heel subtiel kan je op een
+   progressbalkje in de achtergrond de vooruitgang zien.
+#. Doe hetzelfde voor de tweede zip die je downloadde.
+#. Herstart de telefoon. Zeker bij de eerste opstart kan het booten even
+   duren.
+#. KLAAR!
+
+
+
+Zoals gezegd, is het bij mij niet van de eerste keer gelukt. Het
+opstartscherm met de blauwe robot bleef maar opnieuw starten. Ik had
+toen enkel de 'dalvik cache' 'gewipet', en ik had ook geprobeerd de
+Google Apps te flashen via de 'tiny' image van
+http://wiki.cyanogenmod.com/index.php?title=Latest\_Version#Google\_Apps.
+
+Toen
+heb ik heel het systeem 'gewipet', en enkel de cyanogenmod en de
+EBI1-kernel geflasht. Dat lukte wel.
+
+Referenties:
+
+
+
+-  http://www.axllent.org/docs/android/android\_rooting (over hoe het
+   type telefoon te herkennen)
+-  http://software2tech.com/tag/download-universal-androot/ (software om
+   je telefoon te rooten)
+-  `http://wiki.cyanogenmod.com/index.php?title=Full\_Update\_Guide\_-\_HTC\_Magic\_(32A) <http://wiki.cyanogenmod.com/index.php?title=Full_Update_Guide_-_HTC_Magic_(32A)>`__
+   (over de installatie van de recovery image)
+-  http://wiki.cyanogenmod.com/index.php?title=Upgrading\_from\_CyanogenMod\_4.2\_to\_CyanogenMod\_5/6
+   (over de installatie van CyanogenMod 6. In de titel staat dat je moet
+   upgraden van een oudere CyanogenMod, maar dat bleek dus niet nodig)
+
+
+

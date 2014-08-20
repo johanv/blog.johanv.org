@@ -1,0 +1,21 @@
+.. title: Nederlandse politie verkiest open source
+.. slug: node-30
+.. date: 2009-10-15 08:29:37
+.. tags: opensource,linux,beleid
+.. link:
+.. description: 
+.. type: text
+
+De Nederlandse politie `verkiest open source boven traditionele gesloten
+software <http://www.computable.nl/artikel/ict_topics/open_source/3108017/1277105/politie-nederland-geeft-open-source-voorrang.html>`__.
+Eerder deze week raakte bekend dat `de voorziening tot samenwerking
+Politie Nederland (vtsPN) zal samenwerken met Red
+Hat <http://www.computable.nl/artikel/ict_topics/open_source/3107894/1277105/politie-nederland-kiest-voor-red-hat.html>`__
+voor haar nieuwe servers.
+
+Blijkbaar kondigden in april Vincent Van
+Quickenborne en zijn Nederlandse evenknie Frank Heemskerk al aan dat
+`België en Nederland zouden samenwerken om open source en open
+standaarden te
+promoten <http://www.businessmomentum.eu/nl/belgie-en-nederland-promoten-samen-open-standaarden-en-open-source>`__.
+Ik ben benieuwd wanneer we daar in België iets van gaan merken.

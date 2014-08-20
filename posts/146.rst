@@ -1,0 +1,9 @@
+.. title: An introduction to continued fractions
+.. slug: node-146
+.. date: 2010-12-13 16:21:18
+.. tags: cant
+.. link:
+.. description: 
+.. type: text
+
+Slides of some presentation I gave back in 2003.

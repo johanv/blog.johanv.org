@@ -1,0 +1,19 @@
+.. title: Belgische justitie kiest opnieuw voor Microsoft?
+.. slug: node-38
+.. date: 2009-10-22 08:31:55
+.. tags: microsoft,overheid
+.. link:
+.. description: 
+.. type: text
+
+Terwijl in `in Nederland de politie overschakelt naar open
+source </node/30>`__, zou de `Belgische federale overheidsdienst
+Justitie net het omgekeerde
+doen <http://tweakers.net/nieuws/63212/belgische-justitie-stapt-na-drie-jaar-weer-over-op-microsoft.html>`__.
+Ik schrijf ‘zou’, want volgens tweakers.net wil justitie het bericht
+bevestigen noch ontkennen.
+
+De beslissing zou genomen zijn op basis
+van een rapport opgesteld door Microsoft, dat besluit dat open source te
+veel problemen veroorzaakt. Verrassend. :-]
+

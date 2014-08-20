@@ -1,0 +1,50 @@
+.. title: Filmpjes downloaden van Youtube
+.. slug: node-70
+.. date: 2009-11-23 20:31:13
+.. tags: opensource,tips
+.. link:
+.. description: 
+.. type: text
+
+Omdat dit enigszins valt onder veelgestelde vragen, is dit wel een
+blogpost waard. Hoe kan je filmpjes van Youtube downloaden, zodat je ze
+ook kan tonen als er geen internetverbinding meer is?
+
+Je hebt twee
+dingen nodig.
+
+1. Firefox. Firefox is een webbrowser, zoals Internet
+Explorer, maar dan anders. Als Firefox nog niet op je computer
+geïnstalleerd is, dan gebruik je waarschijnlijk Windows. Je dan `hier
+een installatieprogramma
+downloaden <http://www.mozilla-europe.org/nl/firefox/>`__, en het
+uitvoeren om Firefox te installeren.
+
+2. De ‘Video DownloadHelper
+add-on’. Firefox is een uitbreidbare web browser, Video DownloadHelper
+is een uitbreiding van Firefox die toelaat om filmpjes van een webpagina
+als bestand te downloaden. Om het te installeren, surf je met Firefox
+naar
+`https://addons.mozilla.org/en-US/firefox/addon/3006 <https://addons.mozilla.org/en-US/firefox/addon/3006>`__.
+Klik daar op de knop ‘Add to Firefox’. Het kan zijn dat er bovenaan een
+balk verschijnt, waarin je toestemming moet geven voor het downloaden
+van add-ons. Als dat gebeurd is, verschijnt er een ander kadertje,
+waarin je na 5 seconden op ‘Installeren’ kan klikken. Na de installatie
+zal Firefox voorstellen om zichzelf te herstarten. Klik op ‘Firefox
+herstarten’, en de installatie is rond. Bij de herstart van Firefox
+krijg je nog eens in een kadertje te zien dat de add-on geïnstalleerd
+is.
+
+Als je nu naar een Youtubefilmpje surft (of eender welke
+webpagina met een filmpje erop), zal je naast de adresbalk het dansende
+icoontje van DownloadHelper zien. Naast dat icoontje staat een
+pijltje-omlaag. Als je daarop klikt, zie je de videobestanden die je kan
+downloaden. In het geval van Youtube zijn dat er meestal twee of drie.
+Geen idee waarom, maar meestal is het onderste bestand het meest
+bruikbaar. Klik dat dus aan, en de download zal beginnen. 
+
+Ik denk
+dat Firefox standaard naar je bureaublad downloadt. Maar als dat niet
+het geval is, kan je in het venster met de downloads rechts op de naam
+van het filmpje klikken, en vervolgens op ‘Map openen’
+

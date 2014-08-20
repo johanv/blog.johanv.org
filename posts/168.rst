@@ -1,0 +1,23 @@
+.. title: Strange HTTP error 0 problem when updating Drupal 6
+.. slug: node-168
+.. date: 2011-04-21 22:22:03
+.. tags: mozilla,fail
+.. link:
+.. description: 
+.. type: text
+
+After moving my Drupal 6 websites to another hosting provider, I got an
+error message every time I have to update a module. It
+says:
+
+\ ``\nAn unrecoverable error has occurred. You can find the error message below. It is advised to copy it to the clipboard for reference.\nPlease continue to the error page\nAn HTTP error 0 occurred. http://johanv.org/update.php?id=18&op=do\n``
+
+The
+problem has probably to do with Drupal issue
+`1046682 <http://drupal.org/node/1046682>`__, but I don't understand how
+I can fix it.
+
+But after a whole lot of Googling, I found a stupid
+workaround for this problem. You can run the update script using
+Internet Explorer. The problem only shows up with Firefox and Chromium.
+What a fail.

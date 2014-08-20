@@ -1,0 +1,27 @@
+.. title: Facebook wil dat iedereen zijn privacy te grabbel gooit
+.. slug: node-84
+.. date: 2009-12-10 13:20:48
+.. tags: privacy
+.. link:
+.. description: 
+.. type: text
+
+Miljoenen Facebookgebruikers kregen gisteren of vandaag een schermpje te
+zien, dat vertelde dat Facebooks privacybeleid verandert. Standaard
+wordt nu veel meer informatie zichtbaar voor iedereen op het Internet,
+of voor ‘vrienden van vrienden’ (wat min of meer hetzelfde is als heel
+het Internet ;-)). Zij die dat niet willen, moeten eerst vanalles
+uitvinken. Uiteraard lokt deze zet heel wat `kritische
+reacties <http://webwereld.nl/nieuws/64564/facebook-zet-privacy-overboord.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+Webwereld+(Webwereld)&utm_content=Google+Reader>`__
+uit.
+
+Vermoedelijk wil Facebook mee op de trein van het
+‘Microbloggen’ springen, waar de geposte berichten ook standaard door
+iedereen gelezen kunnen worden.
+
+Wat `mijn
+facebookaccount <http://www.facebook.com/johan.vervloet>`__ betreft; je
+zal toch tot mijn ‘selecte’ vriendenclubje moeten behoren vooraleer je
+mijn status, geboortedatum,... zal kunnen aanschouwen. Voor
+microblogging zal ik wel `identi.ca <http://www.identi.ca/johanv>`__
+gebruiken.

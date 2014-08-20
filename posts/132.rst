@@ -1,0 +1,61 @@
+.. title: Geen open standaard voor video in Internet Explorer 9
+.. slug: node-132
+.. date: 2010-05-03 13:04:50
+.. tags: microsoft,apple,openstandaarden,internet
+.. link:
+.. description: 
+.. type: text
+
+De aankomende nieuwe versie van Internet Explorer, `IE9, zal overweg
+kunnen met HTML
+5 <http://webwereld.nl/nieuws/65463/microsoft-brengt-preview-internet-explorer-9-uit.html>`__.
+Dat wordt onder andere aangekondigd op Microsofts
+`‘testdrive’ <http://ie.microsoft.com/testdrive/>`__-website voor
+Internet Explorer. `HTML5 <http://nl.wikipedia.org/wiki/HTML5>`__ is de
+laatste, nog in ontwikkeling zijnde versie van de
+`HTML-standaard <http://nl.wikipedia.org/wiki/Html>`__ voor
+website-opmaak.
+
+Microsoft die standaarden ondersteunt, dat zijn we
+niet gewoon. Uiteraard zit er een addertje :-)
+
+HTML5 biedt onder
+meer de mogelijkheid aan om videobeelden af te spelen in een webpagina,
+zonder dat je daar bijvoorbeeld `een Flash
+plugin <http://nl.wikipedia.org/wiki/Flash_Player''>`__ (brr!) voor moet
+installeren. 
+
+Om een filmpje te digitaliseren, zijn er
+verschillende formaten beschikbaar. Typisch wil je dat je zo weinig
+mogelijk diskruimte nodig hebt voor je filmpje. Je moet dus je filmpje
+comprimeren, dat scheelt ook wel wat in downloadtijd. En nu komt de kat
+op de koord.
+
+Het
+`Theora <http://nl.wikipedia.org/wiki/Theora_%28compressieformaat%29>`__-formaat
+is de gangbare open standaard. De omschrijving van dit formaat is vrij
+beschikbaar, en voor zover geweten zijn er geen patenten op van
+toepassing.
+
+Microsoft zal geen ondersteuning aanbieden voor het
+Theora-formaat in Internet Explorer 9. Enkel
+`H.264 <http://nl.wikipedia.org/wiki/H.264>`__ zal ondersteund worden.
+H.264 gebruikt wel gepatenteerde technologie, en in principe moet je er
+dus voor betalen. ('t Is te zeggen, in landen waar softwarepatenten van
+toepassing zijn; in Europa is dat vooralsnog het geval niet. Gelukkig
+maar.)
+
+MPEG LA, de bezitter van de betreffende patenten, belooft
+wel dat
+`H.264 <http://css.dzone.com/articles/h264-royalty-free-until-2016>`__
+tot 2016 gratis gebruikt kan worden. Maar wie zal zeggen of ze niet van
+gedacht zullen veranderen? En wat na 2016?
+
+Enfin, voor Microsoft is
+dat alleszins geen probeem. Volgens hun redenering is het maar een
+kwestie van wachten totdat er iemand opduikt die zal beweren dat Theora
+zijn patenten schendt. En blijkbaar `weet Steve Jobs daar meer van
+af <http://techie-buzz.com/tech-news/steve-jobs-a-patent-pool-is-being-assembled-to-go-after-theora.html>`__.
+
+Conclusie:
+Awoe patenten, awoe awoe awoe! :-)

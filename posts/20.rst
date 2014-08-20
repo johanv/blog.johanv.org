@@ -1,0 +1,11 @@
+.. title: Spam verwijderd
+.. slug: node-20
+.. date: 2009-09-15 12:28:10
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Vanmorgen heb ik een aantal spamcomments verwijderd. Als ik per ongeluk
+een niet-spam heb verwijderd, sorry daarvoor dan. Bij gelegenheid zal ik
+eens bekijken hoe ik de spam op deze site aan banden kan leggen.

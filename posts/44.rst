@@ -1,0 +1,19 @@
+.. title: Microsoft zou specificaties van het PST-bestandsformaat vrijgeven
+.. slug: node-44
+.. date: 2009-10-27 09:49:51
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Microsoft kondigde gisteren aan dat het `de specificaties van het
+PST-bestandsformaat openbaar zal
+maken <http://tweakers.net/nieuws/63328/microsoft-geeft-documentatie-pst-bestandsformaat-vrij.html>`__.
+Het beruchte PST-formaat wordt door Outlook gebruikt om e-mails en
+agenda's te bewaren. Omdat het een gesloten formaat is, kan geen enkel
+ander e-mail- of kalenderprogramma met zo'n PST-bestand overweg. Jammer
+genoeg vertelt Microsoft er niet bij wanneer de specificaties
+beschikbaar zulen zijn.
+
+Zie ook `de aankondiging op de
+blogs.msdn.com <http://blogs.msdn.com/interoperability/archive/2009/10/26/roadmap-for-outlook-personal-folders-pst-documentation.aspx>`__.

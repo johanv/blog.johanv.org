@@ -1,0 +1,11 @@
+.. title: Welkom op mijn website
+.. slug: node-1
+.. date: 2008-04-25 16:19:08
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Fijn dat je m'n website komt bezoeken. Dit is al een blog geweest, een
+overzicht van IT-nieuws, en nu is het gewoon 'johanv.org'. Misschien
+publiceer ik er nog wel eens iets. Misschien ook niet.

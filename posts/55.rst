@@ -1,0 +1,19 @@
+.. title: iTunes stelt voor autorun opnieuw aan te zetten
+.. slug: node-55
+.. date: 2009-11-09 09:37:17
+.. tags: apple,beveiliging,windows
+.. link:
+.. description: 
+.. type: text
+
+‘Autorun’ is een concept dat ervoor zorgt dat Windows bij het inpluggen
+van een CD of USB-disk automatisch een programma op die CD of stick
+uitvoert. Op die manier kunnen bijvoorbeeld snel installatieprogramma's
+gestart worden. Maar ook computervirussen kunnen zich op die manier
+onopvallend via USB-sticks verspreiden. Vandaar dat Microsoft met de
+release van Windows 7 (eindelijk) autorun uitschakelde.
+
+Maar
+blijkbaar `stelt iTunes zijn gebruikers voor om autorun opnieuw aan te
+zetten <http://www.security.nl/artikel/31394/1/Apple_rotzooit_met_Windows_AutoRun.html>`__.
+Tss.

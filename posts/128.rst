@@ -1,0 +1,12 @@
+.. title: Microsoft besteedt IT uit
+.. slug: node-128
+.. date: 2010-04-26 13:06:45
+.. tags: microsoft,oudnieuws
+.. link:
+.. description: 
+.. type: text
+
+`Microsoft besteedt zijn eigen IT uit aan een ander
+bedrijf <http://www.zdnet.be/itprofessional/114925/microsoft-besteedt-it-uit-aan-infosys/>`__.
+Ik vermoed dat ze bij Microsoft hun IT liever toevertrouwen aan mensen
+die wél iets afweten van computers :-)

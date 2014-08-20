@@ -1,0 +1,18 @@
+.. title: Bug in Snow Leopard kan Mac-gebruikers hun persoonlijke gegevens kosten
+.. slug: node-28
+.. date: 2009-10-13 12:28:20
+.. tags: apple
+.. link:
+.. description: 
+.. type: text
+
+Mac-gebruikers die hun besturingssysteem geüpgraded hebben naar Mac OS X
+10.6 (Snow Leopard), `kunnen door een bug in het systeem hun
+persoonlijke gegevens (documenten, foto's, muziek,...)
+verliezen <http://macwereld.nl/nieuws/2009/10/apple_bevestigt_aanwezigheid_bug_in_snow_leopard_die_dataverlies_kan_veroorzaken>`__.
+
+Apple
+bevestigt het probleem, en laat weten dat er aan gewerkt wordt. Ik ben
+benieuwd wanneer de fix er zal zijn :-]
+
+

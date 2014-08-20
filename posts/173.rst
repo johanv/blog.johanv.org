@@ -1,0 +1,163 @@
+.. title: Wat maakt identi.ca beter voor microblogging dan andere sociale netwerken?
+.. slug: node-173
+.. date: 2011-04-23 22:00:54
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Zowat alle sociale netwerken bieden de mogelijkheid om kleine berichtjes
+te posten. In principe zou je dus eender welk sociaal netwerk kunnen
+gebruiken om te microbloggen. Maar toch is Identi.ca op verschillende
+vlakken superieur. Hieronder vind je een lijst van zaken die ik geweldig
+fijn vind aan identi.ca, en ik denk niet dat er een ander sociaal
+netwerk bestaat dat al die ‘features’ aanbiedt. 
+
+Je zult zien dat
+ik vooral vergelijk met Facebook en Twitter. Dat komt omdat ik die
+alternatieven het beste ken.
+
+
+
+Conversaties
+------------
+
+
+
+Het concept ‘conversatie’ is op zich vrij basic, maar blijkbaar
+vinden velen het niet gemakkelijk om te implementeren.
+
+Neem nu
+Facebook. Facebook geeft wel de mogelijkheid om op berichten van een
+ander te reageren, maar alle reacties staan stomweg onder elkaar, en
+reageren op een reactie is niet mogelijk. Bij identi.ca daarentegen
+werkt het prachtig. Als je bijvoorbeeld de publieke tijdslijn op
+http://identi.ca bekijkt, dan zal je zien dat bij sommige berichten een
+link ‘in context’ staat. Door op die link te klikken, kom je op een
+pagina met heel de discussie terecht.
+
+
+
+Duidelijkheid wat betreft privacy
+---------------------------------
+
+
+
+Bij identi.ca is het duidelijk: alle berichten die je zelf post,
+zijn voor iedereen zichtbaar. Bij Facebook is de situatie veel
+moeilijker. Jij kunt instellen dat alleen je vrienden je foto's mogen
+zien. Maar als jouw vriend een reactie post op die foto, kunnen de
+vrienden van die vriend dan die reactie zien? En die foto? Geen idee. En
+als iemand die jij niet kent jou ‘tagt’ op een foto, wie kan dat dan
+allemaal zien? Ik weet het niet, dus op Facebook zet ik veiligheidshalve
+ook enkel dingen waarvan ik vind dat de hele wereld ze mag
+weten.
+
+Wat minstens even belangrijk is, is dat identi.ca enkel
+gegevens publiceert die je zelf post. Een goede zaak, maar niet
+vanzelfsprekend. Als je bij Facebook aangemeld bent, en je surft naar
+een andere website waar zo'n ‘vind-ik-leuk-knop’ staat, registreert
+Facebook jouw bezoek op die andere site. Facebook weet dus heel veel
+over de websites die je bezoekt. Creepy...
+
+
+
+Geen reclame a.u.b.
+-------------------
+
+
+
+Er staan geen advertenties op de pagina's van identi.ca. Zo vind
+je er niet veel meer.
+
+
+
+RSS iemand?
+-----------
+
+
+
+De algemene tijdslijn, je persoonlijke tijdslijn, de berichten die
+een bepaalde gebruiker post, alle berichten met dezelfde hashtag,...
+Voor al die dingen biedt identi.ca rss-feeds aan. Als je dus een
+nieuwslezer gebruikt zoals Google Reader of Thunderbird, kun je hier
+bepaalde tijdslijnen uit identi.ca in opnemen.
+
+
+
+Als je software gebruikt die vrij beschikbaar is, geef dan ook iets terug
+-------------------------------------------------------------------------
+
+
+
+Ik denk niet dat ik er ver naast zit als ik zeg dat alle
+veelgebruikte sociale netwerken gebaseerd zijn op vrije software. Dat is
+software die je zomaar kan downloaden, aanpassen en gebruiken. Dan vind
+ik toch wel dat je je eigen software ook beschikbaar moet stellen voor
+anderen, om te downloaden, aan te passen en te gebruiken. Identi.ca's
+onderliggend systeem is `StatusNet <http://status.net>`__, en de
+`broncode <http://status.net/download>`__ is beschikbaar onder een open
+source licentie (de
+`AGPL <http://nl.wikipedia.org/wiki/Affero_General_Public_License>`__).
+
+
+
+Je bent niet gebonden aan één leverancier
+-----------------------------------------
+
+
+
+Als op een dag Twitter, of Facebook, of whoever, dingen begint te
+doen waar je het niet mee eens bent, dan moet je mee. Facebook durft wel
+eens `zaken te verwijderen zonder duidelijke
+motivering <http://www.zdnet.be/news/120238/facebook-schrapt-fanpagina-studio-brussel/>`__.
+En Twitter wordt wel eens beschuldigd van het `manipuleren van
+statistieken <http://studentactivism.net/2010/12/11/twitter-wikileaks-why/>`__.
+Maar als je Facebook of Twitter niet vertrouwt, kun je je gegevens niet
+gauw naar ergens anders verhuizen.
+
+De software die gebruikt wordt
+voor identi.ca is StatusNet, en als je iemand anders kent met een
+StatusNet installatie, of je zet er zelf een op, kun je je account
+gewoon overzetten naar die andere server. Het leuke is dat je de
+berichten van je vrienden blijft zien: je kunt gebruikers op eender
+welke andere StatusNet server volgen. Net zoals je @-reply's naar die
+gebruikers kunt sturen.
+
+
+
+Iedereen mag identi.ca clients maken
+------------------------------------
+
+
+
+Je mag zelf een toepassing schrijven om berichten op te halen van
+en te posten naar identi.ca. Dat lijkt vanzelfsprekend, maar voor
+Twitter `mag dat niet
+meer <http://tweakers.net/nieuws/73176/twitter-raadt-ontwikkelaars-af-nieuwe-clients-te-maken.html>`__.
+Je mag geen programma's maken die gelijkaardige dingen doen als Twitters
+eigen software. Dit zogenaamd om de gebruikers niet in verwarring te
+brengen. Maar dat gelooft niemand.
+
+
+
+Geen onzin zoals
+----------------
+
+
+
+Farmville, Maffia Wars, ‘Welk Friends-personage past bij jou’,
+‘Hoe goed kan je tegen de drank’, ‘Hoe hoog is je libido’
+
+
+
+En tenslotte...
+---------------
+
+
+
+... is het natuurlijk veel cooler om identi.ca te gebruiken dan
+Twitter, Facebook of Netlog :-)
+
+[`Terug naar het
+overzicht </node/171/>`__\ ]

@@ -1,0 +1,12 @@
+.. title: 40 jaar Internet!
+.. slug: node-46
+.. date: 2009-10-29 12:31:54
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Vandaag vieren we niet enkel de release van
+`Ubuntu <http://www.ubuntu.com/>`__ 9.10, maar ook `40 jaar
+Internet <http://www.standaard.be/Artikel/Detail.aspx?artikelId=DS2H6APA>`__!
+Hip hip hoera!

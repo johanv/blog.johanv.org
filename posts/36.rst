@@ -1,0 +1,15 @@
+.. title: Gelukkige verjaardag Ubuntu!
+.. slug: node-36
+.. date: 2009-10-20 10:30:46
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Precies 5 jaar geleden `kondigde Mark Shuttleworth de eerste release van
+Ubuntu
+aan <https://lists.ubuntu.com/archives/ubuntu-announce/2004-October/000003.html>`__.
+Vijf jaar later is `Ubuntu <http://www.ubuntu-be.org/nl>`__ de
+populairste Linuxdistributie op het Internet.
+
+Gelukkige verjaardag!

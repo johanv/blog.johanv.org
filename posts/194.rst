@@ -1,0 +1,46 @@
+.. title: Tax-on-web met Linux Mint 13
+.. slug: node-194
+.. date: 2012-06-26 08:58:48
+.. tags: overheid,linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/194>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/724468/Tax-on-web-met-Linux-Mint-13>`__
+Ieder jaar is het opnieuw wat gepruts om de belastingaangifte te doen
+met Tax-on-web en Linux. Het is me ook dit jaar gelukt, al is het me
+niet helemaal duidelijk waarom :-)
+
+Ik gebruik Linux mint 13, de
+64-bit Cinnamon editie, en mijn browser is Mozilla Firefox. En het lukte
+als volgt:
+
+Van
+http://eid.belgium.be/nl/je\_eid\_gebruiken/de\_eid-middleware\_installeren/linux/
+downloadde ik de 64-bit debs voor eid-mw en eid-viewer. Ik installeerde
+ze allebei. eid-viewer is een gui-tool waarmee je de gegevens op je
+identiteitskaart kunt bekijken, door dit programma te starten kun je
+makkelijk zien of je kaartlezer werkt.
+
+Het eid-mw pakket
+installeert een firefox-add-on, maar die werkte bij mij niet out of the
+box. Ik heb die add-on gedisabled, en dan de add-on geinstalleerd van
+https://addons.mozilla.org/en-US/firefox/addon/belgium-eid/. Dan werkte
+het wel.
+
+Je kunt testen of alles in orde is op
+http://www.test.eid.belgium.be/.
+
+PS: In de standaardrepo's van
+Ubuntu zitten pakketten beid-mozilla-plugin en beidgui. Ik heb geen idee
+of en hoe die werken. Weet jij het wel, laat iets weten.
+
+Reageer
+via `deze conversatie op
+identi.ca <https://identi.ca/conversation/94417669>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

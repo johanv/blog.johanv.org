@@ -1,0 +1,27 @@
+.. title: WCF services tutorial (in het Nederlands)
+.. slug: node-188
+.. date: 2011-10-19 15:34:03
+.. tags: development,.NET
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/188>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/418303/WCF-services-tutorial-in-het-Nederlands>`__
+
+Enkele dagen geleden moest ik iemand uitleggen hoe je in een
+.NET-omgeving web services kunt opzetten. Ik heb hiervoor een filmpje
+gemaakt. De uitleg die ik geef is niet helemaal accuraat, en de
+kwaliteit van het geluid is ronduit slecht, maar toch vond ik het de
+moeite om het met de wereld te
+delen:
+
+[video:http://www.youtube.com/watch?v=aTMHlit1Ggw]
+
+Broncode
+is beschikbaar op github: https://github.com/johanv/WcfDemo/
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

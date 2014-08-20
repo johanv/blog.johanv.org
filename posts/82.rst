@@ -1,0 +1,37 @@
+.. title: Sabam wil dat internetproviders P2P-verkeer filteren
+.. slug: node-82
+.. date: 2009-12-08 14:08:25
+.. tags: privacy
+.. link:
+.. description: 
+.. type: text
+
+In 2004 spande Sabam een rechtszaak in tegen de toenmalige
+internetprovider Tiscali. Sabam vindt Tiscali aansprakelijk voor de
+uitwisseling van auteursrechtelijk beschermde gegevens via
+`P2P <http://nl.wikipedia.org/wiki/P2P>`__. Ondertussen is Tiscali
+Scarlet geworden, maar een definitieve uitspraak is er nog altijd
+niet.
+
+Blijkbaar `wil Sabam dat Scarlet de inhoud van
+P2P-communicatie
+filtert <http://www.zdnet.be/news/110711/rechtszaak-scarlet-sabam-hervat/>`__,
+om te vermijden dat auteursrechtelijk beschermde informatie op die
+manier uitgewisseld wordt. In eerste instantie is het dus een proces
+tegen Scarlet, maar als Sabam zijn gelijk haalt, dan kun je verwachten
+dat andere providers ook een proces aan hun been zullen
+hebben.
+
+Laat ons hopen dat het niet zover komt. Ik vind het een
+griezelig idee dat mijn provider gaat bekijken wat ik allemaal op het
+Internet uitsteek. Op die manier kan ‘Big Brother’ geweldig veel
+informatie over mij verzamelen, zonder dat ik kan controleren wie
+allemaal toegang tot die informatie heeft.
+
+De informatie over
+mijzelf die ik voor anderen beschikaar wil maken, kies ik toch graag
+zelf.
+
+
+Zie ook: `de informatie van ZDNet over de zaak
+Scarlet-Sabam <http://www.zdnet.be/news/110710/achtergrond-waarover-gaat-scarlet-vs-sabam-/>`__.

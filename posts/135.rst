@@ -1,0 +1,22 @@
+.. title: Quit Facebook Day
+.. slug: node-135
+.. date: 2010-05-31 13:22:19
+.. tags: privacy,internet
+.. link:
+.. description: 
+.. type: text
+
+Vandaag is het `Quit Facebook Day <http://www.quitfacebookday.com/>`__.
+De organisatoren roepen op om je Facebookaccount af te sluiten, uit
+onvrede met het omstreden privacybeleid van de sociale-netwerksite. Maar
+blijkbaar `zijn er maar weinig Facebookgebruikers die gehoor geven aan
+de
+oproep. <http://www.standaard.be/artikel/detail.aspx?artikelid=G82QS2HC&subsection=64>`__.
+
+Ik
+heb zelf zo geen problemen met Facebooks privacybeleid; ik gebruik
+Facebook om zaken te publiceren die heel de wereld mag weten. Ik ben mij
+ervan bewust dat er hiervoor veel betere technologieën bestaan, maar
+jammer genoeg hebben mijn berichten op Facebook een veel groter bereik
+dan die op identi.ca. Voorlopig ook geen ‘Quit Facebook Day’ voor mij,
+hoe jammer ook. :-/

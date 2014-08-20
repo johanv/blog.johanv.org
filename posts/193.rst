@@ -1,0 +1,163 @@
+.. title: Installing Mint 13 next to Debian Sid on an already encrypted hard drive
+.. slug: node-193
+.. date: 2012-05-30 16:36:23
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/193>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/706075/Installing-Mint-13-next-to-Debian-Sid-on-an-already-encrypted-hard-drive>`__
+
+I had a dual boot system with Debian Sid and some proprietary other OS
+(\*cough\* wind\*cough\*s). The Debian installation is installed on 3
+encrypted partitions, with LVM on top of them. I installed Linux Mint 13
+next to the Debian system (also on the encrypted systems), so that I now
+have a triple boot setup: Linux Mint 13, Debian Sid and Windows. I
+thought it would be interesting to document how I did it, and what
+issues I ran into.
+
+Before I started, I uninstalled all
+kernel-image-\* packages from my debian system, except the one
+corresponding to the kernel I was actually using. This will eventually
+reduce the number of choices in the grub boot menu when finished. I
+backed up all in ``/boot``, to be able to recover the original dual boot
+configuration in case of something going wrong. (Of course you should
+backup your whole system, and not only ``/boot``, but hey, we all know
+how this goes, don't we.)
+
+I
+`downloaded <http://www.linuxmint.com/download.php>`__ the
+64-bit-live-DVD for Linux Mint 13 with Cinnamon, and I put it on an
+USB-stick using `unetbootin <http://unetbootin.sourceforge.net/>`__.
+Then I booted from the USB stick.
+
+The first thing to do, was
+enabling lvm, and decrypting my encrypted
+partitions:\ ``\napt-get install lvm2\nmodprobe dm-mod\ncryptsetup luksOpen /dev/sda6 crypt_sda6\ncryptsetup luksOpen /dev/sda7 crypt_sda7\ncryptsetup luksOpen /dev/sda8 crypt_sda8\nlvscan``
+
+sda6,
+sda7 and sda8 are my encrypted partitions. The lvscan showed that all my
+logical volumes were found and active, so I didn't have to
+``vgchange -a y`` the volume group.
+
+Now I had to create a new
+partition for the root file system of my Mint installation. I had more
+than 100 GB left on my volume group, so this was not a
+problem.\ ``\nlvcreate -L 20G -n mint-root vg-debian\nmkfs.ext4 /dev/vg-debian/mint-root``
+(My
+volume group is called 'vg-debian', because it was created this way by
+the debian installer. This doesn't make sense with multiple distro's
+installed onto it, but what's in a name anyway.)
+
+To be sure, I ran
+``partprobe``, and then I started the mint installer.
+First I had to
+choose the partitions to use. For ``/boot``, ``/home`` and swap, I took
+the existing ones from the Debian setup. As root partition, I chose the
+freshly created ``mint-root``. I marked only the latter to be
+formatted.
+
+The installer complained about system partitions not
+being empty, and it told me it might erase them. I guess it was
+referring to the ``/boot`` partition, but as will turn out, most of the
+files on there will just stay where they are.
+
+After the
+configuration of the partitions, the installer started copying files,
+and asked me where I live. I chose 'Brussels', and then the installer
+froze. Partly. The progress bar of 'copying files' was moving, but for
+the rest nothing happened. I waited until the progress bar was
+completely full, but it kept being unresponsive. So I just killed the
+installation process, and I was left with a half-installed system.
+Exciting :-)
+
+Luckily I was installing from a live CD, so I got a
+browser to search for help. On the Mint Forum I found a post which
+described more or less `what the Mint installer actually
+does <http://forums.linuxmint.com/viewtopic.php?f=141&t=71159&start=0>`__.
+So I could continue the installation process manually. My mint system
+appeared to be mounted under ``/target``. First of all, I edited
+``/target/etc/crypttab``, and put the following
+in:\ ``\ncrypt_sda6\t/dev/sda6\tnone\tluks\ncrypt_sda7\t/dev/sda7\tnone\tluks\ncrypt_sda8\t/dev/sda8\tnone\tluks``
+This
+is needed to get the information of the encrypted partitions in the
+initrd. Then I chrooted into the new system, and installed the necessary
+packages for encrypted
+lvm:\ ``\nchroot /target\nmount -t sysfs none /sys\nmount -t proc none /proc\nmount -t devpts none /dev/pts\napt-get install cryptsetup lvm2``
+I
+set the root password:\ ``\npasswd``
+and created a
+user.\ ``\nadduser johan2``
+Initially I gave my user a different user
+name (johan2) than on the Debian system (johanv). This will create a new
+home directory. Then I just rename the new
+user:\ ``\nusermod -l johanv johan2``
+Now I have a user johanv, with
+home dir ``/home/johan2``. I do this because I typically have the
+following directory in my /home file system:
+
+
+-  ``/home/johan1`` *(home directory for system 1)*
+-  ``/home/johan2`` *(home directory for system 2)*
+-  ``/home/johan-shared`` *(files I share between the two systems)*
+
+
+In ``johan-shared``, there are my settings for e.g. mutt and pidgin,
+and my develop-subdirectory. In the actual homedirs (``johan1`` and
+``johan2``) I have symlinks to the files in ``johan-shared``. Whenever I
+switch to another distro, and I notice I need something from my previous
+homedir, I move these files to ``johan-shared``, and put links in all
+homedirs. 
+
+At last I installed the bootloader: (I just accepted the
+defaults)\ ``\ndpkg-reconfigure grub-pc``
+Moment of the truth:
+rebooting into the fresh
+system.\ ``\numount /dev/pts\numount /proc\numount /sys\nexit\numount /target/dev\numount /target/home\numount /target/boot\numount /target\nreboot``
+The
+grub menu was shown, but when I booted into Mint, my screen showed some
+noise, and nothing else happened. Apparently the system was waiting for
+the password of the encrypted disc, but it didn't show a message that
+told me so. So I just entered the password, and I saw the disc activity
+indicator flickering. I had to enter the password two more times
+(because I have 3 encrypted volumes), and finally I had a running Mint
+system. More or less.
+
+First problem: the mouse wasn't working
+correctly. When I clicked somewhere, the actually click was registered a
+little to the left of the mouse pointer. This was an annoying problem,
+but quickly resolved after installing the software updates. I tend to do
+this via the command
+line:\ ``\napt-get update\napt-get upgrade\napt-get dist-upgrade``
+
+After
+a while a second problem appeared. The system froze. But this is no new
+problem for me. I have an NVidia Quadro FX 1800M video card, which makes
+the free nouveau driver crash from time to time. This is a problem I
+have noticed on different distributions. So I installed the freedom
+hating nvidia driver (press the ‘super key’ (AKA the win\*\*\*-key),
+enter 'driv', and the menu item 'Additional Drivers' will pop up. This
+tool will automagically install the driver for you). Installing the evil
+driver fixed the problem of not prompting for passwords as
+well.
+
+One last thing left to do: make the old Debian installation
+available via the grub menu. For this, I needed the backup of my old
+``/boot``, to look at the original ``/boot/grub/grub.cfg`` file. I
+copied the Debian GNU/Linux entries in there, and appended them under
+``/etc/grub.d/40_custom``. And then:\ ``\nupdate-grub``
+This appended
+entries for Debian at the bottem of the grub menu, which now allows me
+to boot into my old system as well. It also seems to create some extra
+entries, which claim to start Mint with the old Debian kernel files. I
+didn't try to boot these (yet).
+
+You can comment on this via `this
+identi.ca conversation <https://identi.ca/conversation/93762483>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

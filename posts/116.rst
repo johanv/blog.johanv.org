@@ -1,0 +1,33 @@
+.. title: Microsoft maakt programmeerfout in keuzescherm webbrowsers
+.. slug: node-116
+.. date: 2010-03-01 13:12:49
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Sinds enkele dagen is `Microsofts browserkeuzescherm </node/87>`__
+online beschikbaar. Microsoft werd door Europa verplicht om zijn
+gebruikers te laten kiezen met welke browser ze op het net willen. Op de
+website `www.browserchoice.eu <http://www.browserchoice.eu/>`__ kan je
+kiezen uit een aantal webbrowsers, die in willekeurige volgorde
+gepresenteerd worden.
+
+Nu ja, willekeurig. Een zekere Rob Weir
+ontdekte namelijk dat de volgorde van de browsers `helemaal niet zo
+willekeurig
+is <http://www.robweir.com/blog/2010/02/microsoft-random-browser-ballot.html>`__.
+En dat heeft niets te maken met duistere complotten, maar wel met een
+domme programmeerfout.
+
+Het willekeurig sorteren van de browsers
+gebeurt in Javascript. Wat Microsoft deed, was JavaScript laten sorteren
+op basis van een ‘custom’ totale orderelatie, met deze
+implementatie:
+
+\ ``\nfunction RandomSort (a,b)\n{\n    return (0.5 - Math.random());\n}\n``
+
+Omdat
+dit helemaal geen orderelatie definieert, kan het - afhankelijk van het
+gebruikte sorteeralgoritme - een beetje tot volledig mislopen. (In het
+slechtste geval krijg je zelfs een oneindige lus.)

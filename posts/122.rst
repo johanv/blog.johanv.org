@@ -1,0 +1,39 @@
+.. title: Microsoft en het standaardendebacle
+.. slug: node-122
+.. date: 2010-04-14 13:07:46
+.. tags: microsoft,openstandaarden
+.. link:
+.. description: 
+.. type: text
+
+Microsoft en standaarden, het is altijd een moeilijke combinatie
+geweest.
+
+Een standaard voor ‘officedocumenten’ bestaat al lang.
+`OpenDocument <http://nl.wikipedia.org/wiki/OpenDocument>`__ is sinds
+november 2006 een
+`ISO <http://nl.wikipedia.org/wiki/International_Organization_for_Standardization>`__-standaard
+voor documentuitwisseling. Het bekende officepakket
+`OpenOffice.org <http://nl.openoffice.org/>`__ gebruikt dit formaat
+sinds versie OpenOffice.org 2.0.
+
+Maar Mircorosft is nooit een
+geweldige fan geweest van OpenDocument, en in plaats van het
+OpenDocument-formaat te gebruiken voor Microsoft Office, hield Microsoft
+vast aan een eigen bestandsformaat. Maar omdat meer en meer overheden
+open standaarden willen gebruiken voor hun officiële documenten, wou
+Microsoft zijn eigen bestandsformaten ook graag als open standaard
+erkend zien. Dit is hen ook gelukt, in januari 2007 accepteerde de ISO
+Microsofts OOXML-formaat als open standaard. Zij het niet zonder de
+nodige
+`controverse <http://www.tudelft.nl/live/pagina.jsp?id=25055610-30a4-4f0f-b806-91366aa748a7⟨=nl>`__.
+
+Wat
+blijkt nu: `Microsoft slaagt er niet in zijn eigen standaard te
+implementeren <http://arstechnica.com/microsoft/news/2010/04/microsoft-office-15not-2010to-be-fully-ooxml-compliant.ars>`__
+in het aankomende Microsoft Office 2010. Momenteel luidt het dat ten
+laatste Office 15 OOXML volledig zal ondersteunen.
+
+We zullen wel
+zien hoe het afloopt. Ondertussen stel ik voor dat we voor de zekerheid
+maar `OpenOffice.org <http://nl.openoffice.org>`__ blijven gebruiken.

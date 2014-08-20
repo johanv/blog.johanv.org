@@ -1,0 +1,121 @@
+.. title: Onderzoek
+.. slug: node-5
+.. date: 2008-04-30 16:32:32
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+
+In een vorig leven heb ik nog onderzoek gedaan in de vakgroep
+`Computeraritmetiek en numerieke
+technieken <http://www.cant.ua.ac.be>`__ aan de `Universiteit
+Antwerpen <http://www.ua.ac.be>`__. Aangezien dat onderzoek betaald werd
+met misschien wel uw belastinggeld, kan je hier nog steeds een aantal
+zaken downloaden.
+
+
+
+
+
+
+Teksten, papers, presentaties
+-----------------------------
+
+
+
+
+
+Exception handling en special values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+-  `Oneindig in floating-pointaritmetiek </node/142>`__
+-  `Verzamelingensystemen </node/143>`__
+-  `Universal semantics for computer arithmetic
+   implementations <ftp://ftp.win.ua.ac.be/pub/cant/preprints/sv.pdf>`__
+-  `Manual
+   MpIeee <ftp://ftp.win.ua.ac.be/pub/cant/Arithmos/MpIeee.ps.gz>`__
+-  `Vertrouwt u uw rekenmachine? </node/144>`__
+-  `Blending interval and set arithmetic for maximal
+   reliability </node/145>`__
+
+
+
+
+
+Functiebenaderingen
+~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+-  `An introduction to continued fractions </node/146>`__
+-  `Reliable function evaluation using continued fraction
+   expansions </node/147>`__
+-  `Betrouwbare functie-evaluatie met behulp van
+   kettingbreukontwikkelingen </node/148>`__
+-  `Propagatie van afrondingsfouten door afleidbare
+   functies </node/149>`__
+-  `Effect van de argumentreductie op de foutenanalyse van
+   arctan </node/150>`__
+
+
+
+
+
+Foutafschattingen
+~~~~~~~~~~~~~~~~~
+
+
+
+
+
+-  `log 10 </node/151>`__
+-  `log 2 </node/152>`__
+-  `atan </node/153>`__
+-  `acot </node/154>`__
+
+
+
+
+
+Software
+--------
+
+
+
+
+
+-  `libRational <http://oud.losderover.be/librational/>`__, een C++
+   library voor rationale aritmetiek, gebouwd rond
+   `gmp <http://www.swox.com/gmp>`__.
+-  `libmplite <http://oud.losderover.be/libmplite/>`__, een C++ library
+   voor multiprecisie-aritmetiek, gebouwd rond
+   `mpfr <http://www.mpfr.org>`__.
+-  `libcff <http://oud.losderover.be/libcff/>`__, een C++
+   kettingbreukentoolkit.
+-  `SpecialValue <http://oud.losderover.be/specialvalue/>`__, een C++
+   library voor computeraritmetische speciale waarden.
+-  `Easyval <http://oud.losderover.be/Easyval>`__, een C++ library voor
+   floating-point intervalaritmetiek.
+-  `libmultival <http://oud.losderover.be/libmultival>`__, een aanzet
+   tot multiprecisie intervalaritmetiek, gebaseerd op
+   `libmplite <http://oud.losderover.be/libmplite/>`__.
+
+
+
+\ **Opgelet:**
+Ik ontwikkelde deze software in het kader van
+mijn onderzoek, maar sinds ik een andere job heb, ligt die ontwikkeling
+stil. Mogelijk is er aan sommige projecten nog verder gewerkt door de
+mensen van `CANT <http://www.cant.ua.ac.be>`__, je kan daar altijd je
+licht eens opsteken. Als je zelf geïnteresseerd bent om projecten te
+‘adopteren’, laat dat dan weten. Ik zal met plezier linken naar de
+nieuwe homepage.
+
+

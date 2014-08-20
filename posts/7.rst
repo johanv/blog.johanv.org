@@ -1,0 +1,29 @@
+.. title: Johan goes Drupal (again)
+.. slug: node-7
+.. date: 2008-05-01 15:24:47
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Een tweetal jaar geleden heb ik er nog eens over gedacht om m'n site om
+te zetten naar `Drupal <http://www.drupal.org>`__. Ik heb dat toen niet
+gedaan, omdat ik dacht dat ik niet genoeg content zou leveren voor een
+dergelijk systeem.
+
+Nu ben ik wat ouder en wijzer, en ik weet
+ondertussen dat niemand verplicht is berichten op mijn site te zetten,
+en al zeker ikzelf niet. :-) Maar het is wel handig dat je, wanneer je
+het nodig vindt, op een snelle manier iets on-line kan hebben. Mijn
+vorige site was databasegebaseerd, maar ik heb zelf nooit de tijd
+genomen om er een admin-interface voor te schrijven. Dan is Drupal dus
+een stuk gemakkelijker.
+
+Ik had geluk; er bestond een Drupalthema
+voor de lay-out die ik gebruikte voor mijn website. Ik heb er wel wat in
+moeten hacken om het te doen werken met deze versie van Drupal, en om de
+site opnieuw XHTML strict te maken.
+
+Als ik er nog eens tijd voor
+heb, wil ik de lay-out nog wel wat bijschaven. Maar voorlopig kan het
+ermee door.

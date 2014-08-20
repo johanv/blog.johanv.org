@@ -1,0 +1,16 @@
+.. title: Gegevens Sidekick-klanten toch gered?
+.. slug: node-31
+.. date: 2009-10-16 08:54:02
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Eerder deze week raakte bekend dat `gebruikers van Sidekick-telefoons
+heel wat gegevens verloren </node/27>`__ volgend op servercrash bij een
+dochteronderneming van Microsoft.
+
+Nu zou Microsoft `de gegevens van
+de meeste klanten toch kunnen
+recupereren <http://www.nu.nl/internet/2102872/gegevens-sidekick-klanten-toch-gered.html>`__.
+Oef ;-]

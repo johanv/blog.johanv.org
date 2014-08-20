@@ -1,0 +1,18 @@
+.. title: Microsoft geeft Win 7 USB/DVD download tool vrij onder GPL v2
+.. slug: node-83
+.. date: 2009-12-10 13:13:31
+.. tags: opensource,microsoft
+.. link:
+.. description: 
+.. type: text
+
+`Het heeft even geduurd </node/71>`__, maar vandaag raakte bekend dat
+`Microsoft zijn Windows 7 USB/DVD download tool
+vrijgeeft <http://wudt.codeplex.com/>`__ onder een
+GPL-openbronlicentie.
+
+Het programma in kwestie lijkt echter wel
+serieus aangepast, `en blijkbaar zijn er stukken van de oorspronkelijke
+functionaliteit
+verdwenen <http://www.zdnet.be/news/110894/microsoft-herlanceert-downloadtool-windows-7/>`__.
+

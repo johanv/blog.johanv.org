@@ -1,0 +1,20 @@
+.. title: Fedora/NVidia font problem
+.. slug: node-166
+.. date: 2011-03-01 17:14:17
+.. tags: fedora,linux,tips
+.. link:
+.. description: 
+.. type: text
+
+A quick fedora/nvidia tip:
+
+After installing the evil and freedom
+hating nvidia-drivers on my Fedora system, a lot of font sizes magically
+increased. It seems you can fix this (per user) by clicking ‘System’,
+‘Preferences’, ‘Appearance’. Click the ‘fonts’ tab, then the ‘details’
+button, and change the resolution back to 96 dpi.
+
+You can probably
+change this in some configuration file as well. If you know how, please
+let me know.
+

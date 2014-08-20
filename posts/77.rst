@@ -1,0 +1,15 @@
+.. title: Microsoft kondigt migratie van Nederlandse ministerie van defensie naar Windows 7 aan. Het ministerie ontkent.
+.. slug: node-77
+.. date: 2009-12-02 12:26:20
+.. tags: microsoft,overheid
+.. link:
+.. description: 
+.. type: text
+
+Microsoft had in een case study aangekondigd dat het Nederlandse
+ministerie van defensie snel naar Windows 7 zou migreren, `maar dit
+bericht werd door het ministerie zelf
+ontkend. <http://webwereld.nl/nieuws/64470/defensie-ontkent-snelle-windows-7-migratie---update.html>`__
+Ondertussen zou Microsoft `de case
+study <http://www.microsoft.com/casestudies/Case_Study_Detail.aspx?casestudyid=4000005224>`__
+aangepast hebben.

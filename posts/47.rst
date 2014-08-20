@@ -1,0 +1,20 @@
+.. title: Ubuntu 9.10 officieel vrijgegeven.
+.. slug: node-47
+.. date: 2009-10-29 16:28:06
+.. tags: opensource,linux
+.. link:
+.. description: 
+.. type: text
+
+Vanaf vandaag is de nieuwste versie van
+`Ubuntu <http://www.ubuntu.com>`__ (9.10, ‘Karmic Koala’) officieel
+vrijgegeven.
+
+Ubuntu is een besturingssysteem dat ontwikkeld wordt
+door een wereldwijd team van ontwikkelaars. Het komt met alle nodige
+toepassingen: een webbrowser, officetoepassingen, mediaspelers, instant
+messaging, en nog veel meer.
+
+Ubuntu is een open-source alternatief
+voor Windows en Microsoft Office.
+

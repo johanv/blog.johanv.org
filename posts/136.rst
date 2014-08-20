@@ -1,0 +1,44 @@
+.. title: Over Google, Windows en veilige besturingssystemen
+.. slug: node-136
+.. date: 2010-06-03 13:38:34
+.. tags: microsoft,beveiliging,windows,google
+.. link:
+.. description: 
+.. type: text
+
+Misschien heb je het gisteren wel op de radio gehoord: `Werknemers van
+Google mogen geen Windows meer
+gebruiken <http://security.nl/artikel/33471/1/Google_verbiedt_Windows_op_werkvloer.html>`__
+zonder expliciete toestemming van een CIO (chief information officer).
+Tenminste, dat zeggen de geruchten. Windows zou te onveilig zijn, en het
+incident eerder dit jaar met de `Chinese aanval op
+Gmail <http://tweakers.net/nieuws/64900/google-overweegt-china-te-verlaten-na-aanval-op-gmail-accounts.html>`__
+zou de beslissing versneld hebben.
+
+Als het al waar is dat Google
+Windows dumpt, dan geloof ik er niets van dat het beveiligingsargument
+de grootste reden is. Wat wel speelt, is dat Microsoft een concurrent is
+van Google: beide bedrijven hebben een zoekmachine, bieden webmail aan,
+en nu ook een soort van Officetoepassingen op het internet. Als Google
+nu Windows bant, en de pers pikt dat op, dan is het natuurlijk mooi
+meegenomen dat de concurrentie op een negatieve manier in het nieuws
+komt.
+
+Ondertussen heeft `het Microsoftkamp ook
+gereageerd <http://www.security.nl/artikel/33496/1/Experts%3A_Windows_beste_keus_voor_bedrijven.html>`__
+. Volgens de Microsoftfans brengt een overschakeling naar Linux of Mac
+OS X meestal nog meer beveiligingsproblemen met zich mee. Dat is
+larie.
+
+Het is natuurlijk zo dat - als je meer computers op Linux of
+Mac OS X gaat gebruiken -, je ook Windows-beveiligingsexperten zal
+moeten omscholen tot/vervangen door Linux- of Macbeveiligingsexperten.
+Ik vermoed sterk dat Google dat ook wel zal doen.
+
+Dat Linux
+achterloopt wat betreft veiligheid, is ook geweldig onwaar. Het is niet
+omdat er geen antivirusprogramma's bestaan, dat Linux onveilig is. Voor
+Linux heb je geen antivirus nodig, en dat heeft alles te maken met de
+manier waarop je in een Linuxsysteem programma's bij-installeert. Die
+verschilt wezenlijk met de manier waarop dit onder Windows gebeurt. Maar
+later meer daarover.

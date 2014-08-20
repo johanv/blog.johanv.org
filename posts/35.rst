@@ -1,0 +1,32 @@
+.. title: Internetters installeren 93% van de schadelijke software zelf.
+.. slug: node-35
+.. date: 2009-10-20 09:49:06
+.. tags: beveiliging
+.. link:
+.. description: 
+.. type: text
+
+Volgens Symantec zou `93% van de meest voorkomende schadelijke software
+door de internetters
+zelf <http://www.demorgen.be/dm/nl/991/Multimedia/article/detail/1017710/2009/10/19/Internetters-installeren-93-valse-software-gewoon-zelf.dhtml>`__
+geïnstalleerd worden.
+
+Mensen klikken blijkbaar graag op flitsende
+advertenties die vertellen dat je computer beveiligingsrisico's loopt,
+en downloaden en installeren dan vaak de software die de zogenaamde
+risico's moet verhelpen.
+
+Volgens mij wordt veel van het probleem
+veroorzaakt door de manier waarop je in een Windowssysteem software moet
+installeren. Je downloadt een installer van een site (waarvan je bijna
+nooit weet of die te vertrouwen is), en je laat het programma lopen, in
+de hoop dat je antivirus (if any) mogelijk kwaadaardige bestanden
+opspoort.
+
+In een Linuxomgeving is dit probleem minder groot. Het
+overgrote deel van de software die je wil installeren, is daar
+gecentraliseerd op de servers van de linuxdistributie zelf. Als je dus
+een programma wil bij-installeren, gebruik je daarvoor gewoon een
+toepassing die de gewenste toepassing voor jou downloadt van een
+betrouwbare server, en installeert. En dat is wat mij betreft een van de
+meest onderschatte voordelen van Linux vergeleken met Windows.

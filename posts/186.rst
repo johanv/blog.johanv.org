@@ -1,0 +1,53 @@
+.. title: StatusThread: saving the trees in identi.ca discussions
+.. slug: node-186
+.. date: 2011-09-26 22:27:32
+.. tags: wildidee,opensource,identi.ca
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/186>`__
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/403788/StatusThread-saving-the-trees-in-identi-ca-discussions>`__
+
+
+A week or two ago, I disabled the registration of new users on
+this site: only spammers seemed to be interested in getting an account
+on my blog.
+
+Nevertheless, if you want to comment on what I write, I
+think you should have the opportunity to do so. So I decided to post
+every article I write on identi.ca, and link to the corresponding
+discussion, so that everyone with an identi.ca account can comment on my
+texts. This way I don't have to do user management, and checking for
+f\*\*\*ng spammers.
+
+So far so good. But last week, identi.ca got
+upgraded to version 1.0 of StatusNet. Which has tons of new features,
+but which also 'flattens' the discussion threads. If you go to the page
+of a discussion, you don't get the tree of messages StatusNet 9.9
+generated, you just get the stream of messages in chronological
+order.
+
+Some people like this, some don't, but this was not what I
+want as a feedback system for my site. So I quickly programmed something
+in php, that reconstructs the discussion tree of any identi.ca
+discussion. Like for example
+http://test.johanv.org/StatusThread/?controller=conversation&id=84176717
+
+As
+you can probably see, it is pretty basic. I will probably improve it,
+but as I am famous of my failed projects, I won't promise anything :-)
+But it is open source, that's something. You can find the code on
+https://github.com/johanv/StatusThread/.
+
+\ **UPDATE:** In the
+identi.ca settings, you can now re-enable the conversation trees:
+http://identi.ca/settings/oldschool
+
+Comment via `this identi.ca
+discussion <http://test.johanv.org/StatusThread/?controller=conversation&id=84264980>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

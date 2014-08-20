@@ -1,0 +1,17 @@
+.. title: Microsoft verliest data van Sidekick-gebruikers
+.. slug: node-27
+.. date: 2009-10-12 21:06:53
+.. tags: microsoft
+.. link:
+.. description: 
+.. type: text
+
+Gebruikers van Sidekick-telefoons zijn helaas hun kalender,
+adresboek,... kwijt. De betreffende gegevens werden bewaard op servers
+van Danger, een dochter van Microsoft. Er crashte daar een server,
+waarvan er helaas geen backup was.
+
+Op de website van
+`Sidekick <http://www.sidekick.com/>`__ vind je nu een
+verontschuldiging. Het hele verhaal kan je onder meer lezen bij
+`ZDNet <http://www.zdnet.be/news/108847/sidekick-gebruikers-spelen-data-kwijt-door-servercrash/>`__.

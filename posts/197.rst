@@ -1,0 +1,72 @@
+.. title: Upgrading the Xperia Mini Pro from CM 7.2 to CM 9
+.. slug: node-197
+.. date: 2012-08-24 20:55:31
+.. tags: opensource,android
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/197>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/857385/Upgrading-the-Xperia-Mini-Pro-from-CM-7-2-to-CM-9>`__
+
+Recently I upgraded my phone (Sony Ericsson Xperia Mini Pro) from
+Cyanogenmod 7.2 to Cyanogenmod 9. And you should upgrade too, if you are
+running Cyanogenmod 7.2. This is why:
+
+
+
+-  The hardware keyboard layout can be configured from the settings
+   menu.
+-  The ‘symbols’ key on the hardware keyboard now actually works, so you
+   don't have to switch to the software keyboard anymore when you have
+   to enter an exotic symbol.
+-  The dictionary on the software keyboard now works. Not that I ever
+   use it, but hey, it might be useful for some of you.
+-  The ‘dock’ at the bottom is more stable: it doesn't disappear for no
+   reason, and the icons in it stay where they are.
+-  Dragging icons from the app drawer to the main screen is a lot
+   smoother.
+-  CM 9 (based on Android 4) looks way cooler than CM 7.2 (based on
+   Android 2.3).
+
+
+
+But I went to some pain while upgrading the thing. So if you want
+to perform a similar upgrade, here are two useful tips.
+
+The first
+one: Be sure to put not only the roms of `CM
+9 <http://download.cyanogenmod.com/get/jenkins/5812/cm-9.0.0-mango.zip>`__
+and the `Google
+apps <http://cmw.22aaf3.com/gapps/gapps-ics-20120317-signed.zip>`__ on
+your SD-card, but the ROM of the old `CM
+7.2 <http://download.cyanogenmod.com/get/jenkins/2846/cm-7.2.0-mango.zip>`__
+as well. If anything goes wrong, you can quickly flash the old image for
+having access to your phone again.
+
+Second thing: before flashing CM
+9 to your phone, you'll probably have to upgrade your boot loader. I
+didn't do that, and after flashing the ROM, the phone booted into a
+black screen; removing the battery was the only option. Maybe you can
+upgrade the boot loader with ROM manager, but I didn't try that. I just
+used fastboot (a tool that can be found in the platform-tools folder of
+the `Android SDK <https://developer.android.com/sdk/index.html>`__), as
+described in steps 5 and 6 of the `excellent documentation on the
+cyanogenmod
+wiki <http://wiki.cyanogenmod.com/wiki/Sony_Ericsson_Xperia_Mini_Pro:_Full_Update_Guide#Flashing_CyanogenMod>`__.
+
+The
+new bootloader looks much slicker than the previous one, which was plain
+ugly :-). And when it's installed, you should be able to flash the roms
+for CyanogenMod 9 and the Google Apps for Ice Cream Sandwich. (But don't
+come after me if things break, because I'm clueless as always.)
+
+You
+can comment via `this identi.ca
+discussion <https://identi.ca/conversation/95580612>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

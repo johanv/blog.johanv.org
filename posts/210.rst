@@ -1,0 +1,113 @@
+.. title: Ik heb mijn fiets-gps-systeem gevonden
+.. slug: node-210
+.. date: 2013-08-16 21:09:40
+.. tags: google,android
+.. link:
+.. description: 
+.. type: text
+
+` <http://www.johanv.org/node/210>`__
+
+Een tijd geleden moest ik
+eerst even langs Lier passeren, alvorens ik naar het werk in Antwerpen
+fietste. Ik ken de fietswegen tussen Lier en Antwerpen niet zo goed, en
+aangezien de navigatie-app van Google maps al een tijdje fietsroutes
+ondersteunt, had ik het idee om me gps-gewijze te laten
+begeleiden.
+
+Slecht idee. Google stuurde me langs idyllische
+plaatsjes zoals de ring rond Lier, en via de N10 helemaal van Lier tot
+Wilrijk. Vervolgens mocht ik de binnensingel volgen tot in Berchem, en
+daar werd ik dan min of meer fatsoenlijk begeleid tot waar ik moest
+zijn.
+
+Dit verhaal is er eentje van in de winter. Ik heb vandaag de
+fietsroute nog eens opgezocht, en het is al een beetje beter:
+
+
+\ |googles route|
+
+Vanaf Mortsel stuurt Google me nu via de
+spoorweg tot in Berchem. Maar om in Mortsel te geraken, moet ik nog wel
+langs de Antwerpsesteenweg. Of langs de Hagenbroeksesteenweg, maar dat
+is al even erg. Er moest toch iets beters bestaan.
+
+En dat betere
+alternatief heb ik nu gevonden. Het heet
+`YOURS <http://wiki.openstreetmap.org/wiki/YOURS>`__, en je kunt het
+uitproberen op `yournavigation.org <http://www.yournavigation.org/>`__.
+YOURS gebruikt de kaarten van
+`openstreetmap <http://www.openstreetmap.org>`__. Openstreetmap is te
+vergelijken met wikipedia, maar verzamelt wegenkaarten.
+
+Het
+YOURS-navigatiesysteem leidde me naast de spoorweg tot in Boechout.
+Vervolgens langs rustige wegen tot in Mortsel. En vandaar volgde ik de
+spoorweg verder tot in Antwerpen. Anderhalve kilometer meer trappen, dat
+wel. Maar zonder het continue geraas van de ochtendspits, wat het een
+pak aangenamer maakt.
+
+\ |yours route|
+
+Als je over een
+Androidtelefoon beschikt, kan je telefoon de weg voor je wijzen.
+Hiervoor installeer je `Osmand <osmand.net>`__, een toepassing die je
+kunt downloaden via `Google
+Play <https://play.google.com/store/apps/details?id=net.osmand>`__.
+
+Als
+je de toepassing voor het eerst start, stelt ze voor om een aantal
+kaartgegevens te downloaden. Ik heb dat gedaan voor België, dat leek me
+nog wel nuttig. Je moet Osmand nu nog wel instellen om YOURS te
+gebruiken, en dat doe je als volgt:
+
+
+
+-  Instellingen
+-  Navigatie
+-  Fiets
+-  Routeberekening
+-  YOURS
+-  Ik heb ook 'stembegeleiding' aangezet, omdat ik mijn telefoon niet
+   kan zien terwijl ik fiets. Ik gebruik de 'oortjes'.
+
+
+
+Het navigatiesysteem gebruiken, kun je bijvoorbeeld als
+volgt:
+
+
+
+-  Zoeken
+-  (selecteer het 'huisje')
+-  Kies stad, straat, en een aangrenzende straat
+-  (met het sterretje kun je de locatie toevoegen aan je favorieten)
+-  Klik 'Aanwijzingen' (of het verkeersbordje met de pijl)
+-  Dan 'Alleen tonen' om de weg te tonen, of 'Volg' om de navigatie te
+   starten
+
+
+
+Het is aangewezen om op voorhand eens te kijken hoe de route
+loopt. Want als je op de gesproken aanwijzingen rijdt, dan is het soms
+niet helemaal duidelijk welke richting je uit moet. Een aantal
+valkuilen:
+
+
+-  'Flauwe bocht naar rechts' moet je soms interpreteren als 'gewoon het
+   pad volgen, dat wat afbuigt', soms als 'rechtsaf een straat inslaan',
+   of soms als 'een klein bijna onzichtbaar fietspaadje inrijden'.
+-  'Volg de weg' wil soms zeggen: 'Rij rechtdoor het kleine fietspaadje
+   in, terwijl de gewone weg afbuigt.'
+-  Als een fietspad aan een kruispunt even rechtsaf draait, dan krijg je
+   soms de aanwijzing 'sla linksaf' als je aan het kruispunt gewoon
+   rechtdoor moet.
+
+
+Maar dat is allemaal niet onoverkomelijk. Als je van de route raakt,
+word je gevraagd om terug te keren, of wordt ze herberekend.
+
+.. |googles route| image:: http://www.johanv.org/sites/johan.zandhoven.org/files/fietsroute-google.png
+   :target: http://www.johanv.org/sites/johan.zandhoven.org/files/fietsroute-google.png
+.. |yours route| image:: http://www.johanv.org/sites/johan.zandhoven.org/files/fietsroute-yours.png
+   :target: http://www.johanv.org/sites/johan.zandhoven.org/files/fietsroute-yours.png

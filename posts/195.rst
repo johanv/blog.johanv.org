@@ -1,0 +1,102 @@
+.. title: Raspberry Pi as print server without server side driver
+.. slug: node-195
+.. date: 2012-06-29 14:40:57
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+` <http://johanv.org/node/195>`__
+
+
+`
+\ |Flattr
+this| <http://flattr.com/thing/726703/Raspberry-Pi-as-print-server-without-server-side-driver>`__
+
+I bought myself a `Raspberry Pi <http://www.raspberrypi.org/>`__ and I
+am using it as print server right now. It required some hacking to make
+it work, so I might as well blog about it.
+
+I started off with the
+Arch based image from `the official download
+page <http://www.raspberrypi.org/downloads>`__. Arch Linux might not be
+the best distribution for a server, but I didn't want to use the Debian
+image since it had X installed. And I didn't search for other
+downloadable images. I guess Arch will be fine for my specific home
+situation.
+
+Setting up a print server on Arch is easy
+enoguh:\ ``\npacman -S cups``
+
+You have to modify
+``/etc/cups/cupsd.conf`` in order to make the cups web interface remote
+accessible. This is what I changed: 
+
+
+-  Replaced ``Listen localhost:631`` by ``Port 631``.
+-  Added ``Allow from 192.168.0.0/255.255.0.0`` in the /, /admin and
+   /admin/conf locations. (You will have to adapt the network ranges to
+   your own situation.)
+
+
+To make cups start at boot time, you have to add ``@cupsd`` to the
+``DAEMONS`` line in ``/etc/rc.conf``. (To start the cups daemon right
+now, issue ``/etc/rc.d/cupsd start``.)
+
+Using the web interface, in
+my case https://192.168.3.200:631 (replace the IP address as
+appropriate) I could add my printer. But, a problem: it uses the foo2zjs
+driver, which has no ARM version, so it could not be installed on the
+ARM-based Raspberry Pi. We can work around this, by defining the printer
+driver client side. This implies of course that it will be impossible to
+send print jobs originating from the Raspberry Pi itself. Printing a
+test page from the CUPS management web interface will not work either.
+But since print jobs typically come from client computers, this won't be
+an issue.
+
+Because there is no driver available for the server, I
+just set up the printer to use no driver (selecting RAW as model in the
+CUPS printer configuration page). This is sufficient to make Windows
+clients work, provided that you selected the appropriate driver client
+side.
+
+(Note: you don't have to install samba on your print server
+to use your printer from Windows. To define the printer on a Windows
+client, just use the url
+http://192.168.3.3:631/printers/myprinter.)
+
+I would have thought
+that the same would work with Linux: I tried to use CUPS to connect to
+the printer on the server, using a locally installed driver. It didn't
+work.
+
+I hacked around the problem by emulating a HP-jetdirect
+printer. For this I installed xinetd on the Raspberry Pi
+(``pacman -S xinetd``), and created a file
+``/etc/xinetd.d/hp-pdl-datastr`` with the following
+content:\ ``\nservice hp-pdl-datastr\n{\nsocket_type = stream\nprotocol = tcp\nwait = no\nuser = root\nserver = /usr/bin/lp\nserver_args = -d myprinter -o raw\ngroups = yes\ndisable = no\n}``
+(the
+name hp-pdl-datastr is just a guess. I grepped port 9100 in
+``/etc/services``, and I found hp-pdl-datastr and pdl-datastream. I just
+took hp-pdl-datastream because I have a HP printer, but I guess it
+doesn't really matter.)
+
+When you now start the xinetd
+service:\ ``\n/etc/rc.d/xinetd start``
+you can tell your Linux client
+that you have a HP-JetDirect printer on port 9100 of your print server.
+(Remember to adapt ``/etc/rc.conf`` to make xinetd start at boot
+time.)
+
+References:
+
+
+-  https://wiki.archlinux.org/index.php/CUPS
+-  http://www.linuxforums.org/forum/networking/53105-how-make-cups-jetdirect-appsocket-print-server.html
+
+
+
+You can comment via `this identi.ca
+conversation <http://identi.ca/conversation/94501999>`__.
+
+.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

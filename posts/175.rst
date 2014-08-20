@@ -1,0 +1,40 @@
+.. title: Aan de slag met identi.ca
+.. slug: node-175
+.. date: 2011-04-29 13:40:38
+.. tags: NULL
+.. link:
+.. description: 
+.. type: text
+
+Nu je dit allemaal gelezen hebt, kan het al bijna niet anders of je wilt
+direct een identi.ca-account aanmaken. :) Surf dus gauw naar
+`http://identi.ca/main/register <https://identi.ca/main/register>`__,
+geef je gegevens in, en klik ‘register’.
+
+Van zodra je geregistreerd
+bent, kun je je eerste berichten de tijdslijn insturen, en kun je je
+abonneren op de berichten van andere gebruikers. Kijk misschien eens in
+de publieke tijdslijn, om te zien of er dingen gezegd worden die je
+interessant vindt. Of misschien ken je wel mensen met een
+identi.ca-account: zoek hen op, en klik op ‘abonneren’. Ikzelf heb twee
+accounts: `@johanv <http://identi.ca/johanv>`__ en
+`@johanvnl <http://identi.ca/johanvnl>`__. Die laatste heb ik bijgemaakt
+om berichten in het Nederlands te posten.
+
+Berichten sturen en
+lezen, kan uiteraard via de website, maar er zijn ook programmaatjes te
+vinden (identi.ca clients) waarmee je dat rechtstreeks kunt doen. Er
+zijn er een hele hoop, maar ik weet niet goed wat ik kan aanbevelen. Dus
+als je dat interessant vindt, zal je er zelf een aantal moeten
+downloaden en uitproberen.
+
+Ook voor je telefoon bestaan er
+ongetwijfeld identi.ca clients. Hier heb ik wel een uitgesproken
+favoriet, en dat is `mustard <http://mustard.macno.org/>`__. Mustard is
+een identi.ca client voor Android, en is gratis te downloaden van de
+Android market. De auteur van mustard,
+`@macno <http://identi.ca/macno>`__, is uiteraard ook op identi.ca te
+vinden.
+
+[`terug naar het overzicht </node/171>`__\ ]
+

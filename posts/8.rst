@@ -1,0 +1,19 @@
+.. title: Vertaal eens een Linuxcampagne
+.. slug: node-8
+.. date: 2008-05-07 12:30:59
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Toevallig stootte ik op http://www.getgnulinux.org/, een website die
+probeert om de ‘gewone m/v’ te overtuigen om de stap naar Linux te
+zetten. Omdat ik dat een goed initiatief vind, heb ik me aan de
+Nederlandse
+`vertaling <http://www.gnulinuxmatters.org/participate/translation/>`__
+gezet. Er is een hele hoop tekst die vertaald moet worden, dus als
+iemand zich geroepen voelt om te helpen, graag :-)
+
+(Hier en daar
+zijn de teksten wel wat ‘extreem-GNU’, maar dat neem ik er dan maar bij.
+Bovendien kan je in de vertaling altijd stiekem wat milderen ;-))

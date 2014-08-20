@@ -1,0 +1,22 @@
+.. title: Revolutionair: verander de taal van Windows na installatie
+.. slug: node-52
+.. date: 2009-11-03 21:04:43
+.. tags: microsoft,windows
+.. link:
+.. description: 
+.. type: text
+
+Naar verluidt is het met Windows 7 eindelijk mogelijk om `de taal van
+Windows na de installatie nog te
+veranderen <http://www.computerworld.be/index.cfm?PageID=16365&News_ID=20659&style=99896>`__.
+En dan werkt het blijkbaar nog niet helemaal :-p.
+
+Ter info: Ik
+gebruik al Linux sinds 1999, en voor Linux heb ik altijd al geweten dat
+de taal na installatie gewijzigd kan worden. Daar is het zelfs een
+instelling die per gebruiker kan verschillen. 
+
+Enfin, ze komen er
+wel bij Microsoft. Nu nog ondersteuning voor `virtuele
+desktops <http://en.wikipedia.org/wiki/Virtual_desktop>`__. :-7
+

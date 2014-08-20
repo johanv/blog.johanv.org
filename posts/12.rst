@@ -1,0 +1,43 @@
+.. title: Cursus Linux vanuit de gemeente?
+.. slug: node-12
+.. date: 2008-08-29 18:21:39
+.. tags: opensource,linux
+.. link:
+.. description: 
+.. type: text
+
+Vandaag zat het 'gemeentebladje' in de brievenbus. De gemeente
+organiseert cursussen informatica: ('Cursus computerlessen' zoals ze het
+zelf noemen :-/)
+
+
+
+-  Word voor 55-plussers
+-  Windows voor 55-plussers
+-  PowerPoint
+-  Excel basis
+
+
+
+Al jaar en dag ben ik ervan overtuigd dat er ook een cursus 'basis
+Linux' moet zijn. Misschien moet ik eens voorstellen om zelf zoiets te
+geven. Ik wil dat zelf vrijwillig doen.
+
+Wat kan er in zo'n cursus
+behandeld worden? Een voorlopig overzicht.
+
+
+
+#. Wat is Linux? Wat is vrije software? Kennismaking met Ubuntu. De
+   live-cd
+#. Linux installeren naast je Windowsinstallatie, het systeem up to date
+   houden
+#. Het installeren van software
+#. De command line
+#. Specifieke zaken, alnaargelang interesse: meerdere gebruikers?
+   multimedia? office? netwerking? backup? grafische dingen? kernel
+   compilatie? shell scripting?
+#. Andere distributies
+
+
+

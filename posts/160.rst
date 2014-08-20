@@ -1,0 +1,169 @@
+.. title: Linux print- en scanserver
+.. slug: node-160
+.. date: 2011-01-06 16:52:29
+.. tags: linux
+.. link:
+.. description: 
+.. type: text
+
+Een vijftal jaar geleden kochten we een nieuwe printer/scanner: een
+`Brother
+DCP-115c <http://www.brother.be/g3.cfm/s_page/57590/s_level/19480/s_product/DCP115CU1>`__.
+
+Eerst
+en vooral: ik zou het niet opnieuw doen. Een nieuwe inktcassette kost
+bijna even veel als de printer zelf, en bovendien heeft het meer dan 3
+jaar geduurd vooraleer de printer min of meer ‘out of the box’ werkte
+met een recente Linuxdistributie; de eerste waarmee het lukte was Ubuntu
+10.04. (Is het nu echt zó moeilijk om postscript-ondersteuning in een
+printer in te bouwen? Maar dit ter zijde.)
+
+Tegenwoordig staat onze
+printer op zolder, want als we thuis een computer gebruiken, dan is het
+een laptop. Die printer hangt aan een Linuxserver, en je kunt dus via
+het draadloze netwerk je printeropdrachten naar boven sturen. Je moet
+dan wel trappen doen om de prints te gaan halen, maar dat beperkt het
+aantal printopdrachten, en is goed voor de conditie ;-)
+
+De
+printserversoftware is gewoon CUPS, en die draait op mijn ‘thuisserver’,
+een oude PC waar ik in het voorjaar van 2008 Ubuntu server edition op
+installeerde. Ik zou nu misschien niet meer voor Ubuntu kiezen, maar
+mijn server van toen draait nu nog steeds met weinig problemen, dus
+waarom zou ik hem vervangen?
+
+De installatie van CUPS was niet
+moeilijk:
+``\nsudo apt-get install brother-cups-wrapper-common brother-cups-wrapper-extra cups\n``
+
+Als
+jouw printer standaardvriendelijker is dan de mijne, dan zijn die
+Brotherpakketten uiteraard niet nodig.
+
+De configuratie was al iets
+moeilijker. Op mijn Ubuntu server staat geen grafische schil, en de
+webinterface voor de cups-configuratie werkt standaard enkel vanaf
+localhost. Ik had cups toch graag geconfigureerd vanop een andere PC,
+maar ik vond niet direct hoe ik dat moest ‘enablen’, dus loste ik het op
+via een ssh-tunnel. (Vermoedelijk gaat dat allemaal veel gemakkelijker
+door rechtstreeks de configuratiefiles aan te passen, maar ik had geen
+zin om dat uit te zoeken.) Ssh-tunnel dus. Voor
+linux/cygwin:\ ``\nssh -L 8080:127.0.0.1:631 username@servername\n``
+
+waarbij
+je het stuk ‘username@servername’ aanpast alnaargelang de naam van je
+‘server’ en een user die kan ssh'en.
+
+Als je nu surft naar
+http://localhost:8080 surft, kom je terecht op de
+administratie-interface van cups op je printserver. Eventueel kun je
+daar onder het flapje ‘Administration’ ‘Allow remote administration’
+aanvinken, zodat je in de toekomst de omweg via de ssh-tunnel niet meer
+nodig hebt. Je kan je printserver dan beheren via
+http://servername:631.
+
+Ook onder het flapje ‘Administration’ klik
+je op ‘Add printer’ om je printer te configureren. Dit komt neer op het
+doorlopen van een aantal eenvoudige stappen. (Ik koos de driver voor
+Brother DCP-110c, en die werkte.)
+
+Je geconfigureerde printer
+aanspreken vanop een andere Linuxcomputer is vrij gemakkelijk. De meeste
+distributies voorzien wel een tooltje waarmee je een printer kan
+‘toevoegen’. Deze tooltjes zijn in het algemeen ook in staat om een
+cups-printerserver te herkennen. Moest dat toch niet het geval zijn, dan
+kan je allicht ergens de URI van je printer opgeven, en die is
+‘\ ``ipp://servername/printers/printername``\ ’ waar ‘printername’ de
+naam is die je je printer gegeven hebt op de server. (Let op: ik moest
+op de client, in dit geval Linux Mint, ook wel de Brotherdingen
+installeren: brother-cups-wrapper-common en brother-cups-wrapper-extra).
+
+
+Je kan je cups-printserver overigens ook gebruiken onder Windows,
+op voorwaarde dat de juiste printerdriver op je Windowsclient
+geïnstalleerd is. Je voegt daarvoor een netwerkprinter toe, en als URL
+gebruik je gewoon de URI van je printer, maar je tikt ‘http:’ in plaats
+van ‘ipp:’, dus: ‘\ ``http://servername/printers/printername``\ ’. Geen
+gedoe meer dus met installatie van samba; had ik dat maar eerder geweten
+;-)
+
+Maar nu probleem 2: de scanner. Er bestaan command-line tools
+om de scanner aan te sturen:\ ``\napt-get install sane-utils\n``
+
+Je
+hebt ook nog software van Brother zelf nodig; download en installeer het
+pakket
+`brscan2 <http://welcome.solutions.brother.com/bsc/public_s/id/linux/en/download_scn.html#brscan2>`__
+van de website van Brother.
+
+\ **Update:** If you have a 64-bit
+system, the driver provided by Brother won't work on a recent Ubuntu
+distribution. Shame on you, Brother. A solution can be found (as always
+:)) in the forums:
+http://ubuntuforums.org/showpost.php?p=11578647&postcount=8
+
+Scannen
+kan nu als
+volgt:\ ``\nsudo scanimage --format=tiff > outputfile.tiff\n``
+
+Nu
+graag nog wat gebruikersgemak. Je zou een webapplicatietje op de server
+kunnen maken, dat scant en het gescande document aanbiedt als download.
+Maar in mijn situatie is dat niet ideaal. Er staat geen grafische
+omgeving op mijn server, en bovendien hangt er ook geen scherm aan. En
+telkens een laptop mee naar boven nemen om de scan te kunnen starten, is
+een beetje vervelend. (En naar beneden lopen nadat het document op de
+scanner ligt, om het na de scan terug te gaan halen, is nog
+vervelender.)
+
+Ik pakte het anders aan. Er hangt nu een toetsenbord
+aan mijn server, en telkens je op ENTER duwt, wordt een scan gemaakt,
+die wordt dan weggeschreven, en kan dan opgepikt worden via ftp of
+(toch) samba.
+
+Om dit te bewerkstelligen maakte ik een nieuwe user
+aan:\ ``\nsudo useradd -g scanner scanner\n``
+
+Deze user moet kunnen
+scannen met sudo, zonder dat daarvoor een wachtwoord ingegeven moet
+worden. Bewerk de configuratie van sudo met ``visudo``, en voeg deze
+lijn toe:\ ``\nscanner ALL = NOPASSWD : /usr/bin/scanimage\n``
+
+Maak
+een bestand ‘\ ``/usr/local/bin/scanloop.sh``\ ’ aan, met deze
+inhoud:
+
+\ ``\n#!/bin/bash\n\noutputdir=/mnt/bigdata/documenten/scans\n\nwhile true; do\n\techo Druk ENTER om te scannen.\n\tread a\n\toutputfile=`tempfile --suffix=.tiff -d $outputdir`\n\tchmod 666 $outputfile\n\tsudo scanimage --format=tiff > "$outputfile"\n\techo Scan bewaard als "$outputfile"\ndone\n``
+
+En
+maak het
+executable:\ ``\nsudo chmod +x /usr/local/bin/scanloop.sh\n``
+
+Als
+we het nu voor elkaar krijgen dat na het booten van de server de user
+scanner automatisch aanlogt, en bovenstaand script uitvoert, dan zijn we
+gesteld. En dat kan met
+‘mingetty’.\ ``\nsudo apt-get install mingetty\n``
+
+In het bestand
+‘\ ``/etc/init/tty1.conf``\ ’ vervang je de lijn
+``\nexec /sbin/getty -8 38400 tty1``
+door
+``\nexec /sbin/mingetty --autologin scanner tty1\n``
+
+Op die manier
+wordt na het opstarten van de server, de user ‘scanner’ automatisch
+aangemeld op tty1. Als je dan nog het volgende commando
+ingeeft:\ ``\nusermod -s /usr/local/bin/scanloop.sh scanner``
+dan maak
+je het nifty scanscriptje de shell voor diezelfde gebruiker.
+
+Als je
+nu je server herstart, dan zal op tty1 automatisch het scanscriptje
+gestart worden. Iedere keer je op ENTER drukt, wordt een scan gemaakt,
+en weggeschreven in de directory bepaald in ‘scanloop.sh’. Die directory
+maak je dan beschikbaar via ftp, samba, webinterface, of nog een andere
+creatieve oplossing, zodat je vanop elke client in huis de documenten
+gemakkelijk kan downloaden.
+
+

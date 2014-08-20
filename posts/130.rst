@@ -1,0 +1,26 @@
+.. title: Verplicht item: Ubuntu 10.4
+.. slug: node-130
+.. date: 2010-04-29 13:06:27
+.. tags: opensource,linux,ubuntu
+.. link:
+.. description: 
+.. type: text
+
+Normaalgezien is vanaf vandaag versie 10.4 (‘Lucid Lynx’) van Ubuntu
+beschikbaar. Tweakers.net heeft al `een
+review <http://tweakers.net/reviews/1644/ubuntu-1004-lts-lucid-lynx.html>`__
+on-line, waaruit we het volgende onthouden:
+
+
+Voor het overige is
+Ubuntu wederom sterker geworden, en met drie jaar support voor de
+desktopversie en vijf jaar voor de servereditie is het heldere
+kattebeest dan ook een serieuze concurrent voor Windows 7.
+
+
+Dat
+zullen we waarschijnlijk nog moeten zien :). Lucid Lynx is ook een vrij
+omstreden release, onder andere omdat de ‘Window Controls’ (knopjes voor
+maximaliseren, minimaliseren, sluiten) nu `links staan in plaats van
+rechts <http://tweakers.net/nieuws/66207/canonical-houdt-voorlopig-vast-aan-verplaatste-windowcontrols.html>`__,
+en omdat `Gimp niet meer standaard meegeïnstalleerd wordt </node/67>`__.

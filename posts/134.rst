@@ -1,0 +1,19 @@
+.. title: Mailserver justitie ligt uit gedurende een week
+.. slug: node-134
+.. date: 2010-05-21 14:26:59
+.. tags: overheid
+.. link:
+.. description: 
+.. type: text
+
+Onder het motto ‘Het kan altijd nog wat erger’. `De mailserver van de
+federale overheidsdienst
+justitie <http://www.demorgen.be/dm/nl/5036/Wetstraat/article/detail/1108442/2010/05/21/Tien-jaar-oude-mailserver-stuurt-organisatie-verkiezingen-in-het-honderd.dhtml>`__
+heeft blijkbaar een week uitgelegen. Gelukkig was de communicatie niet
+volledig verbroken, want er waren nog 'andere kanalen als de post, fax
+en telefoon'. :-]
+
+Eind dit jaar komt er blijkbaar een nieuw systeem
+voor e-mail bij justitie. Aangezien er bespaard moet worden, hoop ik dat
+voor iets kiezen zonder `hoge
+licentiekost <http://www.microsoft.com/exchange/2010/nl/nl/default.aspx>`__.

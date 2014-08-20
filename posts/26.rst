@@ -1,0 +1,24 @@
+.. title: Mediafire eist verwijdering van Firefoxplugin
+.. slug: node-26
+.. date: 2009-10-12 16:21:37
+.. tags: opensource
+.. link:
+.. description: 
+.. type: text
+
+Mediafire.com is een website waar gebruikers bestanden kunnen plaatsen
+die zo door anderen gedownload kunnen worden. Niet-betalende gebruikers
+moeten normaalgezien een halve minuut wachten vooraleer hun download
+begint. Tenzij ze `Mozilla
+Firefox <http://www.mozilla-europe.org/nl/firefox/>`__ gebruiken om te
+surfen, in combinatie met de `SkipScreen <http://skipscreen.com/>`__
+add-on.
+
+Mediafire vindt nu dat het op die manier
+advertentie-inkomsten misloopt, en eist dat de SkipScreen add-on
+verdwijnt:
+http://tweakers.net/nieuws/62957/downloadsite-eist-verwijdering-firefox-plugin-die-wachttijd-omzeilt.html.
+
+Dit
+bewijst m.i. enkel dat Mediafire totaal niet begrijpt hoe het Internet
+werkt.

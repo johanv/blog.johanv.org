@@ -1,0 +1,13 @@
+.. title: Strafste computer ter wereld draait op Linux
+.. slug: node-79
+.. date: 2009-12-03 20:35:58
+.. tags: linux,oudnieuws
+.. link:
+.. description: 
+.. type: text
+
+TOP500 is een project dat de `500 krachtigste supercomputers ter
+wereld <http://www.top500.org/list/2009/11/100>`__ oplijst. De recentste
+lijst dateert van 16 november, en op de eerste plaats prijkt de ‘Jaguar’
+van de Oak Ridge National Laboratory. `Een
+Linuxcomputer <http://techworld.nl/technologie/12982/meer-petaflops-in-top-500-supercomputers.html>`__.

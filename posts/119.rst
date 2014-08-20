@@ -1,0 +1,14 @@
+.. title: Gij zult de straling van uw iPhone niet bepalen
+.. slug: node-119
+.. date: 2010-03-08 12:13:00
+.. tags: apple,bigbrother
+.. link:
+.. description: 
+.. type: text
+
+Apple heeft weer eens een applicatie geweigerd voor zijn app-store. Deze
+keer gaat het over
+`Tawkon <http://techcrunch.com/2010/03/04/tawkon-iphone-radiation/>`__,
+een toepassing die een beeld probeert te geven van de hoeveelheid
+straling die je telefoon uitzendt.
+

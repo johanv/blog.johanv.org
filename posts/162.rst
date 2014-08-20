@@ -1,0 +1,81 @@
+.. title: Automatic beer label recognition
+.. slug: node-162
+.. date: 2011-02-01 16:28:44
+.. tags: opensource,bier,android
+.. link:
+.. description: 
+.. type: text
+
+Yesterday, the Antwerp pub
+‘\ `Kulminator <http://www.ratebeer.com/Places/ShowPlace.asp?PlaceID=533>`__\ ’
+was nominated by `ratebeer.com <http://ratebeer.com>`__ as `Best Beer
+Pub <http://ur1.ca/33021>`__. I work in Antwerp, and yesterday after
+work, I went over there with a couple of collegues, to enjoy some
+beer.
+
+We talked about beers, and I showed my collegues the
+`remembeer <http://remembeer.info/>`__ app on my Android phone. This app
+allows you to log the beers you drink, and to rate them. But as it turns
+out, I don't log the beers I drink that often. When there is a beer in
+front of me, most of the time I don't have time to log it using the tiny
+buttons of the Android software keyboard. :)
+
+So one of my collegues
+said: you should be able to take a picture of the label or cap of the
+bottle. The app should recognize this picture, and automatically fill
+out the information about the beer.
+
+Now this sounded like an
+interesting project. I want to program such a thing. But I'm not sure
+how to start.
+
+I guess I need to develop some kind of backend, to
+which you can upload pictures. Or maybe I can upload the picture to some
+existing image recognition backend, and then do something with the
+result.
+
+I did a little Googling, and I found out about
+`TinEye <http://tineye.com>`__, an online reverse picture search. Maybe
+I can upload the pictures to TinEye (or something similar), and use the
+result for searching the beer info in a backend database.
+
+If I ever
+succeed in programming such a service, I would be happy to implement
+this into remembeer (if the source code will be available again some
+time). I will any way contact the remembeer devs.
+
+Now, what I want
+to know from you, dear reader :-)
+
+
+
+-  Do you know any existing open source app that does something similar
+   to beer label recognition? I think there are apps for wine, but I
+   doubt they are open source.
+-  How would you interpret images of beer labels? Do you know any
+   existing open source projects for image matching?
+-  Are you a beer lover, and do you want to help me generating a
+   database with pictures of labels/caps and info about beers?
+-  Are you a programmer, and do you want to help me with the
+   implementation of this project?
+
+
+
+If you answer ‘yes’ to one of the above questions, and you want to
+help me out, please contact me. 
+
+\ **updated: Contact info**
+
+
+
+-  `!beerscan <http://identi.ca/group/beerscan>`__ identi.ca group
+-  Please upload pictures of beer labels/caps, and tag them with
+   `#beerlabel <http://identi.ca/tag/beerlabel>`__.
+-  I am still working on a web site for the project.
+-  I am `@johanv <http://identi.ca/johanv>`__ on identi.ca
+-  You can e-mail me: my address is my first name, followed by
+   @losderover.be
+
+
+
+
