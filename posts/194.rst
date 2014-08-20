@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/724468/Tax-on-web-met-Linux-Mint-13>`__
 Ieder jaar is het opnieuw wat gepruts om de belastingaangifte te doen
 met Tax-on-web en Linux. Het is me ook dit jaar gelukt, al is het me
 niet helemaal duidelijk waarom :-)
@@ -42,4 +39,3 @@ Reageer
 via `deze conversatie op
 identi.ca <https://identi.ca/conversation/94417669>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

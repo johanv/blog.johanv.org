@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/403788/StatusThread-saving-the-trees-in-identi-ca-discussions>`__
 
 
 A week or two ago, I disabled the registration of new users on
@@ -49,4 +46,3 @@ http://identi.ca/settings/oldschool
 Comment via `this identi.ca
 discussion <http://test.johanv.org/StatusThread/?controller=conversation&id=84264980>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

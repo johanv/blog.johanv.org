@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/857385/Upgrading-the-Xperia-Mini-Pro-from-CM-7-2-to-CM-9>`__
 
 Recently I upgraded my phone (Sony Ericsson Xperia Mini Pro) from
 Cyanogenmod 7.2 to Cyanogenmod 9. And you should upgrade too, if you are
@@ -68,4 +65,3 @@ You
 can comment via `this identi.ca
 discussion <https://identi.ca/conversation/95580612>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/396772/Installeer-eens-een-Linuxdistributie>`__
 
 
 
@@ -100,4 +97,3 @@ Reageer op deze blog post via `deze
 identi.ca-discussie <http://test.johanv.org/StatusThread/?controller=conversation&id=81408498>`__.
 
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

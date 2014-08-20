@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/312647/Arch-Linux-with-encrypted-LVM-on-2-physical-volumes>`__
 
 
 
@@ -166,4 +163,3 @@ References
 -  https://wiki.archlinux.org/index.php/System\_Encryption\_with\_LUKS#LVM.26dm-crypt\_manually\_.28short\_version.29
 -  http://www.pindarsign.de/webblog/?p=767
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

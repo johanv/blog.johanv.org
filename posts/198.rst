@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/882915/Linux-mint-vanop-een-USB-stick>`__
 Deze zaterdag, 15 september, is het weer software freedom day! Dit jaar
 installeren we geen Linuxdistributie op je harde schijf, want dat deden
 we vorig jaar al :-)
@@ -48,5 +45,4 @@ onthouden:
 Reageren kan via `deze
 identi.ca-discussie <https://identi.ca/conversation/95937011>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
 .. |the making of| image:: https://lh5.googleusercontent.com/-4ozV8at00bA/UFDiVgxiBdI/AAAAAAAADQU/f5yIaKgWdxA/s720/IMG_20120908_191616.jpg

@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/482747/Setting-up-a-wireless-virtualisation-host-with-Debian-Squeeze-and-KVM>`__
 
 
 
@@ -221,4 +218,3 @@ References
 -  `Debian wiki: Bridging with a wireless
    NIC <http://wiki.debian.org/BridgeNetworkConnections#Bridging_with_a_wireless_NIC>`__
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

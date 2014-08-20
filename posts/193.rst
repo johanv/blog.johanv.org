@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/706075/Installing-Mint-13-next-to-Debian-Sid-on-an-already-encrypted-hard-drive>`__
 
 I had a dual boot system with Debian Sid and some proprietary other OS
 (\*cough\* wind\*cough\*s). The Debian installation is installed on 3
@@ -159,4 +156,3 @@ didn't try to boot these (yet).
 You can comment on this via `this
 identi.ca conversation <https://identi.ca/conversation/93762483>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

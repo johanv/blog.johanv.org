@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/173078/Log-on-to-Fedora-14-with-your-active-directory-credentials>`__
 
 
 
@@ -63,4 +60,3 @@ References:
 
 -  http://spiralbound.net/blog/2007/04/11/rhel-winbind-authentication-against-active-directory
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

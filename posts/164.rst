@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/171077/Booting-an-existing-Windows-7-installation-from-Fedora-using-Virtualbox->`__
 
 
 
@@ -180,4 +177,3 @@ Don't forget to remove your ‘normal user account’ from the ‘disk’ group
 You can comment on this post via `this identi.ca
 conversation <http://test.johanv.org/StatusThread/?controller=conversation&id=81417727>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

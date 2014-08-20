@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/178329/One-social-network-to-rule-them-all-identi-ca>`__
 
 
 
@@ -36,4 +33,3 @@ maar dan beter. Lees dus vooral verder:
 
 
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

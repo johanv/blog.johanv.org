@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/418303/WCF-services-tutorial-in-het-Nederlands>`__
 
 Enkele dagen geleden moest ik iemand uitleggen hoe je in een
 .NET-omgeving web services kunt opzetten. Ik heb hiervoor een filmpje
@@ -23,4 +20,3 @@ delen:
 Broncode
 is beschikbaar op github: https://github.com/johanv/WcfDemo/
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/726703/Raspberry-Pi-as-print-server-without-server-side-driver>`__
 
 I bought myself a `Raspberry Pi <http://www.raspberrypi.org/>`__ and I
 am using it as print server right now. It required some hacking to make
@@ -98,4 +95,3 @@ References:
 You can comment via `this identi.ca
 conversation <http://identi.ca/conversation/94501999>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

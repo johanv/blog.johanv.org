@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/1154664/Git-met-grafische-tools-voor-Windowsgebruikers>`__
 
 Sommige mensen houden niet van de command line. Wat lastig is, als je
 git moet gebruiken. Gelukkig geraak je tegenwoordig vrij ver met de git
@@ -22,4 +19,3 @@ ik).
 Reacties via deze
 `twitterdiscussie <https://twitter.com/vohanj/status/307216735990317056>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

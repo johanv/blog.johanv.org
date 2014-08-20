@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/758504/Installatie-van-cyanogenmod-7-1-op-de-Xperia-Mini-Pro>`__
 
 Ik kocht me een nieuwe telefoon. Een Sony Ericsson Mini Pro met Android.
 Een fijn toestel met hardwarekeyboard, maar helaas ook met een hele hoop
@@ -256,4 +253,3 @@ Reageren?
 ... via deze
 `identi.ca-conversatie <http://identi.ca/conversation/94981702>`__.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

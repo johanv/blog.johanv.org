@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/322779/Tax-on-Web-Fedora-15-en-Firefox-4>`__
 
 
 Eind juni, dringend tijd voor de belastingaangifte. En uiteraard
@@ -81,4 +78,3 @@ bugreport van
 hem <http://code.google.com/p/eid-mw/issues/detail?id=34>`__ terecht,
 dat mij leidde naar de eid-mw-software.
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

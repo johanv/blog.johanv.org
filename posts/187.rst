@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/411281/Packages-I-install-on-my-Arch-Linux-system>`__
 
 
 
@@ -193,4 +190,3 @@ You can comment via `this identi.ca
 conversation <http://identi.ca/conversation/84415043>`__.
 
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

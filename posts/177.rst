@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/180533/Een-LUG-in-Kessel>`__
 
 
 Alweer een wild idee, waarvan waarschijnlijk niets komt, maar toch de
@@ -60,4 +57,3 @@ kent, kun je me ook mailen. Als ik volk genoeg vind, en ik mag van mijn
 vrouw ;-), dan gaat het door.
 
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

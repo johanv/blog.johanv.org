@@ -8,9 +8,6 @@
 
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/385849/Backing-up-a-remote-website-using-sshfs-and-rsnapshot>`__
 
 
 
@@ -116,4 +113,3 @@ backup my database. I don't have command line mysql on the server, so I
 will have to use the mysql web interface. I will keep you informed when
 I get this working automatically :)
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png

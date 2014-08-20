@@ -7,9 +7,6 @@
 .. type: text
 
 
-`
-\ |Flattr
-this| <http://flattr.com/thing/172954/How-to-add-flattr-buttons-to-your-Drupal-site>`__
 
 
 Here is a quick and diry way for putting dynamic flattr buttons in
@@ -40,4 +37,3 @@ I know there exists a Drupal module for
 Flattr, but I think it is not ready for easy usage yet.
 
 
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
