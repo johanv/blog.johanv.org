@@ -52,6 +52,3 @@ don't mention 'Pro'.
 -  `login </user/login?destination=comment%2Freply%2F209%23comment-form>`__
    om te reageren
 
-Flattr dit artikel
-------------------
-

@@ -188,6 +188,3 @@ even pull requests) over there.
 -  `login </user/login?destination=comment%2Freply%2F204%23comment-form>`__
    om te reageren
 
-Flattr dit artikel
-------------------
-

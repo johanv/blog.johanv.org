@@ -54,6 +54,3 @@ who posted the comment that saved my day.
 -  `login </user/login?destination=comment%2Freply%2F207%23comment-form>`__
    om te reageren
 
-Flattr dit artikel
-------------------
-

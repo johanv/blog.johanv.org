@@ -690,8 +690,3 @@ requests sturen, als je hem wilt verbeteren :)
 -  `login </user/login?destination=comment%2Freply%2F199%23comment-form>`__
    om te reageren
 
-Flattr dit artikel
-------------------
-
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
-   :target: http://flattr.com/thing/1051976/De-tekst-die-ik-zocht-toen-ik-startte-met-git

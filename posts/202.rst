@@ -192,8 +192,3 @@ stuur een pull request.
 -  `login </user/login?destination=comment%2Freply%2F202%23comment-form>`__
    om te reageren
 
-Flattr dit artikel
-------------------
-
-.. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
-   :target: http://flattr.com/thing/1159977/Tekstverwerkers-zijn-overrated
