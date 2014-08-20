@@ -377,11 +377,11 @@ THEME = "johanv"
 LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
-# LICENSE = """
-# <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/">
-# <img alt="Creative Commons License BY-NC-SA"
-# style="border-width:0; margin-bottom:12px;"
-# src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
+LICENSE = """
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<img alt="Creative Commons License BY-SA"
+style="border-width:0; margin-bottom:12px;"
+src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
