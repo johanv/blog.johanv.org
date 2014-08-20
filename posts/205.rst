@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/205>`__
 
 Hoe installeer ik een
 geprecompileerde .NET-toepassing op een bestaande IIS-server?

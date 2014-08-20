@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-` <http://johanv.org/node/182>`__
 
 
 `

@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/206>`__
 My favourite mail client is
 mutt. At work we have an Exchange mail server, and I wanted to use mutt
 for my work e-mail. Today it works. (I am using Fedora 19 beta)

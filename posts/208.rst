@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/208>`__
 
 Wil je met Fedora 19 beta je
 EID-kaartlezer aan de praat krijgen om met Tax-On-Web je

@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/210>`__
 
 Een tijd geleden moest ik
 eerst even langs Lier passeren, alvorens ik naar het werk in Antwerpen

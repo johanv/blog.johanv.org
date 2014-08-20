@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/201>`__
 
 `
 \ |Flattr
