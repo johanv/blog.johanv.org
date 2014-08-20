@@ -4405,8 +4405,12 @@ input[type="submit"].btn.btn-mini {
   padding: 10px 20px 10px;
   margin-left: -20px;
   font-size: 20px;
-  font-weight: 200;
-  color: #ccc;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 2px #ccc;
+  background-image: url("images/jo-klein.png");
+  background-repeat: no-repeat;
+  background-position: -70% 7%;
 }
 
 .navbar .brand:hover,
