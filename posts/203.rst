@@ -81,8 +81,6 @@ There is a `ROM for
 CM7 <http://theunlockr.com/2012/03/15/cm7-for-player-5-0-rom/>`__ as
 well. Maybe with a working camera. I still have to try this out.
 
--  `login </user/login?destination=comment%2Freply%2F203%23comment-form>`__
-   om te reageren
 
 About the SD-card problems
 --------------------------

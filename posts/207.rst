@@ -51,6 +51,3 @@ Many thanks to `Sergei
 Winitzki <http://orkultus.wordpress.com/2013/01/18/frequent-wireless-connection-drops-with-the-atheros-ar9462/comment-page-1/#comment-146>`__,
 who posted the comment that saved my day.
 
--  `login </user/login?destination=comment%2Freply%2F207%23comment-form>`__
-   om te reageren
-

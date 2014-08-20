@@ -189,6 +189,3 @@ stuur een pull request.
 | `tekstverwerkers.md\_.txt <http://drupal.johanv.org/sites/johan.zandhoven.org/files/tekstverwerkers.md_.txt>`__   | 7.07 KB    |
 +-------------------------------------------------------------------------------------------------------------------+------------+
 
--  `login </user/login?destination=comment%2Freply%2F202%23comment-form>`__
-   om te reageren
-

@@ -687,6 +687,4 @@ github. <https://github.com/johanv/randomtexts/blob/master/gitstart.md>`__
 Daar kun je commentaar geven (post gerust een issue), of zelfs pull
 requests sturen, als je hem wilt verbeteren :)
 
--  `login </user/login?destination=comment%2Freply%2F199%23comment-form>`__
-   om te reageren
 

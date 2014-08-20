@@ -49,6 +49,3 @@ becasuse of the Pro in the name, on a completely different place in the
 alphabetical list than the other (nonfunctional) cp1025 drivers, which
 don't mention 'Pro'.
 
--  `login </user/login?destination=comment%2Freply%2F209%23comment-form>`__
-   om te reageren
-

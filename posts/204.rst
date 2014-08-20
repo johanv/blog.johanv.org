@@ -185,6 +185,4 @@ github <https://github.com/johanv/randomtexts/blob/master/wordprocessors.md>`__.
 In markdown format, of course. :-) You can post comments (issues, or
 even pull requests) over there.
 
--  `login </user/login?destination=comment%2Freply%2F204%23comment-form>`__
-   om te reageren
 
