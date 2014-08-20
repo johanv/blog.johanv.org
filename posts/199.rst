@@ -6,917 +6,692 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/199>`__
-
-`
-\ |Flattr
-this| <http://flattr.com/thing/1051976/De-tekst-die-ik-zocht-toen-ik-startte-met-git>`__
+De tekst die ik zocht toen ik startte met git
+---------------------------------------------
 
 
-Toen de dieren nog spraken, heb ik aan projecten gewerkt die
-CVS
-gebruikten als versiebeheersysteem. Daarna werkte ik
-verschillende
-jaren met subversion. Maar sinds enkele maanden heb ik
-ook subversion
-gedumpt, en gebruik ik alleen nog git. Als ik kan
-kiezen tenminste.
-Dit zijn de redenen:
+Toen de dieren nog spraken, heb ik aan projecten gewerkt die CVS
+gebruikten als versiebeheersysteem. Daarna werkte ik verschillende jaren
+met subversion. Maar sinds enkele maanden heb ik ook subversion gedumpt,
+en gebruik ik alleen nog git. Als ik kan kiezen tenminste. Dit zijn de
+redenen:
 
-\* Je kunt committen als
-je internetconnectie het laat afweten.
-\* Je kunt vrij gemakkelijk
-configureren dat niet iedereen
-schrijfrechten heeft op de master- en
-de releasebranches.
-\* Je kunt al eens lokaal iets uitproberen en
-wijzigingen committen,
-zonder dat je daarvoor op de centrale
-repository een branch moet maken.
-\* Feature branches maken en
-switchen tussen branches gaat veel
-makkelijker, en ook zonder
-internetconnectie.
-\* Git heeft veel meer features dan
-subversion.
-\* Linus zegt: 'If you are using subversion, you are
-stupid and
-ugly.' ;-)
+-  Je kunt committen als je internetconnectie het laat afweten.
+-  Je kunt vrij gemakkelijk configureren dat niet iedereen
+   schrijfrechten heeft op de master- en de releasebranches.
+-  Je kunt al eens lokaal iets uitproberen en wijzigingen committen,
+   zonder dat je daarvoor op de centrale repository een branch moet
+   maken.
+-  Feature branches maken en switchen tussen branches gaat veel
+   makkelijker, en ook zonder internetconnectie.
+-  Git heeft veel meer features dan subversion.
+-  Linus zegt: 'If you are using subversion, you are stupid and ugly.'
+   ;-)
 
+Er zijn ook wel wat problemen met een migratie naar git:
 
-Er zijn ook wel wat problemen met een
-migratie naar git:
+-  Git werkt op een heel andere manier dan subversion, en het vraagt
+   tijd om goed te begrijpen wat het doet
+-  Git werkt het gemakkelijkst via de command line, en dat is voor
+   sommige users een hoge drempel.
 
-\* Git werkt op een heel andere manier dan
-subversion, en het vraagt
-tijd om goed te begrijpen wat het doet
-\*
-Git werkt het gemakkelijkst via de command line, en dat is
-voor
-sommige users een hoge drempel.
+Ik mocht een bestaande server gebruiken met git en gitolite. En ook de
+conversie van subversion naar git ging vrij gemakkelijk. We konden git
+gebruiken, het werkte, al wist ik niet helemaal hoe dat kwam. Dat lijkt
+overigens een meer gehoord probleem te zijn. Vandaar dat ik nu de tekst
+schrijf die ik graag had gelezen toen ik met git begon. Want hier en
+daar zitten er wel wat rariteiten in onze repo, die waarschijnlijk
+vermeden hadden kunnen worden, als ik beter wist waar ik mee bezig was.
 
-Ik mocht een bestaande
-server gebruiken met git en gitolite. En ook de
-conversie van
-subversion naar git ging vrij gemakkelijk. We konden git
-gebruiken,
-het werkte, al wist ik niet helemaal hoe dat kwam. Dat lijkt
-overigens
-een meer gehoord probleem te zijn. Vandaar dat ik nu de tekst
-schrijf
-die ik graag had gelezen toen ik met git begon. Want hier en
-daar
-zitten er wel wat rariteiten in onze repo, die waarschijnlijk
-vermeden
-hadden kunnen worden, als ik beter wist waar ik mee bezig
-was.
+Twee disclaimers:
 
-Twee disclaimers: 
+-  Ik bespreek hier enkel de concepten, je vindt hier geen concrete
+   git-commando's. Dat is bewust :) Mogelijk schrijf ik ooit nog een
+   praktisch vervolg op deze tekst.
 
-\* Ik bespreek hier enkel de
-concepten, je vindt hier 
-geen concrete git-commando's. Dat is bewust
-:) Mogelijk schrijf ik
-ooit nog een praktisch vervolg op deze
-tekst.
+-  Van sommige technische zaken maak ik abstractie, om de lengte van de
+   tekst te kunnen beperken.
 
-\* Van sommige technische zaken maak ik abstractie, om de
-lengte van de
-tekst te kunnen beperken.
+Git is gedistribueerd
+---------------------
 
-## Git is
-gedistribueerd
+Git is gedistribueerd. Er is in principe geen centrale repository, en
+iedere developer heeft een kopie van de volledige repository staan. Wil
+je een nieuwe kopie, dan kloon je gewoon een bestaande.
 
-Git is gedistribueerd. Er is in principe geen
-centrale repository, en
-iedere developer heeft een kopie van de
-volledige repository staan. Wil
-je een nieuwe kopie, dan kloon je
-gewoon een bestaande. 
+In je eigen repository kun je referenties bewaren naar andere remote
+reposity's. Als je een repository kloont, dan wordt sowieso een
+referentie gelegd naar het orginineel, die dan de naam 'origin' krijgt.
 
-In je eigen repository kun je referenties
-bewaren naar andere remote
-reposity's. Als je een repository kloont,
-dan wordt sowieso een referentie
-gelegd naar het orginineel, die dan
-de naam 'origin' krijgt.
+Commits
+-------
 
-## Commits
+Een git repository is in grote lijnen niets meer dan een gerichte
+acyclische graph met commits, waar een commit een specifieke revisie van
+je source code is. Iedere commit wordt bepaald door een SHA-1-hash,
+niets meer dan een (in praktijk) unieke checksum. Vaak spreekt men
+kortweg over een 'SHA'.
 
-Een git repository is in
-grote lijnen niets meer dan een gerichte
-acyclische graph met commits,
-waar een commit een specifieke revisie van
-je source code is. Iedere
-commit wordt bepaald door een SHA-1-hash,
-niets meer dan een (in
-praktijk) unieke checksum. Vaak spreekt men
-kortweg over een
-'SHA'.
+Een SHA is 40 karakters lang, dat is erg veel om te typen. Als er geen
+dubbelzinnigheid is, kun je naar een commit verwijzen met de eerste
+karakters van de SHA. Meestal kom je met 5 à 6 karakters toe.
 
-Een SHA is 40 karakters lang, dat is erg veel om te typen.
-Als er geen
-dubbelzinnigheid is, kun je naar een commit verwijzen met
-de eerste
-karakters van de SHA. Meestal kom je met 5 à 6 karakters
-toe.
+Iedere commit (behalve de initiële) heeft een verwijzing naar één of
+twee ouders. Die verwijzing gebeurt via de SHA. Door van een
+willekeurige commit die verwijzigingen te blijven volgen tot de initiële
+commit, kun je heel de geschiedenis van die revisie van de source code
+terugvinden.
 
-Iedere commit (behalve de initiële) heeft een verwijzing naar
-één of twee
-ouders. Die verwijzing gebeurt via de SHA. Door van een
-willekeurige
-commit die verwijzigingen te blijven volgen tot de
-initiële commit, kun je
-heel de geschiedenis van die revisie van de
-source code terugvinden.
+In het meest eenvoudige geval, is een git repository gewoon een
+opeenvolging van commits, waarbij iedere commit hoogstens één ouder en
+hoogstens één kind heeft. De geschiedenis is dan bij wijze van spreke
+een rechte lijn:
 
-In het meest eenvoudige geval, is een git
-repository gewoon een
-opeenvolging van commits, waarbij iedere commit
-hoogstens één ouder en
-hoogstens één kind heeft. De geschiedenis is
-dan bij wijze van spreke een
-rechte lijn:
+::
 
- C1 <- C2 <- C3 <-
-C4
+    C1 <- C2 <- C3 <- C4
 
-\*\`C1\` is de initiële commit. Om de schema's niet te
-overladen, ga
-ik verderop in de tekst de 'pijltjes' voor de
-ouderrelatie (\`<-\`) niet
-meer als dusdanig afbeelden. De conventie
-is dat de parent links staat,
-en de children rechts.\*
+*``C1`` is de initiële commit. Om de schema's niet te overladen, ga ik
+verderop in de tekst de 'pijltjes' voor de ouderrelatie (``<-``) niet
+meer als dusdanig afbeelden. De conventie is dat de parent links staat,
+en de children rechts.*
 
-In de
-meeste gevallen is het echter niet zo dat alle revisies in
-een
-git-repository elkaar mooi opvolgen. In geval van branchen heeft
-een
+In de meeste gevallen is het echter niet zo dat alle revisies in een
+git-repository elkaar mooi opvolgen. In geval van branchen heeft een
 commit typisch meerdere kinderen. Bij een merge-operatie heeft een
-commit
-precies twee ouders. Maar daarover later meer.
+commit precies twee ouders. Maar daarover later meer.
 
-\*Voorbeeld
-van een ingewikkelder repository:\*
+*Voorbeeld van een ingewikkelder repository:*
 
- C1 -- C2 -- C3 -- C4 -- C5 --
-D6 -- D7
- \| \|
- +--- D3 -- D4 -- D5 ----+
- \|
- \| +--- F5 --
-F6
- \| \|
- +--- E3 -- E4--- E5
+::
 
-Bij het programmeren is er
-altijd één commit uitgecheckt. Deze commit
-is de \`HEAD\` van je
-repository. De huidige source code (working copy)
-komt overeen de code
-van \`HEAD\`, met daarop een een aantal wijzigingen die
-je maakte. Er
-kunnen bestanden toegevoegd, verwijderd, of aangepast zijn.
+    C1 -- C2 -- C3 -- C4 -- C5 -- D6 -- D7
+           |                       |
+           +--- D3 -- D4 -- D5 ----+
+           |
+           |           +--- F5 -- F6
+           |           |
+           +--- E3 -- E4--- E5
 
-Als je
-nu een nieuwe revisie van je code wilt committen, moet je aan
-git
+Bij het programmeren is er altijd één commit uitgecheckt. Deze commit is
+de ``HEAD`` van je repository. De huidige source code (working copy)
+komt overeen de code van ``HEAD``, met daarop een een aantal wijzigingen
+die je maakte. Er kunnen bestanden toegevoegd, verwijderd, of aangepast
+zijn.
+
+Als je nu een nieuwe revisie van je code wilt committen, moet je aan git
 laten weten welke van de wijzigingen in de working copy meegenomen
-moeten
-worden. Als je wilt dat een wijziging mee gecommit wordt, dan
-moet je
-die toevoegen aan de 'index': de wijziging 'stagen'. Een
-nieuwe commit
-bevat alle wijzigingen van de index. Zaken die je aan de
-source veranderde,
-maar niet stagede, blijven weliswaar gewijzigd in
-jouw versie van de
-source code, maar worden niet mee opgenomen in de
-commit.
+moeten worden. Als je wilt dat een wijziging mee gecommit wordt, dan
+moet je die toevoegen aan de 'index': de wijziging 'stagen'. Een nieuwe
+commit bevat alle wijzigingen van de index. Zaken die je aan de source
+veranderde, maar niet stagede, blijven weliswaar gewijzigd in jouw
+versie van de source code, maar worden niet mee opgenomen in de commit.
 
- HEAD
- ↓
- C1 -- C2 -- C3 -- C4 -- staged changes --
-working copy
+::
 
-\*... wordt na committen:\*
+                      HEAD
+                       ↓
+    C1 -- C2 -- C3 -- C4  -- staged changes -- working copy
 
- HEAD
- ↓
- C1 --
-C2 -- C3 -- C4 -- C5 -- working copy
+*... wordt na committen:*
 
-Na een commit schuift \`HEAD\`
-een plaatsje op, zodat die opnieuw wijst naar
-de commit waarop je
-working copy gebaseerd is.
+::
 
-Als git-repository's met elkaar praten,
-dan wisselen ze typisch
-commits uit. Op de duur krijg je er zo heel
-wat bij elkaar, en de
-vraag is dan hoe je daar je weg nog in vindt.
-Hier is een oplossing
-voor: branches.
+                            HEAD
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- working copy
 
-## Branches
+Na een commit schuift ``HEAD`` een plaatsje op, zodat die opnieuw wijst
+naar de commit waarop je working copy gebaseerd is.
+
+Als git-repository's met elkaar praten, dan wisselen ze typisch commits
+uit. Op de duur krijg je er zo heel wat bij elkaar, en de vraag is dan
+hoe je daar je weg nog in vindt. Hier is een oplossing voor: branches.
 
 Branches
-zijn in se niets meer dan pointers naar een bepaalde
-commit in je
-repository. Net zoals \`HEAD\` er eentje is, eigenlijk. Een
-branch
-uitchecken, komt neer op het uitchecken van de commit waar de
-branch
-naar wijst. Git weet in welke branch je aan het werken bent,
-en als je
-een nieuwe revisie commit, dan schuift niet alleen \`HEAD\` op,
-maar
-ook de pointer van de huidige branch.
+--------
 
-Branches kun je namen geven
-zoals je wilt, maar typisch is er één die
-\`master\` heet. De
-\`master\`-branch is de 'mainline', die bevat de meest
-up-to-date
-developmentversie.
+Branches zijn in se niets meer dan pointers naar een bepaalde commit in
+je repository. Net zoals ``HEAD`` er eentje is, eigenlijk. Een branch
+uitchecken, komt neer op het uitchecken van de commit waar de branch
+naar wijst. Git weet in welke branch je aan het werken bent, en als je
+een nieuwe revisie commit, dan schuift niet alleen ``HEAD`` op, maar ook
+de pointer van de huidige branch.
 
-\*Voorbeeld:\*
+Branches kun je namen geven zoals je wilt, maar typisch is er één die
+``master`` heet. De ``master``-branch is de 'mainline', die bevat de
+meest up-to-date developmentversie.
 
+*Voorbeeld:*
 
- master 
- ↓ HEAD
- C1
--- C2 -- C3 -- C4 branch2
- \| ↓
- +--- D3 -- D4 -- D5 
- \|
- \|
-+--- F5 -- F6
- \| \| ↑
- +--- E3 -- E4 branch4
- ↑ 
- branch3
+::
 
+                    master   
+                        ↓    HEAD
+    C1 -- C2 -- C3 -- C4     branch2
+           |                 ↓
+           +--- D3 -- D4 -- D5 
+           |
+           |           +--- F5 -- F6
+           |           |           ↑
+           +--- E3 -- E4         branch4
+                       ↑           
+                     branch3  
 
-Branches in je eigen kopie van de repository, zijn lokale
-branches. De
-branches in een remote repository kun je ook zien, dat
-zijn dan remote
-branches. Het is mogelijk om remote branches te
-'fetchen'; dan worden
-alle relevante commits overgehaald naar je eigen
-repository, alsook de
+Branches in je eigen kopie van de repository, zijn lokale branches. De
+branches in een remote repository kun je ook zien, dat zijn dan remote
+branches. Het is mogelijk om remote branches te 'fetchen'; dan worden
+alle relevante commits overgehaald naar je eigen repository, alsook de
 pointer van de remote branch.
 
+::
+
+    (origin)
+
+                    master   
+                        ↓         
+    C1 -- C2 -- C3 -- C4          branch2
+           |                       ↓
+           +--- D3 -- D4 -- D5 -- D6
+           |
+           |           +--- F5 -- F6
+           |           |           ↑
+           +--- E3 -- E4         branch4
+                       ↑           
+                     branch3  
 
 
-(origin)
+    (lokaal)
 
- master 
- ↓ 
- C1 -- C2 -- C3 -- C4 branch2
- \| ↓
+                           HEAD
+                           master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
 
-+--- D3 -- D4 -- D5 -- D6
- \|
- \| +--- F5 -- F6
- \| \| ↑
- +---
-E3 -- E4 branch4
- ↑ 
- branch3 
+*Fetchen van ``origin/branch4`` geeft in dit voorbeeld*
 
+::
 
- (lokaal)
+    (lokaal)
 
- HEAD
+                          HEAD
+                          master  
+                             ↓    
+    C1 -- C2 -- C3 -- C4 -- C5  
+           |                       
+           +--- E3 -- F4 -- F5 -- F6  
+                                   ↑
+                                origin/branch4
 
-master
- ↓
- C1 -- C2 -- C3 -- C4 -- C5
+Je kunt niet rechtstreeks committen een branch in een remote repository.
+De geijkte manier van werken is dat je eerst de remote branch fetcht,
+dat je die koppelt aan een lokale branch, en dat je dan lokaal je nieuwe
+commits maakt. Een dergelijke lokale branch die gekoppeld is aan een
+remote branch, heet een '(remote) tracking branch'.
 
+Van een tracking branch weet git waar het origineel zit, zodat je de
+recentste wijzigingen in de remote branch makkelijk kunt downloaden. Git
+zal je ook informeren over de verschillen tussen je de remote branch en
+je gekoppelde lokale tracking branch.
 
-\*Fetchen van
-\`origin/branch4\` geeft in dit voorbeeld\*
+*Terug naar het voorbeeld van daarnet. Als je een lokale branch
+``branch4`` maakt, als remote tracking branch voor ``origin/branch4``,
+en je checkt die uit, dan is de situatie als volgt:*
 
- (lokaal)
+::
 
- HEAD
+                          master  
+                             ↓   
+    C1 -- C2 -- C3 -- C4 -- C5  
+           |                       
+           +--- E3 -- F4 -- F5 -- F6  
+                                   ↑
+                                origin/branch4
+                                branch4
+                                HEAD
 
-master 
- ↓ 
- C1 -- C2 -- C3 -- C4 -- C5 
- \| 
- +--- E3 -- F4 --
-F5 -- F6 
- ↑
- origin/branch4
+Maar voor de rest gedraagt een tracking branch zich net hetzelfde als
+een gewone lokale branch. Als hij uitgechekt is, en je commit, dan
+schuift de pointer van je tracking branch gewoon mee op met ``HEAD``.
 
-Je kunt niet rechtstreeks
-committen een branch in een remote
-repository. De geijkte manier van
-werken is dat je eerst de remote branch
-fetcht, dat je die koppelt aan
-een lokale branch, en dat je dan lokaal je
-nieuwe commits maakt. Een
-dergelijke lokale branch die
-gekoppeld is aan een remote branch, heet
-een '(remote) tracking branch'.
+::
 
-Van een tracking branch weet git
-waar het origineel zit, zodat je de
-recentste wijzigingen in de remote
-branch makkelijk kunt downloaden.
-Git zal je ook informeren over de
-verschillen tussen je de remote branch
-en je gekoppelde lokale
-tracking branch.
+                          master  
+                             ↓                HEAD
+    C1 -- C2 -- C3 -- C4 -- C5                branch4
+           |                                   ↓
+           +--- E3 -- F4 -- F5 -- F6 -- F7 -- F8
+                                   ↑
+                                origin/branch4
 
-\*Terug naar het voorbeeld van daarnet. Als je een
-lokale branch \`branch4\`
-maakt, als remote tracking branch voor
-\`origin/branch4\`, en je checkt die
-uit, dan is de situatie als
-volgt:\*
+Mergen
+------
 
+Als een commit 2 parents heeft, dan spreken we over een
+'merge-operatie'. Het idee achter mergen is dat je de wijzigingen van
+een andere branch toepast op je uitgecheckte branch. Die wijzigingen
+worden bepaald op basis van de recentste gemeenschappelijke voorouder
+van de uitgecheckte branch en de te mergen branch.
 
- master 
- ↓ 
- C1 -- C2 -- C3 -- C4 -- C5 
- \| 
+In het eenvoudigste geval, is je uitgecheckte branch zelf een voorouder
+van de branch die je wilt mergen. (Dit komt vaker voor dan je initieel
+zou denken). Git zal dan gewoon de pointer van je uitgecheckte branch
+verleggen naar de commit waar de te mergen branch naar wijst. De
+verlegde branch wordt dan opnieuw uitgecheckt, zodat ``HEAD`` ook
+opschuift. We spreken van een 'fast forward merge'. Goed onthouden, want
+dat is een belangrijk concept: een fast forward merge is een merge die
+enkel neerkomt op het verleggen van de pointer van een branch.
 
-+--- E3 -- F4 -- F5 -- F6 
- ↑
- origin/branch4
- branch4
+::
 
-HEAD
+                    HEAD
+                    branch1   
+                       ↓
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                branch2
 
-Maar voor de rest gedraagt een tracking branch zich net
-hetzelfde als een
-gewone lokale branch. Als hij uitgechekt is, en je
-commit, dan schuift de
-pointer van je tracking branch gewoon mee op
-met \`HEAD\`.
+*Na merge van branch2 op branch1:*
 
- master 
- ↓ HEAD
- C1 -- C2 -- C3 -- C4 -- C5
-branch4
- \| ↓
- +--- E3 -- F4 -- F5 -- F6 -- F7 -- F8
- ↑
+::
 
-origin/branch4
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6
+                                   ↓
+                                branch1
+                                branch2
+                                HEAD
 
-##Mergen
+*(Ik heb de knik in de tekening laten zitten, maar uiteraard is die niet
+van belang)*
 
-Als een commit 2 parents heeft, dan
-spreken we over een 'merge-operatie'.
-Het idee achter mergen is dat je
-de wijzigingen van een andere branch
-toepast op je uitgecheckte
-branch. Die wijzigingen worden bepaald op basis
-van de recentste
-gemeenschappelijke voorouder van de uitgecheckte branch
-en de te
+Een fast forward merge is niet altijd mogelijk. Als je uitgecheckte
+branch geen voorouder is van de te mergen branch, dan volstaat het
+verleggen van een pointer niet.
+
+::
+
+                          HEAD
+                          branch1
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                branch2
+
+In dit geval gaat git op zoek naar de recentste gemeenschappelijke
+voorouder. Op die voorouder worden dan de wijzigingen van daar tot de
+uitgecheckte branch toegepast, en de wijzigingen van daar tot de te
 mergen branch.
 
-In het eenvoudigste geval, is je uitgecheckte branch
-zelf een voorouder
-van de branch die je wilt mergen. (Dit komt vaker
-voor dan je initieel
-zou denken). Git zal dan gewoon de pointer van je
-uitgecheckte branch
-verleggen naar de commit waar de te mergen branch
-naar wijst. De verlegde
-branch wordt dan opnieuw uitgecheckt, zodat
-\`HEAD\` ook opschuift. We
-spreken van een 'fast forward merge'. Goed
-onthouden, want dat is een
-belangrijk concept: een fast forward merge
-is een merge die enkel neerkomt
-op het verleggen van de pointer van
-een branch.
+*Onderstaand voorbeeld laat zien hoe ``branch2`` gemerged wordt in
+``branch1``.*
 
- HEAD
- branch1 
- ↓
- C1 -- C2 -- C3 -- C4
- \|
+::
 
-+--- D5 -- D6
- ↑
- branch2
+                                    HEAD
+                                    branch1
+                                       ↓
+    C1 -- C2 -- C3 -- C4 -- C5------- C6
+                       |               |
+                       +--- D5 -- D6 --+
+                                   ↑
+                                branch2
 
-\*Na merge van branch2 op
-branch1:\*
+In het beste geval gaat dat probleemloos. Git maakt dan een nieuwe
+commit in de uitgecheckte branch.
 
- C1 -- C2 -- C3 -- C4
- \|
- +--- D5 -- D6
- ↓
+Als er conflicten zijn tussen de 2 sets wijzigingen, dan zal git je
+files wel aanpassen, maar zal het resultaat nog niet gecommit zijn. Je
+zult dan manueel de conflicten moeten oplossen (git zal je vertellen
+over welke files het gaat), alvorens het resultaat te committen.
 
-branch1
- branch2
- HEAD
+Pull en push
+------------
 
-\*(Ik heb de knik in de tekening laten
-zitten, maar uiteraard is die
-niet van belang)\*
+Stel dat je in een remote tracking branch aan het werken bent, en dat je
+de laatste commits van die remote branch wilt toepassen op jouw branch.
+Dan kun je een 'pull'-operatie uitvoeren. Git zal dan de remote branch
+opnieuw fetchen, en die mergen in jouw tracking branch.
 
-Een fast forward
-merge is niet altijd mogelijk. Als je uitgecheckte branch
-geen
-voorouder is van de te mergen branch, dan volstaat het verleggen van een
-pointer niet.
+*Bijvoorbeeld: Toen in onderstaand voorbeeld ``remote/branch1`` naar
+``C3`` wees, maakte je een remote tracking branch. Sindsdien werd remote
+een commit ``C4`` bijgemaakt, terwijl jij lokaal ``C4'``, ``C5'`` en
+``C6'`` committe.*
 
- HEAD
- branch1
- ↓
- C1 -- C2 -- C3 -- C4 --
-C5
- \|
- +--- D5 -- D6
- ↑
- branch2
+::
 
-In dit geval gaat git op
-zoek naar de recentste gemeenschappelijke
-voorouder. Op die voorouder
-worden dan de wijzigingen van daar tot de
-uitgecheckte branch
-toegepast, en de wijzigingen van daar tot de te
-mergen
-branch.
-
-\*Onderstaand voorbeeld laat zien hoe \`branch2\` gemerged
-wordt in
-\`branch1\`.\*
-
- HEAD
- branch1
- ↓
- C1 -- C2 -- C3
--- C4 -- C5------- C6
- \| \|
- +--- D5 -- D6 --+
- ↑
-
-branch2
-
-In het beste geval gaat dat probleemloos. Git maakt dan een
-nieuwe commit
-in de uitgecheckte branch.
-
-Als er conflicten zijn
-tussen de 2 sets wijzigingen, dan zal git je
-files wel aanpassen, maar
-zal het resultaat nog niet gecommit zijn. Je
-zult dan manueel de
-conflicten moeten oplossen (git zal je vertellen
-over welke files het
-gaat), alvorens het resultaat te committen.
-
-## Pull en
-push
-
-Stel dat je in een remote tracking branch aan het werken bent,
-en dat je
-de laatste commits van die remote branch wilt toepassen op
-jouw branch.
-Dan kun je een 'pull'-operatie uitvoeren. Git zal dan de
-remote branch
-opnieuw fetchen, en die mergen in jouw tracking
-branch.
-
-\*Bijvoorbeeld: Toen in onderstaand voorbeeld
-\`remote/branch1\` naar \`C3\` wees,
-maakte je een remote tracking
-branch. Sindsdien werd remote een commit
-\`C4\` bijgemaakt, terwijl
-jij lokaal \`C4'\`, \`C5'\` en \`C6'\` committe.\*
-
- (origin)
-
-branch1
- ↓
- C1 -- C2 -- C3 -- C4 
- 
- 
- (lokaal)
- 
- HEAD
-
-branch1 (trackt remote/branch1)
- ↓
- C1 -- C2 -- C3 -- C4' -- C5'--
-C6'
- ↑ 
- remote/branch1
+    (origin)
+                     branch1
+                       ↓
+    C1 -- C2 -- C3 -- C4 
 
 
-\*Na een fetch-operatie van
-\`remote/branch1\`, ziet de lokale repo er
-als volgt uit:\*
+    (lokaal)
 
+                                   HEAD
+                                   branch1 (trackt remote/branch1)
+                                    ↓
+    C1 -- C2 -- C3 -- C4' -- C5'-- C6'
+                 ↑ 
+              remote/branch1
 
-HEAD
- branch1
- ↓
- C1 -- C2 -- C3 -- C4' -- C5'-- C6'
- \|
- +---
-C4
- ↑ 
- remote/branch1
+*Na een fetch-operatie van ``remote/branch1``, ziet de lokale repo er
+als volgt uit:*
 
-\*Tenslotte wordt gemerged\*
+::
 
+                                   HEAD
+                                   branch1
+                                    ↓
+    C1 -- C2 -- C3 -- C4' -- C5'-- C6'
+                 |
+                 +--- C4
+                       ↑ 
+                  remote/branch1
 
-HEAD
- branch1
- ↓
- C1 -- C2 -- C3 -- C4' -- C5'-- C6' -- C7'
- \|
-\|
- +--- C4 ------------------+
- ↑ 
- remote/branch1
+*Tenslotte wordt gemerged*
 
-Net zoals
-bij iedere andere merge, zou het kunnen dat dit
-conflicten
-veroorzaakt, die je dan zult moeten
-oplossen.
+::
 
-Omgekeerd kun je de commits in een uitgecheckte branch
-'pushen'
-naar een branch in een remote repository. Dat kan zowel naar
-een nieuwe
-als naar een bestaande remote branch zijn. Git uploadt dan
-de commit waar
-\`HEAD\` naar wijst, samen met de nodige voorouders om
-jouw \`HEAD\` te
+                                         HEAD
+                                       branch1
+                                           ↓
+    C1 -- C2 -- C3 -- C4' -- C5'-- C6' -- C7'
+                 |                         |
+                 +--- C4 ------------------+
+                       ↑ 
+                  remote/branch1
+
+Net zoals bij iedere andere merge, zou het kunnen dat dit conflicten
+veroorzaakt, die je dan zult moeten oplossen.
+
+Omgekeerd kun je de commits in een uitgecheckte branch 'pushen' naar een
+branch in een remote repository. Dat kan zowel naar een nieuwe als naar
+een bestaande remote branch zijn. Git uploadt dan de commit waar
+``HEAD`` naar wijst, samen met de nodige voorouders om jouw ``HEAD`` te
 koppelen aan de remote commits.
 
-Als de remote
-branch al bestond, worden jouw lokale commits gemerged in de
-remote
-branch. Maar in de meeste configuraties gebeurt dat enkel als
-die
-merge-operatie een fast forward merge is. In de andere gevallen
-krijg je
-een foutmelding.
+Als de remote branch al bestond, worden jouw lokale commits gemerged in
+de remote branch. Maar in de meeste configuraties gebeurt dat enkel als
+die merge-operatie een fast forward merge is. In de andere gevallen
+krijg je een foutmelding.
 
-In zo'n geval pull je eerst de remote
-branch, zodat de merge-operatie in
-jouw lokale repository afgehandeld
-kan worden. Die merge-operatie
-resulteert dan lokaal in een nieuwe
-commit, met als ouders jouw recentste
-commit en de recentste commit
-uit de remote repository. Als je dan opnieuw
-pusht, zal aan de remote
-kant wel fast forward gemerged kunnen
-worden.
+In zo'n geval pull je eerst de remote branch, zodat de merge-operatie in
+jouw lokale repository afgehandeld kan worden. Die merge-operatie
+resulteert dan lokaal in een nieuwe commit, met als ouders jouw
+recentste commit en de recentste commit uit de remote repository. Als je
+dan opnieuw pusht, zal aan de remote kant wel fast forward gemerged
+kunnen worden.
 
-##Rebasen
+Rebasen
+-------
 
-'Rebasen' komt min of meer neer op het
-'verleggen' van een branch. Stel dat
-je een branch hebt gemaakt, op
-basis van \`master\`. Intussen zijn er aan
-die branch nieuwe commits
-toegevoegd, en ook \`master\` heeft nieuwe
-commits.
+'Rebasen' komt min of meer neer op het 'verleggen' van een branch. Stel
+dat je een branch hebt gemaakt, op basis van ``master``. Intussen zijn
+er aan die branch nieuwe commits toegevoegd, en ook ``master`` heeft
+nieuwe commits.
 
-Je kunt nu je
-branch rebasen op \`master\`. Git gaat op zoek naar
-de
-gemeenschappelijke voorouder van \`master\` en jouw branch.
-Vertrekkende van
-dat punt, zal git alle commits in jouw branch
-aflopen, en bekijken wat er
-precies gewijzigd is bij deze commits. Dan
-maakt git een nieuwe branch
-vertrekkende van de huidige \`master\`, en
-worden in die nieuwe branch
-nieuwe commits gemaakt, door dezelfde
-wijzigingen door te voeren in de
-nieuwe branch. Mogelijk treden er
-onderweg conflicten op, omdat
-wijzigingen in \`master\` de wijzigingen
-uit de branch in de weg staan. Die
-moet je dan onderweg oplossen. Als
-alle commits zijn overgedaan, wordt
-de pointer van je branch verlegd
-naar de nieuw aangemaakte branch,
-en wordt die
-uitgecheckt.
+Je kunt nu je branch rebasen op ``master``. Git gaat op zoek naar de
+gemeenschappelijke voorouder van ``master`` en jouw branch. Vertrekkende
+van dat punt, zal git alle commits in jouw branch aflopen, en bekijken
+wat er precies gewijzigd is bij deze commits. Dan maakt git een nieuwe
+branch vertrekkende van de huidige ``master``, en worden in die nieuwe
+branch nieuwe commits gemaakt, door dezelfde wijzigingen door te voeren
+in de nieuwe branch. Mogelijk treden er onderweg conflicten op, omdat
+wijzigingen in ``master`` de wijzigingen uit de branch in de weg staan.
+Die moet je dan onderweg oplossen. Als alle commits zijn overgedaan,
+wordt de pointer van je branch verlegd naar de nieuw aangemaakte branch,
+en wordt die uitgecheckt.
 
-\*Bijvoorbeeld: na een commit \`C4\` in de \`master\`
-branch, maakte je een
-nieuwe branch. Daarin committe je de wijzigingen
-\`D5\` en \`D6\`.\*
+*Bijvoorbeeld: na een commit ``C4`` in de ``master`` branch, maakte je
+een nieuwe branch. Daarin committe je de wijzigingen ``D5`` en ``D6``.*
 
- master
- ↓
- C1 -- C2 -- C3 -- C4 -- C5 --
-C6 -- C7
- \|
- +--- D5 -- D6
- ↑
- branch2
- HEAD
+::
 
-\*Intussen
-zijn er ook nieuwe commits in de master branch. Nu wil je
-graag dat
-\`branch2\` verlegd wordt naar de huidige toestand van de
-master
-branch (\`C7\`). In dat geval spreekt men van een 'rebase' van
-\`branch2\`
-op \`master\`.\*
+                                      master
+                                         ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                branch2
+                                 HEAD
 
-\*Git gaat op zoek naar de recentste
-gemeenschappelijke 'voorouder'
-van \`branch2\` en \`master\`. In dit
-voorbeeld is dat \`C4\`. Nu worden de
-wijzigingen die nodig waren om
-van \`C4\` naar \`D5\` te gaan toegepast
-op \`C7\`. Dit wordt
-gecommit, en op die nieuwe commit worden dan de
-wijzigingen voor de
-overgang van \`D5\` naar \`D6\` toegepast. Met het
-volgende
-resultaat:\*
+*Intussen zijn er ook nieuwe commits in de master branch. Nu wil je
+graag dat ``branch2`` verlegd wordt naar de huidige toestand van de
+master branch (``C7``). In dat geval spreekt men van een 'rebase' van
+``branch2`` op ``master``.*
 
- master
- ↓
- C1 -- C2 -- C3 -- C4 -- C5 -- C6 --
-C7
- \|
- +--- D5' -- D6'
- ↑
- branch2
- HEAD
+*Git gaat op zoek naar de recentste gemeenschappelijke 'voorouder' van
+``branch2`` en ``master``. In dit voorbeeld is dat ``C4``. Nu worden de
+wijzigingen die nodig waren om van ``C4`` naar ``D5`` te gaan toegepast
+op ``C7``. Dit wordt gecommit, en op die nieuwe commit worden dan de
+wijzigingen voor de overgang van ``D5`` naar ``D6`` toegepast. Met het
+volgende resultaat:*
 
-Let op! Rebasen
-doe je enkel met branches die niemand anders wordt
-geacht te tracken.
-Bij het rebasen verander je namelijk de geschiedenis
-van een branch.
-Als een collega commits toevoegt aan een branch die jij
-hebt verlegd,
-en hij probeert te pushen of te pullen, dan eindigt dat
-ongetwijfeld
-met miserie.
+::
 
-##Workflow
+                                      master
+                                         ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
+                                         |
+                                         +--- D5' -- D6'
+                                                      ↑
+                                                    branch2
+                                                     HEAD
 
-Je kunt met git veel kanten uit. Op
-dit moment is mijn manier van werken als
-volgt:
+Let op! Rebasen doe je enkel met branches die niemand anders wordt
+geacht te tracken. Bij het rebasen verander je namelijk de geschiedenis
+van een branch. Als een collega commits toevoegt aan een branch die jij
+hebt verlegd, en hij probeert te pushen of te pullen, dan eindigt dat
+ongetwijfeld met miserie.
 
-###
+Workflow
+--------
+
+Je kunt met git veel kanten uit. Op dit moment is mijn manier van werken
+als volgt:
+
 Master-branch
+~~~~~~~~~~~~~
 
-De \`master\`-branch bevat de recentste werkbare
-code. Dat mag met
-experimentele features zijn, maar de bedoeling is
-wel dat de code
+De ``master``-branch bevat de recentste werkbare code. Dat mag met
+experimentele features zijn, maar de bedoeling is wel dat de code
 compileert, en geacht wordt goed te werken.
 
-###
 Feature branches
+~~~~~~~~~~~~~~~~
 
-Iedere keer als je aan een nieuwe feature begint,
-maak je een
-feature-branch. 
+Iedere keer als je aan een nieuwe feature begint, maak je een
+feature-branch.
 
-\*Bijvoorbeeld:\*
+*Bijvoorbeeld:*
 
- master
+::
 
-↓
- C1 -- C2 -- C3 -- C4
- \|
- +--- D5 -- D6 -- D7
- ↑
+                     master
+                       ↓
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6 -- D7
+                                         ↑
+                                    feature1
+                                       HEAD
 
-feature1
- HEAD
+Als je in een feature branch code commit die niet helemaal werkt, of
+half broken is, is dat geen probleem. Enkel ``master`` wordt geacht in
+orde te zijn.
 
-Als je in een feature branch code commit die niet
-helemaal werkt, of half
-broken is, is dat geen probleem. Enkel
-\`master\` wordt geacht in orde te zijn.
+Stel dat er nu plots een bug wordt gevonden, die dringend gefixt moet
+worden. In dat geval kun je makkelijk ``master`` opnieuwe uitchecken, en
+een nieuwe branch maken voor je bugfix. Je zult dan geen last hebben van
+mogelijke problemen of onvolkomenheden van je half-afgewerkte feature.
 
-Stel dat er nu plots een
-bug wordt gevonden, die dringend gefixt moet worden.
-In dat geval kun
-je makkelijk \`master\` opnieuwe uitchecken, en een nieuwe 
-branch
-maken voor je bugfix. Je zult dan geen last hebben van mogelijke
+::
 
-problemen of onvolkomenheden van je half-afgewerkte feature.
+                     master
+                       ↓
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6 -- D7
+                       |                 ↑
+                       +--- E5         feature1
+                             ↑          
+                           bugfix
+                            HEAD
 
+Is je bugfix afgewerkt, en er is ondertussen niets aan ``master``
+veranderd, dan kun je die bugfix makkelijk fast forward mergen.
 
-master
- ↓
- C1 -- C2 -- C3 -- C4
- \|
- +--- D5 -- D6 -- D7
- \|
-↑
- +--- E5 feature1
- ↑ 
- bugfix
- HEAD
+::
 
-Is je bugfix
-afgewerkt, en er is ondertussen niets aan \`master\` veranderd,
-dan
-kun je die bugfix makkelijk fast forward mergen.
+                           HEAD
+                          bugfix
+                          master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- E5
+                       |
+                       +--- D5 -- D6 -- D7
+                                         ↑
+                                     feature1
 
- HEAD
- bugfix
+De bugfixbranch is na de merge van geen belang meer, en kan verwijderd
+worden. Je checkt je feature branch opnieuw uit, en kunt dan zonder
+problemen verder werken aan waar je mee bezig was.
 
-master
- ↓
- C1 -- C2 -- C3 -- C4 -- E5
- \|
- +--- D5 -- D6 --
-D7
- ↑
- feature1
+Na een tijdje is die feature af, en wil je ook mergen. Dat kan niet meer
+via een fast forward merge, want ondertussen is de master branch
+opgeschoven. (Omwille van de bugfix van daarnet.) Om de geschiedenis van
+je code dan overzichtelijk te houden, is het dan interessanter om de
+feature-branch te rebasen alvorens hem te mergen naar ``master``.
 
-De bugfixbranch is na de merge van geen belang
-meer, en kan verwijderd
-worden. Je checkt je feature branch opnieuw
-uit, en kunt dan zonder
-problemen verder werken aan waar je mee bezig
-was.
+*Rebase dus eerst ``feature1`` op ``master``:*
 
-Na een tijdje is die feature af, en wil je ook mergen. Dat kan
-niet
-meer via een fast forward merge, want ondertussen is de master
-branch
-opgeschoven. (Omwille van de bugfix van daarnet.) Om de
-geschiedenis
-van je code dan overzichtelijk te houden, is het dan
-interessanter om
-de feature-branch te rebasen alvorens hem te mergen
-naar \`master\`. 
+::
 
-\*Rebase dus eerst \`feature1\` op
-\`master\`:\*
+                          master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- E5
+                             |
+                             +--- D5' -- D6' -- D7'
+                                                 ↑
+                                             feature1
+                                               HEAD
 
- master
- ↓
- C1 -- C2 -- C3 -- C4 -- E5
- \|
+*Hierna kun je fast forward mergen:*
 
-+--- D5' -- D6' -- D7'
- ↑
- feature1
- HEAD
+::
 
-\*Hierna kun je
-fast forward mergen:\*
+                                              HEAD
+                                             feature1
+                                              master
+                                                 ↓
+    C1 -- C2 -- C3 -- C4 -- E5 -- D5' -- D6' -- D7'
 
- HEAD
- feature1
- master
- ↓
- C1 -- C2
--- C3 -- C4 -- E5 -- D5' -- D6' -- D7'
+Een feature-branch is typisch een branch waar jij alleen aan werkt; er
+is niemand anders die die trackt. Rebasen is dus geen probleem, en op
+die manier heeft elke commit slechts 1 parent, wat overzichtelijker is
+als je de geschiedenis van je project wilt bekijken. Bij een gewone
+merge die niet fast-forward is, heb je een commit met 2 parents, en dat
+maakt het ingewikkelder. Als je dat kunt vermijden, moet je dat doen.
 
-Een feature-branch is
-typisch een branch waar jij alleen aan werkt; er is
-niemand anders die
-die trackt. Rebasen is dus geen probleem, en op
-die manier heeft elke
-commit slechts 1 parent, wat overzichtelijker is
-als je de
-geschiedenis van je project wilt bekijken. Bij een gewone merge
-die
-niet fast-forward is, heb je een commit met 2 parents, en dat maakt
-het
-ingewikkelder. Als je dat kunt vermijden, moet je dat
-doen.
+Release-branches
+~~~~~~~~~~~~~~~~
 
-### Release-branches
+Stel dat er een release dichtbij komt. Dan splits je een release-branch
+af van ``master``. In het begin bevat die uiteraard nog niets speciaals.
 
-Stel dat er een release dichtbij
-komt. Dan splits je een release-branch
-af van \`master\`. In het begin
-bevat die uiteraard nog niets speciaals.
+::
 
- release-1
- master
+                     release-1
+                     master
+                       ↓
+    C1 -- C2 -- C3 -- C4
 
-↓
- C1 -- C2 -- C3 -- C4
+Typisch zijn er een aantal bugs die nog gefixt moeten worden voor de
+release. Maar de gewone ontwikkeling gaat verder in master.
 
-Typisch zijn er een aantal bugs die nog
-gefixt moeten worden
-voor de release. Maar de gewone ontwikkeling gaat
-verder in master.
+::
 
- release-1 master
- ↓ ↓
- C1 -- C2 -- C3 -- C4
--- C5 -- C6
+                     release-1    master
+                       ↓           ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6
 
-Stel nu dat je een release-critical bug wilt fixen. Dan
-doe je die fix in de
-release branch.
+Stel nu dat je een release-critical bug wilt fixen. Dan doe je die fix
+in de release branch.
 
- master
- ↓
- C1 -- C2 --
-C3 -- C4 -- C5 -- C6
- \|
- +--- D5
- ↑
- release-1
+::
 
-Maar je
-wilt deze fix natuurlijk ook toepassen op de master branch.
-Hier is
-het uiteraard geen optie om eerst de release-branch te rebasen
-op
-\`master\`, want dan zouden de nieuwe features die intussen naar
-master
-gecommit zijn, ook in de releasebranch zitten. En dat is
-uiteraard niet de
-bedoeling. In dit geval merge je de release-branch
-gewoon in \`master\`.
+                                 master
+                                   ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6
+                       |
+                       +--- D5
+                             ↑
+                          release-1
 
- master
- ↓
- C1 -- C2 -- C3 -- C4 -- C5 --
-C6 -- C7
- \| \|
- +--- D5 ---------+
- ↑
- release-1
+Maar je wilt deze fix natuurlijk ook toepassen op de master branch. Hier
+is het uiteraard geen optie om eerst de release-branch te rebasen op
+``master``, want dan zouden de nieuwe features die intussen naar master
+gecommit zijn, ook in de releasebranch zitten. En dat is uiteraard niet
+de bedoeling. In dit geval merge je de release-branch gewoon in
+``master``.
 
-Na zo'n
-merge mag de release-branch uiteraard ook niet verwijderd
-worden, want
-die heb je achteraf nog nodig om verdere
-release-critical-bugs te
-committen.
+::
 
-### Ingrijpende refactoring
+                                     master
+                                        ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
+                       |                |
+                       +--- D5 ---------+
+                             ↑
+                          release-1
 
-Een laatste use case
-die ik wil bespreken, is een ingrijpende refactoring.
-Hiervoor maak je
-ook een branch.
+Na zo'n merge mag de release-branch uiteraard ook niet verwijderd
+worden, want die heb je achteraf nog nodig om verdere
+release-critical-bugs te committen.
 
-Omdat zo'n refactoring wel wat tijd in beslag zal
-nemen, en omdat je
-tijdens het refactoren graag feedback hebt, wil je
-je refactoring branch
+Ingrijpende refactoring
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Een laatste use case die ik wil bespreken, is een ingrijpende
+refactoring. Hiervoor maak je ook een branch.
+
+Omdat zo'n refactoring wel wat tijd in beslag zal nemen, en omdat je
+tijdens het refactoren graag feedback hebt, wil je je refactoring branch
 ook publiek beschikbaar maken.
 
-Publieke
-branches rebasen is meestal niet zo'n goed idee. Want zoals
-gezegd
-geeft dat problemen als iemand anders jouw branch trackt.
-Vermijden
-dus. Als je de laatste zaken uit \`master\` ook in je
-refactoring branch
-wilt trekken, dan kun je ook beter direct
-mergen.
+Publieke branches rebasen is meestal niet zo'n goed idee. Want zoals
+gezegd geeft dat problemen als iemand anders jouw branch trackt.
+Vermijden dus. Als je de laatste zaken uit ``master`` ook in je
+refactoring branch wilt trekken, dan kun je ook beter direct mergen.
 
-## That's all
+That's all
+----------
 
-Voilà. Een bescheiden introductie tot
-git. Hier en daar heb ik dingen
-weggeabstraheerd, om de tekst niet te
-lang te maken, en natuurlijk ook
-omdat ik zelf nog niet alles beheers
-:-)
+Voilà. Een bescheiden introductie tot git. Hier en daar heb ik dingen
+weggeabstraheerd, om de tekst niet te lang te maken, en natuurlijk ook
+omdat ik zelf nog niet alles beheers :-)
 
-De manier van werken die ik beschrijf, werkt voor mij. Ik ben
-niet zeker
-of het echt volgens de best practices is. Als je feedback
-hebt, dan ben ik
-daar zeker in geïnteresseerd.
+De manier van werken die ik beschrijf, werkt voor mij. Ik ben niet zeker
+of het echt volgens de best practices is. Als je feedback hebt, dan ben
+ik daar zeker in geïnteresseerd.
 
-[Deze tekst is ook
-beschikbaar op
-github.](https://github.com/johanv/randomtexts/blob/master/gitstart.md)
+`Deze tekst is ook beschikbaar op
+github. <https://github.com/johanv/randomtexts/blob/master/gitstart.md>`__
 Daar kun je commentaar geven (post gerust een issue), of zelfs pull
 requests sturen, als je hem wilt verbeteren :)
 
+-  `login </user/login?destination=comment%2Freply%2F199%23comment-form>`__
+   om te reageren
+
+Flattr dit artikel
+------------------
 
 .. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
+   :target: http://flattr.com/thing/1051976/De-tekst-die-ik-zocht-toen-ik-startte-met-git

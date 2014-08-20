@@ -6,88 +6,115 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/203>`__
-
-I had the chance to buy a
-Samsung Galaxy S wifi 5: It's not a phone, it 's not a tablet, it's
-something in between. I got a special price ;-) so I could buy it just
-to mess with it. If I break it, so be it.
-
-Of course, I wanted to
-replace the default firmware by a clean system: CyanogenMod.
-Unfortunately, there is no official CyanogenMod version for this device.
-I thought there was, but I was confused. There are a lot of devices
-called 'Samsung Galaxy S', and they all use incompatible hardware. So
-the installation was a little harder than I expected.
+Cyanogenmod on the Samsung Galaxy S wifi 5 (Samsung Galaxy Player 5)
+--------------------------------------------------------------------
 
 
-## Replace
-the recovery image
+I had the chance to buy a Samsung Galaxy S wifi 5: It's not a phone, it
+'s not a tablet, it's something in between. I got a special price ;-) so
+I could buy it just to mess with it. If I break it, so be it.
 
-I found this very useful walkthrough to replace
-the recovery image: 
+Of course, I wanted to replace the default firmware by a clean system:
+CyanogenMod. Unfortunately, there is no official CyanogenMod version for
+this device. I thought there was, but I was confused. There are a lot of
+devices called 'Samsung Galaxy S', and they all use incompatible
+hardware. So the installation was a little harder than I expected.
 
-\* [How to root and install ClockWorkMod
-recovery on Galaxy Player
-5.0](http://www.androidegis.com/how-to/how-to-root-and-install-clockworkmod-recovery-cwm-on-galaxy-player-5-0-any-variant-expect-korean/#comment-25222)
+Replace the recovery image
+--------------------------
 
-I
-did install the [Samsung USB drivers for mobile
-phones](http://forum.xda-developers.com/showthread.php?t=961956) on
+I found this very useful walkthrough to replace the recovery image:
+
+-  `How to root and install ClockWorkMod recovery on Galaxy Player
+   5.0 <http://www.androidegis.com/how-to/how-to-root-and-install-clockworkmod-recovery-cwm-on-galaxy-player-5-0-any-variant-expect-korean/#comment-25222>`__
+
+I did install the `Samsung USB drivers for mobile
+phones <http://forum.xda-developers.com/showthread.php?t=961956>`__ on
 beforehand, I am not sure this was necessary, but it is likely it is.
 (Remember: I am clueless, as always.)
 
-If you went throught the
-steps, you can boot into the ClockWorkMod recovery by pressing the
-volume-up button while turning on the device.
+If you went throught the steps, you can boot into the ClockWorkMod
+recovery by pressing the volume-up button while turning on the device.
 
-## Download and flash
-the images for CM9
+Download and flash the images for CM9
+-------------------------------------
 
-I found a lot of ROMS for the Samsung Galaxy
-Player on
-[theunlockr.com](http://theunlockr.com/category/roms-2/android-roms-2/samsung-galaxy-player-roms/).
+I found a lot of ROMS for the Samsung Galaxy Player on
+`theunlockr.com <http://theunlockr.com/category/roms-2/android-roms-2/samsung-galaxy-player-roms/>`__.
 I picked 'CM9 for Galaxy Player 5.0 ROM' (because I am not in the USA),
 and I followed the links to
 
-\* [CM9 for Galaxy Player 5.0 INTL, USA
-and KOR
-devices](http://forum.xda-developers.com/showthread.php?t=1679957).
+-  `CM9 for Galaxy Player 5.0 INTL, USA and KOR
+   devices <http://forum.xda-developers.com/showthread.php?t=1679957>`__.
 
-Download
-the \*\*stable\*\* version. Which I did not notice, because the link was
-in red. Probably to draw the attention. Which did not work for me :-). I
-first installed an old version, so I lost a lot of time.
+Download the **stable** version. Which I did not notice, because the
+link was in red. Probably to draw the attention. Which did not work for
+me :-). I first installed an old version, so I lost a lot of time.
 
-The
-extra's seem to be useful as well. I installed all of them. For the
+The extra's seem to be useful as well. I installed all of them. For the
 GApps, I took the most recent for ics (gapps-ics-20120429-signed.zip),
 and for the 'home fix for INTL users', I took version 2.
 
-I put all
-the zips on the sd-card. I rebooted into recovery, created a backup, and
-installed all images. (Cyanogenmod first, then all the rest.) Factory
-reset, clear cache, reboot, done.
+I put all the zips on the sd-card. I rebooted into recovery, created a
+backup, and installed all images. (Cyanogenmod first, then all the
+rest.) Factory reset, clear cache, reboot, done.
 
-## What does not work:
+What does not work:
+-------------------
 
-\*
-Camera
-\* Transferring files via USB from/to the sd-card.
-\* The
-hardware button in the middle under the screen doesn't seem to do
-anything.
-\* Installing apps on the SD-card.
+-  Camera
+-  Transferring files via USB from/to the sd-card.
+-  The hardware button in the middle under the screen doesn't seem to do
+   anything.
+-  Installing apps on the SD-card.
 
-## Other
-versions?
+Other versions?
+---------------
 
-There is a [thread about
-CM10](http://forum.xda-developers.com/showthread.php?t=2077671) on the
-xda-developers forum, but this [does not
-work](http://forum.xda-developers.com/showpost.php?p=39353117&postcount=1025),
+There is a `thread about
+CM10 <http://forum.xda-developers.com/showthread.php?t=2077671>`__ on
+the xda-developers forum, but this `does not
+work <http://forum.xda-developers.com/showpost.php?p=39353117&postcount=1025>`__,
 and development on this version seems to have stopped.
 
-There is a
-[ROM for CM7](http://theunlockr.com/2012/03/15/cm7-for-player-5-0-rom/)
-as well. Maybe with a working camera. I still have to try this out.
+There is a `ROM for
+CM7 <http://theunlockr.com/2012/03/15/cm7-for-player-5-0-rom/>`__ as
+well. Maybe with a working camera. I still have to try this out.
+
+-  `login </user/login?destination=comment%2Freply%2F203%23comment-form>`__
+   om te reageren
+
+Reacties
+--------
+
+`About the SD-card problems </node/203#comment-243>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Submitted by johanv on zo, 24/03/2013 - 15:48.
+
+There are some issues with the SD-card, but I im unsure which ones.
+
+Some apps (like e.g. Mustard) want to install on the SD-card. So the
+installation from the market fails.
+
+If you remount / as rw, using the terminal: `` mount -o rw,remount /``
+
+installation works, and the apps run. That is, until you reboot the
+device. Then the app is 'not found' when you try to run it.
+
+Another problem: if you now open the 'app management' screen, the system
+crashes after a few seconds.
+
+To install Mustard, I did the following:
+
+-  remount / as rw
+-  install mustard
+-  open app management, show the apps on SD-card, and uncheck mustard. I
+   had to be very quick, before the crash.
+
+-  `login </user/login?destination=comment%2Freply%2F203%23comment-form>`__
+   om te reageren
+
+Flattr dit artikel
+------------------
+

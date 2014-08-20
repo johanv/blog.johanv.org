@@ -6,49 +6,54 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/207>`__
+Wireless networking on a Samsung Series 5 laptop with Linux Mint
+----------------------------------------------------------------
 
-Last weekend, I installed
-[Linux Mint 15](http://www.linuxmint.com/rel\_olivia.php) (Olivia) on a
-collegue's [Samsung
-notebook](http://www.samsung.com/us/computer/series-5-notebooks). (I did
-a \`lshw\`, and it showed me '535U34C, Samsung SENS').
 
-At my place,
-everything seemed to work OK (WPA2 and all), but when I tried it at
-work, the wireless connection dropped every x seconds, and needed to
-reauthenticate.
+Last weekend, I installed `Linux Mint
+15 <http://www.linuxmint.com/rel_olivia.php>`__ (Olivia) on a collegue's
+`Samsung
+notebook <http://www.samsung.com/us/computer/series-5-notebooks>`__. (I
+did a ``lshw``, and it showed me '535U34C, Samsung SENS').
 
-So I guess the problem depends on the type of
-wireless router.
+At my place, everything seemed to work OK (WPA2 and all), but when I
+tried it at work, the wireless connection dropped every x seconds, and
+needed to reauthenticate.
 
-I did some googling, and often I read that I had
-to pass the \`nohwcrypt=1\` option to the ath9k kernel module. Which did
-not work. So I cluelessly tried some more suggestions, and finally I
-found a set of options that do work: \`nohwcrypt=1 blink=1
-btcoex\_enable=1 enable\_diversity=1\`.
+So I guess the problem depends on the type of wireless router.
 
-To try this out, you can do
-the following:
+I did some googling, and often I read that I had to pass the
+``nohwcrypt=1`` option to the ath9k kernel module. Which did not work.
+So I cluelessly tried some more suggestions, and finally I found a set
+of options that do work:
+``nohwcrypt=1 blink=1 btcoex_enable=1 enable_diversity=1``.
 
- rmmod ath9k
- modprobe ath9k nohwcrypt=1 blink=1
-btcoex\_enable=1 enable\_diversity=1
+To try this out, you can do the following:
 
-(Maybe you have to log out and
-log on again after this command).
+::
 
-If it works, you can persist the
-settings, adding the following line to
-\`/etc/modprobe.d/ath9k.conf\`
+    rmmod ath9k
+    modprobe ath9k nohwcrypt=1 blink=1 btcoex_enable=1 enable_diversity=1
 
- options ath9k nohwcrypt=1 blink=1
-btcoex\_enable=1 enable\_diversity=1
+(Maybe you have to log out and log on again after this command).
 
-That worked for me. So I hope
-this information is useful for someone else as wel.
+If it works, you can persist the settings, adding the following line to
+``/etc/modprobe.d/ath9k.conf``
 
-Many thanks to
-[Sergei
-Winitzki](http://orkultus.wordpress.com/2013/01/18/frequent-wireless-connection-drops-with-the-atheros-ar9462/comment-page-1/#comment-146),
+::
+
+    options ath9k nohwcrypt=1 blink=1 btcoex_enable=1 enable_diversity=1
+
+That worked for me. So I hope this information is useful for someone
+else as wel.
+
+Many thanks to `Sergei
+Winitzki <http://orkultus.wordpress.com/2013/01/18/frequent-wireless-connection-drops-with-the-atheros-ar9462/comment-page-1/#comment-146>`__,
 who posted the comment that saved my day.
+
+-  `login </user/login?destination=comment%2Freply%2F207%23comment-form>`__
+   om te reageren
+
+Flattr dit artikel
+------------------
+

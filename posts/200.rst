@@ -6,1006 +6,751 @@
 .. description: 
 .. type: text
 
-` <http://www.johanv.org/node/200>`__
-
-`
-\ |Flattr this| <http://flattr.com/thing/1094450/About-Git>`__
+HPR episode: About git
+----------------------
 
 
-This is more or less the transcript of my HPR submission about
-git, a version control system. 
+This is more or less the transcript of my HPR submission about git, a
+version control system.
 
-I have used other
-version control
-systems in the past: cvs (long ago) and subversion, but
-today git is
-by far my favourite. This is why:
+I have used other version control systems in the past: cvs (long ago)
+and subversion, but today git is by far my favourite. This is why:
 
-\* You can commit new revisions
-when your internet connection is down.
-\* You can easily prevent that
-just any developer can commit to
-the master branch or to release
-branches.
-\* You can try out experimental things locally, committing
-changes,
-without having to create a branch in a central
-repository.
-\* Creating feature branches, and switching between
-branches is easy, even
-without a working internet connection.
-\* Git
-has way more features than subversion or cvs.
-\* Linus says: 'If you
-are using subversion, you are stupid and
-ugly.' ;-)
+-  You can commit new revisions when your internet connection is down.
+-  You can easily prevent that just any developer can commit to the
+   master branch or to release branches.
+-  You can try out experimental things locally, committing changes,
+   without having to create a branch in a central repository.
+-  Creating feature branches, and switching between branches is easy,
+   even without a working internet connection.
+-  Git has way more features than subversion or cvs.
+-  Linus says: 'If you are using subversion, you are stupid and ugly.'
+   ;-)
 
+Yet there are problems when moving from subversion to git
 
-Yet there
-are problems when moving from subversion to git
+-  Git works in a very different way than subversion. It requires some
+   effort to fully understand what it does.
+-  The easiest way to work with git (imo) is with the command line. For
+   some users, this is a drawback.
 
-\* Git works in a
-very different way than subversion. It requires some
-effort to fully
-understand what it does.
-\* The easiest way to work with git (imo) is
-with the command line. For
-some users, this is a drawback.
+I moved a project from subversion and trac to git and redmine, about
+half a year ago. I could use an existing server with git, gitolite and
+redmine, so I didn't have to bother about setting those things up. The
+conversion from subversion to git went pretty easy. We started using
+git, and it kind of worked, although we were not quite sure why it did.
+I guess it is a common problem for new git users.
 
-I
-moved a project from subversion and trac to git and redmine,
-about
-half a year ago. I could use an existing server with git,
-gitolite and
-redmine, so I didn't have to bother about setting those
-things up. The
-conversion from subversion to git went pretty easy. We
-started using git,
-and it kind of worked, although we were not quite
-sure why it did. I
-guess it is a common problem for new git
-users.
-
-I aim to explain the things that I wanted to know when
-starting
-with git. Now there are some oddities in our repository,
-which could
-probably be avoided if I only knew what I was
-doing.
+I aim to explain the things that I wanted to know when starting with
+git. Now there are some oddities in our repository, which could probably
+be avoided if I only knew what I was doing.
 
 Two disclaimers:
 
-\* I only discuss the concepts of
-using git. You will not find
-specific git commands here. This is
-intentional. Possibly I will publish
-a more practical follow-up later
-on.
+-  I only discuss the concepts of using git. You will not find specific
+   git commands here. This is intentional. Possibly I will publish a
+   more practical follow-up later on.
 
-\* I make abstraction of some of the technical stuff, just to
-restrict the
-length of this introduction.
+-  I make abstraction of some of the technical stuff, just to restrict
+   the length of this introduction.
 
-## Git is
-distributed
+Git is distributed
+------------------
 
-Git is distributed. Theoretically there is no central
-code repository, and
-every developer has his own local copy of the
-entire repository. If
-you want a copy for yourself, you can just clone
-an existing one.
+Git is distributed. Theoretically there is no central code repository,
+and every developer has his own local copy of the entire repository. If
+you want a copy for yourself, you can just clone an existing one.
 
-Your own repository typically contains references
-to remote repositories.
-At the moment you clone a repository, a
-reference to the original is kept,
-which is usually called
-\`origin\`.
+Your own repository typically contains references to remote
+repositories. At the moment you clone a repository, a reference to the
+original is kept, which is usually called ``origin``.
 
-## Commits
+Commits
+-------
 
-A git repository is basically nothing
-more than a targeted
-acyclic graph of commits. A commit represents a
-specific revision of
-your source code. Each commit is determined by a
-SHA-1 hash,
-which is a unique checksum. 
+A git repository is basically nothing more than a targeted acyclic graph
+of commits. A commit represents a specific revision of your source code.
+Each commit is determined by a SHA-1 hash, which is a unique checksum.
 
-The hash is 40
-characters long, which is tedious to type. If there is no
-ambiguity,
-you can refer to a commit using just the first few
-characters of the
-hash. Usually 5 or 6 characters are sufficient.
+The hash is 40 characters long, which is tedious to type. If there is no
+ambiguity, you can refer to a commit using just the first few characters
+of the hash. Usually 5 or 6 characters are sufficient.
 
-Each commit (except
-for the initial one) has a reference to one or two
-parents. If you
-pick a random commit, you can find its entire history
-following the
-parent links to the very beginning.
+Each commit (except for the initial one) has a reference to one or two
+parents. If you pick a random commit, you can find its entire history
+following the parent links to the very beginning.
 
-In the simplest case, a git
-repository is just a
-sequence of commits, where each commit has at
-most one parent and
-most one child. The history is so to speak
-one
-straight line:
+In the simplest case, a git repository is just a sequence of commits,
+where each commit has at most one parent and most one child. The history
+is so to speak one straight line:
 
- C1 <- C2 <- C3 <- C4
+::
 
-\*\`C1\` is the
-initial commit. In order not to overload the diagrams, 
-I will from
-now on omit the "arrows" of the parent relation (\`<-\`).
-By
-convention I put the parent on the left,
-and the children on the
-right.\*
+    C1 <- C2 <- C3 <- C4
 
-Generally, it is not the case that all the revisions in
-a
-git repository nicely follow one after the other. In the case of
-branching
-a commit typically has several children. In a merge
-operation a
-commit can have two parents. But more on that
-later.
+*``C1`` is the initial commit. In order not to overload the diagrams, I
+will from now on omit the "arrows" of the parent relation (``<-``). By
+convention I put the parent on the left, and the children on the right.*
 
-\*Example of a more complex repository:\*
+Generally, it is not the case that all the revisions in a git repository
+nicely follow one after the other. In the case of branching a commit
+typically has several children. In a merge operation a commit can have
+two parents. But more on that later.
 
- C1 -- C2 --
-C3 -- C4 -- C5 -- D6 -- D7
- \| \|
- +--- D3 -- D4 -- D5 ----+
+*Example of a more complex repository:*
 
-\|
- \| +--- F5 -- F6
- \| \|
- +--- E3 -- E4--- E5
+::
 
-While
-programming, there is always one commit checked out. This commit
-is
-the \`HEAD\` of your repository. The current source code (called working
-copy)
-corresponds to the code of \`HEAD\`, with a certain
-modifications
-you made. Files can be added, deleted, or
-changed.
+    C1 -- C2 -- C3 -- C4 -- C5 -- D6 -- D7
+           |                       |
+           +--- D3 -- D4 -- D5 ----+
+           |
+           |           +--- F5 -- F6
+           |           |
+           +--- E3 -- E4--- E5
 
-If you want to commit a new revision of your code, you
-need to inform git
-about the changes in the working copy that should
-be included in the new
-commit. Git knows
-how you version of the code
-differs from the code in the last commit,
-but it does not include by
-default all changes in a new commit.
-If you want a change to be
-included in the next commit, you should
-explicitly add it to the
-'index': this is called 'staging'. All staged changes will
-be part of
-the next commit. Changes you did not stage, stay as they are in
-your
-working copy, but they are kept out of the commit.
+While programming, there is always one commit checked out. This commit
+is the ``HEAD`` of your repository. The current source code (called
+working copy) corresponds to the code of ``HEAD``, with a certain
+modifications you made. Files can be added, deleted, or changed.
 
- HEAD
- ↓
- C1
-- C2 - C3 - C4 - staged changes - working copy
+If you want to commit a new revision of your code, you need to inform
+git about the changes in the working copy that should be included in the
+new commit. Git knows how you version of the code differs from the code
+in the last commit, but it does not include by default all changes in a
+new commit. If you want a change to be included in the next commit, you
+should explicitly add it to the 'index': this is called 'staging'. All
+staged changes will be part of the next commit. Changes you did not
+stage, stay as they are in your working copy, but they are kept out of
+the commit.
 
-\*... after
-committing:\*
+::
 
- HEAD
- ↓
- C1 -- C2 -- C3 -- C4 -- C5 -- working
-copy
+                   HEAD
+                    ↓
+    C1 - C2 - C3 - C4 - staged changes - working copy
 
-When a new revision of your code is committed, this commit
-becomes the
-new \`HEAD\` of the repository.
+*... after committing:*
 
-When git repositories
-talk to each other, commits are moved from one
-repository to the
-other. After some time you end up with a lot of commits,
-and it
-becomes difficult to find your way. Branches are the answer to
-this
-problem.
+::
 
-## Branches
+                           HEAD
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- working copy
 
-You might know the concept of
-branches from other source control
-systems. In the easiest case, your
-code history is one straight line, one
-commit after the other, from
-the initial commit to \`HEAD\`. This way, there
-is only one branch in
-your source repository.
+When a new revision of your code is committed, this commit becomes the
+new ``HEAD`` of the repository.
 
-It is possible however, that at some point,
-development is done in
-parallel. After a certain commit, say \`C\`
-developer A adds new commits
-\`A1\`, \`A2\`, \`A3\`, while developer B
-ignores these commits, and adds
-other comitts \`B1\`, \`B2\` and
-\`B3\` after \`C\`. Now there are two branches,
-in which the code is
-diverging. These branches could or could not be
-merged again, at some
-point in the future, but more about this later.
+When git repositories talk to each other, commits are moved from one
+repository to the other. After some time you end up with a lot of
+commits, and it becomes difficult to find your way. Branches are the
+answer to this problem.
 
- X1 -- X2 -- X3 --
-C -- A1 -- A2 -- A3
- \|
- +--- B1 -- B2 -- B3
+Branches
+--------
 
-Technically, a git
-branch is nothing more than a pointer to a particular
-commit in your
-repository. Just like \`HEAD\`, as a matter of fact. A branch
-is
-pointing to its most recent commit.
+You might know the concept of branches from other source control
+systems. In the easiest case, your code history is one straight line,
+one commit after the other, from the initial commit to ``HEAD``. This
+way, there is only one branch in your source repository.
 
-If you take two random branches
-in your repository, you can always find a
-commit where they diverged.
-You start from the commits the branches are
-pointing to, and then keep
-follwing the parent links. At some point, you
-will find a common
-ancester, and this is the commit you are looking for.
+It is possible however, that at some point, development is done in
+parallel. After a certain commit, say ``C`` developer A adds new commits
+``A1``, ``A2``, ``A3``, while developer B ignores these commits, and
+adds other comitts ``B1``, ``B2`` and ``B3`` after ``C``. Now there are
+two branches, in which the code is diverging. These branches could or
+could not be merged again, at some point in the future, but more about
+this later.
 
-Just as with
-any other version control system, there is typically
-one branch
-'checked out'. This is the branch you are working on.
-\`HEAD\` is
-pointing to the same commit as the checked out branch, and
-when
-commiting a new revision, the branch pointer will move along
-with
-\`HEAD\` to this new commit.
+::
 
-Adding new branches is very
-easy, you just add a new pointer to the
+    X1 -- X2 -- X3 -- C -- A1 -- A2 -- A3
+                      |
+                      +--- B1 -- B2 -- B3
+
+Technically, a git branch is nothing more than a pointer to a particular
+commit in your repository. Just like ``HEAD``, as a matter of fact. A
+branch is pointing to its most recent commit.
+
+If you take two random branches in your repository, you can always find
+a commit where they diverged. You start from the commits the branches
+are pointing to, and then keep follwing the parent links. At some point,
+you will find a common ancester, and this is the commit you are looking
+for.
+
+Just as with any other version control system, there is typically one
+branch 'checked out'. This is the branch you are working on. ``HEAD`` is
+pointing to the same commit as the checked out branch, and when
+commiting a new revision, the branch pointer will move along with
+``HEAD`` to this new commit.
+
+Adding new branches is very easy, you just add a new pointer to the
 repository.
 
-You can name
-branches as you like, but typically there is one branch 
-called
-\`master\`. \`master\` is pointing to the 'mainline', the
-most
+You can name branches as you like, but typically there is one branch
+called ``master``. ``master`` is pointing to the 'mainline', the most
 up-to-date development revision.
 
-\*Example:\*
+*Example:*
 
- master
+::
 
- ↓ HEAD
- C1 -- C2 -- C3 -- C4 branch2
- \| ↓
- +--- D3 -- D4 --
-D5 
- \|
- \| +--- F5 -- F6
- \| \| ↑
- +--- E3 -- E4 branch4
- ↑
+                    master   
+                       ↓     HEAD
+    C1 -- C2 -- C3 -- C4     branch2
+           |                 ↓
+           +--- D3 -- D4 -- D5 
+           |
+           |           +--- F5 -- F6
+           |           |           ↑
+           +--- E3 -- E4         branch4
+                       ↑           
+                     branch3  
 
- branch3 
+Branches in your own copy of the repository, are called local branches.
+Git is also aware of branches in remote repositories: remote branches.
+When you 'fetch' a remote branch, git downloads all necessary commits to
+your repository, and puts a pointer to the commit corresponding with the
+remote branch.
 
-Branches in your own copy of the repository, are
-called local branches. Git is
-also aware of branches in remote
-repositories: remote
-branches. When you 'fetch' a remote branch, git
-downloads
-all necessary commits to your repository, and puts a pointer
-to the commit
-corresponding with the remote branch.
+*For example:*
 
-\*For
-example:\*
+::
 
- (remote repo: origin)
+    (remote repo: origin)
 
- master 
- ↓ 
- C1 -- C2
--- C3 -- C4 branch2
- \| ↓
- +--- D3 -- D4 -- D5 -- D6
- \|
- \|
-+--- F5 -- F6
- \| \| ↑
- +--- E3 -- E4 branch4
- ↑ 
- branch3 
+                    master   
+                       ↓         
+    C1 -- C2 -- C3 -- C4          branch2
+           |                       ↓
+           +--- D3 -- D4 -- D5 -- D6
+           |
+           |           +--- F5 -- F6
+           |           |           ↑
+           +--- E3 -- E4         branch4
+                       ↑           
+                     branch3  
 
 
- 
- (local repo)
- 
- HEAD
- master
- ↓
- C1 -- C2 -- C3 -- C4
--- C5
+    (local repo)
 
-\*After fetching \`origin/branch4\`:\*
+                           HEAD
+                           master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
 
- (local repo)
+*After fetching ``origin/branch4``:*
 
+::
 
- HEAD
- master 
- ↓ 
- C1 -- C2 -- C3 -- C4 -- C5 
- \| 
- +---
-E3 -- F4 -- F5 -- F6 
- ↑
- origin/branch4
+    (local repo)
 
-You can not directly
-add commits to a remote branch.
-Typically you first fetch the remote
-branch, you link it to a local
-branch, and you commit new revisions to
-the local branch.
-Such a local branch that is
-linked to a remote
-branch, is called a '(remote) tracking branch'.
+                          HEAD
+                          master  
+                             ↓    
+    C1 -- C2 -- C3 -- C4 -- C5  
+           |                       
+           +--- E3 -- F4 -- F5 -- F6  
+                                   ↑
+                                origin/branch4
 
-If you are working
-in a tracking branch, git knows where the original is.
-This makes it
-easy to download the latest commits in the remote branch,
-and git will
-inform you about the differences between the remote branch
-and your
-associated tracking branch.
+You can not directly add commits to a remote branch. Typically you first
+fetch the remote branch, you link it to a local branch, and you commit
+new revisions to the local branch. Such a local branch that is linked to
+a remote branch, is called a '(remote) tracking branch'.
 
-\*Back to the previous example. If you
-have a local branch \`branch4\`
-checked out, which is set it up to
-track \`origin/branch4\`, 
-the situation is as follows:\*
+If you are working in a tracking branch, git knows where the original
+is. This makes it easy to download the latest commits in the remote
+branch, and git will inform you about the differences between the remote
+branch and your associated tracking branch.
 
+*Back to the previous example. If you have a local branch ``branch4``
+checked out, which is set it up to track ``origin/branch4``, the
+situation is as follows:*
 
+::
 
-master
- ↓
- C1 -- C2 -- C3 -- C4 -- C5
- \|
- +--- E3 -- F4 -- F5
--- F6
- ↑
- origin/branch4
- branch4
- HEAD
+                         master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
+           |
+           +--- E3 -- F4 -- F5 -- F6
+                                  ↑
+                               origin/branch4
+                               branch4
+                               HEAD
 
-A tracking branch
-behaves just like an ordinary local branches. If it is
-checked out,
-and you create a new commit, the branch will move along
-with
-\`HEAD\`.
+A tracking branch behaves just like an ordinary local branches. If it is
+checked out, and you create a new commit, the branch will move along
+with ``HEAD``.
 
- master
- ↓ HEAD
- C1 -- C2 -- C3 -- C4 -- C5
-branch4
- \| ↓
- +--- E3 -- F4 -- F5 -- F6 -- F7 -- F8
- ↑
+::
 
-origin/branch4
+                          master
+                             ↓                 HEAD
+    C1 -- C2 -- C3 -- C4 -- C5                 branch4
+           |                                   ↓
+           +--- E3 -- F4 -- F5 -- F6 -- F7 -- F8
+                                 ↑
+                              origin/branch4
 
-## Merging
+Merging
+-------
 
-Suppose you have 2 branches, let's
-say \`A\` and \`B\`, which originate from
-a common ancester commit
-\`C\`.
+Suppose you have 2 branches, let's say ``A`` and ``B``, which originate
+from a common ancester commit ``C``.
 
-Merging branch \`B\` into branch \`A\` means
-incorporating
-into \`A\` all changes between \`C\` and \`B\`.
+Merging branch ``B`` into branch ``A`` means incorporating into ``A``
+all changes between ``C`` and ``B``.
 
-In the simplest
-case, branch \`A\` itself is an ancestor of branch \`B\`. So
-when
-working on branch A, you created a new branch B, to which you
-added
-some commits. (The common ancester \`C\` is just the last commit
-of branch
-\`A\`.)
+In the simplest case, branch ``A`` itself is an ancestor of branch
+``B``. So when working on branch A, you created a new branch B, to which
+you added some commits. (The common ancester ``C`` is just the last
+commit of branch ``A``.)
 
-In this case, git will just move the pointer
-\`A\`, so that it points to the
-same commit as \`B\`. This kind of
-merge is called a "fast forward merge";
-an important concept in the
-world of git. A fast forward merge is a
-merge operation which comes
-down to moving the pointer of the branch
-into whom you are
-merging.
+In this case, git will just move the pointer ``A``, so that it points to
+the same commit as ``B``. This kind of merge is called a "fast forward
+merge"; an important concept in the world of git. A fast forward merge
+is a merge operation which comes down to moving the pointer of the
+branch into whom you are merging.
 
- HEAD
- A 
- ↓
- C1 -- C2 -- C3 -- C4
- \|
- +--- D5
--- D6
- ↑
- B 
+::
 
-\*After merge of \`B\` into \`A\`:\*
+                    HEAD
+                       A   
+                       ↓
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                   B   
 
- C1 --
-C2 -- C3 -- C4
- \|
- +--- D5 -- D6
- ↑
- A 
- B 
+*After merge of ``B`` into ``A``:*
 
-HEAD
+::
 
-\*(Note that this graph is isomorph to a straight
-line)\*
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                   A   
+                                   B   
+                                HEAD
 
-A fast forward merge is not always possible. If \`A\` and
-\`B\` diverged
-from their common ancester \`C\`, simply moving a
-pointer does not work.
+*(Note that this graph is isomorph to a straight line)*
 
- HEAD
- A 
- ↓
- C1 -- C2 -- C3 -- C4 --
-C5
- \|
- +--- D5 -- D6
- ↑
- B 
+A fast forward merge is not always possible. If ``A`` and ``B`` diverged
+from their common ancester ``C``, simply moving a pointer does not work.
 
-In this case, when merging
-\`B\` into \`A\`, the changes between the common
-ancestor and branch
-to \`B\` are applied to branch \`A\`. If this doesn't
-cause any
-trouble (lucky you), git will create a new commit on \`A\`,
-containing
-the changes in \`B\`.
+::
 
-\*The example below shows how \`B\` will be
-merged merged into
-\`A\`.\*
+                          HEAD
+                             A   
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                   B   
 
- HEAD
- A 
- ↓
- C1 -- C2 -- C3 --
-C4 -- C5 ------ C6
- \| \|
- +--- D5 -- D6 --+
- ↑
- B 
+In this case, when merging ``B`` into ``A``, the changes between the
+common ancestor and branch to ``B`` are applied to branch ``A``. If this
+doesn't cause any trouble (lucky you), git will create a new commit on
+``A``, containing the changes in ``B``.
 
-If both
-branches modify the same part of your code, you cannot just apply
-the
-changes from one branch to the other. If this happens, git marks
-the
-conflicts, and does not commit the result of the merge operation.
-You
-first have to resolve the conflicts, before you
-commit.
+*The example below shows how ``B`` will be merged merged into ``A``.*
 
-That's it about merging. Merging comes down to integrating
-changes frome
-one branch into another branch in the same repository.
-Now we will
-consider push and pull operations, which is about moving
-changes between
+::
+
+                                    HEAD
+                                       A   
+                                       ↓
+    C1 -- C2 -- C3 -- C4 -- C5 ------ C6
+                       |               |
+                       +--- D5 -- D6 --+
+                                   ↑
+                                   B   
+
+If both branches modify the same part of your code, you cannot just
+apply the changes from one branch to the other. If this happens, git
+marks the conflicts, and does not commit the result of the merge
+operation. You first have to resolve the conflicts, before you commit.
+
+That's it about merging. Merging comes down to integrating changes frome
+one branch into another branch in the same repository. Now we will
+consider push and pull operations, which is about moving changes between
 repositories.
 
-## Pull and push
+Pull and push
+-------------
 
-Suppose you
-have checked out a remote tracking branch, and you want to
-apply the
-latest commits of the remote branch to your tracking branch
-locally.
-This is called a pull operation. Git fetches the current state
-of the
-remote branch, together with all necessary commits, and merges it
-into
-the tracking branch in your repository.
+Suppose you have checked out a remote tracking branch, and you want to
+apply the latest commits of the remote branch to your tracking branch
+locally. This is called a pull operation. Git fetches the current state
+of the remote branch, together with all necessary commits, and merges it
+into the tracking branch in your repository.
 
-\*For example: When
-\`remote/branch1\` pointed to \`C3\`,
-you made a remote tracking
-branch. Since then, commit \`C4\` was added to
-the remote repository,
-while you added \`C4'\`, \`C5'\` and \`C6'\` to your
-local
-repository.\*
+*For example: When ``remote/branch1`` pointed to ``C3``, you made a
+remote tracking branch. Since then, commit ``C4`` was added to the
+remote repository, while you added ``C4'``, ``C5'`` and ``C6'`` to your
+local repository.*
 
- (origin)
- branch1
- ↓
- C1 -- C2 -- C3
--- C4
- 
- 
- (Local)
- 
- HEAD
- branch1 (trackt
-remote/branch1)
- ↓
- C1 -- C2 -- C3 -- C4' -- C5' -- C6'
- ↑
+::
 
-remote/branch1
+    (origin)
+                     branch1
+                       ↓
+    C1 -- C2 -- C3 -- C4
 
 
-\*After fetching of \`remote/branch1\`, see the
-local repo looks
-as follows:\*
+    (Local)
 
- HEAD
- branch1
- ↓
- C1 -- C2
--- C3 -- C4' -- C5' -- C6 '
- \|
- + --- C4
- ↑
+                                   HEAD
+                                   branch1 (trackt remote/branch1)
+                                    ↓
+    C1 -- C2 -- C3 -- C4' -- C5' -- C6'
+                 ↑
+              remote/branch1
 
-remote/branch1
+*After fetching of ``remote/branch1``, see the local repo looks as
+follows:*
 
-\*After merging:\*
+::
 
- HEAD
- branch1
- ↓
- C1
--- C2 -- C3 -- C4' -- C5' -- C6' -- C7'
- \| \|
- +--- C4
--------------------+
- ↑
- remote/branch1
+                                   HEAD
+                                   branch1
+                                    ↓
+    C1 -- C2 -- C3 -- C4' -- C5' -- C6 '
+                 |
+                 + --- C4
+                       ↑
+                  remote/branch1
 
-As with any other
-merge, it could be that this causes conflicts,
-which you'll have to
-resolve.
+*After merging:*
 
-Conversely you can push the commits in a local branch
-to
-a branch in a remote repository. This can be either to a new
-remote
-branch as to an existing remote branch. Git will upload the most
+::
 
-recent commit of the local branch, together with all necessary
-ancestor
-commits to link it to the existing remote commits. This way
-you create
-a new remote branch; if there was no existing branch, you
-are done.
+                                         HEAD
+                                       branch1
+                                           ↓
+    C1 -- C2 -- C3 -- C4' -- C5' -- C6' -- C7'
+                 |                          |
+                 +--- C4 -------------------+
+                       ↑
+                  remote/branch1
 
-If the remote branch you were pushing to already existed,
-the newly
-created branch will be merged into the existing branch. But
-in most
-configurations this only works if this merge operation is a
-fast forward
-merge, which is the case if no commits were added to the
-remote branch
-after your last pull. If a fast forward merge is not
-possible,
-you will get an error message.
+As with any other merge, it could be that this causes conflicts, which
+you'll have to resolve.
 
-To resolve this, you
-first fetch the remote branch, and merge it locally with
-your local
-tracking branch. (Which is in fact a pull operation.) This
-operation
-results in a new local commit with the latest commit from
-the remote
-repository as one of its parents. So if you push your branch again,
-it
-will be fast forward merged into the remote repository without
-a
-problem.
+Conversely you can push the commits in a local branch to a branch in a
+remote repository. This can be either to a new remote branch as to an
+existing remote branch. Git will upload the most recent commit of the
+local branch, together with all necessary ancestor commits to link it to
+the existing remote commits. This way you create a new remote branch; if
+there was no existing branch, you are done.
 
-## Rebasing
+If the remote branch you were pushing to already existed, the newly
+created branch will be merged into the existing branch. But in most
+configurations this only works if this merge operation is a fast forward
+merge, which is the case if no commits were added to the remote branch
+after your last pull. If a fast forward merge is not possible, you will
+get an error message.
 
-When branches diverge, merging is one
-way to get them together again. A
-typical use case of merging, is the
-resynchronisation of the same branches
-in different repositories, as
-we've encountered in the discussion of push and
-pull
-operations.
+To resolve this, you first fetch the remote branch, and merge it locally
+with your local tracking branch. (Which is in fact a pull operation.)
+This operation results in a new local commit with the latest commit from
+the remote repository as one of its parents. So if you push your branch
+again, it will be fast forward merged into the remote repository without
+a problem.
 
-There is however another way to integrate changes from
-one branch
-into another: rebasing.
+Rebasing
+--------
 
-Suppose you have two branches,
-let's say \`A\` and \`B\`, with a common
-ancester \`C\`. Rebasing
-\`B\` onto \`A\` can be seen as taking branch \`B\` from
-the point
-where it diverged from \`A\`, tearing it off, taking it away,
-and
-reattaching it to the current commit of branch \`A\`.
+When branches diverge, merging is one way to get them together again. A
+typical use case of merging, is the resynchronisation of the same
+branches in different repositories, as we've encountered in the
+discussion of push and pull operations.
 
-Let's look at
-this into more detail. You created a branch \`B\` which diverged
-from
-branch \`A\`. New commits were added to \`B\`, but to \`A\` as
-well.
+There is however another way to integrate changes from one branch into
+another: rebasing.
 
-When you rebase your \`B\` onto \`A\`, git searches for
-the
-commit where the branches diverged, which is \`C\`. 
+Suppose you have two branches, let's say ``A`` and ``B``, with a common
+ancester ``C``. Rebasing ``B`` onto ``A`` can be seen as taking branch
+``B`` from the point where it diverged from ``A``, tearing it off,
+taking it away, and reattaching it to the current commit of branch
+``A``.
 
-Now git
-will iterate over the commits from \`C\` to \`B\`, and determine
-the
-changes that have been applied to the source code between each
-commit.
-Then git starts a new branch on \`A\`, and creates similar
-commits on
-there by replaying the same changes.
+Let's look at this into more detail. You created a branch ``B`` which
+diverged from branch ``A``. New commits were added to ``B``, but to
+``A`` as well.
 
-It is possible
-that conflicts occur, in particular if the same code was
-changed in
-branches \`A\` and \`B\`. If so, you will have to resolve
-these
-conflicts before the rebase process can continue. When all
-commits from
-\`C\` to \`B\` are recreated on top of \`A\`, the new
-branch will take the
-place of the original \`B\`-branch.
+When you rebase your ``B`` onto ``A``, git searches for the commit where
+the branches diverged, which is ``C``.
 
-The
-overall result will be that the changes which where developed
-in
-parallel on branches \`A\` and \`B\` now appear to be serial
-changes: \`A\`
-first, then \`B\`.
+Now git will iterate over the commits from ``C`` to ``B``, and determine
+the changes that have been applied to the source code between each
+commit. Then git starts a new branch on ``A``, and creates similar
+commits on there by replaying the same changes.
 
-\*Visually: after commit \`C4\`
-in the \`A\`-branch, you created a new
-branch \`B\`. You added commits
-\`D5\` and \`D6\` to this new branch.\*
+It is possible that conflicts occur, in particular if the same code was
+changed in branches ``A`` and ``B``. If so, you will have to resolve
+these conflicts before the rebase process can continue. When all commits
+from ``C`` to ``B`` are recreated on top of ``A``, the new branch will
+take the place of the original ``B``-branch.
 
- A 
- ↓
- C1 -- C2 -- C3
--- C4 -- C5 -- C6 -- C7
- \|
- +--- D5 -- D6
- ↑
- B 
+The overall result will be that the changes which where developed in
+parallel on branches ``A`` and ``B`` now appear to be serial changes:
+``A`` first, then ``B``.
 
-HEAD
+*Visually: after commit ``C4`` in the ``A``-branch, you created a new
+branch ``B``. You added commits ``D5`` and ``D6`` to this new branch.*
 
-\*Meanwhile, new commis were added to the \`A\`-branch. Now
-you want
-the changes from the \`B\`-branch to be applied to the
-current state of 
-\`A\` (\`C7\`): rebasing branch \`B\` onto
-\`A\`.\*
+::
 
-\*Git searches for the point where both branches diverged,
-in this example,
-\`C4\`. Now, the changes needed to transform \`C4\`
-to \`D5\`, will be applied
-to \`C7\`, and committed (\`D5'\`). Next,
-the changes for the transition from
-\`D5\` to \`D6\` are applied, to
-create the next commit (\`D6'\`). The result
-is as follows:\*
+                                         A  
+                                         ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
+                       |
+                       +--- D5 -- D6
+                                   ↑
+                                   B   
+                                 HEAD
 
- A
+*Meanwhile, new commis were added to the ``A``-branch. Now you want the
+changes from the ``B``-branch to be applied to the current state of
+``A`` (``C7``): rebasing branch ``B`` onto ``A``.*
 
- ↓
- C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
- \|
- --- D5' --
-D6'
- ↑
- B 
- HEAD
+*Git searches for the point where both branches diverged, in this
+example, ``C4``. Now, the changes needed to transform ``C4`` to ``D5``,
+will be applied to ``C7``, and committed (``D5'``). Next, the changes
+for the transition from ``D5`` to ``D6`` are applied, to create the next
+commit (``D6'``). The result is as follows:*
 
-One should be careful with rebasing. You
-should only rebase branches that
-nobody else is supposed to be
-tracking. Rebasing changes the history of
-a branch. So if a collegue
-wants to push/pull commits to/from a branch
-you rebased, you probably
-end up in a lot of trouble.
+::
 
-## Workflow
+                                         A  
+                                         ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
+                                         |
+                                          --- D5' -- D6'
+                                                      ↑
+                                                      B    
+                                                     HEAD
 
-There are many ways to
-organise your work with git. At the moment, I
-usually work as
-follows:
+One should be careful with rebasing. You should only rebase branches
+that nobody else is supposed to be tracking. Rebasing changes the
+history of a branch. So if a collegue wants to push/pull commits to/from
+a branch you rebased, you probably end up in a lot of trouble.
 
-### Master branch
+Workflow
+--------
 
-The \`master\` branch contains the
-latest relevant code. It may contain
-experimental features, but the
-idea is that the code in \`master\`
+There are many ways to organise your work with git. At the moment, I
+usually work as follows:
+
+Master branch
+~~~~~~~~~~~~~
+
+The ``master`` branch contains the latest relevant code. It may contain
+experimental features, but the idea is that the code in ``master``
 compiles and works.
 
-###
 Feature branches
+~~~~~~~~~~~~~~~~
 
-Every time you want to implement a new feature,
-you create a
-feature branch.
-
-\*For example:\*
-
- master
-
-↓
- C1 -- C2 -- C3 -- C4
- \|
- + --- D5 -- D6 -- D7
- ↑
-
-feature1
- HEAD
-
-In a feature branch, you can commit non-functional
-or even broken code.
-This is not a problem; only the code in
-\`master\` is expected to work.
-
-Now suppose you are working on a
-new feature, but meanwhile a bug had been
-reported, which urgently
-needs a fix.
-In that case you can rather easily switch back to
-\`master\`, and a create a new
-bugfix branch. The changes you made in
-your half-finished feature branch
-will cause no troubles.
-
-
-master
- ↓
- C1 -- C2 -- C3 -- C4
- \|
- +--- D5 -- D6 -- D7
- \|
-↑
- +--- E5 feature1
- ↑
- bugfix
- HEAD
-
-When your bugfix is
-ready, and nothing changed to \`master\` you can
-easily fast-forward
-merge the bugfix branch to the \`master\`
+Every time you want to implement a new feature, you create a feature
 branch.
 
- HEAD
+*For example:*
 
-bugfix
- master
- ↓
- C1 -- C2 -- C3 -- C4 -- E5
- \|
- +--- D5 --
-D6 -- D7
- ↑
- feature1
+::
 
-After merging, the bugfix branch is of no
-more interest; this pointer can be
-removed. You can check out your
-feature branch again, and
+                     master
+                       ↓
+    C1 -- C2 -- C3 -- C4
+                       |
+                       + --- D5 -- D6 -- D7
+                                         ↑
+                                    feature1
+                                       HEAD
+
+In a feature branch, you can commit non-functional or even broken code.
+This is not a problem; only the code in ``master`` is expected to work.
+
+Now suppose you are working on a new feature, but meanwhile a bug had
+been reported, which urgently needs a fix. In that case you can rather
+easily switch back to ``master``, and a create a new bugfix branch. The
+changes you made in your half-finished feature branch will cause no
+troubles.
+
+::
+
+                     master
+                       ↓
+    C1 -- C2 -- C3 -- C4
+                       |
+                       +--- D5 -- D6 -- D7
+                       |                 ↑
+                       +--- E5      feature1
+                             ↑
+                           bugfix
+                            HEAD
+
+When your bugfix is ready, and nothing changed to ``master`` you can
+easily fast-forward merge the bugfix branch to the ``master`` branch.
+
+::
+
+                           HEAD
+                          bugfix
+                          master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- E5
+                       |
+                       +--- D5 -- D6 -- D7
+                                         ↑
+                                     feature1
+
+After merging, the bugfix branch is of no more interest; this pointer
+can be removed. You can check out your feature branch again, and
 continue to work on the feature.
 
-At
-some point, hopefully, your feature implementation is ready, and
-has
-to be merged it into \`master\`. A fast forward merge is
-impossible now,
-because the bugfix created new commits in the master
-branch. To avoid
-clutter in the history of your code, it is useful to
-rebase your feature
-branch onto \`master\` before
-merging.
+At some point, hopefully, your feature implementation is ready, and has
+to be merged it into ``master``. A fast forward merge is impossible now,
+because the bugfix created new commits in the master branch. To avoid
+clutter in the history of your code, it is useful to rebase your feature
+branch onto ``master`` before merging.
 
-\*Rebase \`feature1\` onto \`master\`:\*
+*Rebase ``feature1`` onto ``master``:*
 
- master
+::
 
-↓
- C1 -- C2 -- C3 -- C4 -- E5
- \|
- +--- D5' -- D6' -- D7'
- ↑
+                          master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- E5
+                             |
+                             +--- D5' -- D6' -- D7'
+                                                 ↑
+                                             feature1
+                                               HEAD
 
-feature1
- HEAD
+*After that you can fast forward merge:*
 
-\*After that you can fast forward merge:\*
+::
 
+                                              HEAD
+                                             feature1
+                                              master
+                                                 ↓
+    C1 -- C2 -- C3 -- C4 -- E5 -- D5' -- D6' -- D7' 
 
-HEAD
- feature1
- master
- ↓
- C1 -- C2 -- C3 -- C4 -- E5 -- D5' --
-D6' -- D7' 
-
-A feature branch is typically a branch on which you
-work alone; chances
-are high that no one else is tracking it. So
-rebasing is no problem.
-Because of the rebase operation, your feature
-seems to be completely
-developed after the bugfix, which results in a
-cleaner history of your
+A feature branch is typically a branch on which you work alone; chances
+are high that no one else is tracking it. So rebasing is no problem.
+Because of the rebase operation, your feature seems to be completely
+developed after the bugfix, which results in a cleaner history of your
 project's code.
 
-If you had just merged
-your feature branch without rebasing, you would end
-up with a commit
-with two parents, which would just make things more
-complicated than
-they should be.
+If you had just merged your feature branch without rebasing, you would
+end up with a commit with two parents, which would just make things more
+complicated than they should be.
 
-### Release branches
+Release branches
+~~~~~~~~~~~~~~~~
 
-If a new release of your
-project is approaching, you typically create
-a release branch from
-\`master\`.
+If a new release of your project is approaching, you typically create a
+release branch from ``master``.
 
- release-1
- master
- ↓
- C1 -- C2 -- C3 --
-C4
+::
 
-There are probably a number of bugs that still need to be fixed
-before
-release. Meanwhile, the normal development of new features
-can
-continue in \`master\`.
+                     release-1
+                     master
+                       ↓
+    C1 -- C2 -- C3 -- C4
 
- release-1 master
- ↓ ↓
- C1 -- C2
--- C3 -- C4 -- C5 -- C6
+There are probably a number of bugs that still need to be fixed before
+release. Meanwhile, the normal development of new features can continue
+in ``master``.
 
-Suppose you have a release-critical bug to
-fix. Then you fix that bug in the
-release branch.
+::
 
- master
- ↓
+                     release-1   master
+                       ↓           ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6
 
-C1 -- C2 -- C3 -- C4 -- C5 -- C6
- \|
- +--- D5
- ↑
+Suppose you have a release-critical bug to fix. Then you fix that bug in
+the release branch.
 
-release-1
+::
 
-However, you probably also want to apply the bugfix on
-the \`master\` branch.
-At this point rebasing the release branch onto
-\`master\` is not an option,
-because this would make the new features
-you committed to \`master\` part of
-the release branch. Which is not
-what you want, because these new features
-could be experimental or
-untested. So in this particular case 
-merging the release branch into
-the \`master\` branch is the way to go.
+                                 master
+                                   ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6
+                       |
+                       +--- D5
+                             ↑
+                          release-1
 
- master
- ↓
- C1 -- C2 --
-C3 -- C4 -- C5 -- C6 -- C7
- \| \|
- +----D5 ---------+
- ↑
+However, you probably also want to apply the bugfix on the ``master``
+branch. At this point rebasing the release branch onto ``master`` is not
+an option, because this would make the new features you committed to
+``master`` part of the release branch. Which is not what you want,
+because these new features could be experimental or untested. So in this
+particular case merging the release branch into the ``master`` branch is
+the way to go.
 
-release-1
+::
 
-After the merge, you must not remove the release
-branch
-since you will need it afterwards for other release critical
-bugs
-to be committed.
+                                     master
+                                        ↓
+    C1 -- C2 -- C3 -- C4 -- C5 -- C6 -- C7
+                       |                |
+                       +----D5 ---------+
+                             ↑
+                          release-1
 
-### Major refactoring
+After the merge, you must not remove the release branch since you will
+need it afterwards for other release critical bugs to be committed.
 
-A final use case
-that I want to discuss is a major refactoring.
-If you want to refactor
-your code in such a way that a lot has to be
-rewritten, you also
-create a branch.
+Major refactoring
+~~~~~~~~~~~~~~~~~
 
-This kind of refactoring usually takes some time,
-and you typically
-want feedback from other developers during the
-process. If you're lucky,
-other people are even willing to help you
-with the refactoring. So it
-is a good idea to make the refactoring
-branch publicly available.
+A final use case that I want to discuss is a major refactoring. If you
+want to refactor your code in such a way that a lot has to be rewritten,
+you also create a branch.
 
-Now suppose you want the new fixes from
-\`master\` to be incorporated in
-your refactoring branch. Rebasing
-your refactoring
-branch onto \`master\` is usually not a good idea:
+This kind of refactoring usually takes some time, and you typically want
+feedback from other developers during the process. If you're lucky,
+other people are even willing to help you with the refactoring. So it is
+a good idea to make the refactoring branch publicly available.
 
-other developers have probably pulled it; they might even be working on
-it.
-So in this case, merging the \`master\` branch into your feature
-branch will do.
+Now suppose you want the new fixes from ``master`` to be incorporated in
+your refactoring branch. Rebasing your refactoring branch onto
+``master`` is usually not a good idea: other developers have probably
+pulled it; they might even be working on it. So in this case, merging
+the ``master`` branch into your feature branch will do.
 
-## That's all
+That's all
+----------
 
-There you go. A modest
-introduction to git. I made abstraction of some
-details, because I
-wanted to keep it (relatively) short. And of course
-also because there
-are still things I don't understand completely myself :-)
+There you go. A modest introduction to git. I made abstraction of some
+details, because I wanted to keep it (relatively) short. And of course
+also because there are still things I don't understand completely myself
+:-)
 
-The
-workflow as I describe it here, seems to work for me. I'm not
-sure
-whether it is really best practice. If you have any feedback, I
-am
+The workflow as I describe it here, seems to work for me. I'm not sure
+whether it is really best practice. If you have any feedback, I am
 certainly interested.
 
-[This text is also available on
-github.](https://github.com/johanv/randomtexts/blob/master/gitstart-en.md)
+`This text is also available on
+github. <https://github.com/johanv/randomtexts/blob/master/gitstart-en.md>`__
 You can comment over there (just submit an issue), or send me pull
 requests if you want to improve it. :)
 
+-  `login </user/login?destination=comment%2Freply%2F200%23comment-form>`__
+   om te reageren
+
+Flattr dit artikel
+------------------
+
 .. |Flattr this| image:: http://api.flattr.com/button/flattr-badge-large.png
+   :target: http://flattr.com/thing/1094450/About-Git
