@@ -1,9 +1,0 @@
-.. title: Error estimation for the implementation of log10 in Arithmos
-.. slug: node-151
-.. date: 2010-12-13 16:33:37
-.. tags: cant
-.. link:
-.. description: 
-.. type: text
-
-Hoe de relatieve fout voor log\_10 onder controle houden.

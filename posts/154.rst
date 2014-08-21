@@ -1,9 +1,0 @@
-.. title: Error estimation for the implementation of arccot starting from arctan
-.. slug: node-154
-.. date: 2010-12-13 17:07:50
-.. tags: cant
-.. link:
-.. description: 
-.. type: text
-
-

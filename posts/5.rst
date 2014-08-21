@@ -14,8 +14,11 @@ Antwerpen <http://www.ua.ac.be>`__. Aangezien dat onderzoek betaald werd
 met misschien wel uw belastinggeld, kan je hier nog steeds een aantal
 zaken downloaden.
 
-
-
+**Update 21/08/2013:** Bij de migratie van mijn blog van Drupal 6 naar
+Nikola, stelde ik vast dat al deze bestanden ontbraken. Ik
+vermoed dat dat gebeurd is toen ik van web hosting provider verhuisde,
+intussen al enkele jaren geleden. Moest iemand nog een kopietje hebben
+van een van de verloren artikels, neem contact op aub.
 
 
 
@@ -33,15 +36,15 @@ Exception handling en special values
 
 
 
--  `Oneindig in floating-pointaritmetiek </node/142>`__
--  `Verzamelingensystemen </node/143>`__
+-  `Oneindig in floating-pointaritmetiek <files/infty.pdf>`__ (verloren gegaan)
+-  `Verzamelingensystemen <files/verzsys.pdf>`_ (verloren gegaan)
 -  `Universal semantics for computer arithmetic
-   implementations <ftp://ftp.win.ua.ac.be/pub/cant/preprints/sv.pdf>`__
+   implementations <files/sv.pdf>`__ (verloren gegaan)
 -  `Manual
-   MpIeee <ftp://ftp.win.ua.ac.be/pub/cant/Arithmos/MpIeee.ps.gz>`__
--  `Vertrouwt u uw rekenmachine? </node/144>`__
+   MpIeee <ftp://ftp.win.ua.ac.be/pub/cant/Arithmos/MpIeee.ps.gz>`__ (verloren gegaan)
+-  `Vertrouwt u uw rekenmachine? <files/interval.pdf>`__ (verloren gegaan)
 -  `Blending interval and set arithmetic for maximal
-   reliability </node/145>`__
+   reliability <files/intsv.pdf>`__ (verloren gegaan)
 
 
 
@@ -54,15 +57,15 @@ Functiebenaderingen
 
 
 
--  `An introduction to continued fractions </node/146>`__
+-  `An introduction to continued fractions <files/cfintro.pdf>`__ (verloren gegaan)
 -  `Reliable function evaluation using continued fraction
-   expansions </node/147>`__
+   expansions <files/fris.pdf>`__ (verloren gegaan)
 -  `Betrouwbare functie-evaluatie met behulp van
-   kettingbreukontwikkelingen </node/148>`__
+   kettingbreukontwikkelingen <files/isintro.pdf>`__ (verloren gegaan)
 -  `Propagatie van afrondingsfouten door afleidbare
-   functies </node/149>`__
+   functies <files/properr.pdf>`__ (verloren gegaan)
 -  `Effect van de argumentreductie op de foutenanalyse van
-   arctan </node/150>`__
+   arctan <files/atansem.pdf>`__ (verloren gegaan)
 
 
 
@@ -75,10 +78,10 @@ Foutafschattingen
 
 
 
--  `log 10 </node/151>`__
--  `log 2 </node/152>`__
--  `atan </node/153>`__
--  `acot </node/154>`__
+-  `log 10 <files/log10.pdf>`__ (verloren gegaan)
+-  `log 2 <files/details.pdf>`__ (verloren gegaan)
+-  `atan <files/atan.pdf>`__ (verloren gegaan)
+-  `acot <files/acot.pdf>`__ (verloren gegaan)
 
 
 
