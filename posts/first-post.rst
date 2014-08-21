@@ -1,6 +1,6 @@
-.. title: I migrated my blog from Drupal 6...
+.. title: I used to have a blog in Drupal 6
 .. slug: first-post
-.. date: 2014/08/19 10:00:02
+.. date: 2014/08/20 23:21:02
 .. tags: hpr,nikola,johanv.org,drupal
 .. link: 
 .. description: First post on my new blog.
@@ -16,27 +16,28 @@ I got the idea from `guitarman <http://stevebaer.com>`_, who did an
 
 I see a lot of great features:
 
-* I can store my content in a git repository.
+* I can store my content in a `git <http://git-scm.com>`_ repository.
 * I can use my `favourite text editor <http://www.vim.org>`_ to edit my
   blog posts.
 * I can save blog posts when I'm not connected to the internet.
-* I don't need to install Drupal updates.
+* I don't need to install security updates for Drupal and Drupal modules.
 
 Don't get me wrong, I think Drupal is a great product, especially when
 content on a website has to be provided by people who don't like to
-use git. Or when you need to have some forms on your site. But for my
-personal blog, I think a compiled site is a better solution.
+use git. Or when you need to have some forms on your site. Or when the
+server has to do some intelligent work. But my personal blog has other
+use cases, like displaying the texts I wrote. So I think a compiled site
+might not be such a bad solution.
 
-The commenting system uses `Disqus <http://disqus.com>`_, which is of 
-course evil. But hey, if you don't want to use Disqus, just send me
-a `pull request <https://github.com/johanv/blog.johanv.org>`_ with
-your comment :-D
+This site uses `Disqus <http://disqus.com>`_ for managing comments,
+which is of course evil. But hey, if you don't want to use Disqus, just
+send me a `pull request <https://github.com/johanv/blog.johanv.org>`_
+with your comment :-D
 
 I more or less migrated all articles of my drupal site to this new
 instance. (I will provide more details on that in a later post.)
-But it still needs some work, as you can probably see. Also the theme
-is not the most beautiful out there, I just applied some hacks on an
-existing default theme.
+But `there is still work to do <https://github.com/johanv/blog.johanv.org/issues>`_, 
+as you might already found out.
 
 This is work in progress. I will keep you informed on the progress.
 
