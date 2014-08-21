@@ -14,8 +14,6 @@ howto om de grootste problemen op te vangen met Outlook
 
 \ **Correct quoten**
 
-
-
 -  Klik 'Extra', 'Opties' in de menubalk.
 -  Klik onder het flapje 'Voorkeuren' op de knop 'E-mailopties'
 -  Onder 'Bij het beantwoorden van een bericht' kies je voor 'Aanduiding
@@ -24,15 +22,9 @@ howto om de grootste problemen op te vangen met Outlook
    digitaal ondertekende e-mail lezen als tekst zonder opmaak' aan,
    zodat je plain text kan antwoorden op htmlberichten.
 
-
-
 \ **Platte tekst voor e-mails**
-
-
 
 -  Opnieuw onder 'Extra', 'Opties'
 -  Klik op het flapje 'E-mailindeling'
 -  Kies 'Tekst zonder opmaak' achter 'Deze berichtindeling gebruiken'
-
-
 

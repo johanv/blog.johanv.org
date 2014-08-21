@@ -17,22 +17,16 @@ aan een account op Facebook of Twitter. Op die manier komen je ‘dents’
 (berichten op identi.ca) ook automatisch op je Facbook- of Twitterpagina
 terecht.
 
-
-
 Twitter
 -------
-
 
 Om te koppelen met Twitter, surf je naar je persoonlijke pagina op
 identi.ca. Klik vervolgens op ‘Instellingen’, en ‘Twitter’. Je komt op
 de pagina http://identi.ca/settings/twitter terecht, en daar kun je de
 koppeling instellen.
 
-
-
 Facebook
 --------
-
 
 Voor Facebook is er een toepassing die ‘identi.ca’ heet. Ik gebruik
 ze zelf, ze werkt nog steeds, maar ik weet niet meer hoe ik ze
@@ -40,6 +34,6 @@ geïnstalleerd heb. :-$ Ik vind zelfs de instellingen niet terug. Maar ik
 heb al wel vaker problemen geweten met de ‘Facebook identi.ca app’,
 misschien is er vandaag ook wel weer iets mis mee.
 
-[`terug naar het
-overzicht </node/171>`__\ ]
+[:doc:`terug naar het
+overzicht <node-171>`\ ]
 

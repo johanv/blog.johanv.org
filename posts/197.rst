@@ -6,14 +6,9 @@
 .. description: 
 .. type: text
 
-
-
-
 Recently I upgraded my phone (Sony Ericsson Xperia Mini Pro) from
 Cyanogenmod 7.2 to Cyanogenmod 9. And you should upgrade too, if you are
 running Cyanogenmod 7.2. This is why:
-
-
 
 -  The hardware keyboard layout can be configured from the settings
    menu.
@@ -28,8 +23,6 @@ running Cyanogenmod 7.2. This is why:
    smoother.
 -  CM 9 (based on Android 4) looks way cooler than CM 7.2 (based on
    Android 2.3).
-
-
 
 But I went to some pain while upgrading the thing. So if you want
 to perform a similar upgrade, here are two useful tips.

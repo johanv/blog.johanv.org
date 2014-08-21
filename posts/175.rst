@@ -36,5 +36,5 @@ Android market. De auteur van mustard,
 `@macno <http://identi.ca/macno>`__, is uiteraard ook op identi.ca te
 vinden.
 
-[`terug naar het overzicht </node/171>`__\ ]
+[:doc:`terug naar het overzicht <node-171>`\ ]
 

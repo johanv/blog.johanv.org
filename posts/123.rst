@@ -11,16 +11,12 @@ telefoons <http://www.iphoneclub.nl/67567/microsoft-kin-microsoft-kondigt-twee-i
 voor, onder de naam ‘KIN’. Opmerkelijk bij dit verhaal, is wat Microsoft
 hierbij niet doet:
 
-
-
 -  Hoewel Microsoft zelf een telefoonbesturingssysteem ontwikkelde,
    `Windows Phone 7 Series <http://www.dutchcowboys.nl/mobile/19031>`__,
    gebruiken ze dit systeem niet op hun eigen nieuwe telefoon.
 -  Het is niet mogelijk om extra toepassingen te installeren op een
    telefoon, een mogelijkheid die Windows Phone 7 Series wél aanbiedt,
    net zoals concurrerende besturingssystemen iPhone en Android.
-
-
 
 Microsoft kondigt de telefoon aan als ‘speciaal voor jonge
 gebruikers’. Vreemd dus dat ze qua technologie lijken terug te keren in

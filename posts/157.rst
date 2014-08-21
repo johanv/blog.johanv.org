@@ -18,8 +18,8 @@ De
 overschakeling van CyanogenMod 6.0 naar 6.1 verliep een pak eenvoudiger
 dan een eerste installatie van CyanogenMod. Als je op zoek bent naar een
 howto voor de eerste installatie van CyanogenMod, dan vind je meer
-informatie in ‘\ `HTC magic van Android 1.5 naar Android
-2.2 </node/140>`__\ ’. Deze uitleg kan je net zo goed gebruiken voor de
+informatie in ‘\ :doc:`HTC magic van Android 1.5 naar Android
+2.2 <node-140>`\ ’. Deze uitleg kan je net zo goed gebruiken voor de
 installatie van 6.1 als van 6.0. Let er wel op dat het allemaal nogal
 hardware-afhankelijk is. Ik heb het geluk een ‘oude’ HTC Magic te
 hebben, waarmee het OS vervangen nog lukt. De nieuwere modellen van HTC
@@ -54,12 +54,8 @@ zoals de vorige keer de recentste versie van CyanogenMod en die van de
 EBI1-kernel, en blijkbaar waren die nog te vinden op dezelfde
 plaats:
 
-
-
 #. http://wiki.cyanogenmod.com/index.php?title=Latest\_version#HTC\_Magic
 #. http://wiki.cyanogenmod.com/index.php?title=Latest\_version#EBI1
-
-
 
 Installeren was gemakkelijk. Rebooten naar recovery, alles wipen,
 en dan de images in volgorde flashen. Na een volgende reboot kreeg ik

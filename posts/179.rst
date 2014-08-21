@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 In this howto, I explain how I installed Arch Linux, with an
 encrypted LVM setup. The tricky part is that I have 2 physical volumes
 for my volume group, which required some hacking to get it
@@ -27,12 +22,8 @@ used LVM on other distributions though, and I have used encrypted LVM on
 Fedora (where the installer did al the work for me, without me
 completely understanding how it worked.)
 
-
-
 Setting up the encrypted LVM system
 -----------------------------------
-
-
 
 Boot your machine from the installation iso, and use e.g. cfdisk
 to create the partitions.
@@ -56,12 +47,8 @@ anything about that, so I just copied something from yet another howto.
 to the unecrypted partitions on ``/dev/mapper/crypt1`` and
 ``/dev/mapper/crypt2``.
 
-
-
 Reactivating the LVM volumes after reboot
 -----------------------------------------
-
-
 
 At this point, you can just start the installation procedure. But,
 if something goes wrong, and you have to reboot, you obviously don't
@@ -73,12 +60,8 @@ them:
 (The
 last line just activates all available logical volumes.)
 
-
-
 Setting up arch
 ---------------
-
-
 
 To setup arch, just run ``/arch/setup``, as usual. For the step
 ‘prepare hard drive’, choose option 3: manually configure block devices,
@@ -98,13 +81,11 @@ patch </sites/johan.zandhoven.org/files/encrypt.patch>`__ to
 myself, I just shamelessly stole it from `this post on the arch linux
 forums <https://bbs.archlinux.org/viewtopic.php?pid=827495#p828784>`__.
 
-
 Once
 you've done that, press CTRL+ALT+F1 again, to switch back to the
 installer.
 Edit ``rc.conf``: change ``USELVM="no"`` into
 ``USELVM="yes"``.
-
 
 Edit ``mkinitcpio.conf``: search for
 ``HOOKS``, and add ``encrypt lvm2`` directly before ``filesystems``. In
@@ -128,17 +109,12 @@ Adding two partitions after ``cryptdevice=`` is
 non-standard, this is why you had to hack the ``encrypt``
 hook.
 
-
 That's all. It should work. During bootup, you will be
 asked for the passphrases to decrypt your physical LVM partition. After
 entering these, your system will boot.
 
-
-
 Things to be done
 -----------------
-
-
 
 Although this setup works, it isn't perfect yet. In my situation,
 both encrypted partitions can be unlocked with the same password. It
@@ -151,13 +127,8 @@ first entered password for decrypting all the volumes. Only if this
 fails, it should ask to enter another password. This should be perfectly
 doable, but I wasn't able to try this out. Yet. ;-)
 
-
-
 References
 ----------
-
-
-
 
 -  https://bbs.archlinux.org/viewtopic.php?pid=827495#p828784
 -  https://wiki.archlinux.org/index.php/System\_Encryption\_with\_LUKS#LVM.26dm-crypt\_manually\_.28short\_version.29

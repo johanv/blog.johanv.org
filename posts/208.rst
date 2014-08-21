@@ -6,13 +6,10 @@
 .. description: 
 .. type: text
 
-
 Wil je met Fedora 19 beta je
 EID-kaartlezer aan de praat krijgen om met Tax-On-Web je
 belastingaangifte te doen? Met wat chance lukt het in vijf
 stappen:
-
-
 
 #. Installeer de
    `middleware <http://eid.belgium.be/nl/je_eid_gebruiken/de_eid-middleware_installeren/linux/>`__.

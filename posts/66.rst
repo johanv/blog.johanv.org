@@ -31,7 +31,6 @@ paniekknop:
 
 \ **`PANIEK! <javascript:void(location.href='http://www.ecops.be?referer='+encodeURIComponent(location.href))>`__**
 
-
 Sleep
 hem naar je bladwijzerwerkbalk, en je hebt meteen een paniekknop voor
 àlle websites.

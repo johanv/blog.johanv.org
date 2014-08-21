@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-
 Dit weekend installeerde ik Debian Wheezy op mijn Dell Precision M4500
 laptop. Deze laptop heeft een nVidia Corporation GT215 [Quadro FX 1800M]
 grafische kaart, en net zoals bij ongeveer elke mogelijke

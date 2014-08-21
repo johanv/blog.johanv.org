@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 Zaterdag 17 september 2011 is het weer software freedom day. Dit
 jaar vieren we dit door een Linuxdistributie te installeren :-)
 
@@ -25,13 +20,9 @@ Eerst en vooral heb je een computer (laptop
 of desktop, anders is Mint minder interessant) nodig waarop je Linux
 Mint gaat installeren. Er zijn twee mogelijkheden:
 
-
-
 #. Je hebt niets meer nodig van de harde schijf van je computer
 #. Op je computer staat een besturingssysteem (vaak Windows) dat je
    achteraf nog wilt kunnen gebruiken
-
-
 
 Als mogelijkheid 1 voor jou van toepassing is, prijs je dan
 gelukkig. Je kunt de installatie dan helemaal zelf doen, op basis van
@@ -60,8 +51,8 @@ uitdelen is voor mij goedkoper dan DVD's uitdelen :-)
 
 Als je weet
 waar ik werk, dan kun je een CD komen halen op mijn bureau. Er liggen er
-daar, je mag ze zo meenemen. Weet je niet waar ik werk, `contacteer me
-dan </node/155>`__, en zo lang het me niet te veel kost, stuur ik een
+daar, je mag ze zo meenemen. Weet je niet waar ik werk, :doc:`contacteer me
+dan <node-155>`, en zo lang het me niet te veel kost, stuur ik een
 CD'tje op. Als je weet hoe dat moet, kun je natuurlijk zelf `een CD- of
 DVD-image <http://www.linuxmint.com/download.php>`__ downloaden en
 branden.
@@ -95,5 +86,4 @@ ermee!
 
 Reageer op deze blog post via `deze
 identi.ca-discussie <http://test.johanv.org/StatusThread/?controller=conversation&id=81408498>`__.
-
 

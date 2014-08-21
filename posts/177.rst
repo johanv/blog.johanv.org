@@ -6,16 +6,11 @@
 .. description: 
 .. type: text
 
-
-
-
-
 Alweer een wild idee, waarvan waarschijnlijk niets komt, maar toch de
 moeite waard om te lanceren...
 
 Ik denk niet dat ik de enige ben met
 dit probleem: te veel interessante projecten.
-
 
 -  Een hobbyprogrammeerproject dat maar niet vordert
 -  Een aantal Linuxdistributies die ik nog wil uitproberen, en waar ik
@@ -24,7 +19,6 @@ dit probleem: te veel interessante projecten.
 -  Een aantal bestaande open-sourceprojecten waar ik graag aan wil
    ‘contributen’
 -  ...
-
 
 Maar helaas: het komt er nooit van. Eigenlijk zou je er een aantal
 keer een aantal uur aan moeten kunnen doorwerken. Maar er zijn altijd
@@ -39,7 +33,6 @@ met Linux of open source te maken heeft. En we bekijken dat heel ruim
 
 Dit is het wilde idee:
 
-
 -  We vinden een aantal geïnteresseerden uit de buurt van Kessel
    (Nijlen)
 -  We spreken 1 of 2 keer per maand af. Op vaste avonden, gewoon bij
@@ -48,12 +41,9 @@ Dit is het wilde idee:
    voorziet een internetverbinding en bier :-)
 -  Ieder neemt zijn laptop/device mee, en werkt aan eender wat.
 
-
-
 Zodus: woon je in de buurt van Kessel, en vind je het een leuk
 idee, laat iets weten. Je vindt me `op
 identi.ca <http://identi.ca/johanv>`__, maar als je mijn e-mailadres
 kent, kun je me ook mailen. Als ik volk genoeg vind, en ik mag van mijn
 vrouw ;-), dan gaat het door.
-
 

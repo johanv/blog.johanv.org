@@ -78,7 +78,6 @@ naam is die je je printer gegeven hebt op de server. (Let op: ik moest
 op de client, in dit geval Linux Mint, ook wel de Brotherdingen
 installeren: brother-cups-wrapper-common en brother-cups-wrapper-extra).
 
-
 Je kan je cups-printserver overigens ook gebruiken onder Windows,
 op voorwaarde dat de juiste printerdriver op je Windowsclient
 geïnstalleerd is. Je voegt daarvoor een netwerkprinter toe, en als URL
@@ -165,5 +164,4 @@ en weggeschreven in de directory bepaald in ‘scanloop.sh’. Die directory
 maak je dan beschikbaar via ftp, samba, webinterface, of nog een andere
 creatieve oplossing, zodat je vanop elke client in huis de documenten
 gemakkelijk kan downloaden.
-
 

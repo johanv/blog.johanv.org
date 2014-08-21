@@ -6,14 +6,9 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 At the moment, I have two 'servers' on my attic. A file server,
-which is an old laptop running Freenas 8, and a server for `printing,
-scanning </node/160>`__ and backups, which is a 10 year old PC running
+which is an old laptop running Freenas 8, and a server for :doc:`printing,
+scanning <node-160>` and backups, which is a 10 year old PC running
 Ubuntu Server 10.04.
 
 Since I don't have ethernet cables to the
@@ -53,12 +48,8 @@ to use, I'm still experiencing some network problems, and I am not sure
 whether what I am trying will actually work. But I'll keep you updated.
 This is what I did so far:
 
-
-
 Setting up the Debian server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 
 I set up a very basic Debian installation for the virtualization
 host. I used the 64-bit netinstall CD, to install only the basic system
@@ -92,12 +83,8 @@ managing virtual machines on the command line: ``qemu-kvm``,
 accessed using the wireless network, we will also need
 ``ebtables``.
 
-
-
 Setting up the bridge
 ~~~~~~~~~~~~~~~~~~~~~
-
-
 
 Because the virtual machines will have to be accessible from my
 wireless lan, I need to configure a network bridge on the host, which
@@ -115,12 +102,8 @@ the network card has to associate to the access point. The configuration
 above only starts wlan0, but I start br0 in ``/etc/rc.local``, by adding
 the following line: ``\nifup br0``
 
-
-
 Installing a virtual FreeNAS server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 
 To set up the virtual file server, I used this
 command:\ ``\nvirt-install --connect qemu:///system -n gobelijn -r 256 --disk path=/vdisks/gobelijn/gobelijn01.img,size=2 --disk path=/vdisks/gobelijn/gobelijn02.img,size=40 -c /vdisks/iso/FreeNAS-8.0.3-RELEASE-x64.iso --vnc --noautoconsole --os-type unix --os-variant freebsd7 --network=bridge:br0 --hvm``
@@ -160,12 +143,8 @@ to\ ``\n      <model type='rtl8139'/>\n``
 After rebooting the virtual
 machine, it had a network interface.
 
-
-
 ebtables
 ~~~~~~~~
-
-
 
 ... but it still didn't work. I could connect from the virtual
 guest to the virtual host and vice versa, but I couldn't connect the
@@ -199,14 +178,8 @@ doesn't work, probably because the hack of starting the bridge in
 ``/etc/rc.local`` as well, by adding
 ``\nsleep 4\nvirsh start gobelijn``.
 
-
-
 References
 ~~~~~~~~~~
-
-
-
-
 
 -  `Debian wiki: WPA-PSK and
    WPA2-PSK <http://wiki.debian.org/WiFi/HowToUse#WPA-PSK_and_WPA2-PSK>`__

@@ -6,7 +6,7 @@
 .. description: 
 .. type: text
 
-(`Click here for info in English </node/162>`__.)
+(:doc:`Click here for info in English <node-162>`.)
 
 Onlangs zat ik
 met een aantal collega’s op café (in de
@@ -85,5 +85,4 @@ is er al wel een ander communicatiekanaal: de identi.ca group
 enige niet-bot in die groep, dus als je geïnteresseerd bent, sluit je
 gerust aan. Zit je niet op identi.ca, kun je altijd de rss-feed van
 `!beerscan <http://identi.ca/group/beerscan>`__ volgen.
-
 

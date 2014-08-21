@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 Recently, I was introduced to rsnapshot, which is a great tool for
 simple backup. It uses rsync to backup files. And it also uses hard
 links, so it can provide hourly 'snapshots' while it stores unchanged
@@ -77,12 +72,9 @@ Search the line that starts with
 ``\nsnapshot_root   /path/to/backup/location/\n``
 Important:
 
-
 -  Make sure to put a tab between the parts, and add a trailing slash
 -  The file system of rsnapshot\_root should support hard links (ext3,
    ext4 are fine)
-
-
 
 Then search for lines starting with 'backup'. There are some
 examples for backing up ``/home``, ``/etc`` and ``/usr/local``. If you

@@ -6,8 +6,8 @@
 .. description: 
 .. type: text
 
-Eerder deze week raakte bekend dat `gebruikers van Sidekick-telefoons
-heel wat gegevens verloren </node/27>`__ volgend op servercrash bij een
+Eerder deze week raakte bekend dat :doc:`gebruikers van Sidekick-telefoons
+heel wat gegevens verloren <node-27>` volgend op servercrash bij een
 dochteronderneming van Microsoft.
 
 Nu zou Microsoft `de gegevens van

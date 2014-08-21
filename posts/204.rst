@@ -9,7 +9,6 @@
 Word processors are overrated
 -----------------------------
 
-
 (This is the transcript of `my second submission for Hacker Public
 Radio <http://www.hackerpublicradio.org/eps.php?id=1238>`__.)
 
@@ -184,5 +183,4 @@ This text is also available `on
 github <https://github.com/johanv/randomtexts/blob/master/wordprocessors.md>`__.
 In markdown format, of course. :-) You can post comments (issues, or
 even pull requests) over there.
-
 

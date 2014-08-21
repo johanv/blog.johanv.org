@@ -6,9 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
 I bought myself a `Raspberry Pi <http://www.raspberrypi.org/>`__ and I
 am using it as print server right now. It required some hacking to make
 it work, so I might as well blog about it.
@@ -28,12 +25,10 @@ You have to modify
 ``/etc/cups/cupsd.conf`` in order to make the cups web interface remote
 accessible. This is what I changed: 
 
-
 -  Replaced ``Listen localhost:631`` by ``Port 631``.
 -  Added ``Allow from 192.168.0.0/255.255.0.0`` in the /, /admin and
    /admin/conf locations. (You will have to adapt the network ranges to
    your own situation.)
-
 
 To make cups start at boot time, you have to add ``@cupsd`` to the
 ``DAEMONS`` line in ``/etc/rc.conf``. (To start the cups daemon right
@@ -86,11 +81,8 @@ time.)
 
 References:
 
-
 -  https://wiki.archlinux.org/index.php/CUPS
 -  http://www.linuxforums.org/forum/networking/53105-how-make-cups-jetdirect-appsocket-print-server.html
-
-
 
 You can comment via `this identi.ca
 conversation <http://identi.ca/conversation/94501999>`__.

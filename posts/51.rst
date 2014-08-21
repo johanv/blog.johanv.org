@@ -6,7 +6,7 @@
 .. description: 
 .. type: text
 
-Bij `de release van Ubuntu 9.10 vorige week </node/47>`__, was daarover
+Bij :doc:`de release van Ubuntu 9.10 vorige week <node-47>`, was daarover
 niets te lezen in De Morgen. (Dat lag wel even anders bij `Windows
 7 <http://www.google.be/search?hl=nl&q="windows+7"+site:demorgen.be&btnG=Zoeken&meta=&aq=f&oq=>`__.)
 Groot was dus mijn verbazing toen ik gisteren in De Morgen `een artikel

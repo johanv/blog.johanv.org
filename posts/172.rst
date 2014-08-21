@@ -15,12 +15,8 @@ Maar microblogging is ook
 meer dan dat. Ik probeer een overzicht te schetsen, op basis van
 voorbeelden op de identi.ca-website
 
-
-
 Publieke tijdslijn
 ------------------
-
-
 
 Zoals gezegd is het basisidee achter microblogging bijzonder
 eenvoudig. Een microbloggingsysteem heeft een groot aantal gebruikers.
@@ -29,12 +25,8 @@ En al die gebruikers kunnen korte berichtjes (typisch niet langer dan
 tijdslijn’. Als je surft naar http://identi.ca, dan zie je de berichten
 van de publieke tijdslijn passeren.
 
-
-
 Persoonlijke tijdslijn
 ----------------------
-
-
 
 Dat wordt natuurlijk al gauw onoverzichtelijk. Vandaar dat iedere
 gebruiker ook een persoonlijke tijdslijn heeft. Die bevat slechts een
@@ -43,12 +35,8 @@ van je ‘vrienden’, een beperkt aantal gebruikers die je zelf kiest. Bij
 wijze van voorbeeld: mijn persoonlijke tijdslijn vind je op
 http://identi.ca/johanv/all.
 
-
-
 @-reply's
 ---------
-
-
 
 Als je een berichtje wilt posten dat bedoeld is voor een bepaalde
 andere gebruiker, dan doe je dat door in je bericht de naam van die
@@ -62,12 +50,8 @@ johanv jouw berichten blokkeert.) Bovendien kun je gemakkelijk al je
 @-reply's opzoeken. De @-replies gericht aan @johanv zijn
 http://identi.ca/johanv/replies.
 
-
-
 Conversaties
 ------------
-
-
 
 Je hebt ook de mogelijkheid om een antwoord te formuleren op
 eender welk bericht in de tijdslijn. En andere gebruikers kunnen daar
@@ -81,12 +65,8 @@ Door op die link te klikken, kom je op een pagina met heel de discussie
 terecht. Discusies worden wel eens heel uitgebreid, zoals bijvoorbeeld
 hier: http://identi.ca/conversation/68616326
 
-
-
 Hashtags
 --------
-
-
 
 Je kunt in je berichten hashtages gebruiken. Hashtags zijn niets
 anders dan trefwoorden waar je het symbool # voor plakt. Op die manier
@@ -101,12 +81,8 @@ gemakkelijk alle berichten die gelabeld zijn met een trefwoord opzoeken;
 voor het trefwoord ‘koffie’ vind je ze op
 http://identi.ca/tag/koffie.
 
-
-
 Privacy
 -------
-
-
 
 Privacy bij microblogging is heel duidelijk: er is er geen. Alle
 berichten die je post, zijn voor heel de wereld leesbaar. Daar moet je
@@ -118,17 +94,13 @@ worden. Wil je iemand iets persoonlijk laten weten, dan gebruik je beter
 geëncrypteerde e-mail, of (revolutionair): je kan het ook gewoon
 vertellen.
 
-
-
 Dat was het voornaamste
 -----------------------
-
-
 
 Hiermee heb ik het voornaamste nu wel vermeld. Ik heb nog niets
 gezegd over groepen, favoriete berichten, of over berichten herhalen,
 maar dat is op dit moment wat minder relevant. Hoe dat werkt, daar kom
 je wel achter tegen dat je zelf begint te microbloggen :-)
 
-[`terug
-naar het overzicht </node/171>`__\ ]
+[:doc:`terug
+naar het overzicht <node-171>`\ ]

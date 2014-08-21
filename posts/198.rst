@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-
 Deze zaterdag, 15 september, is het weer software freedom day! Dit jaar
 installeren we geen Linuxdistributie op je harde schijf, want dat deden
 we vorig jaar al :-)

@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-
 Suppose you want to make a screencast, and upload the video to Youtube.
 This doesn't sound to hard to do. But I went through a lot of troubles
 before it actually worked. So I decided to write this down, in case

@@ -22,7 +22,6 @@ vaak even snel weer opgeborgen zijn. (Herinnert iemand zich het
 wiskundekwartiertje of beerscan? ;-)) Momenteel zijn dit de lopende
 projecten:
 
-
 -  `netelug <http://netelug.losderover.be>`__ - een kleine LUG voor
    mensen uit Kessel (Nijlen) en omgeving
 -  `bierwiki <http://bierwiki.johanv.org>`__ - informatie over bieren
@@ -30,8 +29,6 @@ projecten:
 -  de `commissie Linux <http://www.facebook.com/commissielinux>`__, een
    officieuze commissie ter promotie van Linux en Open Source in de
    Chiro.
-
-
 
 In een vorig leven heb ik nog onderzoek gedaan aan de UA.
 Aangezien dat onderzoek betaald was met overheidsgeld, vind ik dat de

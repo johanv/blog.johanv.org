@@ -9,7 +9,6 @@
 Cyanogenmod on the Samsung Galaxy S wifi 5 (Samsung Galaxy Player 5)
 --------------------------------------------------------------------
 
-
 I had the chance to buy a Samsung Galaxy S wifi 5: It's not a phone, it
 's not a tablet, it's something in between. I got a special price ;-) so
 I could buy it just to mess with it. If I break it, so be it.
@@ -80,7 +79,6 @@ and development on this version seems to have stopped.
 There is a `ROM for
 CM7 <http://theunlockr.com/2012/03/15/cm7-for-player-5-0-rom/>`__ as
 well. Maybe with a working camera. I still have to try this out.
-
 
 About the SD-card problems
 --------------------------

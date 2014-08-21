@@ -9,7 +9,6 @@
 Wireless networking on a Samsung Series 5 laptop with Linux Mint
 ----------------------------------------------------------------
 
-
 Last weekend, I installed `Linux Mint
 15 <http://www.linuxmint.com/rel_olivia.php>`__ (Olivia) on a collegue's
 `Samsung

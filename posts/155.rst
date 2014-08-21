@@ -8,8 +8,6 @@
 
 Je kunt me vinden op...
 
-
-
 -  **fragdev (statusnet? gnu social? who knows?):**
    http://micro.fragdev.com/johanv
 -  **google+ (no API):** http://gplus.to/johanv
@@ -17,8 +15,6 @@ Je kunt me vinden op...
 -  **facebook (censoring):** http://www.facebook.com/johan.vervloet
 -  **pump.io (I don't like it):** https://identi.ca/johanv
 -  **diaspora (is it still alive):** https://joindiaspora.com/u/johanv
-
-
 
 Als je graag een login hebt om reacties te posten, laat dat dan
 gewoon weten. Wegens spammers kan het niet meer automatisch.

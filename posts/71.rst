@@ -8,18 +8,14 @@
 
 Het vervolg van de USB/DVD-tool saga. The story so far:
 
-
-
 -  6 november: `Within Windows ontdekt dat Microsoft onrechtmatig code
    van een GPL gebruikt in de Windows 7
-   USB/DVD-tool <http://www.withinwindows.com/2009/11/06/microsoft-lifts-gpl-code-uses-in-microsoft-store-tool/>`__.
+   USB/DVD-tool <http://www.withinwindows.com/2009/11/06/microsoft-lifts-gpl-code-uses-in-microsoft-store-tool/>:doc:`__.
 -  9 november: `Microsoft haalt de website voor de tool
-   offline </node/57>`__.
--  13 november: `Microsoft erkent dat er op onrechtmatige manier
-   GPL-code gebruikt werd </node/61>`__, en belooft de USB/DVD-tool
+   offline <node-57>`.
+-  13 november: :doc:`Microsoft erkent dat er op onrechtmatige manier
+   GPL-code gebruikt werd <node-61>`, en belooft de USB/DVD-tool
    onder een open-sourcelicentie vrij te geven.
-
-
 
 Maar zover zijn we 10 dagen later nog altijd niet. `Volgens
 Microsoft is de vertraging te wijten aan de testperiode, die langer is

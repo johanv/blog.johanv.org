@@ -110,30 +110,13 @@ gaan.
 Om dat allemaal in orde te krijgen, moet je eerst je telefoon
 zodanig instellen dat je er goed mee kan prutsen.
 
-
-
-
-
-
 Ga via instellingen naar toepassingen, en vink aan dat er software van
 onbekende bronnen geïnstalleerd mag worden.
-
-
-
 
 Ook onder 'instellingen', 'toepassingen' vind je 'Ontwikkeling'.
 Daaronder zet je ook 'USB-foutopsporing' aan.
 
-
-
-
-
-
 En dan: aan de slag.
-
-
-
-
 
 Download de 'amon\_ra recovery image' van
 http://forum.xda-developers.com/showthread.php?t=530492. Onderaan vind
@@ -141,45 +124,26 @@ je de downloads. Kies een van de recentste, met een 'H' in de naam (om
 wille van de H uit 'SAPPHIRE PVT 32A SHIP S-ON H'). Er zijn er zo 2, ik
 koos de image zonder 'cyan' in de naam.
 
-
-
-
 Download de Android SDK. Die vind je op
 http://developer.android.com/sdk/. In mijn geval had ik het .tgz-bestand
 voor Linux nodig.
-
-
-
 
 Download ook de 'fastboot tool' van
 http://developer.htc.com/adp.html#s2. Voor Linux is dat een zip-bestand
 met daarin een executable.
 
-
-
-
 Pak het tgz-bestand uit, 'cd' naar 'android-sdk-linux\_x86/tools', en
 zet daar de executable uit fastboot.zip
-
-
-
 
 Herstart je telefoon terwijl je op de terugknop drukt, zodat je terug de
 skatende robots te zien krijgt. Connecteer je telefoon aan je PC via het
 USB-kabeltje.
-
-
-
 
 Geef op je PC het volgende commando in vanuit de 'tools'
 directory:
 \ ``\nfastboot boot /path/to/recovery-RA-sapphire-vxxxxH.img\n``
 (het
 juiste pad en de juiste bestandsnaam nemen, uiteraard).
-
-
-
-
 
 Normaalgezien boot je telefoon nu in de nieuwe recovery mode. Je kan
 nu al een backup van je OS maken naar je sd-card. (Nandroid
@@ -197,8 +161,6 @@ op, en klik op de knop 'Root'.
 Koppel je telefoon aan je PC via de
 kabel, maar zorg ervoor dat de sd-kaart niet 'gemount' wordt. 'cd' naar
 de 'tools'-folder van de android SDK, en...
-
-
 
 #. ``sudo ./adb devices``
 Je telefoon wordt gedetecteerd.
@@ -221,9 +183,6 @@ Het lijkt alsof de shell blijft hangen, maar op het
 Dit overschrijft de
    recovery image van je telefoon.
 
-
-
-
 Als je de telefoon nu reboot terwijl je het huisje ingedrukt
 houdt, zal je telefoon je nieuwe recovery image booten. Hoera!
 
@@ -232,18 +191,12 @@ wordt het tijd dat we het OS gaan vervangen. Download het volgende van
 internet, en plaats de zip-bestanden op je sd-card (ofwel via adb push,
 ofwel door de kaart te mounten, en alles te kopieren).
 
-
-
 #. De recentste 'cyanogen mod' van
    http://wiki.cyanogenmod.com/index.php?title=Latest\_version#HTC\_Magic
 #. De 'EBI1'-kernel van
    http://wiki.cyanogenmod.com/index.php?title=Latest\_version#EBI1
 
-
-
 Herstart nu de telefoon in recovery mode.
-
-
 
 #. Kies achtereenvolgens 'Wipe', en 'Wipe data/factory reset'. (Volgens
    wat ik hier en daar las, zou 'wipe dalvik-cache' genoeg zijn, maar
@@ -259,8 +212,6 @@ Herstart nu de telefoon in recovery mode.
    duren.
 #. KLAAR!
 
-
-
 Zoals gezegd, is het bij mij niet van de eerste keer gelukt. Het
 opstartscherm met de blauwe robot bleef maar opnieuw starten. Ik had
 toen enkel de 'dalvik cache' 'gewipet', en ik had ook geprobeerd de
@@ -273,8 +224,6 @@ EBI1-kernel geflasht. Dat lukte wel.
 
 Referenties:
 
-
-
 -  http://www.axllent.org/docs/android/android\_rooting (over hoe het
    type telefoon te herkennen)
 -  http://software2tech.com/tag/download-universal-androot/ (software om
@@ -284,6 +233,4 @@ Referenties:
 -  http://wiki.cyanogenmod.com/index.php?title=Upgrading\_from\_CyanogenMod\_4.2\_to\_CyanogenMod\_5/6
    (over de installatie van CyanogenMod 6. In de titel staat dat je moet
    upgraden van een oudere CyanogenMod, maar dat bleek dus niet nodig)
-
-
 

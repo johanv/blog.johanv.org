@@ -18,7 +18,7 @@ het had geweten, dan had ik een andere telefoon gekocht :/
 
 Ik heb
 de indruk dat Microsoft tegenwoordig liever geld verdient door het af te
-troggelen van anderen o.w.v. zogezegde patenten (`Amazon </node/114>`__,
+troggelen van anderen o.w.v. zogezegde patenten (:doc:`Amazon <node-114>`,
 `TomTom <http://tweakers.net/nieuws/59356/linux-gemeenschap-ongelukkig-met-tomtom-microsoft-schikking.html>`__,...)
 dan door zelf iets productief te doen :-/
 

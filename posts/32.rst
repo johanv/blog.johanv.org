@@ -10,7 +10,6 @@ Een bericht van vorige maand, dat ik nu pas oppikte. De `Londense beurs
 stapt over van Windows naar
 Linux <http://www.nuzakelijk.nl/e-business/2085296/londense-beurs-stapt-af-van-windows.html>`__.
 
-
 Het feit dat de beurs werkte met software van Microsoft, werd nog
 gebruikt in de anti-Linuxcampagne `Get the
 facts <http://www.microsoft.com/uk/getthefacts/lse.mspx>`__. Maar na een

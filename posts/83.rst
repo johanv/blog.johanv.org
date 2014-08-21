@@ -6,7 +6,7 @@
 .. description: 
 .. type: text
 
-`Het heeft even geduurd </node/71>`__, maar vandaag raakte bekend dat
+:doc:`Het heeft even geduurd <node-71>`, maar vandaag raakte bekend dat
 `Microsoft zijn Windows 7 USB/DVD download tool
 vrijgeeft <http://wudt.codeplex.com/>`__ onder een
 GPL-openbronlicentie.

@@ -6,9 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
 Eind juni, dringend tijd voor de belastingaangifte. En uiteraard
 liefst via tax on web, dan zijn er al een aantal dingen op voorhand
 ingevuld. Maar oei, probleem, je hebt een 64-bit installatie van Fedora

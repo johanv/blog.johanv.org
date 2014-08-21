@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-
 Ieder jaar is het opnieuw wat gepruts om de belastingaangifte te doen
 met Tax-on-web en Linux. Het is me ook dit jaar gelukt, al is het me
 niet helemaal duidelijk waarom :-)

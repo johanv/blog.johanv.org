@@ -6,7 +6,7 @@
 .. description: 
 .. type: text
 
-Microsoft heeft de `programmeerfout </node/116>`__ in zijn
+Microsoft heeft de :doc:`programmeerfout <node-116>` in zijn
 `browserkeuzescherm <http://www.browserchoice.eu/BrowserChoice/browserchoice_nl.htm>`__
 `gefixt <http://www.nuzakelijk.nl/e-business/2201277/microsoft-past-browserkeuzescherm.html>`__.
 De 5 populairste webbrowsers worden nu écht in willekeurige volgorde

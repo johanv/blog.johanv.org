@@ -6,9 +6,8 @@
 .. description: 
 .. type: text
 
-Eén van de updates bij de recente `patch tuesday </node/24>`__ zou als
+Eén van de updates bij de recente :doc:`patch tuesday <node-24>` zou als
 gevolg hebben dat `Microsofts eigen software voor instant messaging niet
 meer naar behoren
 werkte <http://security.nl/artikel/31317/1/Windows_patch_sloopt_Microsoft_software.html>`__.
-
 

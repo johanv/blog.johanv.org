@@ -17,12 +17,8 @@ Je zult zien dat
 ik vooral vergelijk met Facebook en Twitter. Dat komt omdat ik die
 alternatieven het beste ken.
 
-
-
 Conversaties
 ------------
-
-
 
 Het concept ‘conversatie’ is op zich vrij basic, maar blijkbaar
 vinden velen het niet gemakkelijk om te implementeren.
@@ -36,12 +32,8 @@ http://identi.ca bekijkt, dan zal je zien dat bij sommige berichten een
 link ‘in context’ staat. Door op die link te klikken, kom je op een
 pagina met heel de discussie terecht.
 
-
-
 Duidelijkheid wat betreft privacy
 ---------------------------------
-
-
 
 Bij identi.ca is het duidelijk: alle berichten die je zelf post,
 zijn voor iedereen zichtbaar. Bij Facebook is de situatie veel
@@ -60,22 +52,14 @@ een andere website waar zo'n ‘vind-ik-leuk-knop’ staat, registreert
 Facebook jouw bezoek op die andere site. Facebook weet dus heel veel
 over de websites die je bezoekt. Creepy...
 
-
-
 Geen reclame a.u.b.
 -------------------
-
-
 
 Er staan geen advertenties op de pagina's van identi.ca. Zo vind
 je er niet veel meer.
 
-
-
 RSS iemand?
 -----------
-
-
 
 De algemene tijdslijn, je persoonlijke tijdslijn, de berichten die
 een bepaalde gebruiker post, alle berichten met dezelfde hashtag,...
@@ -83,12 +67,8 @@ Voor al die dingen biedt identi.ca rss-feeds aan. Als je dus een
 nieuwslezer gebruikt zoals Google Reader of Thunderbird, kun je hier
 bepaalde tijdslijnen uit identi.ca in opnemen.
 
-
-
 Als je software gebruikt die vrij beschikbaar is, geef dan ook iets terug
 -------------------------------------------------------------------------
-
-
 
 Ik denk niet dat ik er ver naast zit als ik zeg dat alle
 veelgebruikte sociale netwerken gebaseerd zijn op vrije software. Dat is
@@ -100,12 +80,8 @@ onderliggend systeem is `StatusNet <http://status.net>`__, en de
 source licentie (de
 `AGPL <http://nl.wikipedia.org/wiki/Affero_General_Public_License>`__).
 
-
-
 Je bent niet gebonden aan één leverancier
 -----------------------------------------
-
-
 
 Als op een dag Twitter, of Facebook, of whoever, dingen begint te
 doen waar je het niet mee eens bent, dan moet je mee. Facebook durft wel
@@ -124,12 +100,8 @@ berichten van je vrienden blijft zien: je kunt gebruikers op eender
 welke andere StatusNet server volgen. Net zoals je @-reply's naar die
 gebruikers kunt sturen.
 
-
-
 Iedereen mag identi.ca clients maken
 ------------------------------------
-
-
 
 Je mag zelf een toepassing schrijven om berichten op te halen van
 en te posten naar identi.ca. Dat lijkt vanzelfsprekend, maar voor
@@ -139,22 +111,14 @@ Je mag geen programma's maken die gelijkaardige dingen doen als Twitters
 eigen software. Dit zogenaamd om de gebruikers niet in verwarring te
 brengen. Maar dat gelooft niemand.
 
-
-
 Geen onzin zoals
 ----------------
-
-
 
 Farmville, Maffia Wars, ‘Welk Friends-personage past bij jou’,
 ‘Hoe goed kan je tegen de drank’, ‘Hoe hoog is je libido’
 
-
-
 En tenslotte...
 ---------------
-
-
 
 ... is het natuurlijk veel cooler om identi.ca te gebruiken dan
 Twitter, Facebook of Netlog :-)

@@ -6,8 +6,8 @@
 .. description: 
 .. type: text
 
-Eerder deze week `haalde Microsoft de Windows 7 USB/DVD tool van het
-internet </node/57>`__, nadat `Within
+Eerder deze week :doc:`haalde Microsoft de Windows 7 USB/DVD tool van het
+internet <node-57>`, nadat `Within
 Windows <http://www.withinwindows.com/2009/11/06/microsoft-lifts-gpl-code-uses-in-microsoft-store-tool/>`__
 ontdekte dat er waarschijnlijk broncode onder de GPL in gebruikt werd.
 Als je software onder de

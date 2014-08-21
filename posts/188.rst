@@ -6,8 +6,6 @@
 .. description: 
 .. type: text
 
-
-
 Enkele dagen geleden moest ik iemand uitleggen hoe je in een
 .NET-omgeving web services kunt opzetten. Ik heb hiervoor een filmpje
 gemaakt. De uitleg die ik geef is niet helemaal accuraat, en de

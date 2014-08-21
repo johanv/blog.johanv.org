@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 Last weekend, I installed Arch Linux for the second time (I messed
 up my first installation). After the installation process, I found
 myself in a command line system (as expected), so I had to install a lot
@@ -23,43 +18,21 @@ reinstall Arch from scratch again.
 Some basic command line
 tools:
 
-
-
 -  lynx
 -  openssh
 -  mutt
 -  pwgen
 
-
-
 Services
-
-
-
-
-
 
 ntp
 
-
-
-
 cups
-
-
-
 
 networkmanager (interesting for laptop; replace standard network service
 by networkmanager)
 
-
-
-
-
-
 Sound
-
-
 
 -  pulseaudio
 -  pulseaudio-alsa
@@ -67,11 +40,7 @@ Sound
 -  lib32-alsa-plugins
 -  alsa-utils
 
-
-
 Xorg
-
-
 
 -  xorg-server
 -  xorg-xinit
@@ -80,41 +49,25 @@ Xorg
 -  mesa
 -  mesa-demos
 
-
-
 The freedom hating nvidia driver
-
-
 
 -  nvidia
 -  nvidia-utils
 
-
-
 Xorg testing
-
-
 
 -  xorg-twm
 -  xorg-xclock
 -  xterm
 -  ttf-dejavu
 
-
-
 Basic gnome
-
-
 
 -  gnome
 -  gdm
 -  gnome-utils
 
-
-
 Basic development
-
-
 
 -  fakeroot
 -  subversion
@@ -123,11 +76,7 @@ Basic development
 -  python
 -  pygtk
 
-
-
 General desktop apps
-
-
 
 -  gvim
 -  evince
@@ -144,34 +93,22 @@ General desktop apps
 -  droidcam
 -  google-talkplugin
 
-
-
 LibreOffice 
-
-
 
 -  libreoffice
 -  libreoffice-gnome
 -  libreoffice-calc
 -  libreoffice-writer
 
-
-
 I am a wannabe Android developer (see Arch wiki for additional
 packages to install)
-
-
 
 -  eclipse
 -  android-sdk
 -  android-udev
 -  android-sdk-platform-tools
 
-
-
 Tools which allow me to use Arch at work
-
-
 
 -  twinkle (SIP phone)
 -  rdesktop (for terminal services)
@@ -184,9 +121,6 @@ Tools which allow me to use Arch at work
 -  thunderbird (plugins allow me to combine Google calendar and Exchange
    calendar)
 
-
-
 You can comment via `this identi.ca
 conversation <http://identi.ca/conversation/84415043>`__.
-
 

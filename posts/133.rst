@@ -22,8 +22,6 @@ je krijgt te zien wat er op de server draait.
 Ziehier het
 resultaat: (in alfabetische volgorde)
 
-
-
 -  `CD&V <http://uptime.netcraft.com/up/graph?site=www.cdenv.be>`__:
    Apache op Debian (Linux)
 -  `Groen! <http://uptime.netcraft.com/up/graph?site=www.groen.be>`__:
@@ -36,8 +34,6 @@ resultaat: (in alfabetische volgorde)
    Apache op Fedora (Linux)
 -  `OpenVLD <http://uptime.netcraft.com/up/graph?site=www.vld.be>`__:
    Apache op CentOS (Linux)
-
-
 
 Opvallend is dat SP.A en LDD onlangs IIS inruilden voor Apache,
 terwijl Groen! in 2003 de omgekeerde beweging maakte.

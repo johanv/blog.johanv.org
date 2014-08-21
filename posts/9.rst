@@ -10,8 +10,6 @@ Nu ik terug met de fiets naar het werk rij, heb ik podcasts ontdekt.
 Leuk om naar te luisteren tijdens een lange fietstocht langs het kanaal.
 Dit zijn mijn favorieten:
 
-
-
 #. `Linux Outlaws <http://linuxoutlaws.com/>`__, ongetwijfeld de beste.
 #. `Linux Basement <http://linuxbasement.com/>`__. Ik ben geen fan van
    Ched, maar je komt wel geregeld iets interessants te weten.
@@ -19,7 +17,5 @@ Dit zijn mijn favorieten:
    Podcast <http://distrowatch.com/news/podcast.xml>`__. De nieuwe host
    klinkt nog saai, maar ik ga ervan uit dat het betert.
 #. `Linuxcast <http://www.linuxworld.com/podcasts/linux/>`__
-
-
 
 Jammer dat er zo (nog?) niets in het Nederlands bestaat.

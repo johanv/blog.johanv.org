@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 Facebook, Twitter, LinkedIn, Netlog, Google Buzz,... er bestaan
 heel wat sociale netwerken op het internet, en meer dan waarschijnlijk
 heb je zelf wel een account bij een of meerdere van deze
@@ -21,15 +16,10 @@ overtuigen om je aan te sluiten bij nog een ander sociaal netwerk:
 identi.ca. Identi.ca is een platform voor microblogging. Zoals Twitter,
 maar dan beter. Lees dus vooral verder:
 
-
-
--  `Wat is microblogging? </node/172>`__
--  `Waarom is identi.ca een beter microbloggingplatform dan de andere
-   sociale netwerken? </node/173>`__
--  `Wat zijn de beperkingen van identi.ca? </node/174>`__
--  `Aan de slag met identi.ca </node/175>`__
--  `Integratie met Twitter en Facebook </node/176>`__
-
-
-
+-  :doc:`Wat is microblogging? <node-172>`
+-  :doc:`Waarom is identi.ca een beter microbloggingplatform dan de andere
+   sociale netwerken? <node-173>`
+-  :doc:`Wat zijn de beperkingen van identi.ca? <node-174>`
+-  :doc:`Aan de slag met identi.ca <node-175>`
+-  :doc:`Integratie met Twitter en Facebook <node-176>`
 

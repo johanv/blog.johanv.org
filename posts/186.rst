@@ -6,9 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
 A week or two ago, I disabled the registration of new users on
 this site: only spammers seemed to be interested in getting an account
 on my blog.

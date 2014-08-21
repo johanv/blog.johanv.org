@@ -6,7 +6,7 @@
 .. description: 
 .. type: text
 
-Sinds enkele dagen is `Microsofts browserkeuzescherm </node/87>`__
+Sinds enkele dagen is :doc:`Microsofts browserkeuzescherm <node-87>`
 online beschikbaar. Microsoft werd door Europa verplicht om zijn
 gebruikers te laten kiezen met welke browser ze op het net willen. Op de
 website `www.browserchoice.eu <http://www.browserchoice.eu/>`__ kan je

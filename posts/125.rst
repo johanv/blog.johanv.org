@@ -16,5 +16,5 @@ uitnodiging krijgt.
 
 Ik vraag me dan af hoe lang het nog gaat duren
 vooraleer je met je ‘Microsoft Passport’ kan aanmelden op Facebook, en
-hoe lang de `XMPP-ondersteuning voor Facebook Chat </node/116>`__ zal
+hoe lang de :doc:`XMPP-ondersteuning voor Facebook Chat <node-116>` zal
 blijven bestaan.

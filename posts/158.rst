@@ -22,4 +22,3 @@ Finally, you
 download and install the i386-rpm of the citrix receiver from this page:
 http://www.citrix.com/English/SS/downloads/details.asp?downloadID=3323&productID=-1
 
-

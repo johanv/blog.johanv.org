@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-
 In een vorig leven heb ik nog onderzoek gedaan in de vakgroep
 `Computeraritmetiek en numerieke
 technieken <http://www.cant.ua.ac.be>`__ aan de `Universiteit
@@ -20,21 +19,11 @@ vermoed dat dat gebeurd is toen ik van web hosting provider verhuisde,
 intussen al enkele jaren geleden. Moest iemand nog een kopietje hebben
 van een van de verloren artikels, neem contact op aub.
 
-
-
 Teksten, papers, presentaties
 -----------------------------
 
-
-
-
-
 Exception handling en special values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
 
 -  `Oneindig in floating-pointaritmetiek <files/infty.pdf>`__ (verloren gegaan)
 -  `Verzamelingensystemen <files/verzsys.pdf>`_ (verloren gegaan)
@@ -46,16 +35,8 @@ Exception handling en special values
 -  `Blending interval and set arithmetic for maximal
    reliability <files/intsv.pdf>`__ (verloren gegaan)
 
-
-
-
-
 Functiebenaderingen
 ~~~~~~~~~~~~~~~~~~~
-
-
-
-
 
 -  `An introduction to continued fractions <files/cfintro.pdf>`__ (verloren gegaan)
 -  `Reliable function evaluation using continued fraction
@@ -67,32 +48,16 @@ Functiebenaderingen
 -  `Effect van de argumentreductie op de foutenanalyse van
    arctan <files/atansem.pdf>`__ (verloren gegaan)
 
-
-
-
-
 Foutafschattingen
 ~~~~~~~~~~~~~~~~~
-
-
-
-
 
 -  `log 10 <files/log10.pdf>`__ (verloren gegaan)
 -  `log 2 <files/details.pdf>`__ (verloren gegaan)
 -  `atan <files/atan.pdf>`__ (verloren gegaan)
 -  `acot <files/acot.pdf>`__ (verloren gegaan)
 
-
-
-
-
 Software
 --------
-
-
-
-
 
 -  `libRational <http://oud.losderover.be/librational/>`__, een C++
    library voor rationale aritmetiek, gebouwd rond
@@ -110,8 +75,6 @@ Software
    tot multiprecisie intervalaritmetiek, gebaseerd op
    `libmplite <http://oud.losderover.be/libmplite/>`__.
 
-
-
 \ **Opgelet:**
 Ik ontwikkelde deze software in het kader van
 mijn onderzoek, maar sinds ik een andere job heb, ligt die ontwikkeling
@@ -120,5 +83,4 @@ mensen van `CANT <http://www.cant.ua.ac.be>`__, je kan daar altijd je
 licht eens opsteken. Als je zelf geïnteresseerd bent om projecten te
 ‘adopteren’, laat dat dan weten. Ik zal met plezier linken naar de
 nieuwe homepage.
-
 

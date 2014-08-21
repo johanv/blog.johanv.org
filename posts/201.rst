@@ -6,8 +6,6 @@
 .. description: 
 .. type: text
 
-
-
 Sommige mensen houden niet van de command line. Wat lastig is, als je
 git moet gebruiken. Gelukkig geraak je tegenwoordig vrij ver met de git
 extensions. Een demo, specifiek voor het GAP van de Chiro, maar ook

@@ -9,7 +9,6 @@
 HPR episode: About git
 ----------------------
 
-
 This is more or less the transcript of my HPR submission about git, a
 version control system.
 
@@ -231,7 +230,6 @@ remote branch.
                        ↑           
                      branch3  
 
-
     (local repo)
 
                            HEAD
@@ -401,7 +399,6 @@ local repository.*
                      branch1
                        ↓
     C1 -- C2 -- C3 -- C4
-
 
     (Local)
 

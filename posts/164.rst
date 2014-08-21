@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 \ **WARNING:** After a month, I ran into problems with the windows
 activation. I couldn't activate the virtual and the physical windows at
 the same time. I tried what's on
@@ -22,8 +17,6 @@ Windows 7 and Fedora. Now I want to create a virtual machine in Fedora,
 which boots the existing Windows 7 installation. It worked for me (TM)
 on a Dell Precision M4500, with the native Windows. This is how I did
 it, starting from a completely updated Fedora 14.
-
-
 
 -  Surf to http://www.virtualbox.org/wiki/Linux\_Downloads, and download
    the .repo file at the bottom of the page.
@@ -50,7 +43,6 @@ it, starting from a completely updated Fedora 14.
    welcome.
 -  We need to generate an mbr which our virtual machine will use.
 
-
    -  Debian based distributions contain a package ‘mbr’, which can be
       used to create such a mbr. But it isn't availiable for Fedora. So
       let's build it from source.
@@ -65,7 +57,6 @@ it, starting from a completely updated Fedora 14.
       /dev/sda3.)\ ``\n/usr/local/sbin/install-mbr -e23 --force ~/vm/vm.mbr\n``\ This
       creates a file ~/vm/vm.mbr of 512 bytes, containing our mbr.
 
-
    
 
 -  Now create the virtual disk for your virtual machine. I did this as
@@ -77,7 +68,6 @@ I
    of C. I'm not sure of this.
 
 -  At last: create the virtual machine using VirtualBox Manager:
-
 
    -  Click ‘New’.
    -  Name your machine, and choose an OS (in my case Windows 7 64 bit)
@@ -109,7 +99,6 @@ It
    seems Windows doesn't like it when the type of your hard drives
    changes. I managed to fix this problem as follows:
 
-
    -  Boot in your original Windows 7
    -  (Backup your registry)
    -  Download
@@ -127,25 +116,15 @@ It
 
 -  If you boot up your virtual machine now, it should just work (TM).
 
-
-
-
 references:
-
 
 -  http://www.rajatarya.com/website/taming-windows-virtualbox-vm
 -  http://forums.virtualbox.org/viewtopic.php?f=28&p=149094
 -  http://www.virtualbox.org/wiki/Migrate\_Windows
 -  http://froebe.net/blog/2009/12/21/how-to-convert-a-laptop-running-microsoft-windows-7-to-a-virtualbox-virtual-machine/
 
-
-
-
-
 UPDATE: Fixing the security
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 
 As mentioned, the security of the above implementation is very
 bad. I improved it a little, creating a dedicated user to run

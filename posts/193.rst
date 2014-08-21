@@ -6,9 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
 I had a dual boot system with Debian Sid and some proprietary other OS
 (\*cough\* wind\*cough\*s). The Debian installation is installed on 3
 encrypted partitions, with LVM on top of them. I installed Linux Mint 13
@@ -97,11 +94,9 @@ Now I have a user johanv, with
 home dir ``/home/johan2``. I do this because I typically have the
 following directory in my /home file system:
 
-
 -  ``/home/johan1`` *(home directory for system 1)*
 -  ``/home/johan2`` *(home directory for system 2)*
 -  ``/home/johan-shared`` *(files I share between the two systems)*
-
 
 In ``johan-shared``, there are my settings for e.g. mutt and pidgin,
 and my develop-subdirectory. In the actual homedirs (``johan1`` and

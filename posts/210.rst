@@ -6,7 +6,6 @@
 .. description: 
 .. type: text
 
-
 Een tijd geleden moest ik
 eerst even langs Lier passeren, alvorens ik naar het werk in Antwerpen
 fietste. Ik ken de fietswegen tussen Lier en Antwerpen niet zo goed, en
@@ -22,7 +21,6 @@ zijn.
 
 Dit verhaal is er eentje van in de winter. Ik heb vandaag de
 fietsroute nog eens opgezocht, en het is al een beetje beter:
-
 
 \ |googles route|
 
@@ -60,8 +58,6 @@ kaartgegevens te downloaden. Ik heb dat gedaan voor België, dat leek me
 nog wel nuttig. Je moet Osmand nu nog wel instellen om YOURS te
 gebruiken, en dat doe je als volgt:
 
-
-
 -  Instellingen
 -  Navigatie
 -  Fiets
@@ -70,12 +66,8 @@ gebruiken, en dat doe je als volgt:
 -  Ik heb ook 'stembegeleiding' aangezet, omdat ik mijn telefoon niet
    kan zien terwijl ik fiets. Ik gebruik de 'oortjes'.
 
-
-
 Het navigatiesysteem gebruiken, kun je bijvoorbeeld als
 volgt:
-
-
 
 -  Zoeken
 -  (selecteer het 'huisje')
@@ -85,13 +77,10 @@ volgt:
 -  Dan 'Alleen tonen' om de weg te tonen, of 'Volg' om de navigatie te
    starten
 
-
-
 Het is aangewezen om op voorhand eens te kijken hoe de route
 loopt. Want als je op de gesproken aanwijzingen rijdt, dan is het soms
 niet helemaal duidelijk welke richting je uit moet. Een aantal
 valkuilen:
-
 
 -  'Flauwe bocht naar rechts' moet je soms interpreteren als 'gewoon het
    pad volgen, dat wat afbuigt', soms als 'rechtsaf een straat inslaan',
@@ -101,7 +90,6 @@ valkuilen:
 -  Als een fietspad aan een kruispunt even rechtsaf draait, dan krijg je
    soms de aanwijzing 'sla linksaf' als je aan het kruispunt gewoon
    rechtdoor moet.
-
 
 Maar dat is allemaal niet onoverkomelijk. Als je van de route raakt,
 word je gevraagd om terug te keren, of wordt ze herberekend.

@@ -11,8 +11,6 @@ I did the following to install `Crunchbang <http://crunchbang.org/>`__
 https://help.ubuntu.com/community/AspireOne, which has more detailed
 information. This is just a reminder for myself.)
 
-
-
 -  Create a bootable usb stick from the iso image using
    `unetbootin <http://unetbootin.sourceforge.net/>`__.
 -  Install crunchbang, choosing ext2 file systems.
@@ -66,11 +64,7 @@ and
    section:
 \ ``\n        DisplaySize 195 113\n``
 
-
-
-
 Interesting firefox add-ons:
-
 
 -  `stop or reload
    button <https://addons.mozilla.org/en-US/firefox/addon/313>`__
@@ -78,8 +72,6 @@ Interesting firefox add-ons:
    menu <https://addons.mozilla.org/en-US/firefox/addon/3895>`__
 -  `autohide status
    bar <https://addons.mozilla.org/en-US/firefox/addon/1530>`__
-
-
 
 Add the string ``browser.cache.disk.parent_directory`` to
 Firefox's about:config, and assign the value ``/tmp/firefox``. In

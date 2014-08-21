@@ -6,11 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
-
-
 You can use your active directory username and password to login
 to a PC running Fedora 14. This is how I did it:
 
@@ -24,7 +19,6 @@ password.
 Enter the following settings (adapt ‘MYDOMAIN’,
 ‘EXAMPLE.COM’, and ‘mydc\ *n*\ ’ to your situation)
 
-
 -  User Account Database: Winbind
 -  Winbind Domain: MYDOMAIN
 -  Security Model: ads
@@ -32,8 +26,6 @@ Enter the following settings (adapt ‘MYDOMAIN’,
 -  Winbind Domain Controllers: mydc1, mydc2
 -  Template Shell: /bin/bash
 -  Check ‘Allow offline login’
-
-
 
 Click ‘Join Domain’, and enter username and password of a domain
 account.
@@ -54,9 +46,7 @@ to
 and reboot (or restart winbind
 and/or samba).
 
-
 References:
-
 
 -  http://spiralbound.net/blog/2007/04/11/rhel-winbind-authentication-against-active-directory
 

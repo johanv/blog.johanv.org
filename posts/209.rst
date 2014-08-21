@@ -26,8 +26,8 @@ hating driver. But it works. (You can also run it in the console:
 ``hp-setup -i``)
 
 Now, where I live, I don't have room for a printer in the living room.
-So the printer is in the attic, attached to a `Raspberry Pi print
-server </node/195>`__. But for that to work, I need a client side
+So the printer is in the attic, attached to a :doc:`Raspberry Pi print
+server <node-195>`. But for that to work, I need a client side
 printer driver. And that is a problem. The hplip tools don't want to
 believe me that there is a HP Laserjet CP1025 on the network. And I
 could not find out how to configure a CUPS network printer with the

@@ -7,7 +7,7 @@
 .. type: text
 
 Bij de updates voor Windows XP die op 9 februari vrijgegeven werden,
-`zat er eentje dat je PC onbruikbaar maakte </node/107>`__, tenminste
+:doc:`zat er eentje dat je PC onbruikbaar maakte <node-107>`, tenminste
 als je computer geïnfecteerd was door de TDL3-rootkit (of TDSS,
 alnaargelang de bron).
 

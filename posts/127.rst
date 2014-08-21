@@ -13,17 +13,15 @@ verplicht moeten worden voor
 overheidsaanbestedingen <http://webwereld.nl/nieuws/65798/eu-ministers-willen-open-standaarden-verplichten.html>`__.
 
 Dat
-is onverwacht goed nieuws, omdat `eind vorig jaar een document
-uitlekte </node/50>`__ waaruit zou blijken dat de eis van open
+is onverwacht goed nieuws, omdat :doc:`eind vorig jaar een document
+uitlekte <node-50>` waaruit zou blijken dat de eis van open
 standaarden verdwenen was.
 
 Wie weet gaat Microsoft dan toch zijn
-best moeten doen om `zijn eigen standaarden te
-implementeren </node/122>`__. Of we zullen met z'n allen Openoffice.org
+best moeten doen om :doc:`zijn eigen standaarden te
+implementeren <node-122>`. Of we zullen met z'n allen Openoffice.org
 moeten gaan gebruiken :-)
 
 Zie ook `de volledige ministriële
 verklaring <http://www.eu2010.es/export/sites/presidencia/comun/descargas/Ministerios/en_declaracion_granada.pdf>`__.
-
-
 

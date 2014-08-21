@@ -10,8 +10,6 @@ Komende dinsdag releast Microsoft 13 'bulletins' die 34 kwetsbaarheden
 in Windows moeten aanpakken. Dat is naar verluidt de grootste patch
 tuesday ooit
 
-
-
 -  http://techworld.nl/technologie/11885/eerste-updates-voor-windows-7-in-grootste-patch-tuesday-ooit.html
 -  http://blogs.technet.com/msrc/archive/2009/10/08/october-2009-bulletin-release.aspx
 

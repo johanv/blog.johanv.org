@@ -6,9 +6,6 @@
 .. description: 
 .. type: text
 
-
-
-
 Ik kocht me een nieuwe telefoon. Een Sony Ericsson Mini Pro met Android.
 Een fijn toestel met hardwarekeyboard, maar helaas ook met een hele hoop
 crap voorgeïnstalleerd, die ik allemaal niet nodig heb. Gelukkig bestaat
@@ -24,8 +21,6 @@ voor mijn nieuwe telefoon was dat cyanogenmod erop moest kunnen
 draaien.)
 
 Een aantal opmerkingen vooraf:
-
-
 
 #. Je moet je stock-os niet rooten om cyanogenmod te kunnen installeren:
    de Xperia Mini Pro laat toe om de bootloader te unlocken, en dan kun
@@ -53,14 +48,8 @@ Een aantal opmerkingen vooraf:
    howto in het Nederlands te zijn, met wat extra info over hoe je het
    hardwarekeyboard configureert.
 
-
-
-
-
 Backup
 ------
-
-
 
 Wat ik niet gedaan heb, is vooraf een backup maken van mijn
 systeem. Het was immers een nieuwe telefoon, en ik had er nog niet veel
@@ -74,16 +63,11 @@ companion <http://www.sonymobile.com/global-en/tools/pc-companion/>`__,
 die je op een Windows-PC kunt installeren door je telefoon in te
 pluggen.
 
-
-
 Bestanden downloaden
 --------------------
 
-
-
 Download het volgende, en plaats de zip-bestanden in de
 root-folder van je SD-kaart:
-
 
 -  Een cyanogenmod-zip voor de telefoon, bijvoorbeeld `de stable
    versie <http://download.cyanogenmod.com/?type=stable&device=mango>`__.
@@ -93,17 +77,12 @@ root-folder van je SD-kaart:
    toestel in België kocht), download dan ook het `zip-bestand met de
    AZERTY-keymap <http://forum.xda-developers.com/attachment.php?attachmentid=1207927&d=1342681335>`__.
 
-
 De zip van cyanogenmod bevat een bestand ‘boot.img’. Dat moet je
 extraheren, en ergens op je de harde schijf van je computer
 zetten.
 
-
-
 Bootloader unlocken
 -------------------
-
-
 
 Om met je telefoon te kunnen prutsen, heb je de
 `android-sdk <https://developer.android.com/sdk/index.html>`__ nodig.
@@ -161,13 +140,8 @@ je code, anders werkt het niet. 't Is hex hé.) Je krijgt wat
 angstaanjagende tekst te zien (‘Erasing block...’), die eindigt met
 ‘OKAY’. Je bootloader is unlocked. Nu kun je hem vervangen.
 
-
-
-
 Een nieuwe bootloader flashen
 -----------------------------
-
-
 
 Geef je het volgende commando
 in:\ ``\nfastboot -i 0xfce flash boot boot.img``
@@ -179,12 +153,8 @@ Of de recovery image al dan niet onderdeel is van de bootloader, dat is
 me niet helemaal duidelijk. Het voornaamste is dat je de recovery image
 kunt oproepen, en wel als volgt:
 
-
-
 Het nieuwe OS flashen
 ---------------------
-
-
 
 Reboot de telefoon. Dat kan nog met fastboot:
 ``\nfastboot -i 0xfce reboot``
@@ -200,55 +170,26 @@ cyanogenmod. De recoverymode is menugebaseerd, en je kunt het menu
 aansturen met de volumecontroleknoppen en de home button van je
 telefoon.
 
-
-
-
-
 Kies 'Wipe data/factory reset,' en bevestig.
 
-
-
-
 Idem voor 'Wipe cache partition.'
-
-
-
 
 Vervolgens kies je 'Install zip from sd-card', selecteer je de zip voor
 cyanogenmod, en bevestig je.
 
-
-
-
 Hetzelfde doe je voor de Google-appszip...
-
-
-
 
 ... en de keyboard-layoutzip.
 
-
-
-
 Kies dan ‘back,’ en ‘reboot.’
 
-
-
-
 Fingers crossed.
-
-
-
-
 
 Met wat geluk heb je nu een nieuw en cool OS op je telefoon, zodat je
 kunt uitpakken bij al je vrienden :)
 
-
-
 Reageren?
 ---------
-
 
 ... via deze
 `identi.ca-conversatie <http://identi.ca/conversation/94981702>`__.

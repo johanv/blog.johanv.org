@@ -6,9 +6,9 @@
 .. description: 
 .. type: text
 
-Eerder deze week `kondigde het obscure bedrijf Prevx aan dat de Windows
+Eerder deze week :doc:`kondigde het obscure bedrijf Prevx aan dat de Windows
 updates van november een Windowssysteem om zeep konden
-helpen </node/76>`__. Windows zou in sommige gevallen niet meer
+helpen <node-76>`. Windows zou in sommige gevallen niet meer
 opstarten; je zou enkel een zwart scherm te zien
 krijgen.
 

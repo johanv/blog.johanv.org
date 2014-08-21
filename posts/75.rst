@@ -6,8 +6,8 @@
 .. description: 
 .. type: text
 
-De `Londense beurs kondigde al eerder aan dat ze af wilden van hun
-huidige software </node/32>`__, gebaseerd op Microsofts .NET-platform.
+De :doc:`Londense beurs kondigde al eerder aan dat ze af wilden van hun
+huidige software <node-32>`, gebaseerd op Microsofts .NET-platform.
 Waarschijnlijk hebben ze er al spijt van dat de overstap op Linux nog
 niet rond is, want gisterenmorgen `crashte hun
 software <http://webwereld.nl/nieuws/64432/microsoft-systeem-legt-londense-beurs-weer-plat.html>`__

@@ -47,8 +47,6 @@ time). I will any way contact the remembeer devs.
 Now, what I want
 to know from you, dear reader :-)
 
-
-
 -  Do you know any existing open source app that does something similar
    to beer label recognition? I think there are apps for wine, but I
    doubt they are open source.
@@ -59,14 +57,10 @@ to know from you, dear reader :-)
 -  Are you a programmer, and do you want to help me with the
    implementation of this project?
 
-
-
 If you answer ‘yes’ to one of the above questions, and you want to
 help me out, please contact me. 
 
 \ **updated: Contact info**
-
-
 
 -  `!beerscan <http://identi.ca/group/beerscan>`__ identi.ca group
 -  Please upload pictures of beer labels/caps, and tag them with
@@ -75,7 +69,4 @@ help me out, please contact me.
 -  I am `@johanv <http://identi.ca/johanv>`__ on identi.ca
 -  You can e-mail me: my address is my first name, followed by
    @losderover.be
-
-
-
 

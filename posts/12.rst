@@ -10,14 +10,10 @@ Vandaag zat het 'gemeentebladje' in de brievenbus. De gemeente
 organiseert cursussen informatica: ('Cursus computerlessen' zoals ze het
 zelf noemen :-/)
 
-
-
 -  Word voor 55-plussers
 -  Windows voor 55-plussers
 -  PowerPoint
 -  Excel basis
-
-
 
 Al jaar en dag ben ik ervan overtuigd dat er ook een cursus 'basis
 Linux' moet zijn. Misschien moet ik eens voorstellen om zelf zoiets te
@@ -25,8 +21,6 @@ geven. Ik wil dat zelf vrijwillig doen.
 
 Wat kan er in zo'n cursus
 behandeld worden? Een voorlopig overzicht.
-
-
 
 #. Wat is Linux? Wat is vrije software? Kennismaking met Ubuntu. De
    live-cd
@@ -38,6 +32,4 @@ behandeld worden? Een voorlopig overzicht.
    multimedia? office? netwerking? backup? grafische dingen? kernel
    compilatie? shell scripting?
 #. Andere distributies
-
-
 
