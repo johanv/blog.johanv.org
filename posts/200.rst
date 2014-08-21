@@ -1,7 +1,7 @@
 .. title: HPR episode: About git
 .. slug: node-200
 .. date: 2013-01-03 19:55:58
-.. tags: development
+.. tags: development,hpr,git
 .. link:
 .. description: 
 .. type: text
