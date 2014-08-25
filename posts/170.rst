@@ -14,12 +14,36 @@ javascript thing in the <head> section of your pages. I did it as
 follows:
 
 I created a file 'flattr.js', with the following
-content:\ ``\n    (function() {\n        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];\n        s.type = 'text/javascript';\n        s.async = true;\n        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';\n        t.parentNode.insertBefore(s, t);\n    })();\n``
+content:\ 
+
+::
+
+
+      (function() {
+          var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+          t.parentNode.insertBefore(s, t);
+      })();
+  
+
+
 
 Then
 I added the following php code to a block that is visible on every page
 of the
-site:\ ``\n<?php\ndrupal_add_js('sites/johanv.org/flattr.js');\n?>\n``
+site:\ 
+
+::
+
+
+  <?php
+  drupal_add_js('sites/johanv.org/flattr.js');
+  ?>
+  
+
+
 (You
 might use an existing block, or create a new block just for this
 purpose.) Make sure you choose 'php' as input format for the

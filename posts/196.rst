@@ -114,9 +114,24 @@ niets.
 Op de computer open je een terminalvenster, zorg ervoor dat
 de map ‘platform-tools’ van de Android-SDK in je zoekpad staat (of geef
 het pad mee in onderstaand commando), en tik
-in:\ ``\nfastboot -i 0x0fce getvar version``
+in:\ 
+
+::
+
+
+  fastboot -i 0x0fce getvar version
+
+
 Je krijgt hopelijk iets
-in deze aard:\ ``\nversion: 0.3\nfinished. total time: 0.001s``
+in deze aard:\ 
+
+::
+
+
+  version: 0.3
+  finished. total time: 0.001s
+
+
 Als je
 in de plaats daarvan ‘waiting for device’ krijgt, is er iets mis, en zul
 je moeten troubleshooten.
@@ -133,7 +148,14 @@ zonder het laatste cijfer, en je e-mailadres. Klik op ‘Submit’, en je
 krijgt je unlock-code te zien.
 
 Tik nu het volgende in het
-terminalvenster ``\nfastboot -i 0x0fce oem unlock 0xKEY``
+terminalvenster 
+
+::
+
+
+  fastboot -i 0x0fce oem unlock 0xKEY
+
+
 waarbij je
 ‘KEY’ vervangt door je unlock-code. (Vergeet de ‘0x’ niet te typen voor
 je code, anders werkt het niet. 't Is hex hé.) Je krijgt wat
@@ -144,7 +166,14 @@ Een nieuwe bootloader flashen
 -----------------------------
 
 Geef je het volgende commando
-in:\ ``\nfastboot -i 0xfce flash boot boot.img``
+in:\ 
+
+::
+
+
+  fastboot -i 0xfce flash boot boot.img
+
+
 Ik weet niet precies
 wat dit doet. Het vervangt volgens mij de bootloader, en installeert ook
 de `ClockworkMod recovery
@@ -157,7 +186,14 @@ Het nieuwe OS flashen
 ---------------------
 
 Reboot de telefoon. Dat kan nog met fastboot:
-``\nfastboot -i 0xfce reboot``
+
+
+::
+
+
+  fastboot -i 0xfce reboot
+
+
 Je krijgt de nieuwe bootloader te zien.
 Op dat moment moet je wat op de volumecontroleknoppen drukken, dan wordt
 de recovery image geboot. Als je dat niet doet, of je wacht te lang, dan

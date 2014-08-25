@@ -16,7 +16,16 @@ difficult part, is sending e-mails.
 
 In a first attempt, I tried
 this in the mutt
-configuration:\ ``\nset smtp_url="smtp://mylogin@our.local.mailserver:587"\nset smtp_pass="mySecretPassword"\n``
+configuration:\ 
+
+::
+
+
+  set smtp_url="smtp://mylogin@our.local.mailserver:587"
+  set smtp_pass="mySecretPassword"
+  
+
+
 
 I
 think this has worked for me somewhere in the past, but now I get the
@@ -24,15 +33,48 @@ error message 'No authenticators available.' So I had to try something
 else.
 
 Now I am using msmtp to send my e-mails. I installed it from
-the repositories:\ ``\nyum install mstmtp``
+the repositories:\ 
+
+::
+
+
+  yum install mstmtp
+
+
 
 I created a
 configuration file:
-``~/.msmtprc``:``\naccount myaccount\nhost webmail.our.domain\nfrom my.email@our.domain\nauth ntlm\ntls on\ntls_trust_file /etc/ssl/certs/ca-bundle.crt\nuser mylogin\nntlmdomain MYDOMAIN\npassword "mySecretPassword"\nport 587\naccount default : myaccount\n``
+``~/.msmtprc``:
+
+::
+
+
+  account myaccount
+  host webmail.our.domain
+  from my.email@our.domain
+  auth ntlm
+  tls on
+  tls_trust_file /etc/ssl/certs/ca-bundle.crt
+  user mylogin
+  ntlmdomain MYDOMAIN
+  password "mySecretPassword"
+  port 587
+  account default : myaccount
+  
+
+
 
 In
 the mutt configuration, I removed the smtp-setttings, and added
-``\nset sendmail="/usr/bin/msmtp"\n``
+
+
+::
+
+
+  set sendmail="/usr/bin/msmtp"
+  
+
+
 
 And guess what. It just
 worked (TM) :-)

@@ -19,7 +19,14 @@ downloadable images. I guess Arch will be fine for my specific home
 situation.
 
 Setting up a print server on Arch is easy
-enoguh:\ ``\npacman -S cups``
+enoguh:\ 
+
+::
+
+
+  pacman -S cups
+
+
 
 You have to modify
 ``/etc/cups/cupsd.conf`` in order to make the cups web interface remote
@@ -65,7 +72,24 @@ I hacked around the problem by emulating a HP-jetdirect
 printer. For this I installed xinetd on the Raspberry Pi
 (``pacman -S xinetd``), and created a file
 ``/etc/xinetd.d/hp-pdl-datastr`` with the following
-content:\ ``\nservice hp-pdl-datastr\n{\nsocket_type = stream\nprotocol = tcp\nwait = no\nuser = root\nserver = /usr/bin/lp\nserver_args = -d myprinter -o raw\ngroups = yes\ndisable = no\n}``
+content:\ 
+
+::
+
+
+  service hp-pdl-datastr
+  {
+  socket_type = stream
+  protocol = tcp
+  wait = no
+  user = root
+  server = /usr/bin/lp
+  server_args = -d myprinter -o raw
+  groups = yes
+  disable = no
+  }
+
+
 (the
 name hp-pdl-datastr is just a guess. I grepped port 9100 in
 ``/etc/services``, and I found hp-pdl-datastr and pdl-datastream. I just
@@ -73,7 +97,14 @@ took hp-pdl-datastream because I have a HP printer, but I guess it
 doesn't really matter.)
 
 When you now start the xinetd
-service:\ ``\n/etc/rc.d/xinetd start``
+service:\ 
+
+::
+
+
+  /etc/rc.d/xinetd start
+
+
 you can tell your Linux client
 that you have a HP-JetDirect printer on port 9100 of your print server.
 (Remember to adapt ``/etc/rc.conf`` to make xinetd start at boot

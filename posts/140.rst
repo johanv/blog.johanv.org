@@ -72,7 +72,19 @@ een schermpje met 'skatende robots', en informatie die er ongeveer als
 volgt
 uitziet:
 
-\ ``\nSAPPHIRE PVT 32A SHIP S-ON H\nHBOOT-1.33.009 (SAPP10000)\nCPLD-12\nRADIO-3.22.20.17\nMAY 8 2009,21:02:32\n``
+\ 
+
+::
+
+
+  SAPPHIRE PVT 32A SHIP S-ON H
+  HBOOT-1.33.009 (SAPP10000)
+  CPLD-12
+  RADIO-3.22.20.17
+  MAY 8 2009,21:02:32
+  
+
+
 
 Wat
 van belang is is de '32A' en de 'H' op de eerste lijn, en ook de
@@ -141,7 +153,15 @@ USB-kabeltje.
 
 Geef op je PC het volgende commando in vanuit de 'tools'
 directory:
-\ ``\nfastboot boot /path/to/recovery-RA-sapphire-vxxxxH.img\n``
+\ 
+
+::
+
+
+  fastboot boot /path/to/recovery-RA-sapphire-vxxxxH.img
+  
+
+
 (het
 juiste pad en de juiste bestandsnaam nemen, uiteraard).
 

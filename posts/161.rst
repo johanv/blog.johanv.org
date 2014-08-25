@@ -16,5 +16,8 @@ een ‘verkeerd’ initramfs.
 
 Een manier om initramfs opnieuw te laten
 genereren, is de
-volgende:\ ``\nmount -o rw,remount /boot       #niet vergeten deze keer\ndpkg-reconfigure linux-image-`uname -r`\n``
+volgende:\ ``
+  mount -o rw,remount /boot       #niet vergeten deze keer
+  dpkg-reconfigure linux-image-`uname -r`
+  ``
 

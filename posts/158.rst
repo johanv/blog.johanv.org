@@ -16,7 +16,15 @@ repository. (See http://rpmfusion.org/Configuration)
 
 Then you
 install opnemotif:
-\ ``\nyum install openmotif\n``
+\ 
+
+::
+
+
+  yum install openmotif
+  
+
+
 
 Finally, you
 download and install the i386-rpm of the citrix receiver from this page:

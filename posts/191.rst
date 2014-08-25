@@ -19,10 +19,26 @@ ik wel verplicht om de freedom hating proprietary driver te installeren.
 Ik haalde de inspiratie op de `Debian
 Wiki <http://wiki.debian.org/NvidiaGraphicsDrivers>`__; op deze manier
 werkt het:
-``\napt-get install linux-headers-`uname -r` #dit is misschien niet nodig\napt-get install nvidia-kernel-dkms nvidia-settings``
+``
+  apt-get install linux-headers-`uname -r` #dit is misschien niet nodig
+  apt-get install nvidia-kernel-dkms nvidia-settings``
 en
 zet het volgende in
-``/etc/X11/xorg.conf``:``\nSection "Module"\n    Load        "glx"\nEndSection\nSection "Device"\n    Identifier  "Video Card"\n    Driver              "nvidia"\nEndSection\n``
+``/etc/X11/xorg.conf``:
+
+::
+
+
+  Section "Module"
+      Load        "glx"
+  EndSection
+  Section "Device"
+      Identifier  "Video Card"
+      Driver              "nvidia"
+  EndSection
+  
+
+
 Rebooten,
 en dat is dat.
 

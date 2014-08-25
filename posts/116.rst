@@ -25,7 +25,18 @@ gebeurt in Javascript. Wat Microsoft deed, was JavaScript laten sorteren
 op basis van een ‘custom’ totale orderelatie, met deze
 implementatie:
 
-\ ``\nfunction RandomSort (a,b)\n{\n    return (0.5 - Math.random());\n}\n``
+\ 
+
+::
+
+
+  function RandomSort (a,b)
+  {
+      return (0.5 - Math.random());
+  }
+  
+
+
 
 Omdat
 dit helemaal geen orderelatie definieert, kan het - afhankelijk van het

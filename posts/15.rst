@@ -45,7 +45,15 @@ intel-hda sound thing. After adding this to /etc/modprobe.d/alsa-base,
 sound was
 working:
 
-\ ``\noptions snd-hda-intel model=toshiba\n``
+\ 
+
+::
+
+
+  options snd-hda-intel model=toshiba
+  
+
+
 
 Now the
 system boots. To speed it up a little more, I installed xubuntu-desktop,

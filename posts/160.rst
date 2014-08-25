@@ -34,7 +34,15 @@ waarom zou ik hem vervangen?
 
 De installatie van CUPS was niet
 moeilijk:
-``\nsudo apt-get install brother-cups-wrapper-common brother-cups-wrapper-extra cups\n``
+
+
+::
+
+
+  sudo apt-get install brother-cups-wrapper-common brother-cups-wrapper-extra cups
+  
+
+
 
 Als
 jouw printer standaardvriendelijker is dan de mijne, dan zijn die
@@ -48,7 +56,15 @@ maar ik vond niet direct hoe ik dat moest ‘enablen’, dus loste ik het op
 via een ssh-tunnel. (Vermoedelijk gaat dat allemaal veel gemakkelijker
 door rechtstreeks de configuratiefiles aan te passen, maar ik had geen
 zin om dat uit te zoeken.) Ssh-tunnel dus. Voor
-linux/cygwin:\ ``\nssh -L 8080:127.0.0.1:631 username@servername\n``
+linux/cygwin:\ 
+
+::
+
+
+  ssh -L 8080:127.0.0.1:631 username@servername
+  
+
+
 
 waarbij
 je het stuk ‘username@servername’ aanpast alnaargelang de naam van je
@@ -87,7 +103,15 @@ gedoe meer dus met installatie van samba; had ik dat maar eerder geweten
 ;-)
 
 Maar nu probleem 2: de scanner. Er bestaan command-line tools
-om de scanner aan te sturen:\ ``\napt-get install sane-utils\n``
+om de scanner aan te sturen:\ 
+
+::
+
+
+  apt-get install sane-utils
+  
+
+
 
 Je
 hebt ook nog software van Brother zelf nodig; download en installeer het
@@ -103,7 +127,15 @@ http://ubuntuforums.org/showpost.php?p=11578647&postcount=8
 
 Scannen
 kan nu als
-volgt:\ ``\nsudo scanimage --format=tiff > outputfile.tiff\n``
+volgt:\ 
+
+::
+
+
+  sudo scanimage --format=tiff > outputfile.tiff
+  
+
+
 
 Nu
 graag nog wat gebruikersgemak. Je zou een webapplicatietje op de server
@@ -121,39 +153,106 @@ die wordt dan weggeschreven, en kan dan opgepikt worden via ftp of
 (toch) samba.
 
 Om dit te bewerkstelligen maakte ik een nieuwe user
-aan:\ ``\nsudo useradd -g scanner scanner\n``
+aan:\ 
+
+::
+
+
+  sudo useradd -g scanner scanner
+  
+
+
 
 Deze user moet kunnen
 scannen met sudo, zonder dat daarvoor een wachtwoord ingegeven moet
 worden. Bewerk de configuratie van sudo met ``visudo``, en voeg deze
-lijn toe:\ ``\nscanner ALL = NOPASSWD : /usr/bin/scanimage\n``
+lijn toe:\ 
+
+::
+
+
+  scanner ALL = NOPASSWD : /usr/bin/scanimage
+  
+
+
 
 Maak
 een bestand ‘\ ``/usr/local/bin/scanloop.sh``\ ’ aan, met deze
 inhoud:
 
-\ ``\n#!/bin/bash\n\noutputdir=/mnt/bigdata/documenten/scans\n\nwhile true; do\n\techo Druk ENTER om te scannen.\n\tread a\n\toutputfile=`tempfile --suffix=.tiff -d $outputdir`\n\tchmod 666 $outputfile\n\tsudo scanimage --format=tiff > "$outputfile"\n\techo Scan bewaard als "$outputfile"\ndone\n``
+\ ``
+  #!/bin/bash
+  
+  outputdir=/mnt/bigdata/documenten/scans
+  
+  while true; do
+  	echo Druk ENTER om te scannen.
+  	read a
+  	outputfile=`tempfile --suffix=.tiff -d $outputdir`
+  	chmod 666 $outputfile
+  	sudo scanimage --format=tiff > "$outputfile"
+  	echo Scan bewaard als "$outputfile"
+  done
+  ``
 
 En
 maak het
-executable:\ ``\nsudo chmod +x /usr/local/bin/scanloop.sh\n``
+executable:\ 
+
+::
+
+
+  sudo chmod +x /usr/local/bin/scanloop.sh
+  
+
+
 
 Als
 we het nu voor elkaar krijgen dat na het booten van de server de user
 scanner automatisch aanlogt, en bovenstaand script uitvoert, dan zijn we
 gesteld. En dat kan met
-‘mingetty’.\ ``\nsudo apt-get install mingetty\n``
+‘mingetty’.\ 
+
+::
+
+
+  sudo apt-get install mingetty
+  
+
+
 
 In het bestand
 ‘\ ``/etc/init/tty1.conf``\ ’ vervang je de lijn
-``\nexec /sbin/getty -8 38400 tty1``
+
+
+::
+
+
+  exec /sbin/getty -8 38400 tty1
+
+
 door
-``\nexec /sbin/mingetty --autologin scanner tty1\n``
+
+
+::
+
+
+  exec /sbin/mingetty --autologin scanner tty1
+  
+
+
 
 Op die manier
 wordt na het opstarten van de server, de user ‘scanner’ automatisch
 aangemeld op tty1. Als je dan nog het volgende commando
-ingeeft:\ ``\nusermod -s /usr/local/bin/scanloop.sh scanner``
+ingeeft:\ 
+
+::
+
+
+  usermod -s /usr/local/bin/scanloop.sh scanner
+
+
 dan maak
 je het nifty scanscriptje de shell voor diezelfde gebruiker.
 

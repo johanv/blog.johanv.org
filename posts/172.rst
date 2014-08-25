@@ -41,7 +41,15 @@ http://identi.ca/johanv/all.
 Als je een berichtje wilt posten dat bedoeld is voor een bepaalde
 andere gebruiker, dan doe je dat door in je bericht de naam van die
 gebruiker te zetten, voorafgegaan door een @-symbool.
-Bijvoorbeeld:\ ``\n@johanv Zin in een terrasje?\n``
+Bijvoorbeeld:\ 
+
+::
+
+
+  @johanv Zin in een terrasje?
+  
+
+
 
 Als je
 bovenstaand berichtje post, dan wordt het ook opgenomen in de
@@ -72,7 +80,14 @@ Je kunt in je berichten hashtages gebruiken. Hashtags zijn niets
 anders dan trefwoorden waar je het symbool # voor plakt. Op die manier
 geef je aan dat je berichtje iets te maken heeft met de gegeven
 trefwoorden.
-Bijvoorbeeld:\ ``\nIk zal eerst eens #koffie zetten.``
+Bijvoorbeeld:\ 
+
+::
+
+
+  Ik zal eerst eens #koffie zetten.
+
+
 
 Door het
 #-symbool voor ‘koffie’ te plaatsen, maak je duidelijk dat het trefwoord

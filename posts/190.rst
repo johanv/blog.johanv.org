@@ -93,20 +93,63 @@ interfaces of the guests. `Configuring a bridge on a Debian
 system <http://wiki.debian.org/BridgeNetworkConnections#Configuring_bridging_in_.2BAC8-etc.2BAC8-network.2BAC8-interfaces>`__
 is very easy, but not if one of the interfaces has to use WPA-PSK. After
 a lot of trial and error, I got it working with this
-``/etc/network/interfaces``:``\n# The loopback network interface\nauto lo\niface lo inet loopback\n\n# The primary network interface\n#allow-hotplug eth0\niface eth0 inet dhcp\n\nauto wlan0\niface wlan0 inet static\n\twpa-ssid **MySsid**\n\twpa-psk **MyPsk**\n\taddress 192.168.1.201\n\tnetmask 255.255.255.0\n\tgateway 192.168.1.1\n\niface br0 inet static\n\tbridge_ports wlan0\n\tbridge-stp off\n\tbridge-maxwait 5\n\taddress 192.168.1.200\n\tnetmask 255.255.255.0\n\tgateway 192.168.1.1``
+``/etc/network/interfaces``:
+
+::
+
+
+  # The loopback network interface
+  auto lo
+  iface lo inet loopback
+  
+  # The primary network interface
+  #allow-hotplug eth0
+  iface eth0 inet dhcp
+  
+  auto wlan0
+  iface wlan0 inet static
+  	wpa-ssid **MySsid**
+  	wpa-psk **MyPsk**
+  	address 192.168.1.201
+  	netmask 255.255.255.0
+  	gateway 192.168.1.1
+  
+  iface br0 inet static
+  	bridge_ports wlan0
+  	bridge-stp off
+  	bridge-maxwait 5
+  	address 192.168.1.200
+  	netmask 255.255.255.0
+  	gateway 192.168.1.1
+
+
 
 As
 you can see, I used static IP-addresses, I think I had troubles when
 using dhcp. I had to start wlan0 first, and then br0, probably because
 the network card has to associate to the access point. The configuration
 above only starts wlan0, but I start br0 in ``/etc/rc.local``, by adding
-the following line: ``\nifup br0``
+the following line: 
+
+::
+
+
+  ifup br0
+
+
 
 Installing a virtual FreeNAS server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To set up the virtual file server, I used this
-command:\ ``\nvirt-install --connect qemu:///system -n gobelijn -r 256 --disk path=/vdisks/gobelijn/gobelijn01.img,size=2 --disk path=/vdisks/gobelijn/gobelijn02.img,size=40 -c /vdisks/iso/FreeNAS-8.0.3-RELEASE-x64.iso --vnc --noautoconsole --os-type unix --os-variant freebsd7 --network=bridge:br0 --hvm``
+command:\ 
+
+::
+
+
+  virt-install --connect qemu:///system -n gobelijn -r 256 --disk path=/vdisks/gobelijn/gobelijn01.img,size=2 --disk path=/vdisks/gobelijn/gobelijn02.img,size=40 -c /vdisks/iso/FreeNAS-8.0.3-RELEASE-x64.iso --vnc --noautoconsole --os-type unix --os-variant freebsd7 --network=bridge:br0 --hvm
+
+
 
 This
 creates a system with 256 MB ram, a disk of 2 GB for the OS and a disk
@@ -120,7 +163,14 @@ Now the new virtual server is booted, but of
 course I couldn't see what was happening. Since there is no graphical
 environment installed on the server, I needed another computer to
 connect to it. I installed ``virt-viewer`` on there, and connected as
-follows:\ ``\nvirt-viewer --connect qemu+ssh://root@192.168.1.200/system gobelijn``.
+follows:\ 
+
+::
+
+
+  virt-viewer --connect qemu+ssh://root@192.168.1.200/system gobelijn
+
+.
 For
 some or another reason, I had to enter the password twice. It should
 probably work with a non-root user as well, still have to try it
@@ -129,7 +179,15 @@ out.
 After the installation, instead of rebooting, the system just
 shuts down. I restarted it by issuing these commands on the virtual
 machine
-host:\ ``\nvirsh --connect qemu:///system\nstart gobelijn``
+host:\ 
+
+::
+
+
+  virsh --connect qemu:///system
+  start gobelijn
+
+
 
 ... and
 it didn't work. The virtual guests didn't recognize it's virtual network
@@ -137,9 +195,25 @@ card. Luckily, this is a `known
 problem <http://blog.adlibre.org/2011/06/06/freenas-8-under-kvm/>`__,
 you can fix it by changing the network device type in the appropriate
 configuration file in ``/etc/libvirt/qemu``. I had to replace the line
-``\n      <model type='ne2k_pci'/>\n`` in the xml (under devices,
+
+
+::
+
+
+        <model type='ne2k_pci'/>
+  
+
+ in the xml (under devices,
 interface), and change it
-to\ ``\n      <model type='rtl8139'/>\n``
+to\ 
+
+::
+
+
+        <model type='rtl8139'/>
+  
+
+
 After rebooting the virtual
 machine, it had a network interface.
 
@@ -156,19 +230,67 @@ authenticate <http://wiki.debian.org/BridgeNetworkConnections#Bridging_with_a_wi
 This
 can be fixed with ebtables, as described in the Debian wiki. I just did
 what's described in there: I
-entered\ ``\nebtables -t nat -A POSTROUTING -o wlan0 -j snat --to-src $MAC_OF_BRIDGE --snat-arp --snat-target ACCEPT``
+entered\ 
+
+::
+
+
+  ebtables -t nat -A POSTROUTING -o wlan0 -j snat --to-src $MAC_OF_BRIDGE --snat-arp --snat-target ACCEPT
+
+
 and
 used the script
-``addcomputer.sh``:``\n #!/bin/bash\n # addcomputer\n # Will Orr - 2009\n\n INIF="wlan0"\n\n function add_ebtables () {\n   COMPIP=$1\n   COMPMAC=$2\n\n   ebtables -t nat -A PREROUTING -i $INIF -p IPv4 --ip-dst $COMPIP -j \
-   dnat --to-dst $COMPMAC --dnat-target ACCEPT\n   ebtables -t nat -A PREROUTING -i $INIF -p ARP --arp-ip-dst $COMPIP \
-   -j dnat --to-dst $COMPMAC --dnat-target ACCEPT\n }\n\n if [[ $# -ne 2 ]]; then\n   echo "Usage: $0 ip mac"\n elif [[ $(whoami) != "root" ]]; then \n   echo "Error: must be root"\n else\n   add_ebtables $1 $2\n fi``
+``addcomputer.sh``:
+
+::
+
+
+   #!/bin/bash
+   # addcomputer
+   # Will Orr - 2009
+  
+   INIF="wlan0"
+  
+   function add_ebtables () {
+     COMPIP=$1
+     COMPMAC=$2
+  
+     ebtables -t nat -A PREROUTING -i $INIF -p IPv4 --ip-dst $COMPIP -j \
+   dnat --to-dst $COMPMAC --dnat-target ACCEPT
+     ebtables -t nat -A PREROUTING -i $INIF -p ARP --arp-ip-dst $COMPIP \
+   -j dnat --to-dst $COMPMAC --dnat-target ACCEPT
+   }
+  
+   if [[ $# -ne 2 ]]; then
+     echo "Usage: $0 ip mac"
+   elif [[ $(whoami) != "root" ]]; then 
+     echo "Error: must be root"
+   else
+     add_ebtables $1 $2
+   fi
+
+
 to
 change the source mac address from source packages from the virtual
 guest. I saved the rules using
-``\nEBTABLES_ATOMIC_FILE=/root/ebtables-atomic ebtables -t nat --atomic-save``
+
+
+::
+
+
+  EBTABLES_ATOMIC_FILE=/root/ebtables-atomic ebtables -t nat --atomic-save
+
+
 and
 load them at boot time by adding this to
-``/etc/rc.local``:``\nEBTABLES_ATOMIC_FILE=/root/ebtables-atomic ebtables -t nat --atomic-commit``.
+``/etc/rc.local``:
+
+::
+
+
+  EBTABLES_ATOMIC_FILE=/root/ebtables-atomic ebtables -t nat --atomic-commit
+
+.
 
 Now
 I still want to start the guest automatically when the host boots.
@@ -176,7 +298,15 @@ Normally this can be done with ``virsh autostart gobelijn``, but that
 doesn't work, probably because the hack of starting the bridge in
 ``/etc/rc.local``. So I just start the virtual guest in
 ``/etc/rc.local`` as well, by adding
-``\nsleep 4\nvirsh start gobelijn``.
+
+
+::
+
+
+  sleep 4
+  virsh start gobelijn
+
+.
 
 References
 ~~~~~~~~~~

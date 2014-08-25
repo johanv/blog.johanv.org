@@ -10,7 +10,14 @@ You can use your active directory username and password to login
 to a PC running Fedora 14. This is how I did it:
 
 Install pam\_krb5
-and samba-winbind:\ ``\nyum install pam_krb5 samba-winbind``
+and samba-winbind:\ 
+
+::
+
+
+  yum install pam_krb5 samba-winbind
+
+
 
 Click
 ‘System’, ‘Administration’, ‘Authentication’. Enter the root
@@ -40,9 +47,23 @@ Now you should
 be able to logon with username ‘MYDOMAIN\\\\myuser’, and your domain
 password. If you don't want the prefix ‘MYDOMAIN\\\\’, edit
 ``/etc/samba/smb.conf``. In the section ``[global]`` change
-``\nwinbind use default domain = false``
+
+
+::
+
+
+  winbind use default domain = false
+
+
 to
-``\nwinbind use default domain = true``
+
+
+::
+
+
+  winbind use default domain = true
+
+
 and reboot (or restart winbind
 and/or samba).
 

@@ -37,7 +37,15 @@ it, starting from a completely updated Fedora 14.
    access to /dev/sda2 and /dev/sda3. But every time I change something
    to the security settings of these block devices, some time later
    Fedora changes it back for me. I'm not sure how to handle this, so
-   for the moment, I did\ ``\nusermod -a -G disk johanv\n``\ which
+   for the moment, I did\ 
+
+::
+
+
+  usermod -a -G disk johanv
+  
+
+\ which
    grants me r/w access to all raw disks and partitions. Which is very
    unsafe! Any suggestion of a better way to arrange this, is more than
    welcome.
@@ -50,18 +58,43 @@ it, starting from a completely updated Fedora 14.
    -  The source for mbr is available at
       http://www.chiark.greenend.org.uk/~neilt/mbr/mbr.tar.gz. Unpack
       the archive, and compile and install mbr issuing these
-      commands:\ ``\n./configure\nmake\nsu -c "make install"\n``
+      commands:\ 
+
+::
+
+
+  ./configure
+  make
+  su -c "make install"
+  
+
+
 
    -  Create a mbr as follows: (change the 23 to the numbers of your
       Windows partitions. 23 is for /dev/sda2 and
-      /dev/sda3.)\ ``\n/usr/local/sbin/install-mbr -e23 --force ~/vm/vm.mbr\n``\ This
+      /dev/sda3.)\ 
+
+::
+
+
+  /usr/local/sbin/install-mbr -e23 --force ~/vm/vm.mbr
+  
+
+\ This
       creates a file ~/vm/vm.mbr of 512 bytes, containing our mbr.
 
    
 
 -  Now create the virtual disk for your virtual machine. I did this as
    root. Remember to adapt the partition numbers to your
-   needs:\ ``\nVBoxManage internalcommands createrawvmdk -filename /home/johanv/vm/win7.vmdk -rawdisk /dev/sda -partitions 3,2 -mbr /home/johanv/vm/vm.mbr -relative ``
+   needs:\ 
+
+::
+
+
+  VBoxManage internalcommands createrawvmdk -filename /home/johanv/vm/win7.vmdk -rawdisk /dev/sda -partitions 3,2 -mbr /home/johanv/vm/vm.mbr -relative 
+
+
 I
    typed ‘-partitions 3,2’ instead of ‘-partitions 2,3’, because I think
    that otherwise the OS-partition will get the drive letter D instead
@@ -90,11 +123,55 @@ I
    the Windows boot loader.
 -  After this, my system booted, I got the Windows 7 splash screen, and
    then the computer crashed with the following
-   BSOD:\ ``\nA problem has been detected and windows has been shut down to prevent damage\nto your computer.``
-\ ``\nIf this is the first time you've seen this stop error screen,\nrestart your comptuer. If this screen appears again, follow\nthese steps:``
-\ ``\nCheck for viruses on your computer. Remove any newly installed\nhard drives or hard drive controllers. Check your hard drive\nto make sure it is properly configured and terminated.\nRun CHKDSK /F to check for hard drive corruption, and then\nrestart your computer.``
-\ ``\nTechnical information:``
-\ ``\n*** STOP: 0x0000007B (0xFFFFF880009A9928, 0xFFFFFFFFC0000034, 0x0000000000000000, 0\nx0000000000000000)\n``
+   BSOD:\ 
+
+::
+
+
+  A problem has been detected and windows has been shut down to prevent damage
+  to your computer.
+
+
+\ 
+
+::
+
+
+  If this is the first time you've seen this stop error screen,
+  restart your comptuer. If this screen appears again, follow
+  these steps:
+
+
+\ 
+
+::
+
+
+  Check for viruses on your computer. Remove any newly installed
+  hard drives or hard drive controllers. Check your hard drive
+  to make sure it is properly configured and terminated.
+  Run CHKDSK /F to check for hard drive corruption, and then
+  restart your computer.
+
+
+\ 
+
+::
+
+
+  Technical information:
+
+
+\ 
+
+::
+
+
+  *** STOP: 0x0000007B (0xFFFFF880009A9928, 0xFFFFFFFFC0000034, 0x0000000000000000, 0
+  x0000000000000000)
+  
+
+
 It
    seems Windows doesn't like it when the type of your hard drives
    changes. I managed to fix this problem as follows:
@@ -132,23 +209,62 @@ virtualbox.
 (uid 899 is arbitrary, but less than 1000, to prevent the
 user from showing up in
 gdm)
-\ ``\nuseradd -u 899 -m -g vboxusers -G disk vboxuser\npasswd vboxuser\ncd /home\n#replace 'johanv' by your own login below\ncp -rp johanv/VirtualBox\\ VMs/ vboxuser/\ncp -rp johanv/.VirtualBox/ vboxuser/\ncp -rp johanv/vm vboxuser/\nchown -R vboxuser vboxuser\nsed -i 's/johanv/vboxuser/' vboxuser/.VirtualBox/VirtualBox.xml\nsed -i 's/johanv/vboxuser/' vboxuser/VirtualBox\\ VMs/win7/win7.vbox\n# replace 'win7' by the name of your virtual machine above.``
+\ 
+
+::
+
+
+  useradd -u 899 -m -g vboxusers -G disk vboxuser
+  passwd vboxuser
+  cd /home
+  #replace 'johanv' by your own login below
+  cp -rp johanv/VirtualBox\\ VMs/ vboxuser/
+  cp -rp johanv/.VirtualBox/ vboxuser/
+  cp -rp johanv/vm vboxuser/
+  chown -R vboxuser vboxuser
+  sed -i 's/johanv/vboxuser/' vboxuser/.VirtualBox/VirtualBox.xml
+  sed -i 's/johanv/vboxuser/' vboxuser/VirtualBox\\ VMs/win7/win7.vbox
+  # replace 'win7' by the name of your virtual machine above.
+
+
 Enter
 ``visudo``, and add the following
-line:\ ``\njohanv ALL=(vboxuser) NOPASSWD: /usr/bin/virtualbox``
+line:\ 
+
+::
+
+
+  johanv ALL=(vboxuser) NOPASSWD: /usr/bin/virtualbox
+
+
 (Change
 the account name as appropriate.)
 
 If you want to enable sound for
 your virtual computer, download and install
-paprefs:\ ``\nyum install paprefs``
+paprefs:\ 
+
+::
+
+
+  yum install paprefs
+
+
 Run paprefs, click on the ‘Network
 Server’ tab and enable network access to local sound devices. (Again,
 probably not the most safe way to do this, but it works.)
 
 Now you
 can run virtualbox as
-follows:\ ``\nxhost +si:localuser:vboxuser\nsudo -H -u vboxuser virtualbox``
+follows:\ 
+
+::
+
+
+  xhost +si:localuser:vboxuser
+  sudo -H -u vboxuser virtualbox
+
+
 !
 Don't forget to remove your ‘normal user account’ from the ‘disk’ group
 !

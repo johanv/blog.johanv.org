@@ -31,7 +31,19 @@ Then I booted from the USB stick.
 
 The first thing to do, was
 enabling lvm, and decrypting my encrypted
-partitions:\ ``\napt-get install lvm2\nmodprobe dm-mod\ncryptsetup luksOpen /dev/sda6 crypt_sda6\ncryptsetup luksOpen /dev/sda7 crypt_sda7\ncryptsetup luksOpen /dev/sda8 crypt_sda8\nlvscan``
+partitions:\ 
+
+::
+
+
+  apt-get install lvm2
+  modprobe dm-mod
+  cryptsetup luksOpen /dev/sda6 crypt_sda6
+  cryptsetup luksOpen /dev/sda7 crypt_sda7
+  cryptsetup luksOpen /dev/sda8 crypt_sda8
+  lvscan
+
+
 
 sda6,
 sda7 and sda8 are my encrypted partitions. The lvscan showed that all my
@@ -41,7 +53,15 @@ logical volumes were found and active, so I didn't have to
 Now I had to create a new
 partition for the root file system of my Mint installation. I had more
 than 100 GB left on my volume group, so this was not a
-problem.\ ``\nlvcreate -L 20G -n mint-root vg-debian\nmkfs.ext4 /dev/vg-debian/mint-root``
+problem.\ 
+
+::
+
+
+  lvcreate -L 20G -n mint-root vg-debian
+  mkfs.ext4 /dev/vg-debian/mint-root
+
+
 (My
 volume group is called 'vg-debian', because it was created this way by
 the debian installer. This doesn't make sense with multiple distro's
@@ -76,20 +96,61 @@ does <http://forums.linuxmint.com/viewtopic.php?f=141&t=71159&start=0>`__.
 So I could continue the installation process manually. My mint system
 appeared to be mounted under ``/target``. First of all, I edited
 ``/target/etc/crypttab``, and put the following
-in:\ ``\ncrypt_sda6\t/dev/sda6\tnone\tluks\ncrypt_sda7\t/dev/sda7\tnone\tluks\ncrypt_sda8\t/dev/sda8\tnone\tluks``
+in:\ 
+
+::
+
+
+  crypt_sda6	/dev/sda6	none	luks
+  crypt_sda7	/dev/sda7	none	luks
+  crypt_sda8	/dev/sda8	none	luks
+
+
 This
 is needed to get the information of the encrypted partitions in the
 initrd. Then I chrooted into the new system, and installed the necessary
 packages for encrypted
-lvm:\ ``\nchroot /target\nmount -t sysfs none /sys\nmount -t proc none /proc\nmount -t devpts none /dev/pts\napt-get install cryptsetup lvm2``
+lvm:\ 
+
+::
+
+
+  chroot /target
+  mount -t sysfs none /sys
+  mount -t proc none /proc
+  mount -t devpts none /dev/pts
+  apt-get install cryptsetup lvm2
+
+
 I
-set the root password:\ ``\npasswd``
+set the root password:\ 
+
+::
+
+
+  passwd
+
+
 and created a
-user.\ ``\nadduser johan2``
+user.\ 
+
+::
+
+
+  adduser johan2
+
+
 Initially I gave my user a different user
 name (johan2) than on the Debian system (johanv). This will create a new
 home directory. Then I just rename the new
-user:\ ``\nusermod -l johanv johan2``
+user:\ 
+
+::
+
+
+  usermod -l johanv johan2
+
+
 Now I have a user johanv, with
 home dir ``/home/johan2``. I do this because I typically have the
 following directory in my /home file system:
@@ -106,10 +167,32 @@ homedir, I move these files to ``johan-shared``, and put links in all
 homedirs. 
 
 At last I installed the bootloader: (I just accepted the
-defaults)\ ``\ndpkg-reconfigure grub-pc``
+defaults)\ 
+
+::
+
+
+  dpkg-reconfigure grub-pc
+
+
 Moment of the truth:
 rebooting into the fresh
-system.\ ``\numount /dev/pts\numount /proc\numount /sys\nexit\numount /target/dev\numount /target/home\numount /target/boot\numount /target\nreboot``
+system.\ 
+
+::
+
+
+  umount /dev/pts
+  umount /proc
+  umount /sys
+  exit
+  umount /target/dev
+  umount /target/home
+  umount /target/boot
+  umount /target
+  reboot
+
+
 The
 grub menu was shown, but when I booted into Mint, my screen showed some
 noise, and nothing else happened. Apparently the system was waiting for
@@ -124,7 +207,16 @@ correctly. When I clicked somewhere, the actually click was registered a
 little to the left of the mouse pointer. This was an annoying problem,
 but quickly resolved after installing the software updates. I tend to do
 this via the command
-line:\ ``\napt-get update\napt-get upgrade\napt-get dist-upgrade``
+line:\ 
+
+::
+
+
+  apt-get update
+  apt-get upgrade
+  apt-get dist-upgrade
+
+
 
 After
 a while a second problem appeared. The system froze. But this is no new
@@ -141,7 +233,14 @@ One last thing left to do: make the old Debian installation
 available via the grub menu. For this, I needed the backup of my old
 ``/boot``, to look at the original ``/boot/grub/grub.cfg`` file. I
 copied the Debian GNU/Linux entries in there, and appended them under
-``/etc/grub.d/40_custom``. And then:\ ``\nupdate-grub``
+``/etc/grub.d/40_custom``. And then:\ 
+
+::
+
+
+  update-grub
+
+
 This appended
 entries for Debian at the bottem of the grub menu, which now allows me
 to boot into my old system as well. It also seems to create some extra

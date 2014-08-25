@@ -30,7 +30,17 @@ to create the partitions.
 
 My partitioning scheme looks like
 this:
-\ ``\nsda1  510 MB ext2 (boot)\nsda5 2048 MB Linux LVM\nsda6 6029 MB Linux LVM\n``
+\ 
+
+::
+
+
+  sda1  510 MB ext2 (boot)
+  sda5 2048 MB Linux LVM
+  sda6 6029 MB Linux LVM
+  
+
+
 
 The
 boot partition cannot be inside LVM, and cannot be encrypted either,
@@ -38,7 +48,31 @@ because it should be accessable by grub. All other file systems will be
 on logical LVM volumes, which will be in one volume group. I set this up
 like
 this:
-\ ``\nmodprobe dm-mod\n \ncryptsetup -y -c aes-xts-plain -s 512 luksFormat /dev/sda5\ncryptsetup -y -c aes-xts-plain -s 512 luksFormat /dev/sda6\n \ncryptsetup luksOpen /dev/sda5 crypt1\ncryptsetup luksOpen /dev/sda6 crypt2\n \npvcreate /dev/mapper/crypt1\npvcreate /dev/mapper/crypt2\n \nvgcreate vgroup /dev/mapper/crypt1\nvgextend vgroup /dev/mapper/crypt2\n \nlvcreate -L 1G -n swap vgroup\nlvcreate -L 6G -n root vgroup\nlvcreate -l 100%FREE -n home vgroup\n``
+\ 
+
+::
+
+
+  modprobe dm-mod
+   
+  cryptsetup -y -c aes-xts-plain -s 512 luksFormat /dev/sda5
+  cryptsetup -y -c aes-xts-plain -s 512 luksFormat /dev/sda6
+   
+  cryptsetup luksOpen /dev/sda5 crypt1
+  cryptsetup luksOpen /dev/sda6 crypt2
+   
+  pvcreate /dev/mapper/crypt1
+  pvcreate /dev/mapper/crypt2
+   
+  vgcreate vgroup /dev/mapper/crypt1
+  vgextend vgroup /dev/mapper/crypt2
+   
+  lvcreate -L 1G -n swap vgroup
+  lvcreate -L 6G -n root vgroup
+  lvcreate -l 100%FREE -n home vgroup
+  
+
+
 
 The
 ``aes-xts-plain`` defines the used encryption method. I don't know
@@ -55,7 +89,19 @@ if something goes wrong, and you have to reboot, you obviously don't
 have to recreate your encrypted partitions. This is how you can
 reactivate
 them:
-\ ``\nmodprobe dm-mod\ncryptsetup luksOpen /dev/sda5 crypt1\ncryptsetup luksOpen /dev/sda5 crypt2\n \nvgchange -ay\n``
+\ 
+
+::
+
+
+  modprobe dm-mod
+  cryptsetup luksOpen /dev/sda5 crypt1
+  cryptsetup luksOpen /dev/sda5 crypt2
+   
+  vgchange -ay
+  
+
+
 
 (The
 last line just activates all available logical volumes.)
@@ -90,14 +136,30 @@ Edit ``rc.conf``: change ``USELVM="no"`` into
 Edit ``mkinitcpio.conf``: search for
 ``HOOKS``, and add ``encrypt lvm2`` directly before ``filesystems``. In
 my case, the HOOKS-line looks like
-this:\ ``\nHOOKS="base udev autodetect pata scsi sata encrypt lvm2 filesystems"\n``
+this:\ 
+
+::
+
+
+  HOOKS="base udev autodetect pata scsi sata encrypt lvm2 filesystems"
+  
+
+
 
 That's
 all you have to change in the configuration files. Continue the
 installation until the step you have to configure grub. For the menu
 entries 'Arch Linux' and 'Arch Linux Fallback' you should make sure that
 the kernel line looks as
-follows:\ ``\nkernel /vmlinuz27 root=/dev/mapper/vgroup-root cryptdevice=/dev/sda5:crypt1,/dev/sda6:crypt2 ro\n``
+follows:\ 
+
+::
+
+
+  kernel /vmlinuz27 root=/dev/mapper/vgroup-root cryptdevice=/dev/sda5:crypt1,/dev/sda6:crypt2 ro
+  
+
+
 Of
 course you should change ``vgroup-root`` to the name of your root
 volume, and choose the correct partitions after ``cryptdevice=``. I

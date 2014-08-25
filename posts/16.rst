@@ -19,7 +19,16 @@ information. This is just a reminder for myself.)
    and add ``ath_pci`` to ``/etc/modules``.
 -  Add the following to ``/etc/rc.local`` to enable the wireless
    led:
-\ ``\nsysctl -w dev.wifi0.ledpin=3\nsysctl -w dev.wifi0.softled=1\n``
+\ 
+
+::
+
+
+  sysctl -w dev.wifi0.ledpin=3
+  sysctl -w dev.wifi0.softled=1
+  
+
+
 
 -  Install ``luvcview`` to use the webcam. This doesn't work yet.
 -  Download `acerfand <http://electronpusher.org/~rachel/acerfand>`__
@@ -38,31 +47,111 @@ information. This is just a reminder for myself.)
    the ``# defoptions`` line.
 -  Add the following to
    ``/etc/fstab``:
-``\ntmpfs      /tmp            tmpfs        defaults           0    2\ntmpfs      /var/tmp        tmpfs        defaults           0    2\n``
+
+
+::
+
+
+  tmpfs      /tmp            tmpfs        defaults           0    2
+  tmpfs      /var/tmp        tmpfs        defaults           0    2
+  
+
+
 
 -  Change ``concurrency=none`` into ``concurrency=shell`` in
    ``/etc/init.d/rc``
 -  For power saving, create a file ``/etc/sysctl.d/60-aspireone.conf``
    with the following
    content:
-\ ``\n###################################################################\n# Settings for the Acer Aspire One\n#\n# Strongly discourage swapping\nvm.swappiness = 1\n# As suggested by PowerTOP\nvm.dirty_writeback_centisecs = 1500\n# Suggested by https://help.ubuntu.com/community/AspireOne\nvm.vfs_cache_pressure = 0\nvm.dirty_ratio = 20\nvm.dirty_background_ratio = 10\nvm.laptop_mode = 5\n``
+\ 
+
+::
+
+
+  ###################################################################
+  # Settings for the Acer Aspire One
+  #
+  # Strongly discourage swapping
+  vm.swappiness = 1
+  # As suggested by PowerTOP
+  vm.dirty_writeback_centisecs = 1500
+  # Suggested by https://help.ubuntu.com/community/AspireOne
+  vm.vfs_cache_pressure = 0
+  vm.dirty_ratio = 20
+  vm.dirty_background_ratio = 10
+  vm.laptop_mode = 5
+  
+
+
 Add
    the following to
    ``/etc/rc.local``:
-``\necho ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor\necho ondemand > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor\ncat /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate_max > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate\n\necho 1 > /sys/devices/system/cpu/sched_smt_power_savings\necho 10 > /sys/module/snd_hda_intel/parameters/power_save\n\n### Decrease power usage of USB while idle\n## commented out; doesn't seem to work\n# [ -w /sys/bus/usb/devices/1-5/power/level ] && echo auto > /sys/bus/usb/devices/1-5/power/level\n# [ -w /sys/bus/usb/devices/5-5/power/level ] && echo auto > /sys/bus/usb/devices/5-5/power/level\n``
+
+
+::
+
+
+  echo ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+  echo ondemand > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+  cat /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate_max > /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate
+  
+  echo 1 > /sys/devices/system/cpu/sched_smt_power_savings
+  echo 10 > /sys/module/snd_hda_intel/parameters/power_save
+  
+  ### Decrease power usage of USB while idle
+  ## commented out; doesn't seem to work
+  # [ -w /sys/bus/usb/devices/1-5/power/level ] && echo auto > /sys/bus/usb/devices/1-5/power/level
+  # [ -w /sys/bus/usb/devices/5-5/power/level ] && echo auto > /sys/bus/usb/devices/5-5/power/level
+  
+
+
 
 -  
 Add the following line to
    ``/etc/profile``:
-``\nexport INTEL_BATCH=1\n``
+
+
+::
+
+
+  export INTEL_BATCH=1
+  
+
+
 
 -  Change the section 'Device' in
    ``/etc/X11/xorg.conf``.
-\ ``\nSection "Device"\n        Identifier      "Configured Video Device"\n#       Driver          "vesa"\n        Option          "MonitorLayout" "LVDS,VGA"\n        Option          "Clone" "True"\n        Option          "AccelMethod" "EXA"\n        Option          "MigrationHeuristic" "greedy"\n        VideoRam        229376\n        Option          "CacheLines" "1980"\n        Option "NoDDC" \nEndSection\n``
+\ 
+
+::
+
+
+  Section "Device"
+          Identifier      "Configured Video Device"
+  #       Driver          "vesa"
+          Option          "MonitorLayout" "LVDS,VGA"
+          Option          "Clone" "True"
+          Option          "AccelMethod" "EXA"
+          Option          "MigrationHeuristic" "greedy"
+          VideoRam        229376
+          Option          "CacheLines" "1980"
+          Option "NoDDC" 
+  EndSection
+  
+
+
 and
    add this line to the 'Monitor'
    section:
-\ ``\n        DisplaySize 195 113\n``
+\ 
+
+::
+
+
+          DisplaySize 195 113
+  
+
+
 
 Interesting firefox add-ons:
 

@@ -28,12 +28,36 @@ behaviour. (Click the left arrow on your task bar if it is hiding the
 Edit /etc/inittab: replace
 the
 line
-\ ``\n#1:2345:respawn:/sbin/mingetty --autologin user tty1\n``
+\ 
+
+::
+
+
+  #1:2345:respawn:/sbin/mingetty --autologin user tty1
+  
+
+
 by
-\ ``\n1:2345:respawn:/sbin/mingetty tty1\n``
+\ 
+
+::
+
+
+  1:2345:respawn:/sbin/mingetty tty1
+  
+
+
 And
 decomment
-\ ``\nx:5:respawn:/etc/X11/prefdm -nodaemon\n``
+\ 
+
+::
+
+
+  x:5:respawn:/etc/X11/prefdm -nodaemon
+  
+
+
 
 (I
 commented out the lines for virtual consoles 2-6 as well, but
@@ -42,7 +66,15 @@ ctrl+alt+f\ *x* seems disabled somehow.)
 In '/etc/rc.d/rc.S',
 comment out the
 line
-\ ``\n#   /usr/bin/xinit -- -br>/dev/null 2>&1 &\n``
+\ 
+
+::
+
+
+  #   /usr/bin/xinit -- -br>/dev/null 2>&1 &
+  
+
+
 
 That
 should do it.
