@@ -40,6 +40,3 @@ https://github.com/johanv/StatusThread/.
 identi.ca settings, you can now re-enable the conversation trees:
 http://identi.ca/settings/oldschool
 
-Comment via `this identi.ca
-discussion <http://test.johanv.org/StatusThread/?controller=conversation&id=84264980>`__.
-

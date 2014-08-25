@@ -19,5 +19,3 @@ identi.ca. In die conversatie kun je je reacties dan kwijt. (Dat
 veronderstelt dat je een identi.ca-account hebt, maar die is uiteraard
 gauw geregistreerd.)
 
-Je kunt reageren op deze blog post via `deze
-identi.ca-discussie <http://test.johanv.org/StatusThread/?controller=conversation&id=81414434>`__.
