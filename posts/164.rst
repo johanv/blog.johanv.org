@@ -37,16 +37,8 @@ it, starting from a completely updated Fedora 14.
    access to /dev/sda2 and /dev/sda3. But every time I change something
    to the security settings of these block devices, some time later
    Fedora changes it back for me. I'm not sure how to handle this, so
-   for the moment, I did\ 
-
-::
-
-
-  usermod -a -G disk johanv
-  
-
-\ which
-   grants me r/w access to all raw disks and partitions. Which is very
+   for the moment, I did ``usermod -a -G disk johanv``
+   to grant me r/w access to all raw disks and partitions. Which is very
    unsafe! Any suggestion of a better way to arrange this, is more than
    welcome.
 -  We need to generate an mbr which our virtual machine will use.
@@ -58,31 +50,19 @@ it, starting from a completely updated Fedora 14.
    -  The source for mbr is available at
       http://www.chiark.greenend.org.uk/~neilt/mbr/mbr.tar.gz. Unpack
       the archive, and compile and install mbr issuing these
-      commands:\ 
+      commands::
 
-::
-
-
-  ./configure
-  make
-  su -c "make install"
-  
-
-
+        ./configure
+        make
+        su -c "make install"
 
    -  Create a mbr as follows: (change the 23 to the numbers of your
       Windows partitions. 23 is for /dev/sda2 and
-      /dev/sda3.)\ 
+      /dev/sda3.) ::
 
-::
+        /usr/local/sbin/install-mbr -e23 --force ~/vm/vm.mbr
 
-
-  /usr/local/sbin/install-mbr -e23 --force ~/vm/vm.mbr
-  
-
-\ This
-      creates a file ~/vm/vm.mbr of 512 bytes, containing our mbr.
-
+   - This creates a file ~/vm/vm.mbr of 512 bytes, containing our mbr.
    
 
 -  Now create the virtual disk for your virtual machine. I did this as
@@ -92,11 +72,10 @@ it, starting from a completely updated Fedora 14.
 ::
 
 
-  VBoxManage internalcommands createrawvmdk -filename /home/johanv/vm/win7.vmdk -rawdisk /dev/sda -partitions 3,2 -mbr /home/johanv/vm/vm.mbr -relative 
+        VBoxManage internalcommands createrawvmdk -filename /home/johanv/vm/win7.vmdk -rawdisk /dev/sda -partitions 3,2 -mbr /home/johanv/vm/vm.mbr -relative 
 
 
-I
-   typed ‘-partitions 3,2’ instead of ‘-partitions 2,3’, because I think
+-  I typed ‘-partitions 3,2’ instead of ‘-partitions 2,3’, because I think
    that otherwise the OS-partition will get the drive letter D instead
    of C. I'm not sure of this.
 
@@ -108,7 +87,6 @@ I
    -  Choose ‘Use existing hard disk’ and browse to the vmdk.
    -  When the virtual machine is created, click ‘System’, ‘Motherbord’,
       and disable IO APIC
-   -  
 
    -  Read what's under ‘DMI BIOS settings’ on
       http://forums.virtualbox.org/viewtopic.php?f=28&p=149094. It seems
@@ -127,53 +105,26 @@ I
 
 ::
 
-
-  A problem has been detected and windows has been shut down to prevent damage
-  to your computer.
-
-
-\ 
-
-::
-
-
-  If this is the first time you've seen this stop error screen,
-  restart your comptuer. If this screen appears again, follow
-  these steps:
-
-
-\ 
-
-::
-
-
-  Check for viruses on your computer. Remove any newly installed
-  hard drives or hard drive controllers. Check your hard drive
-  to make sure it is properly configured and terminated.
-  Run CHKDSK /F to check for hard drive corruption, and then
-  restart your computer.
-
-
-\ 
-
-::
-
-
-  Technical information:
-
-
-\ 
-
-::
-
-
-  *** STOP: 0x0000007B (0xFFFFF880009A9928, 0xFFFFFFFFC0000034, 0x0000000000000000, 0
-  x0000000000000000)
+        A problem has been detected and windows has been shut down to prevent damage
+        to your computer.
+        
+        If this is the first time you've seen this stop error screen,
+        restart your comptuer. If this screen appears again, follow
+        these steps:
+        
+        Check for viruses on your computer. Remove any newly installed
+        hard drives or hard drive controllers. Check your hard drive
+        to make sure it is properly configured and terminated.
+        Run CHKDSK /F to check for hard drive corruption, and then
+        restart your computer.
+        
+        Technical information:
+        
+        *** STOP: 0x0000007B (0xFFFFF880009A9928, 0xFFFFFFFFC0000034, 0x0000000000000000, 0
+        x0000000000000000)
   
 
-
-It
-   seems Windows doesn't like it when the type of your hard drives
+-  It seems Windows doesn't like it when the type of your hard drives
    changes. I managed to fix this problem as follows:
 
    -  Boot in your original Windows 7
@@ -188,8 +139,6 @@ It
       and add it to the IDE controller
    -  (Not sure this is needed:) For the IDE controller, choose 'PIIX3'
       as type, and disable host I/O cache.
-
-   
 
 -  If you boot up your virtual machine now, it should just work (TM).
 
@@ -268,7 +217,3 @@ follows:\
 !
 Don't forget to remove your ‘normal user account’ from the ‘disk’ group
 !
-
-You can comment on this post via `this identi.ca
-conversation <http://test.johanv.org/StatusThread/?controller=conversation&id=81417727>`__.
-
