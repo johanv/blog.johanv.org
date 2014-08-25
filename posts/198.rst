@@ -41,7 +41,4 @@ onthouden:
 
 \ |the making of|
 
-Reageren kan via `deze
-identi.ca-discussie <https://identi.ca/conversation/95937011>`__.
-
 .. |the making of| image:: https://lh5.googleusercontent.com/-4ozV8at00bA/UFDiVgxiBdI/AAAAAAAADQU/f5yIaKgWdxA/s720/IMG_20120908_191616.jpg

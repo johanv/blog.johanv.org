@@ -148,6 +148,3 @@ to boot into my old system as well. It also seems to create some extra
 entries, which claim to start Mint with the old Debian kernel files. I
 didn't try to boot these (yet).
 
-You can comment on this via `this
-identi.ca conversation <https://identi.ca/conversation/93762483>`__.
-

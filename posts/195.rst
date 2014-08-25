@@ -84,6 +84,3 @@ References:
 -  https://wiki.archlinux.org/index.php/CUPS
 -  http://www.linuxforums.org/forum/networking/53105-how-make-cups-jetdirect-appsocket-print-server.html
 
-You can comment via `this identi.ca
-conversation <http://identi.ca/conversation/94501999>`__.
-

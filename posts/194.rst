@@ -34,7 +34,3 @@ PS: In de standaardrepo's van
 Ubuntu zitten pakketten beid-mozilla-plugin en beidgui. Ik heb geen idee
 of en hoe die werken. Weet jij het wel, laat iets weten.
 
-Reageer
-via `deze conversatie op
-identi.ca <https://identi.ca/conversation/94417669>`__.
-

@@ -54,7 +54,3 @@ ugly :-). And when it's installed, you should be able to flash the roms
 for CyanogenMod 9 and the Google Apps for Ice Cream Sandwich. (But don't
 come after me if things break, because I'm clueless as always.)
 
-You
-can comment via `this identi.ca
-discussion <https://identi.ca/conversation/95580612>`__.
-

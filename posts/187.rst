@@ -121,6 +121,3 @@ Tools which allow me to use Arch at work
 -  thunderbird (plugins allow me to combine Google calendar and Exchange
    calendar)
 
-You can comment via `this identi.ca
-conversation <http://identi.ca/conversation/84415043>`__.
-
