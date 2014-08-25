@@ -170,7 +170,6 @@ follows:\
 
   virt-viewer --connect qemu+ssh://root@192.168.1.200/system gobelijn
 
-.
 For
 some or another reason, I had to enter the password twice. It should
 probably work with a non-root user as well, still have to try it
@@ -189,29 +188,13 @@ host:\
 
 
 
-... and
-it didn't work. The virtual guests didn't recognize it's virtual network
-card. Luckily, this is a `known
-problem <http://blog.adlibre.org/2011/06/06/freenas-8-under-kvm/>`__,
-you can fix it by changing the network device type in the appropriate
+... and it didn't work. The virtual guests didn't recognize
+it's virtual network card. Luckily, this is a `known problem
+<http://blog.adlibre.org/2011/06/06/freenas-8-under-kvm/>`__, you
+can fix it by changing the network device type in the appropriate
 configuration file in ``/etc/libvirt/qemu``. I had to replace the line
-
-
-::
-
-
-        <model type='ne2k_pci'/>
-  
-
- in the xml (under devices,
-interface), and change it
-to\ 
-
-::
-
-
-        <model type='rtl8139'/>
-  
+``<model type='ne2k_pci'/>`` in the xml (under devices, interface),
+and change it to ``<model type='rtl8139'/>``.
 
 
 After rebooting the virtual
