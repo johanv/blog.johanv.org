@@ -33,7 +33,7 @@ dat je bij het opzetten van je systeem 2 GB (2048 MB) vrije ruimte
 voorziet, in plaats van de 1 GB in de
 video.
 
-[video:http://youtu.be/zcjDD\_\_Jfg8]
+.. youtube:: zcjDD__Jfg8
 
 Als aardigheidje
 heb ik ook nog een fotootje van ‘the making of’, dat ik jullie niet wou

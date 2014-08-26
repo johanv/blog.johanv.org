@@ -13,7 +13,7 @@ kwaliteit van het geluid is ronduit slecht, maar toch vond ik het de
 moeite om het met de wereld te
 delen:
 
-[video:http://www.youtube.com/watch?v=aTMHlit1Ggw]
+.. youtube:: aTMHlit1Ggw
 
 Broncode
 is beschikbaar op github: https://github.com/johanv/WcfDemo/

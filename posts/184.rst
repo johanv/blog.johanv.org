@@ -69,7 +69,7 @@ want helaas is er hiervoor geen standaardmanier van werken. In
 onderstaand filmpje laat ik zien hoe het zou kunnen
 verlopen:
 
-[video:http://www.youtube.com/watch?v=cnVrXh0Spj0]
+.. youtube:: cnVrXh0Spj0
 
 Als
 het je gelukt is om van de CD te booten, probeer dan eens uit of je op
@@ -79,7 +79,7 @@ het filmpje steek ik dat op de headset die ik gebruik, maar vermoedelijk
 heeft het meer te maken met mijn gebrek aan ervaring met dit soort van
 dingen.)
 
-[video:http://youtu.be/Y\_aZyHTnt7g]
+.. youtube:: Y_aZyHTnt7g
 
 Succes
 ermee!

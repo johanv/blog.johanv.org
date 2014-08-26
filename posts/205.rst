@@ -14,4 +14,4 @@ maakte hierover een screencast in lelijke tussentaal en met slechte
 geluidskwaliteit. Donanaties van fatsoenlijke headsets worden
 geapprecieerd ;-)
 
-[video:http://youtu.be/gQ\_dWp-R4fs]
+.. youtube:: gQ_dWp-R4fs
