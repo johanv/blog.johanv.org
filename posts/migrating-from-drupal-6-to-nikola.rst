@@ -6,32 +6,9 @@
 .. description: How to migrate from Drupal 6 to Nikola
 .. type: text
 
-Hello, this is johanv again for Hacker Public Radio. I'm going to talk
+As promised, some details
 about how I migrated my blog from Drupal 6 to `Nikola
-<http://getnikola.com>`__. You might have heard about Nikola on
-`episode 1577 of HPR <http://hackerpublicradio.org/eps.php?id=1577>`__, it
-is a static web site generator.
-
-First of all: why did I migrate? Mainly because I had some issues with my
-Drupal blog. The way I want to write texts is not very compatible with the
-way Drupal works.
-
-I want to write texts when I'm offline, like e.g. on the train. I want to
-use vim for writing, because I really like that editor. And I
-want to use git to manage different revisons of what I write, because it often
-takes a lot of editing before I am satisfied.
-
-I used to have a `git repository
-<https://github.com/johanv/randomtexts>`__ to write my blog posts, and when I
-was happy with a text, I copy-pasted it into the Drupal web interface.
-Which is kind of tedious.
-
-So I saw the light when I heard HPR 1577, in which `guitarman
-<http://stevebaer.com/>`__ talked about Nikola. He convinced me that I
-needed to use a static website generator for my blog.
-
-I migrated my blog from Drupal 6 to Nikola, and I will now tell you how I
-did this; maybe this is of interest for othere HPR listeners.
+<http://getnikola.com>`__.
 
 First of all some details about the Drupal site I migrated from.
 
@@ -46,13 +23,93 @@ of my nodes to RestructuredText, the format that Nikola uses by default.
 If you have another version of pandoc installed, you will possibly need to
 tweak the script I used.
 
-First of all, I created a new subdomain for my blog: blog.johanv.org. I
+I created a new subdomain for my blog: blog.johanv.org. I
 used a script that creates a blog post for every published Drupal node on
 my Drupal site.
 
 This script was created with a lot of trial and error. It can probably use
 some improvements, so I invite you to look at it, and to send me pull
-requests.
+requests ::
+
+  #!/bin/bash
+  
+  # migrate articles and stories from drupal 6 to nikola
+  # Copyright 2014 Johan Vervloet
+  # You can use and distribute this script under the terms of the
+  # GNU General Public License version 3 or later.
+  
+  # Notes: 
+  #  * my drupal site has no multiple revisions of posts.
+  #  * I had one vocabulary that I used for tagging posts.
+  #  * you need to have pandoc installed for this script to work.
+  
+  
+  # please change the two variables below
+  # according to your needs
+  
+  # mysql command to connect to your drupal database
+  MYSQL_CMD="mysql -N -s -u root johanv6"
+  # directory to save the files
+  OUT_DIR="/tmp/out"
+  
+  mkdir -p $OUT_DIR
+  
+  nodes=$(echo "
+        SELECT nid
+        FROM node
+        WHERE status > 0 
+        " | $MYSQL_CMD);
+  
+  for nid in $nodes
+  do
+        out_file=$OUT_DIR/$nid.rst
+  
+        details=$(echo "
+                SELECT FROM_UNIXTIME(created),title 
+                FROM node
+                WHERE nid=$nid
+                " | $MYSQL_CMD | sed 's/\t/;/g');
+  
+        created=`echo $details | cut -f 1 -d\;`
+        title=`echo $details | cut -f 2 -d\;`
+  
+        tags=$(echo "
+                SELECT GROUP_CONCAT(td.name)
+                FROM term_node tn JOIN term_data td ON tn.tid=td.tid
+                WHERE tn.nid=$nid
+                " | $MYSQL_CMD);
+  
+        cat > $out_file << EOF
+  .. title: $title
+  .. slug: node-$nid
+  .. date: $created
+  .. tags: $tags
+  .. link:
+  .. description: 
+  .. type: text
+  
+  EOF
+  
+  
+        echo "SELECT body FROM node_revisions WHERE nid=$nid" | \
+        $MYSQL_CMD | \
+  # convert node from html to rst
+        pandoc --from=html --to=rst | \
+  # some trial and error for newlines
+        sed 's/\\\\n/\n/g' | \
+  # convert references to other posts
+        perl -p -000 -e 's;`((\s|[^<])*)</node/([0-9]*)>`__;:doc:`\1<node-\3>`;g' | \
+  # lots of trial and error to convert inline code
+          perl -p -000 -e 's/``([^`]*\\n[^`]*)``/\n\n::\n\n\1\n\n/g' | \
+        sed 's/\\n/\n  /g' | sed 's/\\t/\t/g' | sed 's/\\ / /g' | \
+  # convert video-links to youtube-links
+  # I did the conversion of \_ to _ manually
+        sed 's/\[video:.*[/=]\([^/=]*\)\]/.. youtube:: \1/g' >> $out_file
+  
+  # some output to show progress
+        echo -n .
+  
+  done
 
 The script queries the database of the Drupal instance, to do the
 following for each node:
@@ -84,8 +141,14 @@ blog.johanv.org/posts/node-195.html. This way I could easily convert
 hyperlinks to other posts to the corresponding html page of the new blog.
 
 On the location of my old blog, I put an .htaccess file, that redirects
-all requests /node/number to the correct page on the new blog.
+all requests /node/number to the correct page on the new blog ::
 
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} !^blog\.
+  RewriteRule ^(.*)node/(.*)$ http://blog.johanv.org/posts/node-$2 [R=301,L]
+  RewriteRule ^(.*)$ http://blog.johanv.org/$1 [R=301,L]
+
+You will have to 
 With the combination of the script and the .htaccess file, 90% of the
 migration was very easy. But - as always - the remaining 10% needs some
 manual work. Like e.g. converting the youtube links containing
@@ -96,17 +159,4 @@ them manually.
 Another thing you should do manually, is migrating attachments and images to
 your new site. Let's hope you don't have too many of them. And if so, you
 can probably write a script as well.
-
-OK, this was how I migrated my site from Drupal 6 to Nikola. I hope you
-found it interesting. If you want to, you can comment on this HPR episode
-on http://blog.johanv.org/drupal-nikola, using the disqus thingy over there. Or
-you can find `all of my website on github
-<https://github.org/johanv/blog.johanv.org>`__, and send me a pull request.
-
-Finally I want to thank Hacker Public Radio. HPR introduced me to Nikola,
-and HPR allows me to share how I did my migration. If you have something
-interesting to tell, please submit an episode to HPR yourself. If I can do
-this, you certainly can do this to.
-
-This was johanv, signing off.
 
