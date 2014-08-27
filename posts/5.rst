@@ -13,48 +13,42 @@ Antwerpen <http://www.ua.ac.be>`__. Aangezien dat onderzoek betaald werd
 met misschien wel uw belastinggeld, kan je hier nog steeds een aantal
 zaken downloaden.
 
-**Update 21/08/2013:** Bij de migratie van mijn blog van Drupal 6 naar
-Nikola, stelde ik vast dat al deze bestanden ontbraken. Ik
-vermoed dat dat gebeurd is toen ik van web hosting provider verhuisde,
-intussen al enkele jaren geleden. Moest iemand nog een kopietje hebben
-van een van de verloren artikels, neem contact op aub.
-
 Teksten, papers, presentaties
 -----------------------------
 
 Exception handling en special values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `Oneindig in floating-pointaritmetiek <files/infty.pdf>`__ (verloren gegaan)
--  `Verzamelingensystemen <files/verzsys.pdf>`_ (verloren gegaan)
+-  `Oneindig in floating-pointaritmetiek </cant/infty.pdf>`__ 
+-  `Verzamelingensystemen </cant/verzsys.pdf>`_ 
 -  `Universal semantics for computer arithmetic
-   implementations <files/sv.pdf>`__ (verloren gegaan)
+   implementations </cant/sv.pdf>`__ 
 -  `Manual
-   MpIeee <ftp://ftp.win.ua.ac.be/pub/cant/Arithmos/MpIeee.ps.gz>`__ (verloren gegaan)
--  `Vertrouwt u uw rekenmachine? <files/interval.pdf>`__ (verloren gegaan)
+   MpIeee <ftp://ftp.win.ua.ac.be/pub/cant/Arithmos/MpIeee.ps.gz>`__ 
+-  `Vertrouwt u uw rekenmachine? </cant/interval.pdf>`__ 
 -  `Blending interval and set arithmetic for maximal
-   reliability <files/intsv.pdf>`__ (verloren gegaan)
+   reliability </cant/intsv.pdf>`__ 
 
 Functiebenaderingen
 ~~~~~~~~~~~~~~~~~~~
 
--  `An introduction to continued fractions <files/cfintro.pdf>`__ (verloren gegaan)
+-  `An introduction to continued fractions </cant/cfintro.pdf>`__ 
 -  `Reliable function evaluation using continued fraction
-   expansions <files/fris.pdf>`__ (verloren gegaan)
+   expansions </cant/fris.pdf>`__ 
 -  `Betrouwbare functie-evaluatie met behulp van
-   kettingbreukontwikkelingen <files/isintro.pdf>`__ (verloren gegaan)
+   kettingbreukontwikkelingen </cant/isintro.pdf>`__ 
 -  `Propagatie van afrondingsfouten door afleidbare
-   functies <files/properr.pdf>`__ (verloren gegaan)
+   functies </cant/properr.pdf>`__ 
 -  `Effect van de argumentreductie op de foutenanalyse van
-   arctan <files/atansem.pdf>`__ (verloren gegaan)
+   arctan </cant/atansem.pdf>`__ 
 
 Foutafschattingen
 ~~~~~~~~~~~~~~~~~
 
--  `log 10 <files/log10.pdf>`__ (verloren gegaan)
--  `log 2 <files/details.pdf>`__ (verloren gegaan)
--  `atan <files/atan.pdf>`__ (verloren gegaan)
--  `acot <files/acot.pdf>`__ (verloren gegaan)
+-  `log 10 </cant/log10.pdf>`__ 
+-  `log 2 </cant/details.pdf>`__ 
+-  `atan </cant/atan.pdf>`__ 
+-  `acot </cant/acot.pdf>`__ 
 
 Software
 --------
