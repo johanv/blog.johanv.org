@@ -1,7 +1,7 @@
 .. title: Over mijzelf
-.. slug: node-2
-.. date: 2008-04-29 21:13:08
-.. tags: NULL
+.. slug: over-mijzelf
+.. date: 2014-08-29 19:35:08
+.. tags: johan
 .. link:
 .. description: 
 .. type: text
@@ -19,20 +19,12 @@ actief ben geweest.
  
 Ik ben vaak met wilde plannen bezig, die ook
 vaak even snel weer opgeborgen zijn. (Herinnert iemand zich het
-wiskundekwartiertje of beerscan? ;-)) Momenteel zijn dit de lopende
+wiskundekwartiertje, beerscan of netelug? ;-)) Momenteel zijn dit de lopende
 projecten:
 
--  `netelug <http://netelug.losderover.be>`__ - een kleine LUG voor
-   mensen uit Kessel (Nijlen) en omgeving
 -  `bierwiki <http://bierwiki.johanv.org>`__ - informatie over bieren
    onder Creative Commonslicentie
 -  de `commissie Linux <http://www.facebook.com/commissielinux>`__, een
    officieuze commissie ter promotie van Linux en Open Source in de
    Chiro.
-
-In een vorig leven heb ik nog onderzoek gedaan aan de UA.
-Aangezien dat onderzoek betaald was met overheidsgeld, vind ik dat de
-resultaten (hoewel ze niet veel voorstellen) publiek moeten zijn.
-Vandaar dat je hier een pagina vindt over `functiebenaderingen en
-exception handling <5>`__ (computeraritmetiek).
 

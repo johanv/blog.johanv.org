@@ -88,6 +88,8 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
+	('/stories/over-mijzelf.html', 'Over mijzelf'),
+	('/stories/contact.html', 'Contact'),
     ),
 }
 
@@ -384,9 +386,8 @@ style="border-width:0; margin-bottom:12px;"
 src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
-CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
-                                       author=BLOG_AUTHOR,
+CONTENT_FOOTER = 'Contents &copy; {date}         <a href="/stories/contact.html">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = CONTENT_FOOTER.format(author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year,
                                        license=LICENSE)
 
