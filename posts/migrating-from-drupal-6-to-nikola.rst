@@ -6,8 +6,11 @@
 .. description: How to migrate from Drupal 6 to Nikola
 .. type: text
 
+(I recorded an episode for Hacker Public Radio about this subject, which
+will be 'on air' on 2014-09-30. `HPR1507 <http://hackerpublicradio.org/eps.php?id=1607>`__)
+
 As promised, some details
-about how I migrated my blog from Drupal 6 to `Nikola
+about how I :doc:`migrated my blog <first-post>` from Drupal 6 to `Nikola
 <http://getnikola.com>`__.
 
 First of all some details about the Drupal site I migrated from.

@@ -35,7 +35,7 @@ send me a `pull request <https://github.com/johanv/blog.johanv.org>`_
 with your comment :-D
 
 I more or less migrated all articles of my drupal site to this new
-instance. (I will provide more details on that in a later post.)
+instance. (I will provide more details on that in :doc:`a later post <drupal-nikola>`.)
 But `there is still work to do <https://github.com/johanv/blog.johanv.org/issues>`_, 
 as you might already found out.
 
