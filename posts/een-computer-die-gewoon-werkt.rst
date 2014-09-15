@@ -1,7 +1,7 @@
 .. link: 
 .. description: De rust van een cleane computer voor 'dagelijks gebruik'
 .. tags: linux,mint,softwarefreedomday
-.. date: 2014/09/12 23:08:29
+.. date: 2014/09/15 21:44:29
 .. title: De rust van een cleane computer
 .. slug: een-computer-die-gewoon-werkt
 
