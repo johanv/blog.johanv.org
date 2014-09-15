@@ -1,7 +1,7 @@
 .. title: Installeer eens een Linuxdistributie
 .. slug: node-184
 .. date: 2011-09-14 10:51:02
-.. tags: opensource,linux
+.. tags: opensource,linux,mint,softwarefreedomday
 .. link:
 .. description: 
 .. type: text
@@ -52,7 +52,7 @@ uitdelen is voor mij goedkoper dan DVD's uitdelen :-)
 Als je weet
 waar ik werk, dan kun je een CD komen halen op mijn bureau. Er liggen er
 daar, je mag ze zo meenemen. Weet je niet waar ik werk, :doc:`contacteer me
-dan <node-155>`, en zo lang het me niet te veel kost, stuur ik een
+dan <contact>`, en zo lang het me niet te veel kost, stuur ik een
 CD'tje op. Als je weet hoe dat moet, kun je natuurlijk zelf `een CD- of
 DVD-image <http://www.linuxmint.com/download.php>`__ downloaden en
 branden.

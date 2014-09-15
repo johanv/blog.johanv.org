@@ -1,7 +1,7 @@
 .. title: Wireless networking on a Samsung Series 5 laptop with Linux Mint
 .. slug: node-207
 .. date: 2013-06-17 21:19:19
-.. tags: ubuntu,tips,linux,hardware
+.. tags: ubuntu,tips,linux,hardware,mint
 .. link:
 .. description: 
 .. type: text
