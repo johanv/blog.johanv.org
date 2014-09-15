@@ -676,7 +676,7 @@ BODY_END = """
 # Also, if you want to use a different time zone in some of your posts,
 # you can use W3C-DTF Format (ex. 2012-03-30T23:00:00+02:00)
 #
-# TIMEZONE = 'UTC'
+TIMEZONE = 'Europe/Brussels'
 
 # If webassets is installed, bundle JS and CSS to make site loading faster
 # USE_BUNDLES = True
