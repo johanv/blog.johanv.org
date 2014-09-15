@@ -64,6 +64,6 @@ een pintje :)
 
 Ik heb nog een aantal 
 `schermafbeeldingen </galleries/Screenshots_Linux_Mint_17>`_ van mijn 
-nieuwe installatie gepload. Als deze blog post je nieuwsgierig maakte, 
+nieuwe installatie geüpload. Als deze blog post je nieuwsgierig maakte, 
 ga dan zeker eens kijken.
 
