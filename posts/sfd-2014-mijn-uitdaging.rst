@@ -1,4 +1,4 @@
-.. title: Mijn uitdaging voor Software Freedom Day 2014
+.. title: Linux in de klas. Wedden voor een pintje?
 .. slug: sfd-2014-mijn-uitdaging
 .. date: 2014/09/18 21:22:59
 .. tags: linux,mint,onderwijs,softwarefreedomday
@@ -9,78 +9,111 @@
 Voor mensen die mij al langer kennen, is het geen nieuws meer. Ik ben
 een Linuxfan. Ik ben ervan overtuigd dat op de dag van vandaag `heel
 wat PC-gebruikers beter af zouden zijn met Linux
-<http://blog.johanv.org/posts/een-computer-die-gewoon-werkt.html>`_ op hun PC, in plaats van
-de Windows die er nu op draait. Ik heb al vaak aan mensen aangeboden om
+</posts/een-computer-die-gewoon-werkt.html>`_ op hun PC,
+in plaats van Windows.
+Ik heb dan ook al vaak aan mensen aangeboden om
 Linux op hun PC te installeren, maar meestal zijn ze niet zo happig.
 Onbegrijpelijk eigenlijk :-)
 
 In deze post wil ik het hebben over een bijzonder soort computers,
-waarbij een installatie van Linux echt een grote stap voorwaarts zou
+waarvoor een installatie van Linux volgens mij een grote stap vooruit zou
 zijn: de computers in de Vlaamse lagere scholen en kleuterscholen.
 
-Ik sta zelf niet in het onderwijs, dus ik moet al direct bekennen dat ik
+Ik sta zelf niet in het onderwijs. Ik moet dus bekennen dat ik
 nauwelijks weet waarover ik praat. Maar ik vang wel wat op. En ik zie
 wel eens een en ander. Computers die niet gebruikt worden omdat de les
-om is tegen dat ze zijn opgestart. Computers met software die al jaren
-niet meer geüpdatet is. Antivirussoftware die verlopen is. Of Windows
-XP, een systeem dat zelfs door Microsoft niet meer wordt ondersteund.
+om is tegen dat ze zijn opgestart. En als ze dan zijn gestart, dan
+begint het ene na het andere softwarepakket te zeuren om updates
+te installeren, of om licenties te betalen. Je ziet ook nog wel eens
+Windows XP op een schoolcomputer,
+iets dat al enkele maanden `door Microsoft wordt afgeraden
+<http://windows.microsoft.com/nl-be/windows/end-support-help>`_.
 
-Ik mag zeker niet veralgemenen, maar ik maak me sterk dat dit soort
-computers nog erg veel te vinden zijn in talrijke klassen. Er staat iets
-van IT in de eindtermen. Maar er is geen budget voor nieuwe computers.
+.. image:: /galleries/Linux_In_De_Klas/01_Windows_XP_is_dood.jpg
+
+Ik ga zeker niet veralgemenen, maar ik vermoed sterk dat dit soort
+computers nog wel veel te vinden is in de Vlaamse klassen. Er staat iets
+van IT in de eindtermen. Maar het IT-budget is vaak beperkt.
 Met alle gevolgen van dien.
 
 Ik denk dus dat het een goede zaak zou zijn om dit soort
 computers opnieuw te installeren, en wel met een Linuxsysteem
-dat werkt met oudere hardware. Maar, zoals gezegd, ik weet eigenlijk
+dat werkt met oudere hardware [#]_. Maar, zoals gezegd, ik weet eigenlijk
 niet waarover ik praat, en hoewel ik vermoed dat het doenbaar is, heb ik
 het nog nooit kunnen proberen. Laat ons daar iets aan doen; ik gooi er
 een fles bier tegenaan :-D
 
-Dus, ik heb een voorstel, voor een avontuurlijke leerkracht. Dit zijn de
-grote lijnen:
+.. image:: /galleries/Linux_In_De_Klas/02_Screenshot_Linux_Mint_XFCE.png
+
+Ik heb een voorstel. Een uitdaging voor een avontuurlijke juf of meester. 
+Dit zijn de grote lijnen:
 
 Ik krijg van jou een PC uit je klas, die de leerlingen niet graag
 gebruiken omdat hij niet goed (meer) werkt. Ik krijg die PC een week mee
 naar huis, en herinstalleer hem, zodat hij weer bruikbaar wordt. Ben je
 tevreden, dan betaal je me een pint. Ben je niet tevreden, zet ik hem
-terug in de originele toestand, en krijg je van mij een mooie 75-cl-fles
+terug in de originele toestand, en krijg jij van mij een grote fles
 lekker bier. (Desgewenst kan dat ook een fles wijn zijn, maar daar ken
-ik niet zo veel van, dus die is mogelijk minder lekker :))
+ik niet zo veel van. Mogelijk minder lekker dus.)
+
+.. image:: /galleries/Linux_In_De_Klas/03_Niet_tevreden_bier_terug.jpg
 
 Klinkt goed, toch? Hier de details:
 
-* Dit gaat alleen door als je dit mag van de IT-coördinator van je
-  school :-)
-* Voor ik Linux installeer, maak ik een back-up, zodat ik alles terug
-  kan zetten moest het niet goed aflopen.
-* Je laat me op voorhand weten waar de leerlingen de PC's in je klas
-  voor gebruiken. Het gaat uiteraard niet op om te verwachten dat je met
-  je krakkemikigste PC meer dingen kunt doen dan met je beter werkende 
-  PC's. :-)
-* Je brengt de PC naar mij, zodat ik hem kan installeren. Dat duurt
-  hoogstens een week. Daarna haal je hem terug op, en geef ik wat
-  uitleg over hoe het werkt.
-* Je gebruikt de laptop in je klas, en laat me weten hoe het loopt.
+* Dit gaat alleen door met toestemming van de IT-coördinator van jullie
+  school.
+* Voor ik Linux installeer, maak ik een kopie van de harde schijf van de
+  PC, zodat ik de oorspronkelijke toestand kan herstellen moest het niet
+  goed aflopen.
+* We overleggen even (dat kan via mail, of we spreken eens af), zodat ik
+  weet waarvoor de leerlingen de PC's in je klas gebruiken, en of er
+  speciale zaken zijn waarmee rekening gehouden moet worden.
+* Je brengt de PC naar mij, zodat ik hem kan installeren. Ik neem daar een
+  week de tijd voor. Daarna haal je hem terug op, en ik geef wat uitleg
+  over hoe het werkt.
+* Je gebruikt de PC in je klas, en laat me weten hoe dat gaat.
 * Je krijgt ondersteuning van mij. Heb je een vraag of een probleem,
-  stuur me een mail, en dan probeer ik zo snel mogelijk te antwoorden.
-  Als dat nodig is, dan kom ik ter plaatse kijken. Ik voorzie ook iets
-  dat me toelaat vanop afstand op je PC aan te loggen (via een reverse
-  ssh tunnel, maar dit ter zijde).
+  stuur me een mail, en dan probeer ik zo snel mogelijk te antwoorden [#]_.
+  Als dat nodig is, en het is niet te ver van waar ik woon of werk, dan
+  wil ik ook wel eens ter plaatse komen kijken. Ik voorzie sowieso ook
+  iets dat me zal toelaten om vanop afstand op je PC aan te loggen [#]_.
   Lukt het me niet om je probleem op te lossen, en vind je het toch een
   ernstig probleem, dan eindigt het experiment, zet ik je computer
   terug in oorspronkelijke toestand, en krijg je de fles bier erbij.
+* Als er mensen van de school dat graag hebben (IT-coördinator, 
+  IT-werkgroep, of andere), dan wil ik zeker eens
+  afspreken om van naaldje tot draadje uit te leggen hoe alles is
+  geïnstalleerd.
+* Ik beloof plechtig om verantwoord om te springen met eventuele
+  vertrouwelijke informatie die ik mogelijk te weten kom over de
+  IT-infrastructuur op de school.
 * Ik mag bloggen over het experiment.
 
-Schrik dat de leerlingen niet overweg kunnen met een experimenteel
-systeem, zou ik niet hebben. Als je niet zeker bent, kun je altijd nog
-differentiëren, en de PC laten gebruiken voor leerlingen die wat sterker
-zijn in nieuwe technologie.
+Voila. Dat is de deal. Mijn actie voor 
+`Software Freedom Day <http://softwarefreedomday.org>`_ 2014, laat
+ons zeggen. Ik vind het zelf erg spannend. Misschien lukt het, dat
+zou cool zijn. Misschien lukt het niet, en dan weet ik voor welke
+onoverkomelijke problemen ik nog oplossingen moet zoeken. Het loopt dus
+altijd goed af.
 
-Voila. Dat is de deal. Mijn actie voor Software Freedom Day 2014, laat
-ons zeggen. Ik doe dit hoogstens voor 2 personen. Maar neem gerust
-contact op als je geïnteresseerd bent, want ik verwacht eigenlijk niet
-dat ik 2 geïnteresseerden zal vinden :-) De deal blijft gelden tot Software
-Freedom Day 2015. Geen idee eigenlijk wanneer dat zal zijn, maar
-vermoedelijk 19 september 2015.
+.. image:: http://wiki.softwarefreedomday.org/Promote?action=AttachFile&do=get&target=web-banner-chat-participating-h.png
 
+Nog dit: Ik doe dit hoogstens voor 2 personen; mijn vrije tijd is
+beperkt. Maar neem gerust contact op als je geïnteresseerd bent, want
+ik verwacht eigenlijk niet dat ik 2 geïnteresseerden zal vinden :-)
+De deal blijft gelden tot Software Freedom Day 2015, vermoedelijk 19
+september 2015.
+
+.. [#] Ik denk momenteel aan 
+   `Linux Mint 17 XFCE <http://blog.linuxmint.com/?p=2656>`_. Ik
+   probeerde het al eens uit op een laptop die 7 jaar oud is, en
+   dat ging verrassend vlot. Maar afhankelijk van de specificaties
+   van de PC, is een andere distributie misschien beter.
+
+.. [#] Ik wil proberen om je mails binnen de 24 uur te beantwoorden,
+   maar ik zal dat niet garanderen. Voor mij is dit een hobby, en
+   ik heb ook nog een job en een familie. Je kent dat wel.
+
+.. [#] Dat zal verlopen via een `reverse ssh tunnel
+   <https://raymii.org/s/tutorials/Autossh_persistent_tunnels.html>`_
+   naar een PC bij mij thuis.
