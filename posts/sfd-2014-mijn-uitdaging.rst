@@ -70,8 +70,8 @@ Klinkt goed, toch? Hier de details:
   weet waarvoor de leerlingen de PC's in je klas gebruiken, en of er
   speciale zaken zijn waarmee rekening gehouden moet worden.
 * Je brengt de PC naar mij, zodat ik hem kan installeren. Ik neem daar een
-  week de tijd voor. Daarna haal je hem terug op, en ik geef wat uitleg
-  over hoe het werkt.
+  week de tijd voor. Daarna krijg je hem terug, met wat uitleg over hoe
+  alles werkt.
 * Je gebruikt de PC in je klas, en laat me weten hoe dat gaat.
 * Je krijgt ondersteuning van mij. Heb je een vraag of een probleem,
   stuur me een mail, en dan probeer ik zo snel mogelijk te antwoorden [#]_.
@@ -80,7 +80,7 @@ Klinkt goed, toch? Hier de details:
   iets dat me zal toelaten om vanop afstand op je PC aan te loggen [#]_.
   Lukt het me niet om je probleem op te lossen, en vind je het toch een
   ernstig probleem, dan eindigt het experiment, zet ik je computer
-  terug in oorspronkelijke toestand, en krijg je de fles bier erbij.
+  terug in oorspronkelijke toestand. De fles bier krijg je er dan bij.
 * Als er mensen van de school dat graag hebben (IT-coördinator, 
   IT-werkgroep, of andere), dan wil ik zeker eens
   afspreken om van naaldje tot draadje uit te leggen hoe alles is
@@ -101,8 +101,9 @@ altijd goed af.
 
 Nog dit: Ik doe dit hoogstens voor 2 personen; mijn vrije tijd is
 beperkt. Maar neem gerust contact op als je geïnteresseerd bent, want
-ik verwacht eigenlijk niet dat ik 2 geïnteresseerden zal vinden :-)
-De deal blijft gelden tot Software Freedom Day 2015, vermoedelijk 19
+de kans is groot dat er weinig mensen op deze oproep reageren.
+Dit voorstel blijft gelden tot de Software Freedom Day van volgend jaar,
+ik vermoed 19
 september 2015.
 
 .. [#] Ik denk momenteel aan 
