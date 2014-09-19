@@ -1,6 +1,6 @@
 .. title: Linux in de klas. Wedden voor een pintje?
 .. slug: sfd-2014-mijn-uitdaging
-.. date: 2014/09/18 21:22:59
+.. date: 2014/09/19 21:43:59
 .. tags: linux,mint,onderwijs,softwarefreedomday
 .. link: 
 .. description: Beste leerkracht, ik ga de uitdaging aan.
