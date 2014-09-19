@@ -50,7 +50,8 @@ Dit zijn de grote lijnen:
 
 Ik krijg van jou een PC uit je klas, die de leerlingen niet graag
 gebruiken omdat hij niet goed (meer) werkt. Ik krijg die PC een week mee
-naar huis, en herinstalleer hem, zodat hij weer bruikbaar wordt. Ben je
+naar huis, en herinstalleer hem, met de bedoeling hem terug bruikbaar
+te maken. Ben je
 tevreden, dan betaal je me een pint. Ben je niet tevreden, zet ik hem
 terug in de originele toestand, en krijg jij van mij een grote fles
 lekker bier. (Desgewenst kan dat ook een fles wijn zijn, maar daar ken
