@@ -85,7 +85,7 @@ Klinkt goed, toch? Hier de details:
   IT-werkgroep, of andere), dan wil ik zeker eens
   afspreken om van naaldje tot draadje uit te leggen hoe alles is
   geïnstalleerd.
-* Ik beloof plechtig om verantwoord om te springen met eventuele
+* Ik beloof plechtig om verantwoord om te springen met
   vertrouwelijke informatie die ik mogelijk te weten kom over de
   IT-infrastructuur op de school.
 * Ik mag bloggen over het experiment.
