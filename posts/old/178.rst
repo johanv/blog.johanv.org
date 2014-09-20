@@ -27,11 +27,14 @@ follows:\
   su -c "yum install akmod-nvidia xorg-x11-drv-nvidia"
   
 
-
-
 I
 think I have to install *akmod-nvidia* instead of *kmod-nvidia* because
 F15 is still in beta, but I am not sure about that.
+
+**Update:** The following doesn't apply anymore for recent versions of
+Fedora. If you have troubles with your display configuration, I recommend
+trying `arandr <http://christian.amsuess.com/tools/arandr/>`_. It allows
+saving your configuration as a shell script, which is cool.
 
 The
 *nvidia-settings* tool seems very buggy, and I didn't manage to generate
