@@ -1,7 +1,7 @@
 .. title: HTC magic van Android 1.5 naar Android 2.2
 .. slug: node-140
 .. date: 2010-10-14 16:00:52
-.. tags: linux,android
+.. tags: linux,android,cyanogenmod
 .. link:
 .. description: 
 .. type: text
@@ -183,24 +183,24 @@ kabel, maar zorg ervoor dat de sd-kaart niet 'gemount' wordt. 'cd' naar
 de 'tools'-folder van de android SDK, en...
 
 #. ``sudo ./adb devices``
-Je telefoon wordt gedetecteerd.
+   Je telefoon wordt gedetecteerd.
    Waarschijnlijk wel, want anders had je daarnet de image ook niet
    kunnen booten.
 #. ``sudo ./adb push /path/to/recovery-RA-sapphire-vxxxxH.img /sdcard/recovery.img``\ ˙
-(Niet
+   (Niet
    zeker of die sudo hier nodig is.) Dit kopieert gewoon het
    imagebestand naar je sd-kaart. Maar dat werkt enkel op deze manier
    als de sd-kaart niet gekoppeld is, vandaar.
 #. ``sudo ./adb shell``
-Dit opent een shell voor je telefoon.
+   Dit opent een shell voor je telefoon.
 #. ``su``
-Het lijkt alsof de shell blijft hangen, maar op het
+   Het lijkt alsof de shell blijft hangen, maar op het
    schermpje van je telefoon verschijnt de boodschap dat een proces
    su-rechten wil. Daar zal je moeten bevestigen. Hiervoor heb je een
    10-tal seconden tijd. Ben je te laat, doe je het gewoon nog eens
    opnieuw.
 #. ``flash_image recovery /sdcard/recovery.img``
-Dit overschrijft de
+   Dit overschrijft de
    recovery image van je telefoon.
 
 Als je de telefoon nu reboot terwijl je het huisje ingedrukt

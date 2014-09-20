@@ -1,7 +1,7 @@
 .. title: Upgrading the Xperia Mini Pro from CM 7.2 to CM 9
 .. slug: node-197
 .. date: 2012-08-24 20:55:31
-.. tags: opensource,android
+.. tags: opensource,android,cyanogenmod
 .. link:
 .. description: 
 .. type: text

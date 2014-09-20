@@ -1,7 +1,7 @@
 .. title: Cyanogenmod on the Samsung Galaxy S wifi 5 (Samsung Galaxy Player 5)
 .. slug: node-203
 .. date: 2013-03-20 22:56:49
-.. tags: android
+.. tags: android,cyanogenmod
 .. link:
 .. description: 
 .. type: text
