@@ -1,7 +1,7 @@
 .. title: Dell Precision M4500, fedora, nvidia and dual screen
 .. slug: node-178
 .. date: 2011-05-16 20:06:18
-.. tags: linux,fedora
+.. tags: linux,fedora,nvidia
 .. link:
 .. description: 
 .. type: text

@@ -1,7 +1,7 @@
 .. title: Dell Precision M4500, Debian Wheezy en nVidia drivers
 .. slug: node-191
 .. date: 2012-02-27 21:24:11
-.. tags: linux
+.. tags: linux,nvidia
 .. link:
 .. description: 
 .. type: text
@@ -17,11 +17,14 @@ vermoed dat elke distributie een analoge bug zal hebben.)
 Dus ben
 ik wel verplicht om de freedom hating proprietary driver te installeren.
 Ik haalde de inspiratie op de `Debian
-Wiki <http://wiki.debian.org/NvidiaGraphicsDrivers>`__; op deze manier
+Wiki <http://wiki.debian.org/NvidiaGraphicsDrivers>`_; op deze manier
 werkt het:
-``
+
+::
+
   apt-get install linux-headers-`uname -r` #dit is misschien niet nodig
-  apt-get install nvidia-kernel-dkms nvidia-settings``
+  apt-get install nvidia-kernel-dkms nvidia-settings
+
 en
 zet het volgende in
 ``/etc/X11/xorg.conf``:

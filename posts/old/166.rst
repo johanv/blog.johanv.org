@@ -1,7 +1,7 @@
 .. title: Fedora/NVidia font problem
 .. slug: node-166
 .. date: 2011-03-01 17:14:17
-.. tags: fedora,linux,tips
+.. tags: fedora,linux,tips,nvidia
 .. link:
 .. description: 
 .. type: text
