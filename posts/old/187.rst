@@ -25,12 +25,9 @@ tools:
 
 Services
 
-ntp
-
-cups
-
-networkmanager (interesting for laptop; replace standard network service
-by networkmanager)
+-  ntp
+-  cups
+-  networkmanager (interesting for laptop; replace standard network service by networkmanager)
 
 Sound
 
