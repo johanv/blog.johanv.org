@@ -20,9 +20,9 @@ waarvoor een installatie van Linux volgens mij een grote stap vooruit zou
 zijn: de computers in de Vlaamse lagere scholen en kleuterscholen.
 
 Ik sta zelf niet in het onderwijs. Ik moet dus bekennen dat ik
-nauwelijks weet waarover ik praat. Maar ik vang wel wat op. En ik zie
-wel eens een en ander. Computers die niet gebruikt worden omdat de les
-om is tegen dat ze zijn opgestart. En als ze dan zijn gestart, dan
+nauwelijks weet waarover ik praat. Maar ik vang wel eens wat op.
+Computers die niet gebruikt worden omdat de les
+om is tegen dat ze zijn opgestart. En als ze dan toch starten, dan
 begint het ene na het andere softwarepakket te zeuren om updates
 te installeren, of om licenties te betalen. Je ziet ook nog wel eens
 Windows XP op een schoolcomputer,
@@ -32,8 +32,8 @@ iets dat al enkele maanden `door Microsoft wordt afgeraden
 .. image:: /galleries/Linux_In_De_Klas/01_Windows_XP_is_dood.jpg
 
 Ik ga zeker niet veralgemenen, maar ik vermoed sterk dat dit soort
-computers nog wel veel te vinden is in de Vlaamse klassen. Er staat iets
-van IT in de eindtermen. Maar het IT-budget is vaak beperkt.
+computers nog te veel te vinden is in de Vlaamse klassen. Er staat iets
+van IT in de eindtermen, maar het IT-budget is vaak beperkt.
 Met alle gevolgen van dien.
 
 Ik denk dus dat het een goede zaak zou zijn om dit soort
