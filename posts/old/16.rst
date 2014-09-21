@@ -19,7 +19,6 @@ information. This is just a reminder for myself.)
    and add ``ath_pci`` to ``/etc/modules``.
 -  Add the following to ``/etc/rc.local`` to enable the wireless
    led:
-\ 
 
 ::
 
@@ -39,7 +38,10 @@ information. This is just a reminder for myself.)
    the cpu temperature (hexacecimal), and add this line to
    ``/etc/rc.local`` to keep the fan down if the CPU temperature is
    below 70°:
-\ ``/usr/local/bin/acerfand``
+
+::
+
+  /usr/local/bin/acerfand
 
 -  Edit ``/etc/fstab`` and change the the option “relatime” to
    “noatime”.
@@ -63,7 +65,6 @@ information. This is just a reminder for myself.)
 -  For power saving, create a file ``/etc/sysctl.d/60-aspireone.conf``
    with the following
    content:
-\ 
 
 ::
 
@@ -83,7 +84,7 @@ information. This is just a reminder for myself.)
   
 
 
-Add
+-  Add
    the following to
    ``/etc/rc.local``:
 
@@ -106,8 +107,7 @@ Add
 
 
 
--  
-Add the following line to
+-  Add the following line to
    ``/etc/profile``:
 
 
@@ -121,7 +121,6 @@ Add the following line to
 
 -  Change the section 'Device' in
    ``/etc/X11/xorg.conf``.
-\ 
 
 ::
 
@@ -140,10 +139,9 @@ Add the following line to
   
 
 
-and
+-  and
    add this line to the 'Monitor'
    section:
-\ 
 
 ::
 
