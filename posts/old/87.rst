@@ -7,13 +7,12 @@
 .. type: text
 
 Vorige week (op 16 december) bereikten `Microsoft en Europa een
-overenkomst <http://www.fd.nl/artikel/13804163/kroes-microsoft-begraven-strijdbijl-browsers>:doc:`__
-over het beruchte `keuzescherm <node-23>`, waarmee de gebruiker kan
+overenkomst <http://www.fd.nl/artikel/13804163/kroes-microsoft-begraven-strijdbijl-browsers>`_
+over het beruchte :doc:`keuzescherm <node-23>`, waarmee de gebruiker kan
 kiezen met welk programma hij op het web wil surfen.
 
 Naar
-aanleiding van dit akkoord `publiceerde Microsoft een
-mededeling <http://www.microsoft.com/presspass/press/2009/dec09/12-16statement.mspx>`__
+aanleiding van dit akkoord `publiceerde Microsoft een mededeling <http://www.microsoft.com/presspass/press/2009/dec09/12-16statement.mspx>`_
 over zijn beleid aangaande browsers en ‘interoperabiliteit’.
 
 De
