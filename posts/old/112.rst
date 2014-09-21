@@ -8,6 +8,5 @@
 
 Het zit Microsoft niet mee. Er zijn blijkbaar gevallen gerapporteerd van
 Windows Mobile gebruikers
- `die de inbox van iemand anders te zien
-kregen <http://www.techzine.nl/nieuws/22543/microsoft-blunderde-met-windows-live-hotmail.html>`__
+`die de inbox van iemand anders te zien kregen <http://www.techzine.nl/nieuws/22543/microsoft-blunderde-met-windows-live-hotmail.html>`_
 na zich aan te melden bij Hotmail. Spijtig toch.
