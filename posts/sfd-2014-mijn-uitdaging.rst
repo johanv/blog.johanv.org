@@ -7,9 +7,9 @@
 .. type: text
 
 Voor mensen die mij al langer kennen, is het geen nieuws meer. Ik ben
-een Linuxfan. Ik ben ervan overtuigd dat op de dag van vandaag `heel
+een Linuxfan. Ik ben ervan overtuigd dat op de dag van vandaag :doc:`heel
 wat PC-gebruikers beter af zouden zijn met Linux
-</posts/een-computer-die-gewoon-werkt.html>`_ op hun PC,
+<een-computer-die-gewoon-werkt>` op hun PC,
 in plaats van Windows.
 Ik heb dan ook al vaak aan mensen aangeboden om
 Linux op hun PC te installeren, maar meestal zijn ze niet zo happig.
