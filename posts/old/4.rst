@@ -1,29 +1,30 @@
 .. title: Websites
 .. slug: node-4
 .. date: 2008-04-30 13:22:07
-.. tags: NULL
+.. tags:
 .. link:
 .. description: 
 .. type: text
 
+*UPDATE:* Dit is allemaal verouderd. Recente info over mijzelf, vind
+je bij :doc:`over mijzelf <over-mijzelf>`. ;-)
+
 Informaticus zijnde is het niet verrassend dat ik een aantal websites
 beheer(de).
 
--  
-\ `www.losderover.be <.>`__. Mijn persoonlijke website heb je
+-  `www.losderover.be <.>`_. Mijn persoonlijke website heb je
    blijkbaar al gevonden. Dit is steeds een behoorlijk statische site
    geweest. Nu ik Drupal gebruik, is het alleszins gemakkelijker om de
    inhoud aan te passen, maar de toekomst zal uitmaken of ik dit ook
    daadwerkelijk zal doen.
-
--  `jeugdraad.zandhoven.org <http://jeugdraad.zandhoven.org/>`__: de
+-  `jeugdraad.zandhoven.org <http://jeugdraad.zandhoven.org/>`_: de
    website van de Zandhovense jeugdraad. Dit is ook een Drupalsysteem,
    al zijn er nog een aantal zaken die buiten Drupal gebeuren, en daar
    moet ik nog van af.
--  `www.debanier.be <http://www.debanier.be/>`__. De website van De
+-  `www.debanier.be <http://www.debanier.be/>`_. De website van De
    Banier heb ik omgezet van een tabelgebaseerde site naar een site die
    css gebruikt, en de webstandaarden respecteert.
--  `www.gewestpallieter.be <http://www.gewestpallieter.be>`__. Ik ben
+-  `www.gewestpallieter.be <http://www.gewestpallieter.be>`_. Ik ben
    ondertussen webmaster-af voor gewest Pallieter. Maar ik heb deze site
    ‘in den tijd’ opgezet, en blijkbaar wordt hij nog steeds gebruikt.
 
