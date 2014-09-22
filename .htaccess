@@ -1,1 +1,5 @@
 DirectoryIndex index.html 
+
+RewriteEngine On
+RewriteRule ^posts/node-([0-9]*) http://blog.johanv.org/posts/old/node-$1.html [R=301,L]
+
