@@ -1,7 +1,7 @@
 .. title: Welkom op mijn website
 .. slug: node-1
 .. date: 2008-04-25 16:19:08
-.. tags: NULL
+.. tags: johanv.org
 .. link:
 .. description: 
 .. type: text

@@ -1,7 +1,7 @@
 .. title: Twitteren is woord van het jaar
 .. slug: node-69
 .. date: 2009-11-23 08:10:21
-.. tags: NULL
+.. tags:
 .. link:
 .. description: 
 .. type: text
