@@ -1,7 +1,7 @@
 .. title: Aan de slag met identi.ca
 .. slug: node-175
 .. date: 2011-04-29 13:40:38
-.. tags: NULL
+.. tags: identi.ca
 .. link:
 .. description: 
 .. type: text

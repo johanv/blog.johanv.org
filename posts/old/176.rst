@@ -1,7 +1,7 @@
 .. title: Integratie met Facebook en Twitter
 .. slug: node-176
 .. date: 2011-04-30 14:40:33
-.. tags: NULL
+.. tags: identi.ca
 .. link:
 .. description: 
 .. type: text

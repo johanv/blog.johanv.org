@@ -1,7 +1,7 @@
 .. title: Wat maakt identi.ca beter voor microblogging dan andere sociale netwerken?
 .. slug: node-173
 .. date: 2011-04-23 22:00:54
-.. tags: NULL
+.. tags: identi.ca
 .. link:
 .. description: 
 .. type: text

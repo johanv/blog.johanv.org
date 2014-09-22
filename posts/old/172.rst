@@ -1,7 +1,7 @@
 .. title: Wat is microblogging?
 .. slug: node-172
 .. date: 2011-04-22 12:32:24
-.. tags: NULL
+.. tags: identi.ca
 .. link:
 .. description: 
 .. type: text

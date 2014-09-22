@@ -1,7 +1,7 @@
 .. title: De beperkingen van identi.ca
 .. slug: node-174
 .. date: 2011-04-29 13:10:08
-.. tags: NULL
+.. tags: identi.ca
 .. link:
 .. description: 
 .. type: text
