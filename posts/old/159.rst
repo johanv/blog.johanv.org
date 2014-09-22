@@ -1,7 +1,7 @@
 .. title: Blog geüpgraded naar Drupal 6
 .. slug: node-159
 .. date: 2010-12-27 07:39:19
-.. tags: NULL
+.. tags: johanv.org,drupal
 .. link:
 .. description: 
 .. type: text
