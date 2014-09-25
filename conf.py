@@ -246,7 +246,6 @@ COMPILERS = {
 # It seems that it sets the pwd to the base dir of the nikola
 # project. Which is cool :-)
 DEPLOY_COMMANDS = [
-	'cp .htaccess output/',
 	'rsync --delete -pave ssh output/ johanv@johanv.org:www/blog.johanv.org/',
 ]
 
