@@ -242,7 +242,13 @@ COMPILERS = {
 # And then do a backup, or run `nikola ping` from the `ping`
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+
+# It seems that it sets the pwd to the base dir of the nikola
+# project. Which is cool :-)
+DEPLOY_COMMANDS = [
+	'cp .htaccess output/',
+	'rsync --delete -pave ssh output/ johanv@johanv.org:www/blog.johanv.org/',
+]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
