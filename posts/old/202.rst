@@ -109,8 +109,8 @@ Het is ook niet zo vanzelfsprekend om als mooi document af te drukken.
 En ik vind de HTML-tags verveldend om in te tikken. Al zal dat
 persoonlijk zijn.
 
-Markdown
-~~~~~~~~
+Markdown [#]_
+~~~~~~~~~~~~~
 
 En nu kom ik bij de kern van mijn betoog: Markdown. Je zult me niet
 horen vertellen dat markdown perfect is, maar het is tamelijk bekend
@@ -171,20 +171,11 @@ Windows-line-endings, want anders weet notepad niet wat er gebeurt :-)
 Demo
 ----
 
-Deze tekst is uiteraard ook geschreven in markdown. Ter illustratie geef
-ik je de brontekst mee, en de pdf die ik maakte via een conversie naar
-LaTeX.
+Deze tekst was oorsrponkelijk ook geschreven in markdown.
+Ter illustratie geef
+ik je de `brontekst </markdown/tekstverwerkers.md.txt>`_ mee, 
+en de `pdf </markdown/tekstverwerkers.pdf>`_ die ik maakte 
+via een conversie naar LaTeX.
 
-Deze tekst is ook beschikbaar op
-`github <https://github.com/johanv/randomtexts/blob/master/tekstverwerkers.md>`__.
-Daar kun je ook vragen of opmerkingen kwijt; post gerust een ticket, of
-stuur een pull request.
-
-+-------------------------------------------------------------------------------------------------------------------+------------+
-| Bijlage                                                                                                           | Grootte    |
-+===================================================================================================================+============+
-| `tekstverwerkers.pdf <http://drupal.johanv.org/sites/johan.zandhoven.org/files/tekstverwerkers.pdf>`__            | 71.36 KB   |
-+-------------------------------------------------------------------------------------------------------------------+------------+
-| `tekstverwerkers.md\_.txt <http://drupal.johanv.org/sites/johan.zandhoven.org/files/tekstverwerkers.md_.txt>`__   | 7.07 KB    |
-+-------------------------------------------------------------------------------------------------------------------+------------+
-
+.. [#] Markdown is op dit moment een beetje passé. De opvolger
+       heet `commonmark <http://commonmark.org/>`_.
