@@ -1,0 +1,74 @@
+# Tekstverwerkers zijn overrated
+
+* Deze tekst is vrijgegeven onder een [CC-by-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)-licentie.
+* Je vindt deze tekst ook [op mijn blog](http://johanv.org/node/202).
+
+Tekstverwerkers zijn overrated. Ze worden te vaak gebruikt voor zaken waarvoor betere alternatieven bestaan. Typisch voorbeeld: om een verslag te typen, om een manier van werken te documenteren, of om een visie op een bepaald onderwerp uit de doeken te doen, grijpen veel mensen naar Microsoft Word. Slecht idee. LibreOffice Writer dan maar? Al even erg.
+Als je een tekst wilt maken waarbij
+
+* de inhoud belangrijk is
+* de structuur belangrijk is
+* de manier waarop hij opgemaakt minder belangrijk is dan dat hij consequent opgemaakt is
+* je makkelijk moet kunnen samenwerken met andere personen
+
+dan gebruik je beter iets anders dan een typische tekstverwerker.
+
+## Waar slaan de tekstverwerkers de bal mis?
+
+Ik zie drie grote problemen bij de meest gebruikte tekstverwerkers.
+
+### Fouten in de opmaak
+
+Als de manier waarop je tekst opgemaakt is niet belangrijk is, dan wil je weinig tijd spenderen aan het opmaken van je tekst. Met een typische tekstverwerker resulteert zoiets in een lelijke tekst. 'Bullets' in een geordende lijst die verkeerd geïndenteerd zijn. Lettertypes die niet meer kloppen nadat je iets uit een andere tekst hebt gekopieerd. De manier waarop titeltjes worden weergegeven is inconsequent, omdat contributor b dat op een andere manier doet dan contributor a. En de ene dan nog eens een andere tekstverwerker gebruiken dan de andere, dan is het hek vaak helemaal van de dam.
+
+Als je met meerdere personen aan een document werkt waarvan de opmaak niet belangrijk is, en je gebruikt hiervoor een klassieke tekstverwerker, dan resulteert dat vaak in een lelijk document. En dat is jammer.
+
+
+### De onderschatte leercurve
+
+Ervaren gebruikers van een tekstverwerker zullen argumenteren dat je bovenstaande problemen kunt vermijden, als je de tekstverwerker maar op de juiste manier gebruikt. Maar dat wil zeggen dat de mensen waarmee je samenwerkt, de tekstverwerker ook moeten beheersen. Een fout is immers snel gemaakt. Als je met iemand moet samenwerken aan een tekst, dan is het jammer dat je eerst tijd moet investeren in het aanleren van het correct gebruik van een tekstverwerker. Of dat je achteraf opmaakfouten moet verbeteren. Het schrijven van de tekst moet mogelijk zijn met supereenvoudige technologie, zodat je zonder veel opleiding aan de slag kunt.
+
+Met hun WYSYWYG-interfaces geven moderne tekstverwerkers de indruk om makkelijk in gebruik te zijn. Een kind van 3 kan een tekst maken. Maar eender wie die zich een geavanceerde gebruiker van een bepaalde tekstverwerker noemt, zal beamen dat er erg veel manieren zijn om die tekstverwerker verkeerd te gebruiken.
+
+### Mooi is het niet
+
+Het is misschien persoonlijk, maar heel wat teksten die in Word gemaakt zijn, zijn niet mooi. Het is niet moeilijk om lelijke teksten te maken met Word-achtigen, en het gebeurt massaal. Sommige gebruikers moet je beschermen tegen de comic-sansen van deze wereld.
+
+## Alternatieven
+
+Er zijn alternatieven. Waarmee ik niet  LibreOffice, Google Docs of Abiword bedoel, want die zijn in hetzelfde bedje ziek als Microsoft Word. We gaan op zoek naar iets volledig anders.  
+
+### LaTeX
+
+LaTeX is erg goed als je wiskunde nodig hebt in je tekst. Als je met iemand anders samenwerkt aan een wiskundige tekst, dan kiezen jullie sowieso voor LaTeX, want er is gewoon niets anders. Maar als je tekst niet over wiskunde gaat, en je moet samenwerken met iemand anders, dan is LaTeX meestal geen optie. De meerderheid van de mensen wordt erdoor afgeschrikt, omdat de broncode er erg ingewikkeld uitziet.
+
+### Plain text
+
+Plain text is ook een optie, maar de mogelijkheden om tekst op te maken zijn echt te beperkt. Plain text is goed om gauw een mailtje te sturen, maar van zodra je iets van opmaak nodig hebt, volstaat het niet meer.
+
+### HTML
+
+HTML is een heel pak rijker dan plain text. Maar er blijven wel wat nadelen aan gekoppeld. De broncode is nog altijd vrij moeilijk leesbaar. Het is ook niet zo vanzelfsprekend om als mooi document af te drukken. En ik vind de HTML-tags verveldend om in te tikken. Al zal dat persoonlijk zijn.
+
+### Markdown
+
+En nu kom ik bij de kern van mijn betoog: Markdown. Je zult me niet horen vertellen dat markdown perfect is, maar het is tamelijk bekend (alles is relatief uiteraard), en de leercurve is laag.
+
+Een markdownbestand bestaat uit platte tekst, waarbij de meta-informatie over de structuur aangeduid wordt met symbolen zoals de asterisk of het hekje. Op die manier blijft de brontekst erg leesbaar, en zie je er gemakkelijk de structuur in. Een tekstdocument aanpassen kan vrijwel iedereen, en omdat de mogelijkheden om structuur te brengen beperkt zijn, kun je er ook weinig fouten mee maken.
+
+Tekst is natuurlijk maar tekst, maar markdown kan op veel manieren als bron gebruikt worden van een echte afgewerkte tekst.
+
+Zo zijn er een aantal blogs en webforums die markdown aanvaarden als invoerformaat. En ook github kent markdown: als de mensen waarmee je aan een tekst samenwerkt met git overweg kunnen, dan laat github het resultaat mooi geformatteerd zien. Bovendien zijn markdownteksten erg interessant voor versiecontrolesystemen, net omdat ze plain text zijn.
+
+Dat gebeurt allemaal op het web, maar je kunt ook ooffline teksteditors installeren, die je een live preview geven van de markdown die je aan het tikken bent ([ReText](http://sourceforge.net/p/retext/home/ReText/), [Markdownpad](http://markdownpad.com/)).
+
+En kun je overweg met de command line, dan is er [pandoc](http://johnmacfarlane.net/pandoc/) om je markdowndocumenten om te zetten naar LaTeX (als je mooie output wilt), Word (voor conservatieve lezers), HTML en sommige wikiformaten.
+
+## Beperkingen van markdown
+
+Is markdown het ideale alternatief voor office? Nee, want markdown heeft beperkingen. En er is geen duidelijke standaard. Afbeeldingen in je tekst zetten, is vaak niet ondersteund. Net als tabellen. Bovendien mist het op dit moment nog wel wat features, zoals voetnoten.
+
+Op dat vlak scoort [dokuwiki](https://www.dokuwiki.org/) mijns inziens een pak beter. Maar helaas: dokuwiki wordt minder gebruikt dan markdown. Je hebt er geen standalone editors voor, en github herkent het ook niet. Dus toch maar markdown. Of misschien wordt het tijd om dokuwiki-support toe te voegen aan pandoc of retext. :)
+
+Een ander nadeel is dat de meeste mensen markdown nog niet kennen. En erger nog: Windows kent het ook niet (of wil het niet kennen). Zoals gezegd zijn markdowndocumenten gewoon plain text files, typisch met extensie .md. Maar als als je probeert zo'n document te openen onder Windows, dan krijg je het bericht dat het bestandsformaat niet herkend wordt. Als je samenwerkt aan een document met een Windowsuser die het verschil niet kent tussen plain text en binary, geef je je markdownbestanden best een .txt-extensie. En als je zelf geen Windows gebruikt, zorg er dan voor dat je Windows-collega een versie krijgt met Windows-line-endings, want anders weet notepad niet wat er gebeurt :-)
+
