@@ -8,7 +8,7 @@
 .. type: text
 
 Ik gebruik Linux sinds eind 1999. Dat is dus al 15 jaar.
-Ik probeer dus ook al bijna 15 jaar lang om andere mensen te overtuigen
+Ik probeer ook al bijna 15 jaar lang om andere mensen te overtuigen
 om ook Linux te proberen. En ik moet bekennen dat ik daarbij
 erg vaak verkeerde argumenten heb gebruikt. Na 15 jaar is het tijd om een
 aantal misverstanden de wereld uit te helpen, en jullie de echte reden te
@@ -126,15 +126,139 @@ maneschijn: het gaat er soms erg onbeschoft aan toe, `zoals Lennart Poettering a
 in een post op Google+. Poettering is zelf ook niet onbesproken, maar een
 fout van één persoon is geen excuus voor een ander om fouten te maken.
 
+Microsoft is een vijand die bestreden moet worden
+=================================================
+Dit argument heb ik in het verleden vaak gebruikt. En volgens mij ook
+terecht. Maar vandaag is dit niet meer van toepassing. De dagen dat
+Microsoft de enige speler op de markt was, zijn voorbij. Ik heb net eens
+opgezocht welke besturingssystemen de bezoekers van de `website van
+Chirojeugd Vlaanderen <https://www.chiro.be>`_ gebruiken. Het aandeel van
+Windows is maar 65%. IOS (iPhone en iPad) is goed voor 15%. Macintosh en
+Android nemen beide 9% voor hun rekening. Windows is niet meer dominant,
+en dat weten ze erg goed bij Microsoft.
 
+De laatste jaren zet Microsoft meer en meer in op interoperability en
+open source. In de nabije toekomst zul je .NET-webtoepassingen kunnen
+hosten vanop een Linuxserver met mono. Er wordt gewerkt aan Microsoft
+Office voor Android en IOS. Een heel aantal .NET-libraries die Microsoft
+zelf ontwikkelt, zijn beschikbaar onder Apachelicentie. Windows wordt op
+termijn wellicht gratis, net zoals Android. 
 
+Toegegeven, Microsoft is en blijft een veelkoppig monster. Terwijl een
+van de koppen toenadering zoekt tot open-sourceprojecten, spant een
+andere poot rechtszaken aan over softwarepatenten. Jeremy Allison, de
+bezieler van het Samba-project, wist tijdens FOSDEM 2013 te vertellen dat
+hij erg goed kon samenwerken met Microsft voor de ontwikkeling van Samba
+4. Langs de andere kant was hij erg blij dat hij voor de gelegenheid eens
+naar Brussel kon komen voor FOSDEM, want doorgaans moest hij naar Brussel
+voor rechtszaken.
 
-Waarom wel
-==========
-* vrije software
-* makkelijke software-installatie
-* geen crapware
-* gratis nieuwere versies
-* goedkoop voor als je iets anders wilt proberen
+Maar desondanks denk ik dat er een kentering is gebeurd bij Microsoft. Ik
+hoor meer positieve verhalen dan vroeger, ze zijn niet meer de te
+bevechten vijand. Die tijd is voorbij.
+
+De bedrijven die je vandaag in het oog moet houden, dat zijn Apple en
+Google. Apple omdat ze willen controleren wat je wel en niet mag. En
+Google omdat ze meer en meer afstappen van het open internet. Google talk
+ondersteunde vroeger het XMPP-protocol, waardoor je Google talk kon
+gebruiken met erg veel messaging-toepassingen. Die support hebben ze
+laten vallen. Google reader, de webtoepassing waarmee je je vroeger je
+rss-feeds kon beheren, bestaat niet meer. Google wil dat je Google+
+gebruikt om op de hoogte te blijven. De API van Google+ staat nog altijd
+niet op punt.
+
+Je kunt LibreOffice en Thunderbird gebruiken; meer heb je niet nodig.
+=====================================================================
+Serieus? Office en mail het enige dat je nodig hebt? In 2000 misschien,
+maar vandaag? Ik denk het niet.
+Ik denk dat :doc:`Office net hetgene is dat je niet nodig hebt
+<node-202>`. Als je al je werk in Office doet, of in je mail client, 
+dan ben je volgens mij
+verkeerd bezig. Wat je volgens mij wel nodig hebt, is een browser en een
+fatsoenlijke text editor. En een calculator. Als het echt nodig is, ook
+een spreadsheet. En als je dat allemaal hebt, dan ben je al ver. (De
+meeste Linuxdistributies hebben dit trouwens allemaal. Dus vervang dit
+argument maar door 'Je hebt out of the box alle software die je nodig
+hebt.' Dat is overigens iets waar ze bij Microsoft echt iets aan moeten
+doen. Een fatsoenlijke texteditor meeleveren. Hij moet niet veel kunnen,
+maar wel line endings van een ander systeem herkennen. Maar dat is een
+ander verhaal.
+
+Conclusie
+=========
+Zijn er dan eigenlijk nog redenen om Linux te gebruiken? Uiteraard. Ik
+ben nog steeds een overtuigde Linuxgebruiker, en ik kan nog altijd de
+meerwaarde verdedigen. Hier zit iedereen op te wachten: de échte redenen
+waarom iedereen Linux zou moeten proberen.
+
+Vrije software rules
+--------------------
+Linux is vrije software, en het overgrote deel van de toepassingen die
+meegeleverd worden met een Linuxdistributie is dat ook. Als je vrije
+software krijgt aangeleverd, dan heb je per definitie toegang tot de
+broncode van die software. Dat wil zeggen dat je kunt nakijken of die
+software geen dingen doet die je niet graag hebt. Of, misschien meer
+realistisch, dat je een onafhankelijke partij kunt laten nakijken of je
+software geen zaken achter je rug doet.
+
+Als je geen broncode krijgt bij je software, dan moet je vertrouwen op je
+leverancier dat je software geen informatie doorstuurt als jij dat niet
+wilt. En dan moet je er ook op vertrouwen dat je leverancier niet vanop
+afstand zaken op jouw computer kan doen die je niet wilt. Dit wort hoe
+langer hoe belangrijker als er meer en meer toestellen op het internet
+worden aangesloten. Stel dat je auto een internetverbinding heeft. Wie
+kan er zeggen dat leveranciers of de overheid niet op een of andere
+manier jouw auto kan doen stilvallen. En als dat al zo is, hoe kun je
+zeker zijn dat mensen met kwade bedoelingen niet hetzelfde kunnen doen.
+
+Vrije software is de enige garantie dat je controle behoudt over het doen
+en laten van je toestellen. Die controle mogen we niet laten schieten.
+
+Een groot aanbod van makkelijk te installeren softwarepakketten
+---------------------------------------------------------------
+Als je een van de grotere Linuxdistributie installeert, dan heb je toegang tot
+een groot aanbod aan softwarepakketten, die beschikbaar zijn in de
+zogenaamde software repository. Dit is vergelijkbaar met een app store.
+Wil je een toepassing installeren om foto's of audio te bewerken, heb je
+een programmeeromgeving nodig voor eender welke programmeertaal: het
+wordt voor jouw gedownload. Je moet je downloads niet door een antivirus
+halen, want alwat in de repository van je distributie zit, is
+gecontroleerd door je distributie, en tegenwoordig ook digitaal
+ondertekend, zodat er niet mee gefoefeld kan worden.
+
+Beveiligingsproblemen kunnen zich voordoen bij alle software, op eender
+welk platform. Updates heb je altijd nodig. Als er software uit de
+repository beveiligingsproblemen heeft, dan zul je bij de grote
+distributies op korte termijn een update krijgen via de repositories.
+Zoals bij een app-store, eigenlijk. Maar met het voordeel dat de source
+code beschikbaar is, zodat je in principe kunt controleren of je update
+die geacht wordt een beveiligingsprobleem te fixen, geen andere dingen
+doet die je niet graag hebt.
+
+Geen crapware
+-------------
+Zei ik daarnet niet dat je je besturingssyteem quasi gratis meekrijgt als
+je een computer koopt? Wat ik daar vergat te zeggen, is dat je in het
+geval van Windows of Android vaak nog een hele hoop andere software
+meekrijgt, die je eigenlijk niet nodig hebt. En die na X tijd misschien
+vervelend begint te zeuren dat je een licentie moet kopen. Misschien
+geeft die software ook wel informatie van jou door aan derde partijen.
+Dat is moeilijk te zeggen, aangezien je in de meeste gevallen geen
+broncode hebt. En de software verwijderen is ook niet altijd makkelijk,
+omdat het vaak onduidelijk is wat er nu wel nodig is om je PC te kunnen
+gebruiken, en wat niet.
+
+Een open source Linuxdistributie is quasi nooit voorgeinstalleerd. Je
+moet dus een vervelende installatieprocedure doorlopen. Maar wat je dan
+wel hebt, is een clean systeem zonder brol. Dat alleen al maakt het
+ongemak van het installeren meer dan goed.
+
+Makkelijke herinstallatie
+-------------------------
+Stel dat je een tweedehands-PC koopt. Er staat daar mogelijk vanalle brol
+en louche software op, en je wil voor het gemak een herinstallatie doen.
+Als je dan toch wil herinstalleren, dan is een Linuxdistributie de
+makkelijkste oplossing: je downloadt een image, en je kunt aan de slag
+zonder dat je eerst nog een licentiecode of dergelijke nodig hebt.
 
 
