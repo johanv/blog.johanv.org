@@ -1,42 +1,46 @@
-.. title: De echte redenen om Linux te gebruiken
+.. title: Waarom Linux? En nu echt!
 .. slug: de-echte-redenen-om-linux-te-gebruiken
 .. date: 2014/10/13 20:36:09
-.. tags: Linux,opensource
+.. tags: linux,opensource
 .. link: 
 .. description: We helpen de foute redenen om Linux te gebruiken de
    wereld uit.
 .. type: text
 
-Ik gebruik Linux sinds eind 1999. Dat is dus al 15 jaar.
+Ik gebruik Linux sinds eind 1999. Dat is al 15 jaar.
 Ik probeer ook al bijna 15 jaar lang om andere mensen te overtuigen
 om ook Linux te proberen. En ik moet bekennen dat ik daarbij
 erg vaak verkeerde argumenten heb gebruikt. Na 15 jaar is het tijd om een
-aantal misverstanden de wereld uit te helpen, en jullie de echte reden te
-vertellen waarom je Linux moet proberen :-)
+aantal misverstanden de wereld uit te helpen, en jullie de echte redenen te
+vertellen waarom je Linux moet gebruiken :-)
 
-Ik ben overigens ook niet de enige die verkeerde argumenten gebruikt, ik
-denk dat het een veelvoorkomend probleem is.
 
-Zo vroeg ik het onlangs aan Google: 'Waarm Linux?'. Het eerste resultaat
-bracht
-me op een website die er al wat verouderd uitziet, en `een aantal
-veelgehoorde argumenten
+Ik ben niet de enige die Linux met verkeerde argumenten aanprees: het is
+een veelvoorkomend probleem.
+
+Bij wijze van experiment `vroeg ik het onlangs aan Google
+<https://www.google.be/search?q=waarom+linux>`_: 'Waarom Linux?'. 
+Het eerste resultaat bracht me op een wat ouder ogende website, die
+`een aantal veelgehoorde argumenten
 <https://sites.google.com/site/computertip/waaromdaarom>`_ opsomt.
 
 Maar Google filtert natuurlijk zijn zoekresultaten netjes op basis van
 wat hij van me weet, dus ik stelde de vraag ook aan `DuckDuckGo
-<https://duckduckgo.com/>`_. Die leverde me een blog post uit 2011, met
+<https://duckduckgo.com/?q=waarom+linux>`_. 
+Daar was de eerste link een blog post uit 2012, met
 `gelijkaardige argumenten <http://www.alleslinux.net/waarom-linux/>`_.
 
-Het feit dat dat allebei oude pagina's zijn, rechtvaardigt wel dat
-sommige argumenten verkeerd zijn; sommige zijn gewoon verouderd. Maar
-goed, met 2015 in zicht wordt het tijd
-dat we de klassieke argumenten eens onder de loep nemen, zodat we stoppen
-met dingen te vertellen die eigenlijk niet meer waar zijn.
+Beide pagina's zijn al tamelijk oud. Wat verklaart dat sommige argumenten
+gewoon verouderd zijn. Maar toch hoor je die argumenten nog erg vaak. En
+dikwijls ten onrechte. Ik neem er een aantal van onder de loep.
 
+Dus:
 
-Linux is gratis
-===============
+Probeer Linux niet...
+=====================
+
+omdat het gratis is
+-------------------
 Linux is gratis. Dat is waar. Je kunt het downloaden, en op je PC
 installeren. Maar dat is geen argument. Want als je een PC koopt,
 dan koop je daar een besturingssysteem bij. Je hebt het al betaald, en
@@ -47,61 +51,73 @@ je dan al naar de gespecialiseerde leverancier moet stappen, waar de
 prijs wel wat hoger zal liggen dan - ik zeg maar iets - een PC met
 Windows die van de Aldi komt.
 
-In principe kun je geld terugvragen voor een Windowslicentie die je niet
-gebruikt. Maar ik denk niet dat dat zo gemakkelijk is. De weinige keren
-dat iemand daarin slaagt, halen volgens mij altijd de pers :-)
-
-Linux is snel
-=============
-Ik betwijfel ten stelligste dat Linux per definitie sneller is dan een
-ander OS. Als je vandaag
-een standaarddesktop wil installeren van een mainstream distributie
+omdat het sneller is
+--------------------
+Ik betwijfel ten stelligste dat een PC sowieso sneller gaat werken als
+je er Linux op installeert.
+Als je vandaag
+een standaardinstallatie doet van een mainstream distributie
 (zoals `Linux Mint
 <http://www.linuxmint.com>`_ of `Ubuntu <http://www.ubuntu.com>`_), dan
 doe je dat best op een recente PC met voldoende geheugen en rekenkracht.
-Net zoals er wel wat vereisten zijn voor Windows 8. Er bestaan natuurlijk
-Linuxdistributies die wél goed presteren op een oude PC. Maar om te weten
-welke dat zijn, heb je al wat ervaring nodig. En die extra snelheid gaat dan
-vaak ten koste van usability.
+Net zoals er wel wat vereisten zijn voor Windows 8. 
 
-Linux is snel compleet geïnstalleerd
-====================================
-Dat is waar. Maar de meeste mensen willen ook helemaal geen
-besturingssysteem installeren. Als je een PC koopt, dan is je OS
-voorgeïnstalleerd, en meestal staat er wel een documentreader en een
-moderne webbrowser op. Vandaag de dag kom je daar al een heel eind mee.
-Dus het zal de gebruiker worst wezen hoe lang of moeilijk de installatie
-is.
+Het is wel zo dat je een oude PC nog tegen een aanvaardbare snelheid kunt
+laten werken met Linux. Maar je moet voldoende ervaring aan de dag kunnen leggen bij het
+kiezen en configureren van je distributie. En het zal allicht ten koste
+gaan van usability.
 
-Linux is veiliger dan andere besturingssystemen
-===============================================
-Sinds `Heartbleed <http://heartbleed.com/>`_ en `Shellshock
-<http://en.wikipedia.org/wiki/Shellshock_(software_bug)>`_ weten we dat
-Linux even kwetsbaar is dan andere systemen. Ik geloof wel dat de kans op
+Dus als je de ervaring niet hebt, en je hebt niemand om je te helpen, of
+je wilt niet inboeten aan usability, dan zal een Linuxdistributie niet
+sneller werken dan een ander OS.
+
+omdat het snel compleet geïnstalleerd is
+----------------------------------------
+Koop eens een nieuwe computer. Wat maakt het dan uit dat je Linux snel
+kunt installeren? Er staat al een ander systeem voorgeïnstalleerd. Dat is
+sowieso sneller dan er iets nieuws op te zetten.
+
+omdat open-sourcesoftware veiliger is
+-------------------------------------
+Sinds `Heartbleed <http://heartbleed.com/>`_, `Shellshock
+<http://en.wikipedia.org/wiki/Shellshock_(software_bug)>`_ 
+en `Drupageddon
+<http://www.zoubi.me/blog/drupageddon-sa-core-2014-005-drupal-7-sql-injection-exploit-demo>`_ 
+weten we dat
+open source software kwetsbaar is net zoals andere systemen. Ik geloof
+wel dat de kans op
 fouten kleiner wordt naarmate meer mensen naar de broncode kijken. Maar
-dan moeten er ook mensen naar de broncode kijken. Vooral shellshock vind
-ik tekenend: deze vulnerability is een gedocumenteerde feature, die al
+dan moeten er ook mensen naar de broncode kijken. Vooral Shellshock vind
+ik indrukwekkend: deze vulnerability is een gedocumenteerde feature, die al
 meer dan 20 jaar in bash zit. Gedurende die 20 jaar had er gewoon niemand
-bij nagedacht dat deze feature erg ongewenste gevolgen had.
+bij nagedacht dat deze feature misbruikt kon worden om ongewenste dingen
+te doen.
 
-Vroeger werd er wel eens gelachen met de beveiliging van Windows. En
-terecht. Maar Microsoft heeft een lange weg afgelegd. En net zoals bij
+Vroeger werd er wel eens gelachen met de beveiliging van Windows.
+Waarschijnlijk
+terecht. Maar Microsoft heeft een lange weg afgelegd. Ik geloof wel dat de
+architectuur van Windows 7 zodanig is dat je het veilig kunt configureren.
+
+Maar net zoals bij
 Linux is het systeem maar zo veilig als je het configureert. Windows
 krijgt vaak kritiek omdat het erg makkelijk is om als gewone gebruiker
-veel privilleges te krijgen. Maar de manier waarop Windows 7 en later dat
-doet, lijkt wel heel hard op de werkwijze van Ubuntu en afgeleiden. En
+beheerdersrechten te krijgen. Maar bij Ubuntu en afgeleiden verloopt dat
+eigenlijk niet veel moeilijker. En
 stel dat je als zoekende gebruiker `Puppy Linux <http://puppylinux.org>`_
 zou installeren omdat je op zoek bent naar een snelle distributie, dan
 log je standaard aan als root. Quod erat demonstrandum.
 
-Als je Linux gebruikt, heb je in het algemeen geen antivirus nodig. Wel,
-ik durf te stellen dat dat alleen zo is als je gewone gebruikersaccount
-beperkte rechten heeft, en als je weet waarmee je bezig bent. Ik maak me
-sterk dat, als diezelfde voorwaarden voldaan zijn onder Windows, je
-vandaag de dag ook met Windows zonder antivirus kunt werken.
+Als je Linux gebruikt, heb je in het algemeen geen antivirussoftware nodig. Wel,
+als Windows up to date is, je gebruiker geen beheerdersrechten heeft, en
+je weet waarmee je bezig bent, dan kun je volgens mij vandaag de dag ook
+onder Windows zonder virusscanner verder. Al was het maar omdat
+`Virusscanners lang zo goed niet meer werken als vroeger
+<http://krebsonsecurity.com/2014/05/antivirus-is-dead-long-live-antivirus/>`_,
+gewoon omdat de virussen van tegenwoordig slim genoeg zijn om zichzelf te
+encrypteren.
 
-Linux is stablieler dan andere besturingssystemen
-=================================================
+omdat het stabieler is
+----------------------
 Op de server misschien. Al steek ik daar mijn hand niet voor in het vuur.
 Maar de meeste mensen die je wilt overtuigen om Linux te gebruiken, zijn
 niet van plan een server op te zetten. In het beste geval willen ze het
@@ -109,27 +125,30 @@ eens proberen op hun laptop. Maar als ze - ik zeg maar iets - een nVidia
 grafische kaart hebben, dan durft `stabiliteit wel eens een probleem zijn
 <https://www.google.be/search?q=nouveau+driver+freeze>`_.
 
-Er is gratis ondersteuning van de fijne community
-=================================================
+omdat je gratis ondersteuning krijgt van een fijne community
+------------------------------------------------------------
 Als je een vraag hebt over Linux, dan tik je die in in Google, die brengt je meestal bij
 een discussie op `Stack Exchange <http://stackexchange.com/>`_, en
 daar vind je dan het juiste antwoord. Vaak. Vaak ook niet. Het varieert.
 
 Maar - vertel het niet verder - als je een vraag hebt over Windows, dan
-werkt dat even goed. En ik vermoed dat dat in Android- en Appleland net
-zo goed het geval is.
+werkt dat even goed. En ik vermoed dat dat in Android- en Appleland ook
+het geval is.
 
 En - hoewel ik al veel positieve ervaringen heb gehad in
-open-source-communities, is het zeker niet altijd rozengeur en
-maneschijn: het gaat er soms erg onbeschoft aan toe, `zoals Lennart Poettering aankaart
+open-source-communities - is het zeker niet altijd rozengeur en
+maneschijn: het gaat er soms erg hard aan toe, `zoals Lennart Poettering aankaart
 <https://plus.google.com/+LennartPoetteringTheOneAndOnly/posts/J2TZrTvu7vd>`_
-in een post op Google+. Poettering is zelf ook niet onbesproken, maar een
-fout van één persoon is geen excuus voor een ander om fouten te maken.
+in een post op Google+. Poettering is zelf ook niet onbesproken, maar dat
+kan geen excuus zijn voor een ander om fouten te maken.
 
-Microsoft is een vijand die bestreden moet worden
-=================================================
-Dit argument heb ik in het verleden vaak gebruikt. En volgens mij ook
-terecht. Maar vandaag is dit niet meer van toepassing. De dagen dat
+omdat je zo de grote vijand, Microsoft, bestrijdt
+-------------------------------------------------
+Niet echt een argument uit de pagina's die ik vond via de verschillende
+zoekmachines, maar het is er wel een dat ik zelf vaak gebruikte in het
+verleden. En in dat verleden was dat uiteraard terecht :-)
+
+Maar vandaag is dit niet meer van toepassing, denk ik. De dagen dat
 Microsoft de enige speler op de markt was, zijn voorbij. Ik heb net eens
 opgezocht welke besturingssystemen de bezoekers van de `website van
 Chirojeugd Vlaanderen <https://www.chiro.be>`_ gebruiken. Het aandeel van
@@ -137,17 +156,23 @@ Windows is maar 65%. IOS (iPhone en iPad) is goed voor 15%. Macintosh en
 Android nemen beide 9% voor hun rekening. Windows is niet meer dominant,
 en dat weten ze erg goed bij Microsoft.
 
-De laatste jaren zet Microsoft meer en meer in op interoperability en
-open source. In de nabije toekomst zul je .NET-webtoepassingen kunnen
-hosten vanop een Linuxserver met mono. Er wordt gewerkt aan Microsoft
-Office voor Android en IOS. Een heel aantal .NET-libraries die Microsoft
-zelf ontwikkelt, zijn beschikbaar onder Apachelicentie. Windows wordt op
-termijn wellicht gratis, net zoals Android. 
+De laatste jaren zette Microsoft meer en meer in op interoperability en
+open source. In de nabije toekomst zul je `ASP.NET-webtoepassingen kunnen
+hosten vanop een Linuxserver met Mono
+<http://www.infoworld.com/article/2608322/microsoft-net/microsoft-s-new-open-source-asp-net-can-run-on-linux--os-x.html>`_.
+Er zijn vandaag al `MS-officeprogramma's
+Office voor Android en IOS
+<http://time.com/40801/microsoft-office-goes-fully-free-on-iphone-and-android-phones/>`_. Een heel aantal .NET-libraries die Microsoft
+zelf ontwikkelt (bijv. `Entity Framework <https://entityframework.codeplex.com/license>`_ en `ASP.NET MVC <http://aspnetwebstack.codeplex.com/license>`_, 
+zijn beschikbaar onder Apache-2-licentie. Het zo me niet verbazen moest
+Windows op termijn gratis worden, net zoals Android.
 
 Toegegeven, Microsoft is en blijft een veelkoppig monster. Terwijl een
 van de koppen toenadering zoekt tot open-sourceprojecten, spant een
 andere poot rechtszaken aan over softwarepatenten. Jeremy Allison, de
-bezieler van het Samba-project, wist tijdens FOSDEM 2013 te vertellen dat
+bezieler van het Samba-project, wist `op FOSDEM 2013
+<https://www.youtube.com/watch?v=lUIBv4p_zH4>`_
+te vertellen dat
 hij erg goed kon samenwerken met Microsft voor de ontwikkeling van Samba
 4. Langs de andere kant was hij erg blij dat hij voor de gelegenheid eens
 naar Brussel kon komen voor FOSDEM, want doorgaans moest hij naar Brussel
@@ -158,38 +183,38 @@ hoor meer positieve verhalen dan vroeger, ze zijn niet meer de te
 bevechten vijand. Die tijd is voorbij.
 
 De bedrijven die je vandaag in het oog moet houden, dat zijn Apple en
-Google. Apple omdat ze willen controleren wat je wel en niet mag. En
-Google omdat ze meer en meer afstappen van het open internet. Google talk
-ondersteunde vroeger het XMPP-protocol, waardoor je Google talk kon
-gebruiken met erg veel messaging-toepassingen. Die support hebben ze
-laten vallen. Google reader, de webtoepassing waarmee je je vroeger je
-rss-feeds kon beheren, bestaat niet meer. Google wil dat je Google+
-gebruikt om op de hoogte te blijven. De API van Google+ staat nog altijd
-niet op punt.
+Google. Uit die hoek hoor ik meer verontrustende verhalen dan van de kant
+van Microsoft. Maar daar wijd ik een andere keer wel eens over uit.
 
-Je kunt LibreOffice en Thunderbird gebruiken; meer heb je niet nodig.
-=====================================================================
-Serieus? Office en mail het enige dat je nodig hebt? In 2000 misschien,
+omdat Thunderbird en LibreOffice alles is wat je nodig hebt
+-----------------------------------------------------------
+Dit hoor ik ook nog te vaak. 'Alle nodige software is beschikbaar,
+bijvoorbeeld Thunderbird en LibreOffice.'
+
+Serieus? Office en mail? Is dat wat je nodig hebt? In 2000 misschien,
 maar vandaag? Ik denk het niet.
-Ik denk dat :doc:`Office net hetgene is dat je niet nodig hebt
+
+:doc:`Office is net hetgene is dat je niet nodig hebt
 <node-202>`. Als je al je werk in Office doet, of in je mail client, 
 dan ben je volgens mij
-verkeerd bezig. Wat je volgens mij wel nodig hebt, is een browser en een
-fatsoenlijke text editor. En een calculator. Als het echt nodig is, ook
-een spreadsheet. En als je dat allemaal hebt, dan ben je al ver. (De
-meeste Linuxdistributies hebben dit trouwens allemaal. Dus vervang dit
-argument maar door 'Je hebt out of the box alle software die je nodig
-hebt.' Dat is overigens iets waar ze bij Microsoft echt iets aan moeten
-doen. Een fatsoenlijke texteditor meeleveren. Hij moet niet veel kunnen,
-maar wel line endings van een ander systeem herkennen. Maar dat is een
-ander verhaal.
+verkeerd bezig. Wat je volgens mij wel nodig hebt, is een browser, een
+document reader en een
+fatsoenlijke text editor. En als het echt nodig is, ook
+een spreadsheet. Daarmee kom je tegenwoordig al een heel eind.
 
-Conclusie
-=========
+Leg niet de nadruk op LibreOffice. Als je het over LibreOffice hebt, gaan
+mensen vergelijken met Microsoft Office. En dan is Microsoft Office toch
+wel wat 'slicker'. Maar dat is eigenlijk helemaal niet relevant, want een
+officetoepassing heb je niet meer nodig vandaag. Als je per se zoiets wil
+doen, gebruik dan Google docs. Maar ik denk dat er altijd betere
+oplossingen zullen zijn.
+
+Waarom dan wel?
+===============
 Zijn er dan eigenlijk nog redenen om Linux te gebruiken? Uiteraard. Ik
 ben nog steeds een overtuigde Linuxgebruiker, en ik kan nog altijd de
 meerwaarde verdedigen. Hier zit iedereen op te wachten: de échte redenen
-waarom iedereen Linux zou moeten proberen.
+waarom iedereen fan van Linux zou moeten zijn.
 
 Vrije software rules
 --------------------
