@@ -186,8 +186,8 @@ De bedrijven die je vandaag in het oog moet houden, dat zijn Apple en
 Google. Uit die hoek hoor ik meer verontrustende verhalen dan van de kant
 van Microsoft. Maar daar wijd ik een andere keer wel eens over uit.
 
-omdat Thunderbird en LibreOffice alles is wat je nodig hebt
------------------------------------------------------------
+omdat er Thunderbird en LibreOffices is. Wat wil je nog meer?
+-------------------------------------------------------------
 Dit hoor ik ook nog te vaak. 'Alle nodige software is beschikbaar,
 bijvoorbeeld Thunderbird en LibreOffice.'
 
@@ -212,78 +212,83 @@ oplossingen zullen zijn.
 Waarom dan wel?
 ===============
 Zijn er dan eigenlijk nog redenen om Linux te gebruiken? Uiteraard. Ik
-ben nog steeds een overtuigde Linuxgebruiker, en ik kan nog altijd de
-meerwaarde verdedigen. Hier zit iedereen op te wachten: de échte redenen
+anders zou ik het zelf niet doen.
+Hier zit iedereen op te wachten: de échte redenen
 waarom iedereen fan van Linux zou moeten zijn.
 
-Vrije software rules
---------------------
-Linux is vrije software, en het overgrote deel van de toepassingen die
-meegeleverd worden met een Linuxdistributie is dat ook. Als je vrije
-software krijgt aangeleverd, dan heb je per definitie toegang tot de
-broncode van die software. Dat wil zeggen dat je kunt nakijken of die
-software geen dingen doet die je niet graag hebt. Of, misschien meer
-realistisch, dat je een onafhankelijke partij kunt laten nakijken of je
-software geen zaken achter je rug doet.
-
-Als je geen broncode krijgt bij je software, dan moet je vertrouwen op je
-leverancier dat je software geen informatie doorstuurt als jij dat niet
-wilt. En dan moet je er ook op vertrouwen dat je leverancier niet vanop
-afstand zaken op jouw computer kan doen die je niet wilt. Dit wort hoe
-langer hoe belangrijker als er meer en meer toestellen op het internet
-worden aangesloten. Stel dat je auto een internetverbinding heeft. Wie
-kan er zeggen dat leveranciers of de overheid niet op een of andere
-manier jouw auto kan doen stilvallen. En als dat al zo is, hoe kun je
-zeker zijn dat mensen met kwade bedoelingen niet hetzelfde kunnen doen.
-
-Vrije software is de enige garantie dat je controle behoudt over het doen
-en laten van je toestellen. Die controle mogen we niet laten schieten.
-
-Een groot aanbod van makkelijk te installeren softwarepakketten
----------------------------------------------------------------
-Als je een van de grotere Linuxdistributie installeert, dan heb je toegang tot
-een groot aanbod aan softwarepakketten, die beschikbaar zijn in de
-zogenaamde software repository. Dit is vergelijkbaar met een app store.
-Wil je een toepassing installeren om foto's of audio te bewerken, heb je
-een programmeeromgeving nodig voor eender welke programmeertaal: het
-wordt voor jouw gedownload. Je moet je downloads niet door een antivirus
-halen, want alwat in de repository van je distributie zit, is
-gecontroleerd door je distributie, en tegenwoordig ook digitaal
-ondertekend, zodat er niet mee gefoefeld kan worden.
-
-Beveiligingsproblemen kunnen zich voordoen bij alle software, op eender
-welk platform. Updates heb je altijd nodig. Als er software uit de
-repository beveiligingsproblemen heeft, dan zul je bij de grote
-distributies op korte termijn een update krijgen via de repositories.
-Zoals bij een app-store, eigenlijk. Maar met het voordeel dat de source
-code beschikbaar is, zodat je in principe kunt controleren of je update
-die geacht wordt een beveiligingsprobleem te fixen, geen andere dingen
-doet die je niet graag hebt.
+Een groot aanbod makkelijk te installeren softwarepakketten
+-----------------------------------------------------------
+Als je een mainstream Linuxdistributie installeert, dan heb je toegang
+tot een erg groot aanbod aan softwarepakketten, via de zogenaamde
+software repository. Je kunt dit vergelijken met een app store.  Wil je
+een toepassing installeren om foto's of audio te bewerken, heb je een
+programmeeromgeving nodig voor eender welke programmeertaal: het wordt
+voor jouw gedownload en geïnstalleerd.
 
 Geen crapware
 -------------
 Zei ik daarnet niet dat je je besturingssyteem quasi gratis meekrijgt als
 je een computer koopt? Wat ik daar vergat te zeggen, is dat je in het
-geval van Windows of Android vaak nog een hele hoop andere software
-meekrijgt, die je eigenlijk niet nodig hebt. En die na X tijd misschien
-vervelend begint te zeuren dat je een licentie moet kopen. Misschien
-geeft die software ook wel informatie van jou door aan derde partijen.
-Dat is moeilijk te zeggen, aangezien je in de meeste gevallen geen
-broncode hebt. En de software verwijderen is ook niet altijd makkelijk,
-omdat het vaak onduidelijk is wat er nu wel nodig is om je PC te kunnen
-gebruiken, en wat niet.
+geval van Windows of Android vaak nog een `hele hoop andere software
+<https://duckduckgo.com/?q=crapware>`_
+meekrijgt, die je eigenlijk niet nodig hebt. (Op een Mac heb je dat
+misschien wat minder, maar dat is dan ook minder 'quasi gratis' :))
 
-Een open source Linuxdistributie is quasi nooit voorgeinstalleerd. Je
+Je kent het wel, van die programmaatjes die vanalles doen, of net niet, en
+die na X tijd beginnen te zeuren dat je een licentie moet kopen. Misschien
+geeft die software ook wel informatie van jou door aan derde partijen,
+dat is moeilijk te zeggen.  En de software verwijderen is ook niet altijd
+makkelijk, omdat het vaak onduidelijk is wat er nu wel nodig is om je
+PC te kunnen gebruiken, en wat niet.
+
+Een open source Linuxdistributie is quasi nooit voorgeïnstalleerd. Je
 moet dus een vervelende installatieprocedure doorlopen. Maar wat je dan
-wel hebt, is een clean systeem zonder brol. Dat alleen al maakt het
+hebt, is een :doc:`clean systeem zonder brol
+<een-computer-die-gewoon-werkt>`. Dat alleen al maakt het
 ongemak van het installeren meer dan goed.
 
 Makkelijke herinstallatie
 -------------------------
-Stel dat je een tweedehands-PC koopt. Er staat daar mogelijk vanalle brol
-en louche software op, en je wil voor het gemak een herinstallatie doen.
-Als je dan toch wil herinstalleren, dan is een Linuxdistributie de
-makkelijkste oplossing: je downloadt een image, en je kunt aan de slag
-zonder dat je eerst nog een licentiecode of dergelijke nodig hebt.
+Als je een PC om een of andere reden volledig moet herinstalleren, dan is
+Linux de makkelijkste oplossing. Je downloadt een image, en je kunt aan
+de slag zonder dat je een licentie nodig hebt.
 
+Vrije software rules
+--------------------
+De belangrijkste reden hield ik uiteraard tot laatst:
+Linux is vrije software. En het overgrote deel van de toepassingen die
+meegeleverd worden met een Linuxdistributie is dat ook. Als je vrije
+software installeert, dan heb je per definitie ook toegang tot de
+broncode van die software. Dat wil zeggen dat je kunt nakijken of die
+software geen dingen doet die je niet graag hebt. Of, als je zelf niet
+graag broncode bestudeert, kun je dat laten doen door een onafhankelijke
+partij.
+
+Als je software gebruikt waarvan je geen inzage hebt in de broncode, dan
+moet je vertrouwen op je
+leverancier. `Doet de software niets achter je rug
+<http://tweakers.net/nieuws/98896/adobe-bespioneert-gebruikers-via-e-book-applicatie.html>`_?
+Zet je software een backdoor in je computer open, zodat
+instantie X of Y kan `controleren of je wel braaf genoeg bent
+<http://tweakers.net/nieuws/99109/fbi-backdoors-in-software-moeten-mogelijk-verplicht-worden.html>`_?
+Kan die instantie je computer dan bijvoorbeeld ook vanop afstand
+uitschakelen? En in hoeverre zijn die backdoors dan beveiligd tegen
+personen met kwaadwillige bedoelingen?
+
+Uiteraard lees ik niet de broncode van alle software die ik gebruik. Ik
+compileer ook niet (meer ;)) al mijn software zelf, om zeker te zijn dat
+de software die ik heb wel degelijk gemaakt is op basis van de gegeven
+broncode. Maar het feit dat ik weet dat het kan, geeft me toch een vorm
+van gemoedsrust.
+
+De dag van vandaag kunnen meer en meer toestellen op het internet
+aangesloten worden. Telefoons, horloges, domotica, auto's...
+Ik zou het niet appreciëren moesten mijn autodeuren geopend kunnen worden
+omdat er een backdoor in de software zit.
+
+De enige garantie om het doen en laten van je toestellen te controleren,
+is open source software.  `Die controle mogen we niet laten schieten
+<http://youtu.be/iaf3Sl2r3jE>`_. Over de
+software in onze auto heb ik helaas niets te zeggen. Maar over die op
+mijn PC nog wel. En dat wil ik graag zo lang mogelijk behouden.
 
