@@ -1,6 +1,6 @@
 .. title: Waarom Linux? En nu echt!
 .. slug: de-echte-redenen-om-linux-te-gebruiken
-.. date: 2014/10/13 20:36:09
+.. date: 2014/10/19 22:35:09
 .. tags: linux,opensource
 .. link: 
 .. description: We helpen de foute redenen om Linux te gebruiken de
