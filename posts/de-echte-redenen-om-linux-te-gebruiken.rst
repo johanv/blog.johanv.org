@@ -168,7 +168,7 @@ zijn beschikbaar onder Apache-2-licentie. Het zo me niet verbazen moest
 Windows op termijn gratis worden, net zoals Android.
 
 Toegegeven, Microsoft is en blijft een veelkoppig monster. Terwijl een
-van de koppen toenadering zoekt tot open-sourceprojecten, spant een
+van de koppen toenadering zoekt tot de open-source-community, spant een
 andere poot rechtszaken aan over softwarepatenten. Jeremy Allison, de
 bezieler van het Samba-project, wist `op FOSDEM 2013
 <https://www.youtube.com/watch?v=lUIBv4p_zH4>`_
@@ -178,7 +178,7 @@ hij erg goed kon samenwerken met Microsft voor de ontwikkeling van Samba
 naar Brussel kon komen voor FOSDEM, want doorgaans moest hij naar Brussel
 voor rechtszaken.
 
-Maar desondanks denk ik dat er een kentering is gebeurd bij Microsoft. Ik
+Maar desondanks denk ik dat er een kentering is geweest bij Microsoft. Ik
 hoor meer positieve verhalen dan vroeger, ze zijn niet meer de te
 bevechten vijand. Die tijd is voorbij.
 
@@ -186,8 +186,8 @@ De bedrijven die je vandaag in het oog moet houden, dat zijn Apple en
 Google. Uit die hoek hoor ik meer verontrustende verhalen dan van de kant
 van Microsoft. Maar daar wijd ik een andere keer wel eens over uit.
 
-omdat er Thunderbird en LibreOffices is. Wat wil je nog meer?
--------------------------------------------------------------
+omdat je met Thunderbird en LibreOffice alles hebt wat nodig is
+---------------------------------------------------------------
 Dit hoor ik ook nog te vaak. 'Alle nodige software is beschikbaar,
 bijvoorbeeld Thunderbird en LibreOffice.'
 
@@ -273,7 +273,7 @@ instantie X of Y kan `controleren of je wel braaf genoeg bent
 <http://tweakers.net/nieuws/99109/fbi-backdoors-in-software-moeten-mogelijk-verplicht-worden.html>`_?
 Kan die instantie je computer dan bijvoorbeeld ook vanop afstand
 uitschakelen? En in hoeverre zijn die backdoors dan beveiligd tegen
-personen met kwaadwillige bedoelingen?
+personen met kwade bedoelingen?
 
 Uiteraard lees ik niet de broncode van alle software die ik gebruik. Ik
 compileer ook niet (meer ;)) al mijn software zelf, om zeker te zijn dat
