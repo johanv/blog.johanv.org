@@ -3,8 +3,7 @@
 .. date: 2014/10/19 22:35:09
 .. tags: linux,opensource
 .. link: 
-.. description: We helpen de foute redenen om Linux te gebruiken de
-   wereld uit.
+.. description: We helpen de foute redenen om Linux te gebruiken de wereld uit.
 .. type: text
 
 Ik gebruik Linux sinds eind 1999. Dat is al 15 jaar.
