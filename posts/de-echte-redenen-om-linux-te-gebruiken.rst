@@ -163,7 +163,7 @@ Er zijn vandaag al `MS-officeprogramma's
 Office voor Android en IOS
 <http://time.com/40801/microsoft-office-goes-fully-free-on-iphone-and-android-phones/>`_. Een heel aantal .NET-libraries die Microsoft
 zelf ontwikkelt (bijv. `Entity Framework <https://entityframework.codeplex.com/license>`_ en `ASP.NET MVC <http://aspnetwebstack.codeplex.com/license>`_), 
-zijn beschikbaar onder Apache-2-licentie. Het zo me niet verbazen moest
+zijn beschikbaar onder Apache-2-licentie. Het zou me niet verbazen moest
 Windows op termijn gratis worden, net zoals Android.
 
 Toegegeven, Microsoft is en blijft een veelkoppig monster. Terwijl een
@@ -210,8 +210,8 @@ oplossingen zullen zijn.
 
 Waarom dan wel?
 ===============
-Zijn er dan eigenlijk nog redenen om Linux te gebruiken? Uiteraard. Ik
-anders zou ik het zelf niet doen.
+Zijn er dan eigenlijk nog redenen om Linux te gebruiken? Uiteraard.
+Anders zou ik het zelf niet doen.
 Hier zit iedereen op te wachten: de échte redenen
 waarom iedereen fan van Linux zou moeten zijn.
 
