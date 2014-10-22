@@ -1,7 +1,7 @@
 .. title: Word processors are overrated
 .. slug: node-204
 .. date: 2013-04-24 12:20:32
-.. tags: file formats,hpr
+.. tags: file formats,hpr,office
 .. link:
 .. description: 
 .. type: text
@@ -113,8 +113,8 @@ difficult to read. It requires some work to get a nice printout (without
 e.g. headers and footers from a browsers). And I personally find the
 HTML tags annoying to type.
 
-Markdown
-~~~~~~~~
+Markdown [#]_
+~~~~~~~~~~~~~
 
 So now I come to the point I want to make: Markdown is a great
 alternative for writing texts. I won't pretend that it is the perfect
@@ -184,3 +184,5 @@ github <https://github.com/johanv/randomtexts/blob/master/wordprocessors.md>`__.
 In markdown format, of course. :-) You can post comments (issues, or
 even pull requests) over there.
 
+.. [#] (update 2014-10-22) the new cool replacement for Markdown is called
+       `CommonMark <http://commonmark.org/>`_
