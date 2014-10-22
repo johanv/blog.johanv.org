@@ -152,7 +152,7 @@ Microsoft de enige speler op de markt was, zijn voorbij. Ik heb net eens
 opgezocht welke besturingssystemen de bezoekers van de `website van
 Chirojeugd Vlaanderen <https://www.chiro.be>`_ gebruiken. Het aandeel van
 Windows is maar 65%. IOS (iPhone en iPad) is goed voor 15%. Macintosh en
-Android nemen beide 9% voor hun rekening. Windows is niet meer dominant,
+Android nemen beide 9% voor hun rekening. Windows is niet meer alleen,
 en dat weten ze erg goed bij Microsoft.
 
 De laatste jaren zette Microsoft meer en meer in op interoperability en
@@ -162,7 +162,7 @@ hosten vanop een Linuxserver met Mono
 Er zijn vandaag al `MS-officeprogramma's
 Office voor Android en IOS
 <http://time.com/40801/microsoft-office-goes-fully-free-on-iphone-and-android-phones/>`_. Een heel aantal .NET-libraries die Microsoft
-zelf ontwikkelt (bijv. `Entity Framework <https://entityframework.codeplex.com/license>`_ en `ASP.NET MVC <http://aspnetwebstack.codeplex.com/license>`_, 
+zelf ontwikkelt (bijv. `Entity Framework <https://entityframework.codeplex.com/license>`_ en `ASP.NET MVC <http://aspnetwebstack.codeplex.com/license>`_), 
 zijn beschikbaar onder Apache-2-licentie. Het zo me niet verbazen moest
 Windows op termijn gratis worden, net zoals Android.
 
@@ -219,10 +219,16 @@ Een groot aanbod makkelijk te installeren softwarepakketten
 -----------------------------------------------------------
 Als je een mainstream Linuxdistributie installeert, dan heb je toegang
 tot een erg groot aanbod aan softwarepakketten, via de zogenaamde
-software repository. Je kunt dit vergelijken met een app store.  Wil je
-een toepassing installeren om foto's of audio te bewerken, heb je een
-programmeeromgeving nodig voor eender welke programmeertaal: het wordt
-voor jouw gedownload en geïnstalleerd.
+software repository. Je kunt dit vergelijken met een app store.  
+Wil je een toepassing installeren om foto's of audio te bewerken, heb
+je een programmeeromgeving nodig voor eender welke programmeertaal:
+het wordt voor jouw gedownload en geïnstalleerd.
+
+Nu heb je tegenwoordig wel veel app stores. Maar ik heb de indruk dat
+de kwaliteit van de toepassingen in Linux-softwarerepositories
+in het algemeen hoger is dan de kwaliteit van bijvoorbeeld de
+Google Play applicaties. En de toepassingen in de repositories bevatten
+beduidend minder advertenties.
 
 Geen crapware
 -------------
@@ -291,3 +297,11 @@ is open source software.  `Die controle mogen we niet laten schieten
 software in onze auto heb ik helaas niets te zeggen. Maar over die op
 mijn PC nog wel. En dat wil ik graag zo lang mogelijk behouden.
 
+Work in progress
+================
+Ik heb het gevoel dat er nog wel wat werk is aan mijn goede en verkeerde
+argumenten. Maar op een gegeven dag moet je een tekst online zetten.
+Ik ben wel benieuwd naar wat jullie ervan denken. Heb je opmerkingen,
+post ze dan gerust in de disqus hieronder. Of, als je liever niet werkt
+met dat evil disqus systeem (niet onterecht eigenlijk), stuur gerust een
+`pull request <https://github.com/johanv/blog.johanv.org/blob/master/posts/de-echte-redenen-om-linux-te-gebruiken.rst>`_.
