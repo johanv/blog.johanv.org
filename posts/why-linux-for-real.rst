@@ -6,95 +6,252 @@
 .. description: Drop the fake arguments for trying out Linux. Use the real ones.
 .. type: text
 
- I've been using Linux since the end of 1999 which is 15 years. I've been trying for almost 15 years to convince to also try Linux. Others And I must confess that I very often wrong arguments have used. Thereby After 15 years it is time to some misunderstandings the world to help, and to tell you why you should use Linux you are the real reasons:-)
+I am a Linux user since the end of 1999. Which is 15 years already. I've
+also been trying for almost 15 years to convince other people to try Linux.
+And I must confess that I very often used wrong arguments to do this.
+After 15 years it is time to ditch some fake arguments,
+and to tell you the real reasons why you should use Linux. :-)
 
-I'm not the only Linux with wrong arguments aanprees: it's a common problem.
+I'm not the only one that tried to convice people to use Linux based on fake
+arguments aanprees: it's a common problem.
 
-As an experiment, I asked recently to Google : "Why Linux?". The first result gave me an older looking website, that some of the most common arguments lists.
+As an experiment, I recentlky asked Google: "Waarom Linux?". ('Why Linux?')
+I asked the question in Dutch, because that's what my friends would
+typically do. If they were interested at all.
 
-But of course, Google filters search results neatly based on what he knows of me, so I asked the question also DuckDuckGo . There was the first link to a blog post from 2012, with similar arguments .
+The first result was a website that looked as it had been around for a
+long time. It listed some of the commonly heard arguments.
 
-Both pages are already quite old. What explains why some arguments are simply outdated. Yet you hear those arguments are very common. And often wrongly. I take a number of under the microscope.
+But of course, Google filters its search results based on what it knows
+of me, so I also asked DuckDuckGo as well. The first result over there
+was a blog post from 2012, with similar arguments .
+
+Both pages were already quite old. What explains why some arguments
+were outdated. Yet you still hear those arguments very often. And often
+they are wrong. I take a look at the common ones:
 
 So:
-Try not Linux ...
-because it's free
 
-Linux is free. That is true. You can download and install on your PC. But that is no argument. Because if you buy a PC, you buy it with an operating system. You've already paid, and it is already installed. That is as good as free.
+Do not try Linux...
+===================
 
-Buying a PC with no operating system, is not so easy. I think you all need to step, where the price will be higher than what it higher to the specialized supplier - I'm saying something - a PC with Windows that of Aldi coming.
-because it is faster
+because you don't have to pay for it
+------------------------------------
 
-I doubt strongly that a PC anyway going to work if you install Linux on quickly. Today, if you do a default installation of a mainstream distribution (like Linux Mint or Ubuntu ), then you do it best in a recent PC with enough memory and processing power. Just as there are some requirements for Windows 8.
+You don't have to pay money for downloading or using Linux. That
+is a fact. But that is
+no argument. When you buy a PC, you get an operating system as well.
+You paid for the operating system that came with your PC. At that time,
+installing Linux doesn't save you money any more.
 
-It is true that you can work with Linux. An old PC is still at an acceptable rate But you have enough experience to make when selecting and configuring your distribution. The day And it will probably be at the expense of usability.
+You could buy a PC without an operating system, could you?
+It's not that easy. If you want that, I think you'll have to go to
+a specialized supplier. Where prices might be higher than at the
+local discounter, where they offer PC's with Windows at low prices
+once and again.
 
-So if you do not have the experience, and you have no one to help you if you do not want to lose their usability, a Linux distribution will not work faster than any other OS.
-since it is quickly completely installed
+because Linux is faster
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Buy yourself a new computer. What does it matter that you can install Linux soon There is already pre-installed a different system. This is always faster than something new to set up.
+I strongly doubt that a PC will work faster after installing Linux.
+If you install a mainstream distribution (like Linux Mint or Ubuntu) with
+the default settings today, then your pc better had enough memory and
+processing power. Modern Linux distributions have 'modern' requirements,
+just like this is the case with other operating systems.
+
+It is true that you can make old PCs useable again with Linux. But only
+if you have enough experience to select and configure a distribution.
+If your distribution is fast and has a small memory footprint, this will
+probably be at the expense of usability.
+
+because you can install it quickly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Buy yourself a new computer. What does it matter that you can install
+Linux quickly? There is already an operating system pre-installed. This is
+always faster than setting up something new. 
+
 because open source software is more secure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Since Bleed Heart , Shell Shock and Drupageddon we know that open source software is vulnerable just like other systems. I believe that the chance of error becomes smaller as more people look to the source code. But then there must be people looking at the source code. Especially Shellshock I find impressive: this vulnerability is a documented feature, which is in bash for more than 20 years. During those 20 years, there was simply no one stop to think that this feature could be used unwanted things. Abused
+Since Heartbleed, Shellshock and Drupageddon we know that open source
+software is vulnerable just like any other kind of software. I do believe
+that the chance on errors in the source code becomes smaller as more
+people look at it. But the source code being availabe, doesn't guarantee
+that peple are actually looking.
 
-Previously, there was sometimes laughed with the security of Windows. Probably rightly so. But Microsoft has come a long way. I believe that the architecture of Windows 7 is such that you can configure it safe.
+I found Shellshock very impressive: this vulnerability has been
+a documented feature in bash for more than 20 years. During those 20
+years, simply no one noticed that this feature could be used for unwanted
+things. Abused
 
-But as with Linux, the system is only as secure as you configure it. Windows is often criticized because it is very easy to get as a regular user administrator privileges. But with Ubuntu and derivatives proceeds that really is not much more difficult. And imagine that as a searcher Puppy Linux would install because you're looking for a quick distribution, you log in as root by default. Quod erat demonstrandum.
+I often have made fun of Windows' security. And I was probably right at
+the time :). But Microsoft has come a long way. I believe that the
+architecture of Windows 7 is such that you can configure it in a
+secure way.
 
-If you use Linux, you have generally required. Antivirus software Well, if Windows is up to date, your user does not have administrator rights, and you know what you're doing, then you can think today also under Windows virus scanner on. If only because Virus long so good no longer work as they used to , just because the viruses today are smart enough to encrypt itself.
+But as with Linux, a system is only as secure as you configure it. Windows
+is often criticized because it is very easy to get as a regular user
+administrator privileges. But with Ubuntu and derivatives, the process
+really isn't a lot more difficult. And imagine that as you install Puppy
+Linux because you're looking for a quick distribution, you log in as
+root by default.
+
+If you use Linux, you generally don't need Antivirus software. Well,
+if you keep your Windows OS up to date, if your default user does not
+have administrator permissions, and if you know what you're doing, then
+I think you can nowadays also run Windows without antivirus software.
+Antivirus software doesn't work as good as it used to eather, because
+a lot of viruses today are smart enough to encrypt themselves.
+
 because it is more stable
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On the server maybe. All I put my hand there not in the fire. But most of the people you want to persuade you to use Linux are not going to set up a server. At best, they want to try on their laptop. The But if they - I only say something - have an nVidia graphics card, dare stability sometimes be a problem .
+On the server, maybe. But most of the people you want to persuade you
+to use Linux are not going to set up a server. At best, they want to
+try it out on their laptop. But if they - just to say something -
+have an nVidia graphics card, I dare say that stability might be a problem.
+
 because you get free support from a fine community
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you have a question about Linux, then type in Google, which usually takes you to a discussion on Stack Exchange , and you then find the correct answer. Often. Not often. It varies.
+If you have a question about Linux, just ask Google. Google usually
+takes you to a discussion on Stack Exchange, and then you find the
+correct answer. Chances are you do. Chances are you don't. It depends.
 
-But - do not tell anybody - if you have a question about Windows, which works equally well. And I suspect that this is also the case in Android and Apple Land.
+But - do not tell anybody - if you have a question about Windows, this
+probably works as well. And I suspect that this is also the case for
+Android and Apple-OSes.
 
-And - though I've had in open-source communities many positive experiences - it is certainly not always a bed of roses: it is sometimes very hard to it, as Lennart Poettering aankaart in a post on Google+. Poettering himself is not above reproach, but that can not be an excuse for another to make mistakes.
-because you as the great enemy, Microsoft, fights
+And although I've had many positive experiences in open source
+communities, it is certainly not always a bed of roses. Sometimes
+people can be very brutal, as Lennart Poettering says in a rant on
+Google+. I won't pretend that Poettering always behaves exemplary, but
+even if he didn't, this cannot be an excucse for others to behave badly.
 
-Not really an argument from the pages that I found through the various search engines, but it is one that I often used in the past. And in that past that was undoubtedly right:-)
+because you need to fight Microsoft, the great enemy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-But today this is no longer relevant, I think. The days when Microsoft was the only player on the market, are over. I just looked it up which operating systems visitors to the website Chirojeugd Flanders use. Windows' share is only 65%. IOS (iPhone and iPad) accounts for 15%. Macintosh and Android take both 9% of turnover. Windows is not alone, and that they know very well at Microsoft.
+Not really an argument from the pages that I found through the various
+search engines, but it is one that I often used in the past. And in that
+past that was undoubtedly right:-)
 
-In recent years, more and more put Microsoft on interoperability and open source. In the near future you will be able to host ASP.NET Web applications from a Linux Server with Mono . Today there are all MS Office programs Office for Android and IOS . A large number .NET libraries that Microsoft develops (eg. Entity Framework and ASP.NET MVC ), are available under the Apache 2 license. It would not surprise me Windows had to eventually be free, just like Android.
+But today this is no longer relevant, I think. The days when Microsoft
+was the only player on the market, are over. I just had a look on the
+analytics page for chiro.be, the non-profit organization I work for.
+Windows' share is only 65%. IOS (iPhone and iPad) accounts for
+15%. Macintosh and Android take both 9%. Windows is not alone,
+and Microsoft knows this very well.
 
-Granted, Microsoft is still a many-headed monster. While one of the heads befriends the open-source community, another leg spans lawsuits over software patents. Jeremy Allison, the founder of the Samba project, knew at FOSDEM 2013 to say that he could work with Microsft for the development of Samba 4 very good On the other hand, he was very happy that he once could come to Brussels for the occasion for FOSDEM, because usually he had to Brussels for lawsuits.
+In recent years, Microsoft invests more and more in interoperability
+and open source. In the near future you will be able to host ASP.NET
+web applications on a Linux Server with Mono. Today there are MS Office
+programs for Android and IOS. A fair amount of .NET libraries 
+developed by Microsoft (like Entity Framework and ASP.NET MVC), are 
+available under the Apache 2 license. It would not surprise me if Windows
+will eventually given away free as in beer, just like Android.
 
-But nevertheless, I think there's been a change at Microsoft. I hear more positive stories than before, they are no longer the enemy to fight. That time has passed.
+Granted, Microsoft is still a monster with multiple heads. While one of the
+heads is friendly towards the open-source community, another head
+is sueing projects over software patents. Jeremy Allison, the founder of
+the Samba project, told at FOSDEM 2013 to that he worked together with
+Microsft on Samba 4. On the other hand, he was very happy that he could
+come to Brussels for once to speak at FOSDEM, instead of having to deal
+with judges.
 
-The companies that you should keep in mind that today are Apple and Google. From that angle I hear more disturbing stories than on the part of Microsoft. But I dedicate another time ever on the matter.
-because you have everything with Thunderbird and LibreOffice what is needed
+Nevertheless, I think Microsoft is changing slowly. I hear more positive
+stories than before. Microsoft is no longer the enemy to fight. That time
+has passed.
 
-I hear this too often. "All the necessary software is available, for example, Thunderbird and LibreOffice."
+The companies that you should keep an eye on today, are Apple and
+Google. I hear more disturbing stories about those two than about
+Microsoft. I might tell you more about this another time.
 
-Seriously? Office and mail? Is that what you need? In 2000 perhaps, but today? I think not.
+because you have everything: Thunderbird and LibreOffice
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Office is just the thing is that you do not need . If you do your work in Office, or in your mail client, then I think you're doing wrong. What do you think do need is a browser, a document reader and a decent text editor. And if it is really necessary, even a spreadsheet. There you come a long way these days.
+I hear this too often. "All the necessary software is available, for
+example, Thunderbird and LibreOffice."
 
-Do not put the emphasis on LibreOffice. If you're talking about LibreOffice, people are going to compare with Microsoft Office. And then Microsoft Office still has some 'slicker'. But that's really not relevant, because an office application you do not need today. If you necessarily want to do something like use Google docs. But I think there will always be better solutions.
-Why?
+Seriously? Office and mail? Is that what you need? In 2000 perhaps,
+but today? I think not.
 
-Are there actually still reasons to use Linux? Naturally. Otherwise I would not do it myself. Here, everyone is waiting for: the real reasons why everyone should be a fan of Linux.
-A wide range easy to install software
+Office is just the thing is that you do not need. If you do your work
+in Office, or in your mail client, then I think you're doing it wrong. What
+you need is a browser, a document reader and a decent text
+editor. And if really necessary, maybe a spreadsheet. If you've got
+this, you're ready to go.
 
-If you're a mainstream Linux distribution are installed, you have access to a very wide range of software packages, via the so-called software repository. You can compare this with an app store. Do you want to install an application to edit photos or audio you need for any programming language a programming environment: it is for your downloaded and installed.
+Do not put any emphasis on LibreOffice. If you're talking about
+LibreOffice, people will compare it to Microsoft Office. And
+Microsoft Office is more streamlined, like it or not. 
 
-Now you have nowadays many app stores. But I have the impression that the quality of the applications in Linux software repositories is generally higher than the quality of, for example Google Play applications. And applications in the repository contain significantly fewer ads.
+But that's not relevant,
+because you don't neet an office suite today. If you necessarily
+want to do something like Microsoft Office, use Google docs. 
+But I think there will always be better solutions.
+
+Should I still use Linux?
+-------------------------
+
+So are there still valid reasons to use Linux? Of course. Otherwise I
+would not use it myself. So here is what everyone has been waiting for:
+the real reasons why everyone should be a fan of Linux.
+
+A wide range of easy to install software
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you install a mainstream Linux distribution, you have
+access to a very wide range of software packages, via the so-called
+software repository. You can compare this with an app store. You
+want to install an application to edit photos or audio? You need
+a programming environment for any programming language? You can
+download and install all this automatically.
+
+Today, there are many app stores around. But I have the impression
+that the quality of the applications in Linux software repositories
+is generally higher than the quality of, for example apps in Google
+Play. And applications in a repository certainly contain significantly
+less ads.
+
 No crapware
+~~~~~~~~~~~
 
-I have just not said you operating system inherits virtually free if you buy a computer? What I forgot to say there is that you often have one in the case of Windows or Android whole bunch of other software inherits, that you really do not need. (On a Mac you have that maybe less, but that's also less "quasi free ':))
+Did I tell you that your operating system is installed as good as for
+free when you buy a new computer? What I forgot to tell, is that very
+often a lot of other software is installed for free as well. A lot of
+software you actually don't want or need.  (Maybe this is less the case
+for Apple products, but they are also less 'as good as free'. :))
 
-You know the drill, those programs that do everything, or just did not, and who are beginning to complain that you have to purchase a license. After X time Maybe the software also provides information about you to any third party, it's hard to say. And removing the software is not always easy, because it is often unclear what is now required to use your PC and what not.
+I bet you've seen them before: those programs that do who-knows-what,
+and start to complain after a certain amout of time that you have to
+purchase a license. Maybe this software also provides information about
+you to some third party, it's hard to say. And removing it is not always
+easy, because it is often unclear what exactly is required to use your
+PC and what isn't.
 
-An open source Linux distribution is almost never preinstalled. So you have to go through a tedious installation procedure. But what you have then is a clean system with no crap . That alone makes the inconvenience of installing more than good.
+An open source Linux distribution is almost never preinstalled. So you
+have to go through a tedious installation procedure. But after that,
+you have this clean system without crappy software. That alone makes up
+for the inconvenience of installing.
+
 Easy reinstallation
+~~~~~~~~~~~~~~~~~~~
 
-If for any reason must be completely re-install a PC, Linux is the easiest solution. You download an image, and you can get started without that you need a license.
+If for any reason must be completely re-install a PC, Linux is the easiest
+solution. You download an image, and you get started without 
+having to search for a license key or something.
+
 Free software rules
+~~~~~~~~~~~~~~~~~~~
 
-The main reason I kept until recently, of course: Linux is free software. And the vast majority of the applications that come with a Linux distribution is too. When you install free software, then you, by definition, have access to the source code of the software. This means that you can check whether that software does not do things you do not like it. Or, if you do not like studying source code, which can be done by an independent party.
+This is the number one reason to try Linux: Linux is free software.
+And the vast majority of the applications that come with a Linux
+distribution, is free software too. When you install free software, then
+by definition you have access to the source code of the software. This
+means that you can check whether that software doesn't do things you do
+not want. Or, if you do not like studying source code, you can let an
+independent party check it out.
 
 If you use software that you do not have access to the source code, you have to trust your supplier. Does the software nothing behind your back ? Put your software a backdoor into your computer open so body X or Y can check if you're good enough ? Can that body also turn off your computer for example, remotely? And to what extent are the backdoors then secured against persons with malicious intent?
 
