@@ -1,5 +1,5 @@
 .. title: Why Linux? For real.
-.. slug: why-linux-for-real
+.. slug: why-linux
 .. date: 2014/10/24 17:33:06
 .. tags: linux,opensource
 .. link: 
@@ -223,6 +223,24 @@ updating doesn't work, because the installers don't ask for elevated
 permissions. If you hate this as much as I do, try Linux mint, and be
 delighted.
 
+A system that's consistent and mature
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you install a mature Linux distribution, you end up with a nice
+consistent system. You've got a text editor, a sound recorder, a document
+viewer, a web browser, and so on. In most of the cases they have more
+or less the same look and feel. Of course you are free to install 100
+different sound recorders if you want to, but after a standard install
+you have one, the one that the distribution likes the most.
+
+I wanted to mention this explicitly, because this is not the case for
+Windows 8.1. There you have two document viewers: one for the desktop,
+one for Metro. Two sound recorders: one for the desktop, one for
+Metro. Two web browsers. And I could carry on.
+
+Windows 8.1 is young. Windows 10 will probably be more mature. But
+if you want a mature Linux distribution, there is plenty of choice today.
+
 No crapware
 ~~~~~~~~~~~
 
@@ -250,6 +268,7 @@ Easy reinstallation
 If for any reason you need a complete re-install of your PC, Linux is
 the easiest solution. You download an image, and you get started without
 having to search for a license key.
+
 
 Free software rules
 ~~~~~~~~~~~~~~~~~~~
