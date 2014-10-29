@@ -13,6 +13,8 @@ As promised, some details
 about how I :doc:`migrated my blog <first-post>` from Drupal 6 to `Nikola
 <http://getnikola.com>`__.
 
+.. TEASER_END
+
 First of all some details about the Drupal site I migrated from.
 
 * I did not have node revisions on my Drupal site.

@@ -371,6 +371,7 @@ THEME = "johanv"
 
 # Show only teasers in the index pages? Defaults to False.
 # INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # A HTML fragment with the Read more... link.
 # The following tags exist and are replaced for you:
@@ -381,7 +382,7 @@ THEME = "johanv"
 # READ_MORE_LINK = '<p class="more"><a href="{link}">{read_more}…</a></p>'
 
 # A HTML fragment describing the license, for the sidebar.
-LICENSE = ""
+# LICENSE = ""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """

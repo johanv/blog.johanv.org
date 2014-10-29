@@ -16,6 +16,8 @@ It was rather cheap. And it has crappy Linux support. Damn.
 Every time I install a new Linux distribution, I have forgotten how to
 use this printer. So I might as well document it here.
 
+.. TEASER_END
+
 If you want to attach your printer to your PC using the USB cable. It's
 not that difficult. You can install the
 `hplip <http://hplipopensource.com/hplip-web/index.html>`__ package,

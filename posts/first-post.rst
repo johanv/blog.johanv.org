@@ -14,6 +14,8 @@ Now I am using `Nikola <http://getnikola.com>`_, a static site generator.
 I got the idea from `guitarman <http://stevebaer.com>`_, who did an 
 `HPR episode about Nikola <http://hackerpublicradio.org/eps.php?id=1577>`_.
 
+.. TEASER_END
+
 I see a lot of great features:
 
 * I can store my content in a `git <http://git-scm.com>`_ repository.

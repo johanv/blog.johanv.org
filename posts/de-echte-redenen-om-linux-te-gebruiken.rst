@@ -13,6 +13,7 @@ erg vaak verkeerde argumenten heb gebruikt. Na 15 jaar is het tijd om een
 aantal misverstanden de wereld uit te helpen, en jullie de echte redenen te
 vertellen waarom je Linux moet gebruiken :-)
 
+.. TEASER_END
 
 Ik ben niet de enige die Linux met verkeerde argumenten aanprees: het is
 een veelvoorkomend probleem.

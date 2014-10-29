@@ -19,6 +19,8 @@ In deze post wil ik het hebben over een bijzonder soort computers,
 waarvoor een installatie van Linux volgens mij een grote stap vooruit zou
 zijn: de computers in de Vlaamse lagere scholen en kleuterscholen.
 
+.. TEASER_END
+
 Ik sta zelf niet in het onderwijs. Ik moet dus bekennen dat ik
 nauwelijks weet waarover ik praat. Maar ik vang wel eens wat op.
 Computers die niet gebruikt worden omdat de les

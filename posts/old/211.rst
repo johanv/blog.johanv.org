@@ -20,6 +20,8 @@ Yet it is rather easy to prove. So that is what I'll be
 doing in this article. If you are afraid of math, don't worry, it won't
 take more than 10 minutes.
 
+.. TEASER_END
+
 First of all I am going to define a
 prime number. I won't go into technical details, but a positive integer
 is a prime number if it has exactly 2 positive divisors: 1 and the

@@ -12,6 +12,8 @@ And I must confess that I very often used wrong arguments doing this.
 After 15 years it is time to ditch some fake arguments,
 and to tell you the real reasons why you should switch to Linux. :-)
 
+.. TEASER_END
+
 I'm not the only one that tried to convice people using fake
 arguments: it's a common problem.
 

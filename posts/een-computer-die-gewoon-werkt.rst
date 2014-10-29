@@ -12,6 +12,8 @@ toepassingen op. Dat heeft te maken met mijn job en mijn interesses. Als
 ik dan eens op een PC kan werken waarbij de menu's niet overladen zijn,
 en het ziet er nog eens mooi uit ook, dan voel ik me helemaal zen :-)
 
+.. TEASER_END
+
 .. image:: /galleries/Screenshots_Linux_Mint_17/01_Mint_menu.png
 
 We hadden deze laptop al een aantal jaar. Maar nu is hij dus proper. En
