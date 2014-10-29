@@ -192,7 +192,7 @@ LibreOffice, people will compare it to Microsoft Office. And
 Microsoft Office is more streamlined, like it or not. 
 
 But really, that's not relevant.
-You don't neet an office suite today. If you insist
+You don't need an office suite today. If you insist
 to do something like Microsoft Office, use Google docs. 
 But I think there will always be better solutions.
 
@@ -220,7 +220,7 @@ Play. Applications in a repository certainly contain significantly
 less ads. And they are easy to update. Did you ever use Java or Flash
 on Windows 7? Then you know the pop-ups asking you to update. But
 updating doesn't work, because the installers don't ask for elevated
-permissions. If you hate this as much as I do, try Linux mint, and be
+permissions. If you hate this as much as I do, try Linux Mint, and be
 delighted.
 
 A system that's consistent and mature
@@ -257,7 +257,7 @@ you to some third party, it's hard to tell. And removing it is not always
 easy, because it is often unclear what exactly is required to use your
 PC and what isn't.
 
-An open source Linux distribution is almost never preinstalled. So you
+A Linux distribution is almost never preinstalled. So you
 have to go through a tedious installation procedure. But after that,
 you have this clean system without crappy software. That alone makes up
 for the inconvenience of installing.
