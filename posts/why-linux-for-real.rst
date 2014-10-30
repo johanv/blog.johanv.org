@@ -1,4 +1,4 @@
-.. title: Why Linux? For real.
+.. title: The real reasons for using Linux
 .. slug: why-linux
 .. date: 2014/10/24 17:33:06
 .. tags: linux,opensource
@@ -17,16 +17,19 @@ and to tell you the real reasons why you should switch to Linux. :-)
 I'm not the only one that tried to convice people using fake
 arguments: it's a common problem.
 
-As an experiment, I recently asked Google: "Waarom Linux?". ('Why Linux?')
+As an experiment, `I recently asked Google
+<https://www.google.be/search?q=waarom+linux>`_: "Waarom Linux?". ('Why Linux?')
 I asked the question in Dutch, because that's what my friends would
 typically do. If they were interested at all.
 
 The first search result was a website that looked as it had been around
-for a long time. It listed some of the commonly heard arguments.
+for a long time. It listed `some of the commonly heard arguments
+<https://sites.google.com/site/computertip/waaromdaarom>`_.
 
-But of course, Googles results are filtered based on what it knows
-of me, so I asked DuckDuckGo as well. The first result I got there
-was a blog post from 2012, with similar arguments .
+But of course, Googles results are filtered based on what it knows of
+me, so `I asked DuckDuckGo <https://duckduckgo.com/?q=waarom+linux>`_
+as well. The first result I got there was `a blog post from 2012
+<http://www.alleslinux.net/waarom-linux/>`_, with similar arguments [#]_.
 
 So both pages I found where quite old. What explains why some arguments
 were outdated. Yet you still hear those arguments very often. And often
@@ -56,7 +59,7 @@ because Linux is faster
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 I strongly doubt that a PC will work faster after installing Linux.
-If you install a mainstream distribution (like Linux Mint or Ubuntu) with
+If you install a mainstream distribution (like `Linux Mint <http://www.linuxmint.com>`_ or `Ubuntu <http://www.ubuntu.com>`_) with
 the default settings today, then your pc better had enough memory and
 processing power. Modern Linux distributions have 'modern' requirements,
 just like this is the case with other operating systems.
@@ -76,7 +79,10 @@ something new.
 because open source software is more secure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Since Heartbleed, Shellshock and Drupageddon we know that open source
+Since `Heartbleed <http://heartbleed.com/>`_, `Shellshock
+<http://en.wikipedia.org/wiki/Shellshock_(software_bug)>`_
+and `Drupageddon
+<http://www.zoubi.me/blog/drupageddon-sa-core-2014-005-drupal-7-sql-injection-exploit-demo>`_ we know that open source
 software is vulnerable just like any other kind of software. I do believe
 that chances on errors in the source code become smaller as more
 people look at it. But the source code being availabe, doesn't guarantee
@@ -104,7 +110,8 @@ if you keep your Windows OS up to date, and you use Windows with a
 non-administrator account, and you have some basic knowledge about
 how the Internet works, 
 I think you can nowadays run Windows without antivirus software.
-Antivirus software doesn't work as good as it used to eather, because
+`Antivirus software doesn't work as good as it used to anyway
+<http://krebsonsecurity.com/2014/05/antivirus-is-dead-long-live-antivirus/>`_, because
 a lot of viruses today are smart enough to encrypt themselves.
 
 because it is more stable
@@ -113,14 +120,14 @@ because it is more stable
 On the server, maybe. But most of the people you want to convice 
 to use Linux are not going to set up a server. At best, they want to
 try it on their laptop. But if they - just to say something -
-have an nVidia graphics card, I dare say that stability might be an
-issue.
+have an nVidia graphics card, I dare say that `stability might be an
+issue <https://www.google.be/search?q=nouveau+driver+freeze>`_.
 
 because you get free support from a fine community
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you have a question about Linux, just ask Google. Google usually
-takes you to a discussion on Stack Exchange, and then you find the
+takes you to a discussion on `Stack Exchange <http://stackexchange.com/>`_, and then you find the
 correct answer. Chances are you do. Chances are you don't. It depends.
 
 But - do not tell anybody - if you have a question about Windows, this
@@ -129,8 +136,8 @@ case for Android and Apple-OSes.
 
 And although I've had many positive experiences in open source
 communities, it is certainly not always a bed of roses. Sometimes
-people can be very brutal, as Lennart Poettering says in a rant on
-Google+. I won't pretend that Poettering always behaves exemplary, but
+people can be very brutal, as Lennart Poettering says in `a rant on
+Google+ <https://plus.google.com/+LennartPoetteringTheOneAndOnly/posts/J2TZrTvu7vd>`_. I won't pretend that Poettering always behaves exemplary, but
 even if he doesn't, this cannot be an excucse for others bad
 behaviour.
 
@@ -143,23 +150,28 @@ past I was right without doubt :-)
 
 But today this is no longer the case, I think. The days when Microsoft
 was the only player on the market, are over. I just had a look on the
-user stats for the website of the non-profit organization I work for.
+user stats for the website of `the non-profit organization I work for
+<https://www.chiro.be>`_.
 Windows' share is only 65%. IOS (iPhone and iPad) accounts for
 15%. Macintosh and Android take both 9%. Windows is not alone
 any more, and Microsoft knows this very well.
 
 In recent years, Microsoft is investing more in interoperability and
-open source. In the near future you will be able to host ASP.NET web
-applications on a Linux Server with Mono. Today there is Microsoft Office
-software for Android and IOS. A fair amount of .NET libraries developed by
-Microsoft (like Entity Framework and ASP.NET MVC), are available under
+open source. In the near future you will be able to `host ASP.NET web
+applications on a Linux Server <http://www.infoworld.com/article/2608322/microsoft-net/microsoft-s-new-open-source-asp-net-can-run-on-linux--os-x.html>`_ 
+with Mono. Today there is `Microsoft Office
+software for Android and IOS <http://time.com/40801/microsoft-office-goes-fully-free-on-iphone-and-android-phones/>`_. A fair amount of .NET libraries developed by
+Microsoft (like `Entity Framework
+<https://entityframework.codeplex.com/license>`_ and `ASP.NET MVC
+<http://aspnetwebstack.codeplex.com/license>`_), are available under
 the Apache 2 open source license. It would not surprise me if Windows
 will eventually given away free as in beer, just like Android.
 
 Granted, Microsoft is still a monster with multiple heads. While one of the
 heads is friendly towards the open-source community, another head
 is sueing projects over software patents. Jeremy Allison of
-the Samba project, told at FOSDEM 2013 that he worked together with
+the Samba project, `told at FOSDEM 2013 <https://www.youtube.com/watch?v=lUIBv4p_zH4>`_
+that he worked together with
 Microsft on Samba 4. On the other hand, he was very happy that he could
 come to Brussels for once to speak at FOSDEM, instead of having to deal
 with judges.
@@ -181,7 +193,7 @@ example, Thunderbird and LibreOffice."
 Seriously? Office and e-mail? Is that what you need? In 2000 perhaps,
 but today? I think not.
 
-Office is just the thing that you don't need. If you do your work
+:doc:`Office is the thing that you don't need <node-204>`. If you do your work
 in Office, or in your mail client, then I think you're doing it wrong. What
 you need is a browser, a document reader and a decent text
 editor. And if you insist, maybe a spreadsheet. If you've got
@@ -246,7 +258,7 @@ No crapware
 
 Did I tell you that your operating system is installed as good as for
 free when you buy a new computer? What I forgot to tell, is that very
-often a lot of other software is installed for free as well. A lot of
+often `a lot of other software <https://duckduckgo.com/?q=crapware>`_ is installed for free as well. A lot of
 software you actually don't want or need.  (Maybe this is less the case
 for Apple products, but they are also less 'as good as for free'. :))
 
@@ -259,7 +271,7 @@ PC and what isn't.
 
 A Linux distribution is almost never preinstalled. So you
 have to go through a tedious installation procedure. But after that,
-you have this clean system without crappy software. That alone makes up
+you have this :doc:`clean system without crappy software <een-computer-die-gewoon-werkt>`. That alone makes up
 for the inconvenience of installing.
 
 Easy reinstallation
@@ -282,9 +294,9 @@ not want. Or, if you do not like studying source code, you can let an
 independent party check it out for you.
 
 If you use software without having access to the source code, you have
-to trust your supplier. Does the software things where you are not aware
-of? Does it open a backdoor into your computer so that instance X
-or Y can check whether you behave well? Can that instance also turn off your
+to trust your supplier. Does the software `things where you are not aware
+of <http://www.theregister.co.uk/2014/10/23/adobe_updates_digital_editions_encryption/>`_? Does it open a backdoor into your computer so that `instance X
+or Y can check whether you behave well <http://www.theregister.co.uk/2014/10/16/fbi_director_we_dont_want_a_backdoor_to_your_phone_we_want_the_front_door/>`_? Can that instance also turn off your
 computer if you don't behave? And to what extent are backdoors secured
 against crackers with malicious intents?
 
@@ -299,8 +311,8 @@ could be opened because of a hidden backdoor in the software.
 
 The only way to keep an eye on the behaviour of your devices is using
 open source software. Unfortunately, I cannot choose which software is
-used in my car. But on my PC, I can. And I'd like to defend this freedom
-as long as possible.
+used in my car. But on my PC, I can. And I'd like to `defend this freedom
+as long as I can <http://youtu.be/iaf3Sl2r3jE>`_.
 
 Work in progress
 ================
@@ -313,5 +325,8 @@ open source.
 
 If you have comments, feel free to post them in the discussion thread
 below. Or, if you prefer not to work with that evil Disqus system (which
-I would understand), feel free to send a pull request. If you want to
+I would understand), feel free to `send a patch or pull request <https://github.com/johanv/blog.johanv.org/blob/master/posts/why-linux-for-real.rst>`_. If you want to
 correct my bad English, send a pull request as well. Thank you!
+
+.. [#] I searched in English as well, and I found a `similar page
+   <http://www.whylinuxisbetter.net/>`_.
