@@ -6,6 +6,8 @@
 .. description: Drop the fake arguments for trying out Linux. Use the real ones.
 .. type: text
 
+I submitted this to HPR, see `episode 1641 <http://hackerpublicradio.org/eps.php?id=1641>`_.
+
 I am a Linux user since the end of 1999. Which is 15 years already. I've
 also been trying for almost 15 years to convince other people to try Linux.
 And I must confess that I very often used wrong arguments doing this.
