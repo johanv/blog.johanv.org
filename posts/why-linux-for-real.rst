@@ -1,7 +1,7 @@
 .. title: The real reasons for using Linux
 .. slug: why-linux
-.. date: 2014/10/24 17:33:06
-.. tags: linux,opensource
+.. date: 2014/10/30 21:14:06
+.. tags: linux,opensource,hpr
 .. link: 
 .. description: Drop the fake arguments for trying out Linux. Use the real ones.
 .. type: text
