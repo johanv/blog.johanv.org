@@ -6,6 +6,10 @@
 .. description: 
 .. type: text
 
+**UPDATE 2014-11-14:** Don't follow this howto. The
+`tutorial of FTS-team <http://fds-team.de/cms/articles/2013-12/use-a-real-windows-7-partition-in-virtualbox-kvm-vmware-player-u.html>`_ describes a much better way to do this.
+
+
 \ **WARNING:** After a month, I ran into problems with the windows
 activation. I couldn't activate the virtual and the physical windows at
 the same time. I tried what's on
