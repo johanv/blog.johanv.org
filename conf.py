@@ -502,16 +502,10 @@ COMMENT_SYSTEM_ID = "blogjohanvorg"
 # long time). Insert anything you want here, or even make it empty.
 SOCIAL_BUTTONS_CODE = """
 <!-- Social buttons -->
-<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
-<a class="addthis_button_flattr.com">Flattr</a>
-<ul>
-<li><a class="addthis_button_facebook"></a>
-<li><a class="addthis_button_google_plusone_share"></a>
-<li><a class="addthis_button_twitter"></a>
-<li><a class="addthis_button_more"></a>
-</ul>
-</div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js" async="async"></script>
+
+
 <!-- Flattr script adapted from http://tools.flattr.net/addthis/action.php -->
 <script type="text/javascript">
 	var addthis_config = {
@@ -521,6 +515,15 @@ SOCIAL_BUTTONS_CODE = """
 	              icon: "https://raw.githubusercontent.com/balupton/flattr-buttons/master/logo-32x32.png"}
 	}
 </script>
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+    <a class="addthis_button_flattr.com"></a>
+    <a class="addthis_button_facebook"></a>
+    <a class="addthis_button_google_plusone_share"></a>
+    <a class="addthis_button_twitter"></a>
+    <a class="addthis_button_more"></a>
+</div>
+
 <!-- End of social buttons -->
 """
 
