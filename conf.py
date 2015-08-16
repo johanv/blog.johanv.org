@@ -245,9 +245,9 @@ COMPILERS = {
 
 # It seems that it sets the pwd to the base dir of the nikola
 # project. Which is cool :-)
-DEPLOY_COMMANDS = [
+DEPLOY_COMMANDS = {'default': [
 	'rsync --delete -pave ssh output/ johanv@johanv.org:www/blog.johanv.org/',
-]
+]}
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -746,3 +746,4 @@ LOGGING_HANDLERS = {
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {}
+WRITE_TAG_CLOUD = True
