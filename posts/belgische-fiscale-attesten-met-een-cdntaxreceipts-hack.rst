@@ -9,10 +9,11 @@
 Sinds kort hebben wij een coole `CiviCRM <https://civicrm.org>`_-instantie
 op het werk. En één van de dingen dat we daarmee willen doen, is
 fiscale attesten afdrukken. Ik dacht dat we waarschijnlijk niet de enigen waren
-die zoiets wilden doen, dus ik heb wat gezocht op het Internet. Misschien
-zocht ik niet goed genog, want hoewel België wereldwijd
+die zoiets wilden doen, dus ik heb wat gezocht op het Internet. Tevergeefs.
+Misschien
+zocht ik niet goed genoeg, want hoewel België wereldwijd
 `op de vijfde plaats <https://civicrm.org/blogs/cividesk/how-many-organizations-use-civicrm-where-how>`_
-staat qua CiviCRM-implementaties, heeft er nog niemand CiviCRM gebruikt
+staat wat betreft CiviCRM-implementaties, heeft er nog niemand CiviCRM gebruikt
 voor Belgische fiscale attesten. Of er is niemand die eraan gedacht heeft om te
 documenteren hoe het kan.
 
@@ -34,7 +35,7 @@ CDNTaxReceipts
 ==============
 Wat het zoekwerk op internet wel opleverde, was
 `CDNTaxReceipts <https://civicrm.org/extensions/cdn-tax-receipts>`_ extensie,
-een extensie voor Fiscale attesten in Canada. Ik heb die geïnstalleerd, en
+een extensie voor fiscale attesten in Canada. Ik heb die geïnstalleerd, en
 daar wat aan geprutst, tot het werkte voor ons.
 
 CDNTaxReceipts kent twee soorten fiscale attesten: 'individuele' en
@@ -70,13 +71,13 @@ CDNTaxReceipts voorziet hooks, die je kunt gebruiken om het verder te
 configureren: ``hook_cdntaxreceipts_eligible``, waarmee je kunt bepalen
 of een bijdrage (contribution) in aanmerking komt voor een fiscaal attest.
 En ``hook_cdntaxreceipts_alter_receipt``, waarmee je aan het attest kunt
-foefelen. We gaan die allebei gebruiken.
+foefelen. We implementeren ze allebei.
 
 `Hooks kun je implementeren <https://wiki.civicrm.org/confluence/display/CRMDOC/Hook+Reference#HookReference-Implementinghooks>`_
 in een
 `eigen CiviCRM-extensie <https://wiki.civicrm.org/confluence/display/CRMDOC/Create+a+Module+Extension>`_,
 of, als je onderliggend Drupal gebruikt, in een
-`https://www.drupal.org/node/1074360 <eigen Drupal module>`_.
+`eigen Drupal module <https://www.drupal.org/node/1074360>`_.
 
 Wij hebben de hooks geïmplementeerd in een CiviCRM-extensie die
 ``chirocontribution`` heet, zoals je zult zien aan de naam van de
@@ -85,12 +86,12 @@ hook-implementaties.
 hook_cdntaxreceipts_eligible
 ----------------------------
 Je krijgt in België (op dit moment toch) een fiscaal attest als je op
-jaarbasis 40 EUR of meer hebt geschonken. Het is een beetje vervelend dat
+jaarbasis 40 EUR of meer schenkt. Het is een beetje vervelend dat
 ``hook_cdntaxreceipts_eligible`` per contributie wordt aangeroepen, want
 wat ik uiteindelijk doe, is voor iedere contributie apart nakijken of
-diegenen die de gift doet, over heel het jaar voldoende heeft geschonken
-om een attest te krijgen. Dit is erg inefficiënt, maar voor ons aantal
-giften lijkt het te werken. Hier is de code
+het gekoppelde contact over heel het jaar voldoende heeft gegeven
+om een attest te krijgen. Dit is erg inefficiënt, maar voor ons
+lijkt het te werken. Hier is de code
 
 .. code-block:: php
 
@@ -121,7 +122,7 @@ de naam van je eigen extensie en module. Het opmerken waard is deze regel:
 
     return array($total >= CRM_Core_BAO_Setting::getItem('chirocontribution', 'chirocontribution_amount_tax_receipt'));
 
-Ik heb dus het bedrag van 40 EUR niet letterlijk in de code gezet;
+Ik heb het bedrag van 40 EUR niet letterlijk in de code gezet;
 ik gebruik een CiviCRM setting ``chirocontribution_amount_tax_receipt`` uit
 de groep ``chirocontribution``. Het idee is om ooit een formulier te maken
 via hetwelke we dat bedrag kunnen configureren, maar dat is nog een van de vele
@@ -213,7 +214,7 @@ We zijn er nog niet. De fiscale attesten van CDNTaxReceipt worden met 3 op
 een blad geprint (telkens 1 origineel en 2 dubbeltjes, dus 3 keer hetzelfde
 attest op één blad), en er staat niet op wat we willen.
 
-Om het voor ons goed te krijgen, heb ik cdntaxreceipts.functions.inc aangepast
+Om het voor ons goed te krijgen, heb ik ``cdntaxreceipts.functions.inc`` aangepast
 `op deze manier <https://github.com/johanv/CDNTaxReceipts/commit/d96d1f655ac388f25279f331934432d853a0d20a.diff>`_.
 
 Wat deze patch doet:
@@ -228,8 +229,8 @@ Wat deze patch doet:
 Nadat je ze geapplied hebt, wil je de attesten waarschijnlijk ook aanpassen.
 Bij ons staat elke gift er apart op, maar dat heb ik nog nergens anders zo
 gezien. Bovendien staat er daar ook overal 'PCH' hardgecodeerd achter. Geen
-idee waarom. Vermoedelijk is dat irrelevant of fout, maar dat heeft dan nog
-niemand gerapporteerd ;-)
+idee waarom. Vermoedelijk is dat irrelevant of fout, maar voorlopig heeft dat
+nog niemand gerapporteerd ;-)
 
 Wat je dus moet doen, is het bestand
 `cdntaxreceipt.functions.inc <https://github.com/johanv/CDNTaxReceipts/blob/chiro/cdntaxreceipts.functions.inc#L266>`_
@@ -290,7 +291,7 @@ dat begrijpt, mag me dat eens komen uitleggen.
 
 In CDNTaxReceipt zit een template voor CiviReport, maar daar staat geen
 adres op. Het is waarschijnlijk niet moeilijk om die template aan te passen,
-zodat er wel een adres op staat, maar toen ik aan dat rapport begon te werken,
+zodat er wel een adres op staat. Maar toen ik aan dat rapport begon te werken,
 was ik helemaal vergeten dat die template bestond. Ik ben nogal eens
 verstrooid of vergeetachtig, helaas. Ik heb dus een custom search gemaakt.
 
@@ -303,7 +304,7 @@ Ik zal alleszins de query meegeven die ik gebruik voor de custom search;
 desnoods kun je hem runnen op je database, en met dat resultaat iets verder
 doen. Voor 2016 ziet de query er zo uit:
 
-.. codeblock sql
+.. code-block:: sql
 
     SELECT tr.receipt_no, c.display_name, a.street_address, a.postal_code, a.city, tr.receipt_amount
     FROM cdntaxreceipts_log tr
@@ -315,7 +316,8 @@ doen. Voor 2016 ziet de query er zo uit:
 
 Als je een custom search implementeert, dan zet je uiteraard niet letterlijk
 `'2016/%'` in je query, je gebruikt een query-parameter (alweer zo'n
-ongedocumenteerd iets in CiviCRM-land) die je dan invult
+ongedocumenteerd iets in CiviCRM-land, maar in de hook-implementaties bovenaan
+deze post worden ze ook gebruikt). Die parameter vul je dan in
 op basis van het jaar dat de gebruiker kiest in je search form. Een aparte
 blog post dringt zich meer en meer op ;-)
 
