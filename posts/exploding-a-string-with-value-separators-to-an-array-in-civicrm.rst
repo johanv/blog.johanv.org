@@ -1,10 +1,10 @@
 .. title: Exploding a string with value separators to an array in CiviCRM
 .. slug: exploding-a-string-with-value-separators-to-an-array-in-civicrm
 .. date: 2015-08-27 13:16:22 UTC+02:00
-.. tags: civicrm
-.. category: 
-.. link: 
-.. description: 
+.. tags: civicrm,development
+.. category:
+.. link:
+.. description:
 .. type: text
 
 CiviCRM stores its multiselect custom field values in the database
@@ -38,4 +38,3 @@ This is probably not wat you want. What you really want to do, is ::
 
 I just put this in a blog post, because I always forget, and Google doesn't
 seem to know.
-

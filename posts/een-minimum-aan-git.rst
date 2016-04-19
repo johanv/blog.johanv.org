@@ -1,8 +1,8 @@
 .. title: Een minimum aan git
 .. slug: een-minimum-aan-git
 .. date: 2016-04-02 19:38:22 UTC+02:00
-.. tags: git
-.. link: 
+.. tags: git,development
+.. link:
 .. description: Minimum minimorum git-kennis voor iedereen die wel eens wat moet programmeren.
 .. type: text
 
@@ -73,7 +73,7 @@ Nu gaan we een 'repository' maken voor dat project: een soort van database
 die de versies van jouw source code zal bijhouden.
 
 Om dit te doen, open je Git Extensions, je klikt 'Create new repository'.
-Klik dan op 'Browse' om de folder waarin je source staat te selecteren. 
+Klik dan op 'Browse' om de folder waarin je source staat te selecteren.
 Als repository type kies je 'Personal repository', en vervlogens klik
 je op 'Create'.
 
@@ -135,7 +135,7 @@ gesofisticeerder.
 .. code-block:: python
 
   import datetime
-  
+
   d = datetime.datetime.now()
   if d.hour >= 17:
       print('Good evening world')
@@ -155,7 +155,7 @@ Ik doe nog een kleine aanpassing (leestekens in mijn boodschap):
 .. code-block:: python
 
   import datetime
-  
+
   d = datetime.datetime.now()
   if d.hour >= 17:
       print('Good evening world.')
@@ -176,7 +176,7 @@ het bestand 'hello.py':
 
   import datetime
   import hellohelper
-  
+
   d = datetime.datetime.now()
   hellohelper.say_hello(d)
 
@@ -260,4 +260,3 @@ kunt bewaren, en nogmaals: doe dat bij iedere nieuwigheid die je (al dan
 niet gedeeltelijk) maakt, en iedere bug die je fixt.
 
 Succes!
-

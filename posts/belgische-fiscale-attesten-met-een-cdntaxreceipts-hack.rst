@@ -1,7 +1,7 @@
 .. title: Belgische fiscale attesten met een CDNTaxReceipts-hack
 .. slug: belgische-fiscale-attesten-met-een-cdntaxreceipts-hack
 .. date: 2016-02-25 17:33:03 UTC+01:00
-.. tags: civicrm,hacks
+.. tags: civicrm,hacks,development
 .. link:
 .. description: Ik vond een extensie voor fiscale attesten. Voor Canada...
 .. type: text

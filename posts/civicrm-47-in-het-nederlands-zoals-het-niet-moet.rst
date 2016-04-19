@@ -1,7 +1,7 @@
 .. title: CiviCRM 4.7 in het Nederlands, zoals het niet moet
 .. slug: civicrm-47-in-het-nederlands-zoals-het-niet-moet
 .. date: 2016-04-19 11:26:46 UTC+02:00
-.. tags: civicrm,development
+.. tags: civicrm,development,hacks
 .. link:
 .. description: Een lelijke hack rond de vertalingsissues van CiviCRM 4.7
 .. type: text

@@ -1,10 +1,10 @@
 .. title: De CiviCRM API Basic Get implementatie
 .. slug: de-civicrm-api-basic-get-implementatie
 .. date: 2015-08-16 15:01:52 UTC+02:00
-.. tags: civicrm,opensource
-.. category: 
-.. link: 
-.. description: 
+.. tags: civicrm,opensource,development
+.. category:
+.. link:
+.. description:
 .. type: text
 
 `De 'Basic Get'-implementatie van CiviCRM verandert

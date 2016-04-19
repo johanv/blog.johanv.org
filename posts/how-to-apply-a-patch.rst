@@ -1,7 +1,7 @@
 .. title: How to apply a patch?
 .. slug: how-to-apply-a-patch
 .. date: 2016-02-25 20:05:07 UTC+01:00
-.. tags: linux,commandline,patch
+.. tags: linux,commandline,patch,development
 .. link:
 .. description: I have a patch file, and I don't know what to do with it. Help!
 .. type: text
