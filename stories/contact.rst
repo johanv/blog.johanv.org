@@ -19,5 +19,4 @@ You can contact me on:
 My e-mail address is joohanv at johanv dot org.
 (I deliberately put an error in there, to avoid spam. I guess you'll
 be able to figure it out.) Please use my PGP public key
-(`4009EB3126E6E87B <https://keybase.io/johanv/key.asc>`_) to encrypt
-your messages.
+to encrypt your messages. You can find it on my keybase profile.

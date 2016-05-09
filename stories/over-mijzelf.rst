@@ -8,7 +8,7 @@
 
 Momenteel ben ik informaticus bij Chirojeugd Vlaanderen. Ik doe daar
 voornamelijk programmeerwerk. Zo werk ik mee aan het
-`GroepsAdministratieProgramma <https://develop.chiro.be:3000/projects/gap>`__,
+`GroepsAdministratieProgramma <https://websites.chiro.be/projects/gap>`__,
 een online toepassing waarmee de Chirogroepen hun ledenbeheer kunnen
 doen. Sinds 2014 open source, hoera! En ik werk ook mee aan de
 CiviCRM-implementatie voor de Chiro.
