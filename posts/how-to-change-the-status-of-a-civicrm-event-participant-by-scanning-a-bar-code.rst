@@ -1,4 +1,4 @@
-.. title: How to change the status of a CiviCRM event participant by scanning a bar code.
+.. title: How to change the status of a CiviCRM event participant by scanning a bar code
 .. slug: how-to-change-the-status-of-a-civicrm-event-participant-by-scanning-a-bar-code
 .. date: 2016-05-27 22:12:09 UTC+02:00
 .. tags: civicrm,api,howto
@@ -7,28 +7,30 @@
 .. type: text
 
 Yesterday I was at `Civicon NWEurope 2016 <https://nweurope2016.civicrm.org/>`_.
-I was talking to Yves, who was searching for a system that allowed him
-to scan some kind of bar code of participants that turn up at an event, and
+I was talking to Yves, who was searching for a system that would enable him
+to scan some kind of bar code of participants turning up at an event, and
 then automatically change the participants's status to 'Attended' in
 CiviCRM.
 
 .. TEASER_END
 
-I told him this was not very difficult, and I promised to create a simple
+I thought this would not be too difficult, and I promised to create a simple
 proof of concept. So here it is.
 
 I will just show that it is possible, in the most simple way. I created
 a PHP application that reads participant ID's using a web form.
 It calls CiviCRM using the API to change the status of those participants
 to 'attended'. I chose to write a PHP application, because I assume that people
-who use CiviCRM will understand PHP. But you can use any type of client.
+who use CiviCRM will understand PHP. But you can use this with any
+programming language that can do curl-like web requests.
 
 So what you have to do, is send each participant a personalised letter or
 e-mail with their participant ID in a bar code font (more details on
-this later on). So with a scanner and the php app, we can change the
+this later on). So with a scanner and the PHP app, we can change the
 participant status.
 
-This example works for CiviCRM with Drupal.
+This example works for if your CiviCRM runs on top of Drupal. But I guess
+it can be changed for other platforms.
 
 What to do in CiviCRM?
 ======================
@@ -48,7 +50,9 @@ Your Drupal user will have a corresponding CiviCRM contact. You need to
 
 The PHP client application
 ==========================
-Here is the code for the application:
+Here is the code for the application. You do not need to run it on your
+CiviCRM server; it uses the HTTP-api to communicate with your CiviCRM
+instance.
 
 .. code-block:: php
 
@@ -140,7 +144,7 @@ Here is the code for the application:
           'id' => '$value.contact_id',
           'return' => 'display_name'
         ),
-        // Use another chained call to get event detail
+        // Use another chained call to get event title
         'api.Event.getsingle' => array(
           'id' => '$value.event_id',
           'return' => 'title',
@@ -190,10 +194,12 @@ be doable.
 
 Thoughts
 ========
-I cannot repeat enough that this is just a proof of concept. It read
-participant IDs, and changes statuses. Do not use this to prevent people
-from entering your event without paying; it is very easy to spoof the
-bar code by guessing other participant ID's.
+I cannot repeat enough that this is just a proof of concept. It reads
+participant IDs, and changes statuses, that's all. Do not use this to
+prevent people from entering your event without paying; it is very
+easy to spoof the bar code by guessing other participant ID's. As Alain
+suggested, you cold add a hash to the bar code, and check that hash in
+the client program.
 
 If you do not want to patch CiviCRM, you can also generate a bar code
 based on contact ID and event ID. You will have to adapt your API calls,
