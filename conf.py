@@ -12,7 +12,7 @@ BLOG_AUTHOR = "Johan Vervloet"
 BLOG_TITLE = "blog.johanv.org"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://blog.johanv.org/"
+SITE_URL = "https://blog.johanv.org/"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://getnikola.com/"
@@ -243,11 +243,7 @@ COMPILERS = {
 # plugin (`nikola install_plugin ping`).
 # To do manual deployment, set it to []
 
-# It seems that it sets the pwd to the base dir of the nikola
-# project. Which is cool :-)
-DEPLOY_COMMANDS = {'default': [
-	'rsync --delete -pave ssh output/ johanv@johanv.org:www/blog.johanv.org/',
-]}
+# DEPLOY_COMMANDS does not seem to work as it used to.
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -386,10 +382,10 @@ INDEX_TEASERS = True
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">
 <img alt="Creative Commons License BY-SA"
 style="border-width:0; margin-bottom:12px;"
-src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>"""
+src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
 CONTENT_FOOTER = 'Contents &copy; {date}         <a href="/stories/contact.html">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
@@ -511,7 +507,7 @@ SOCIAL_BUTTONS_CODE = """
 	var addthis_config = {
 	      services_custom: {
 	              name: "Flattr",
-	              url: "http://flattr.com/submit/auto?url="+encodeURIComponent(document.URL)+"&title={{title}}&user_id=johanv&category=text",
+	              url: "https://flattr.com/submit/auto?url="+encodeURIComponent(document.URL)+"&title={{title}}&user_id=johanv&category=text",
 	              icon: "https://raw.githubusercontent.com/balupton/flattr-buttons/master/logo-32x32.png"}
 	}
 </script>
