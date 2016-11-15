@@ -10,16 +10,16 @@
 Bijna iedere keer als je je eID wilt gebruiken onder Linux, moet dat anders.
 Die indruk heb ik tenminste. Vandaag lukte het na veel proberen op deze manier:
 
-#. Ik heb de middleware uiteindelijk handmatig gebuild, van de tar.gz-source die
-   ik downloade van http://eid.belgium.be/en/using_your_eid/installing_the_eid_software/linux. 
-   Achteraf bekeken was dat misschien niet nodig. Hoe dan ook, ik moest deze pakketten
-   installeren om de middleware te kunnen builden:
+Ik heb de middleware uiteindelijk handmatig gebuild, van de tar.gz-source die
+ik downloade van http://eid.belgium.be/en/using_your_eid/installing_the_eid_software/linux. 
+Achteraf bekeken was dat misschien niet nodig. Hoe dan ook, ik moest deze pakketten
+installeren om de middleware te kunnen builden:
 
 .. code-block::
 
     sudo dnf install pcsc-lite-libs pcsc-lite-devel gtk3-devel
 
-#. Blijkbaar moet ook de pcscd-service gestart zijn, dat is iets voor de usb-kaartlezer.
+Blijkbaar moet ook de pcscd-service gestart zijn, dat is iets voor de usb-kaartlezer.
 
 .. code-block::
 
