@@ -64,7 +64,7 @@ I needed a Windows PC to accomplish that, and I followed more or less what's on
 
 I downloaded Odin v3.07 from this very page, and the zip with pit-files as
 well. I don't like it at all to download software from a random forum thread,
-but I really tried a lot, and I was happy it eventually worked. I needed
+but I really got desparate, and I was happy it eventually worked. I needed
 to install the drivers for the phone as well, but those I downloaded from
 `samsungdrivers.net <http://www.samsungdrivers.net/samsung-galaxy-s-ii-software/>`_.
 (Not sure that's an official site, but some
