@@ -81,4 +81,6 @@ heimdall, I reformatted the internal sd card in recovery mode,
 and then I sideloaded CyanogenMod again, and the pico-image
 of OpenGapps.
 
-And it worked.
+And it worked. For the last time. I guess I'll keep an eye
+on `Lineage OS <http://lineageos.org/>`_ and
+`Dirty Unicorns <http://dirtyunicorns.com/>`_.
