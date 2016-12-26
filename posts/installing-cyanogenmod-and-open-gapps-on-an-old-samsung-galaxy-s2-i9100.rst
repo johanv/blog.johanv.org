@@ -14,7 +14,7 @@ father gave me his old Samsung Galaxy S2 i9100. It was running Android
 Android 6.0).
 
 I had some troubles with using the Cyanogenmod wiki, so I used googles cache.
-It took me more than a day to realise that `Cyanogenmod seems to have ceised
+It took me more than a day to realize that `Cyanogenmod seems to have ceised
 existing
 <https://www.xda-developers.com/the-death-of-cyangenmod-and-whats-in-store-for-the-future/>`_.
 So I guess this was the last time I installed CyanogenMod. But nevertheless,
@@ -39,15 +39,15 @@ message was:
 I was using the 'zImage' from the tar-file I downloaded using the `direct
 download link <https://web.archive.org/web/20161224194651/https://www.androidfilehost.com/?fid=95916177934516900>`_ on the wiki page.
 
-What I had to do, was unplug the device, reboot it into download mode, and then
-I had to enter this command:
+What I had to do, was unplug the device, reboot it into download mode, plug it
+in again and then I had to enter:
 
 .. code-block::
 
     heimdall flash --KERNEL zImage --no-reboot
 
-So KERNEL should be in all caps, and it was really necessary to unplug,
-reboot, and replug.
+So KERNEL should be in all caps, but it was really necessary to unplug,
+reboot, and replug. Which I found out after way to many tries.
 
 When the new kernel/recovery was installed, I booted into recovery, and I
 was able to install the latest nightly (ever as it seems) using
