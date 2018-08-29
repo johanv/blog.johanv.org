@@ -9,7 +9,7 @@
 Op dit moment ben ik PHP/Symfony-developer bij de KU Leuven, waar ik me
 aan het verdiepen ben in event sourcing en CQRS. Ik heb een lange tijd
 voor Chirojeugd Vlaanderen gewerkt, waar ik veel tijd heb gestoken in het
-`GroepsAdministratiePortaal <https://websites.chiro.be/projects/gap>`__,
+`GroepsAdministratiePortaal <https://gitlab.chiro.be/gap/gap/>`__,
 een online toepassing waarmee de Chirogroepen hun ledenbeheer kunnen
 doen. Sinds 2014 open source, hoera! Ik programmeerde er ook aan
 de CiviCRM-implementatie voor de Chiro, en bij uitbreiding dus ook
@@ -22,7 +22,7 @@ actief ben geweest.
 
 Ik ben vaak met wilde plannen bezig, die ook
 vaak even snel weer opgeborgen zijn. Herinnert iemand zich het
-wiskundekwartiertje, beerscan, netelug, `bierwiki <https://bierwiki.johanv.org>`__,
+wiskundekwartiertje, beerscan, netelug, `bierwiki <http://bierwiki.johanv.org>`__,
 de `commissie Linux <https://www.facebook.com/commissielinux>`__,
 en de `idiotproof-extension voor CiviCRM <https://github.com/johanv/idiotproof>`__?
 Ook mijn `github-profiel <https://github.com/johanv>`__ staat vol met zaken

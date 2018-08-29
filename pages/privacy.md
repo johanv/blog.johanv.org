@@ -1,10 +1,10 @@
-title: Privacystatement
-slug: privacy
-date: 2018-08-29 21:29:00 UTC+02:00
-tags: johanv.org
-type: text
-
-# Privacy statement
+<!--
+.. title: Privacystatement
+.. slug: privacy
+.. date: 2018-08-29 21:29:00 UTC+02:00
+.. tags: johanv.org
+.. type: text
+-->
 
 Uw privacy is belangrijk voor mij :-)
 
