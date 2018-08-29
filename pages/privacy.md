@@ -22,14 +22,14 @@ verzameld worden voor advertentiefuncties, en je IP-adres wordt
 geanonymiseerd voor het naar Google gaat. Ikzelf ga ook geen gegevens
 van jou gebruiken om te adverteren.
 
-Voor die Google Analytics zal mijn website ook een tweetal cookies in je
+Voor die Google Analytics zal mijn website een tweetal cookies in je
 browser zetten.
 
-Ik gebruik [disqus](https://disqus.com) als systeem om commentaren op mijn
+Ik gebruik [Disqus](https://disqus.com) als systeem om commentaren op mijn
 blog posts te beheren. Je bent niet verplicht om disqus te gebruiken; als
 je dat wel doet, dan kun je het
 [privacystatement van Disqus](https://help.disqus.com/terms-and-policies/disqus-privacy-policy)
 lezen, als je dat willen.
 
-Wil je commentaar geven op mijn posts zonder disqus te gebruiken, dan
+Wil je commentaar geven op mijn posts zonder Disqus te gebruiken, dan
 kun je me altijd [een mailtje sturen](/pages/contact/).
