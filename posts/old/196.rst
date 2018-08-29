@@ -3,7 +3,7 @@
 .. date: 2012-07-16 16:59:35
 .. tags: opensource,android,cyanogenmod
 .. link:
-.. description: 
+.. description:
 .. type: text
 
 Ik kocht me een nieuwe telefoon. Een Sony Ericsson Mini Pro met Android.
@@ -11,6 +11,8 @@ Een fijn toestel met hardwarekeyboard, maar helaas ook met een hele hoop
 crap voorgeïnstalleerd, die ik allemaal niet nodig heb. Gelukkig bestaat
 er een oplossing, en die heet
 `cyanogenmod <http://www.cyanogenmod.com/>`__.
+
+.. TEASER_END
 
 Cyanogenmod is
 alternatieve firmware voor Androidtelefoons, en het toeval wil dat er
@@ -114,7 +116,7 @@ niets.
 Op de computer open je een terminalvenster, zorg ervoor dat
 de map ‘platform-tools’ van de Android-SDK in je zoekpad staat (of geef
 het pad mee in onderstaand commando), en tik
-in:\ 
+in:\
 
 ::
 
@@ -123,7 +125,7 @@ in:\
 
 
 Je krijgt hopelijk iets
-in deze aard:\ 
+in deze aard:\
 
 ::
 
@@ -148,7 +150,7 @@ zonder het laatste cijfer, en je e-mailadres. Klik op ‘Submit’, en je
 krijgt je unlock-code te zien.
 
 Tik nu het volgende in het
-terminalvenster 
+terminalvenster
 
 ::
 
@@ -166,7 +168,7 @@ Een nieuwe bootloader flashen
 -----------------------------
 
 Geef je het volgende commando
-in:\ 
+in:\
 
 ::
 
@@ -223,4 +225,3 @@ Fingers crossed.
 
 Met wat geluk heb je nu een nieuw en cool OS op je telefoon, zodat je
 kunt uitpakken bij al je vrienden :)
-

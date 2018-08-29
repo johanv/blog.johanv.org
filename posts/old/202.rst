@@ -3,7 +3,7 @@
 .. date: 2013-03-04 17:46:01
 .. tags: tips,openstandaarden,file formats,office
 .. link:
-.. description: 
+.. description:
 .. type: text
 
 Tekstverwerkers zijn overrated
@@ -14,6 +14,8 @@ waarvoor betere alternatieven bestaan. Typisch voorbeeld: om een verslag
 te typen, om een manier van werken te documenteren, of om een visie op
 een bepaald onderwerp uit de doeken te doen, grijpen veel mensen naar
 Microsoft Word. Slecht idee. LibreOffice Writer dan maar? Al even erg.
+
+.. TEASER_END
 
 Als je een tekst wilt maken waarbij
 
@@ -173,8 +175,8 @@ Demo
 
 Deze tekst was oorsrponkelijk ook geschreven in markdown.
 Ter illustratie geef
-ik je de `brontekst </markdown/tekstverwerkers.md.txt>`_ mee, 
-en de `pdf </markdown/tekstverwerkers.pdf>`_ die ik maakte 
+ik je de `brontekst </markdown/tekstverwerkers.md.txt>`_ mee,
+en de `pdf </markdown/tekstverwerkers.pdf>`_ die ik maakte
 via een conversie naar LaTeX.
 
 .. [#] Markdown is op dit moment een beetje passé. De opvolger

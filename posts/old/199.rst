@@ -3,7 +3,7 @@
 .. date: 2012-12-05 17:18:55
 .. tags: development
 .. link:
-.. description: 
+.. description:
 .. type: text
 
 De tekst die ik zocht toen ik startte met git
@@ -14,6 +14,8 @@ gebruikten als versiebeheersysteem. Daarna werkte ik verschillende jaren
 met subversion. Maar sinds enkele maanden heb ik ook subversion gedumpt,
 en gebruik ik alleen nog git. Als ik kan kiezen tenminste. Dit zijn de
 redenen:
+
+.. TEASER_END
 
 -  Je kunt committen als je internetconnectie het laat afweten.
 -  Je kunt vrij gemakkelijk configureren dat niet iedereen
@@ -165,17 +167,17 @@ meest up-to-date developmentversie.
 
 ::
 
-                    master   
+                    master
                         ↓    HEAD
     C1 -- C2 -- C3 -- C4     branch2
            |                 ↓
-           +--- D3 -- D4 -- D5 
+           +--- D3 -- D4 -- D5
            |
            |           +--- F5 -- F6
            |           |           ↑
            +--- E3 -- E4         branch4
-                       ↑           
-                     branch3  
+                       ↑
+                     branch3
 
 Branches in je eigen kopie van de repository, zijn lokale branches. De
 branches in een remote repository kun je ook zien, dat zijn dan remote
@@ -187,8 +189,8 @@ pointer van de remote branch.
 
     (origin)
 
-                    master   
-                        ↓         
+                    master
+                        ↓
     C1 -- C2 -- C3 -- C4          branch2
            |                       ↓
            +--- D3 -- D4 -- D5 -- D6
@@ -196,8 +198,8 @@ pointer van de remote branch.
            |           +--- F5 -- F6
            |           |           ↑
            +--- E3 -- E4         branch4
-                       ↑           
-                     branch3  
+                       ↑
+                     branch3
 
     (lokaal)
 
@@ -213,11 +215,11 @@ pointer van de remote branch.
     (lokaal)
 
                           HEAD
-                          master  
-                             ↓    
-    C1 -- C2 -- C3 -- C4 -- C5  
-           |                       
-           +--- E3 -- F4 -- F5 -- F6  
+                          master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
+           |
+           +--- E3 -- F4 -- F5 -- F6
                                    ↑
                                 origin/branch4
 
@@ -238,11 +240,11 @@ en je checkt die uit, dan is de situatie als volgt:*
 
 ::
 
-                          master  
-                             ↓   
-    C1 -- C2 -- C3 -- C4 -- C5  
-           |                       
-           +--- E3 -- F4 -- F5 -- F6  
+                          master
+                             ↓
+    C1 -- C2 -- C3 -- C4 -- C5
+           |
+           +--- E3 -- F4 -- F5 -- F6
                                    ↑
                                 origin/branch4
                                 branch4
@@ -254,7 +256,7 @@ schuift de pointer van je tracking branch gewoon mee op met ``HEAD``.
 
 ::
 
-                          master  
+                          master
                              ↓                HEAD
     C1 -- C2 -- C3 -- C4 -- C5                branch4
            |                                   ↓
@@ -283,7 +285,7 @@ enkel neerkomt op het verleggen van de pointer van een branch.
 ::
 
                     HEAD
-                    branch1   
+                    branch1
                        ↓
     C1 -- C2 -- C3 -- C4
                        |
@@ -366,7 +368,7 @@ een commit ``C4`` bijgemaakt, terwijl jij lokaal ``C4'``, ``C5'`` en
     (origin)
                      branch1
                        ↓
-    C1 -- C2 -- C3 -- C4 
+    C1 -- C2 -- C3 -- C4
 
     (lokaal)
 
@@ -374,7 +376,7 @@ een commit ``C4`` bijgemaakt, terwijl jij lokaal ``C4'``, ``C5'`` en
                                    branch1 (trackt remote/branch1)
                                     ↓
     C1 -- C2 -- C3 -- C4' -- C5'-- C6'
-                 ↑ 
+                 ↑
               remote/branch1
 
 *Na een fetch-operatie van ``remote/branch1``, ziet de lokale repo er
@@ -388,7 +390,7 @@ als volgt uit:*
     C1 -- C2 -- C3 -- C4' -- C5'-- C6'
                  |
                  +--- C4
-                       ↑ 
+                       ↑
                   remote/branch1
 
 *Tenslotte wordt gemerged*
@@ -401,7 +403,7 @@ als volgt uit:*
     C1 -- C2 -- C3 -- C4' -- C5'-- C6' -- C7'
                  |                         |
                  +--- C4 ------------------+
-                       ↑ 
+                       ↑
                   remote/branch1
 
 Net zoals bij iedere andere merge, zou het kunnen dat dit conflicten
@@ -538,7 +540,7 @@ mogelijke problemen of onvolkomenheden van je half-afgewerkte feature.
                        +--- D5 -- D6 -- D7
                        |                 ↑
                        +--- E5         feature1
-                             ↑          
+                             ↑
                            bugfix
                             HEAD
 
@@ -683,4 +685,3 @@ ik daar zeker in geïnteresseerd.
 github. <https://github.com/johanv/randomtexts/blob/master/gitstart.md>`__
 Daar kun je commentaar geven (post gerust een issue), of zelfs pull
 requests sturen, als je hem wilt verbeteren :)
-

@@ -3,7 +3,7 @@
 .. date: 2013-03-20 22:56:49
 .. tags: android,cyanogenmod
 .. link:
-.. description: 
+.. description:
 .. type: text
 
 Cyanogenmod on the Samsung Galaxy S wifi 5 (Samsung Galaxy Player 5)
@@ -18,6 +18,8 @@ CyanogenMod. Unfortunately, there is no official CyanogenMod version for
 this device. I thought there was, but I was confused. There are a lot of
 devices called 'Samsung Galaxy S', and they all use incompatible
 hardware. So the installation was a little harder than I expected.
+
+.. TEASER_END
 
 Replace the recovery image
 --------------------------
@@ -102,4 +104,3 @@ To install Mustard, I did the following:
 -  install mustard
 -  open app management, show the apps on SD-card, and uncheck mustard. I
    had to be very quick, before the crash.
-

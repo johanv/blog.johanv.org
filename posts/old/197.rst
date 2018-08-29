@@ -3,12 +3,14 @@
 .. date: 2012-08-24 20:55:31
 .. tags: opensource,android,cyanogenmod
 .. link:
-.. description: 
+.. description:
 .. type: text
 
 Recently I upgraded my phone (Sony Ericsson Xperia Mini Pro) from
 Cyanogenmod 7.2 to Cyanogenmod 9. And you should upgrade too, if you are
 running Cyanogenmod 7.2. This is why:
+
+.. TEASER_END
 
 -  The hardware keyboard layout can be configured from the settings
    menu.
@@ -53,4 +55,3 @@ new bootloader looks much slicker than the previous one, which was plain
 ugly :-). And when it's installed, you should be able to flash the roms
 for CyanogenMod 9 and the Google Apps for Ice Cream Sandwich. (But don't
 come after me if things break, because I'm clueless as always.)
-
