@@ -1,6 +1,6 @@
 .. title: Contact info
 .. slug: contact
-.. date: 2014-08-28 19:41:07
+.. date: 2018-08-29 17:08:13 UTC+2
 .. tags: johan
 .. link:
 .. description:
@@ -11,7 +11,6 @@ You can contact me on:
 -  **twitter:** https://twitter.com/vohanj  - johanv was already taken ;(
 -  **github:** https://github.com/johanv
 -  **untappd:** https://untappd.com/user/johanv
--  **google+:** https://plus.google.com/+johanvervloet
 -  **facebook:** http://www.facebook.com/johan.vervloet
 -  **keybase:** https://keybase.io/johanv
 

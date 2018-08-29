@@ -1,6 +1,6 @@
 .. title: Over mijzelf
 .. slug: over-mijzelf
-.. date: 2014-08-29 19:35:08
+.. date: 2018-08-29 17:08:13 UTC+02:00
 .. tags: johan
 .. link:
 .. description:
