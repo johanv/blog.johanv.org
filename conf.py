@@ -645,6 +645,10 @@ REDIRECTIONS = []
 #     ]
 # }
 
+DEPLOY_COMMANDS = {'default': [
+    'rsync -pave ssh --delete output/ johanv@mijnvps:/var/www/vhosts/blog.johanv.org/',
+]}
+
 # github_deploy configuration
 # For more details, read the manual:
 # https://getnikola.com/handbook.html#deploying-to-github
@@ -1241,15 +1245,14 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # BODY_END = ""
 
 BODY_END = """
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20752330-4"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  ga('create', 'UA-20752330-4', 'auto');
-  ga('send', 'pageview');
-
+  gtag('config', 'UA-20752330-4', { 'anonymize_ip': true } );
 </script>
 """
 
