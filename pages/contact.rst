@@ -3,12 +3,11 @@
 .. date: 2014-08-28 19:41:07
 .. tags: johan
 .. link:
-.. description: 
+.. description:
 .. type: text
 
 You can contact me on:
 
--  **fragdev (gnu social):** http://micro.fragdev.com/johanv
 -  **twitter:** https://twitter.com/vohanj  - johanv was already taken ;(
 -  **github:** https://github.com/johanv
 -  **untappd:** https://untappd.com/user/johanv
