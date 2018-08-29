@@ -13,6 +13,8 @@ father gave me his old Samsung Galaxy S2 i9100. It was running Android
 2.something, so I decided to upgrade it to Cyanogenmod 13 (which uses
 Android 6.0).
 
+.. TEASER_END
+
 I had some troubles with using the Cyanogenmod wiki, so I used googles cache.
 It took me more than a day to realize that `Cyanogenmod seems to have ceised
 existing

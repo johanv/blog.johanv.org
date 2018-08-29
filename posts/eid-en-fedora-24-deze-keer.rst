@@ -2,16 +2,18 @@
 .. slug: eid-en-fedora-24-deze-keer
 .. date: 2016-11-14 22:29:37 UTC+01:00
 .. tags: eid,fedora
-.. category: 
-.. link: 
-.. description: 
+.. category:
+.. link:
+.. description:
 .. type: text
 
 Bijna iedere keer als je je eID wilt gebruiken onder Linux, moet dat anders.
 Die indruk heb ik tenminste. Vandaag lukte het na veel proberen op deze manier:
 
+.. TEASER_END
+
 Ik heb de middleware uiteindelijk handmatig gebuild, van de tar.gz-source die
-ik downloade van http://eid.belgium.be/en/using_your_eid/installing_the_eid_software/linux. 
+ik downloade van http://eid.belgium.be/en/using_your_eid/installing_the_eid_software/linux.
 Achteraf bekeken was dat misschien niet nodig. Hoe dan ook, ik moest deze pakketten
 installeren om de middleware te kunnen builden:
 
@@ -36,4 +38,3 @@ de browser plug-in kunnen gebruiken:
 
 Allez, we kunnen weer even verder. Tot volgende week waarschijnlijk, wanneer
 Fedora 25 gereleaset wordt :-/
-
