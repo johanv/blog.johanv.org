@@ -1,6 +1,6 @@
 .. title: Blog bijgewerkt
 .. slug: blog-update
-.. date: 2018-08-29 20:38:00 UTC+02:00
+.. date: 2018-08-29 22:51:00 UTC+02:00
 .. tags: johanv.org, nikola
 .. category:
 .. link:
@@ -17,6 +17,5 @@ dus allemaal mooi en nieuw uit, maar aan de inhoud is nog niets veranderd.
 Ik gebruik nu nikola 7.8.15 om de statische site te genereren, met
 virtualenv. Dat is iets typisch van Python, denk ik.
 
-'t Is allemaal nog wat work in progress. Ik ga alvast al eens proberen om
-wat meer structuur te brengen in de vertaalde pagina's. Wanneer ik zover
-ben, zou er een versie `in het Engels </en/>`__ moeten zijn.
+'t Is allemaal nog wat work in progress. Ik maakt alvast een privacystatement.
+En verder zullen we nog wel zien.

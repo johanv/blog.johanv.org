@@ -2,7 +2,7 @@
 .. slug: de-echte-redenen-om-linux-te-gebruiken
 .. date: 2014/10/19 22:35:09
 .. tags: linux,opensource
-.. link: 
+.. link:
 .. description: We helpen de foute redenen om Linux te gebruiken de wereld uit.
 .. type: text
 
@@ -19,14 +19,14 @@ Ik ben niet de enige die Linux met verkeerde argumenten aanprees: het is
 een veelvoorkomend probleem.
 
 Bij wijze van experiment `vroeg ik het onlangs aan Google
-<https://www.google.be/search?q=waarom+linux>`_: 'Waarom Linux?'. 
+<https://www.google.be/search?q=waarom+linux>`_: 'Waarom Linux?'.
 Het eerste resultaat bracht me op een wat ouder ogende website, die
 `een aantal veelgehoorde argumenten
 <https://sites.google.com/site/computertip/waaromdaarom>`_ opsomt.
 
 Maar Google filtert natuurlijk zijn zoekresultaten netjes op basis van
 wat hij van me weet, dus ik stelde de vraag ook aan `DuckDuckGo
-<https://duckduckgo.com/?q=waarom+linux>`_. 
+<https://duckduckgo.com/?q=waarom+linux>`_.
 Daar was de eerste link een blog post uit 2012, met
 `gelijkaardige argumenten <http://www.alleslinux.net/waarom-linux/>`_.
 
@@ -60,7 +60,7 @@ een standaardinstallatie doet van een mainstream distributie
 (zoals `Linux Mint
 <http://www.linuxmint.com>`_ of `Ubuntu <http://www.ubuntu.com>`_), dan
 doe je dat best op een recente PC met voldoende geheugen en rekenkracht.
-Net zoals er wel wat vereisten zijn voor Windows 8. 
+Net zoals er wel wat vereisten zijn voor Windows 8.
 
 Het is wel zo dat je een oude PC nog tegen een aanvaardbare snelheid kunt
 laten werken met Linux. Maar je moet voldoende ervaring aan de dag kunnen leggen bij het
@@ -80,9 +80,9 @@ sowieso sneller dan er iets nieuws op te zetten.
 omdat open-sourcesoftware veiliger is
 -------------------------------------
 Sinds `Heartbleed <http://heartbleed.com/>`_, `Shellshock
-<http://en.wikipedia.org/wiki/Shellshock_(software_bug)>`_ 
+<http://en.wikipedia.org/wiki/Shellshock_(software_bug)>`_
 en `Drupageddon
-<http://www.zoubi.me/blog/drupageddon-sa-core-2014-005-drupal-7-sql-injection-exploit-demo>`_ 
+<http://www.zoubi.me/blog/drupageddon-sa-core-2014-005-drupal-7-sql-injection-exploit-demo>`_
 weten we dat
 open source software kwetsbaar is net zoals andere systemen. Ik geloof
 wel dat de kans op
@@ -163,7 +163,7 @@ hosten vanop een Linuxserver met Mono
 Er zijn vandaag al `MS-officeprogramma's
 Office voor Android en IOS
 <http://time.com/40801/microsoft-office-goes-fully-free-on-iphone-and-android-phones/>`_. Een heel aantal .NET-libraries die Microsoft
-zelf ontwikkelt (bijv. `Entity Framework <https://entityframework.codeplex.com/license>`_ en `ASP.NET MVC <http://aspnetwebstack.codeplex.com/license>`_), 
+zelf ontwikkelt (bijv. `Entity Framework <https://entityframework.codeplex.com/license>`_ en `ASP.NET MVC <http://aspnetwebstack.codeplex.com/license>`_),
 zijn beschikbaar onder Apache-2-licentie. Het zou me niet verbazen moest
 Windows op termijn gratis worden, net zoals Android.
 
@@ -195,7 +195,7 @@ Serieus? Office en mail? Is dat wat je nodig hebt? In 2000 misschien,
 maar vandaag? Ik denk het niet.
 
 :doc:`Office is net hetgene is dat je niet nodig hebt
-<node-202>`. Als je al je werk in Office doet, of in je mail client, 
+<node-202>`. Als je al je werk in Office doet, of in je mail client,
 dan ben je volgens mij
 verkeerd bezig. Wat je volgens mij wel nodig hebt, is een browser, een
 document reader en een
@@ -220,7 +220,7 @@ Een groot aanbod makkelijk te installeren softwarepakketten
 -----------------------------------------------------------
 Als je een mainstream Linuxdistributie installeert, dan heb je toegang
 tot een erg groot aanbod aan softwarepakketten, via de zogenaamde
-software repository. Je kunt dit vergelijken met een app store.  
+software repository. Je kunt dit vergelijken met een app store.
 Wil je een toepassing installeren om foto's of audio te bewerken, heb
 je een programmeeromgeving nodig voor eender welke programmeertaal:
 het wordt voor jouw gedownload en geïnstalleerd.
