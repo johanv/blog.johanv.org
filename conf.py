@@ -138,6 +138,7 @@ NAVIGATION_LINKS = {
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS-feed"),
 	("/pages/over-mijzelf/", "Over mijzelf"),
+	("/pages/privacy/", "Privacy"),
 	("/pages/contact/", "Contact"),
     ),
 
@@ -146,6 +147,7 @@ NAVIGATION_LINKS = {
         ("/en/categories/", "Tags"),
         ("/en/rss.xml", "RSS feed"),
 	("/pages/over-mijzelf/", "About me"),
+	("/en/pages/privacy/", "Privacy"),
 	("/pages/contact/", "Contact"),
     ),
 }
