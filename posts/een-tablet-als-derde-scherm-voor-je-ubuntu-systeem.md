@@ -33,18 +33,9 @@ Ubuntu is de Linuxdistributie men gebruikt waar ik werk. Na veel proberen en
 prutsen kreeg ik het derde scherm aan de praat. Het is niet de mooiste
 oplossing, maar het werkt.
 
-## Hoe kreeg ik het aan de praat?
+## Dank je wel, Mike
 
-Wat wel werkte, is iets dat gebaseerd is op een blog post uit
-[https://mikescodeoddities.blogspot.com/2015/04/android-tablet-as-second-ubuntu-screen.html](Mike's Coding Oddities).
-Ik heb er wat aan moeten prutsen, aangezien ik een derde scherm nodig had,
-en Dhr. Mike een tweede.
-
-De voorgestelde oplossing werkt niet als je Wayland gebruikt. Wat jammer is,
-want Wayland klinkt zoveel cooler dan het verouderde Xorg. Maar voor wat
-extra schermruimte moet je wat over hebben
-
-Wat wel werkte, is iets dat gebaseerd is op een blog post uit
+Ik baseerde me op een blog post uit
 [https://mikescodeoddities.blogspot.com/2015/04/android-tablet-as-second-ubuntu-screen.html](Mike's Coding Oddities).
 Ik heb er wat aan moeten prutsen, aangezien ik een derde scherm nodig had,
 en Dhr. Mike een tweede.
@@ -66,7 +57,10 @@ worden. Wat jammer is.
 
 (Het vinden van die namen van die outputs, eDP-1 en HDMI-1, vond ik niet
 vanzelfsprekend. Uiteindelijk is het me gelukt door het tooltje
-arandr te installeren en te runnen.)
+[arandr](https://christian.amsuess.com/tools/arandr/) te installeren
+en te runnen.)
+
+## Het script
 
 Dit is nu het script dat ik gebruik:
 
@@ -97,7 +91,7 @@ zijn op het fysieke scherm tot 1920x1080. De muis kan verder naar rechts
 bewegen, maar dat zie je niet meer.
 
 Tenslotte start ik een vnc-server, die het onzichtbare stuk van het externe
-scherm beschikbaar stelt.  Met `-nocursorshape` en `-nocurorpos` geef ik
+scherm beschikbaar stelt.  Met `-nocursorshape` en `-nocursorpos` geef ik
 aan dat ik de cursor van de server (laptop) wil zien en gebruiken, en niet
 die van de client (tablet).
 
