@@ -9,42 +9,29 @@
 .. type: text
 -->
 
-Op het werk heb ik een docking station, en op die manier hangen er twee
-externe schermen aan mijn laptop. En dat vind ik echt handig om te
-programmeren. Een terminalvenster hier, broncode daar, een gelijkaarig
-codebestand ginder, en dan nog een unit test nog ergens anders... Drie
-schermen zijn al gauw vol.
+Op het werk beschik ik over een docking station, en op die manier hangen er twee
+externe schermen aan mijn laptop. En dat vind ik nu eens buitengewoon handig.
+Een terminalvenster hier, broncode daar, een gelijkaarig
+codebestand ginder, een unit test nog ergens anders, en dan misschien nog
+een browser ook... De drie schermen zijn al gauw goed gevuld.
 
 Ik werk ook al eens van thuisuit. Daar heb ik geen docking station, en
-maar één extern scherm. Dat gaat ook, maar extra schermruimte is toch
-altijd meegenomen. Op een dag viel mijn oog op de Android-tablet die we
+maar één extern scherm. Dat gaat ook, maar ik mis dat toch gauw, die extra
+ruimte.
+Op een dag viel mijn oog op de tablet die we
 thuis hebben liggen. Hoe moeilijk kon het zijn om die als extra scherm
 te gebruiken?
 
-<!--
-.. TEASER_END
--->
+![een tablet als derde scherm](/galleries/3rd_Screen/3rdscreen.jpg)
 
-Dat was nog niet zo makkelijk als het leek. O ja, ik vergat te vertellen
-dat ik Linux gebruik als OS op mijn laptop. (Want je gebruikt ook al eens graag
-docker als je wilt programmeren, en als je niet de tijd hebt om minutenlang
-te wachten op iedere docker-operatie, is Linux een must. En er zijn nog
-1000 andere redenen om Linux te gebruiken, maar die lees je maar eens in
-mijn andere blog posts.) Ubuntu 18.10 tegenwoordig. Ik heb mijn derde
-scherm aan de praat, maar het is nog niet helemaal zoals ik het zou willen.
-Maar het werkt al goed genoeg om het te delen, en misschien heeft iemand wel
-tips om mijn oplossing te verbeteren.
+<!-- TEASER_END -->
 
-## Hoe zou het kunnen werken?
-
-Mijn ideale oplossing zou zijn mocht je onder 'Settings', 'Displays' 3
-schermen te zien krijgen, waarbij je via VNC een connectie maakt naar dat
-derde scherm. Dat is niet gelukt.
-Ik vermoed dat dat wel op één of andere manier moet gaan met
-[xserver-xorg-video-dummy](https://packages.ubuntu.com/bionic/xserver-xorg-video-dummy),
-maar ik heb daar nog niet erg hard mee kunnen experimenteren, en ik ben
-wat terughoudend om met de Xorg-configuratie te prutsen, zeker omdat die
-tegenwoordig niet meer expliciet nodig is.
+Uiteraard was dat toch wat moeilijker dan ik in eerste instantie dacht. O ja,
+ik vergat te vertellen
+dat ik Linux gebruik als OS op mijn laptop. Tegenwoordig Ubuntu 18.10, want
+Ubuntu is de Linuxdistributie men gebruikt waar ik werk. Na veel proberen en
+prutsen kreeg ik het derde scherm aan de praat. Het is niet de mooiste
+oplossing, maar het werkt.
 
 ## Hoe kreeg ik het aan de praat?
 
@@ -115,7 +102,8 @@ aan dat ik de cursor van de server (laptop) wil zien en gebruiken, en niet
 die van de client (tablet).
 
 Nu komt het er nog op neer om een VNC-client op de tablet te installeren.
-Ik gebruik [VNC viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android),
+Ik gebruik
+[VNC viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android),
 maar er zijn er andere genoeg. Let wel op, die connectie is niet beveiligd
 en niet geëncrypteerd. Dat is OK om even te testen, of als je volledige
 controle hebt over alles wat op je netwerk gebeurt. Is dat niet het geval,
@@ -134,23 +122,25 @@ door in plaats van je venster te maximizen 'snap left' en 'snap right' te
 gebruiken; de sneltoetsen daarvoor zijn superkey + pijl links en
 superkey + pijl rechts.
 
-Tweede probleem is dat niet alle schermruimte op de tablet gebruikt wordt.
-Ik denk niet dat dat op te lossen is als je deze manier van werken gebruikt,
-aangezien het externe scherm en de tablet hetzelfde aantal pixels moet hebben
-in de breedte of in de hoogte als de tablet. Bovendien gaat
-'snap left' en 'snap right' niet meer zo handig werken als de twee
-resoluties verschillen.
+Volgens mij moet het wel mogelijk zijn om je systeem te laten denken dat
+er echt drie schermen zijn, en dat je die dan alle drie apart kunt configureren
+(resolutie, oriëntatie, positie). Er bestaat een
+[dummy video driver voor xorg](https://packages.ubuntu.com/bionic/xserver-xorg-video-dummy),
+maar ik heb daar nog niet erg hard mee kunnen experimenteren. Bovendien ben ik
+wat terughoudend om met de Xorg-configuratie te prutsen, zeker omdat die
+tegenwoordig niet meer expliciet nodig is.
 
-En tenslotte een laatste probleem: het beeld op de tablet komt met wat
-vertraging. Ik ben er nog niet uit of dat komt door de latency van het
-netwerk, of dat de tablet gewoon te traag rendert. Als je op de tablet een
-terminalvenster zet, dan is dat goed werkbaar, maar als je er iets fancy
+Een tweede probleem is de vertraging waarmee het beeld op de tablet getoond
+wordt. Ik ben er nog niet uit of dat komt door de latency van het
+netwerk, of dat de tablet gewoon traag rendert. Voor een terminalvenster is
+de vertraging aanvaardbaar, maar als je er iets fancy
 op wil runnen, zoals Hipchat (Hipchat? Fancy? Ik snap niet waarom een
 IM-toepassing zo veel tijd nodig heeft om te renderen, maar dat is een
 ander verhaal), dan is het niet zo handig.
 
 ## Conclusie
 
-Een tablet als derde scherm: dat werkt, maar met een paar issues. Probeer
+Een tablet als derde scherm: het werkt met xrandr en x11vnc, maar met een paar
+beperkingen. Probeer
 het eens uit, en mocht je nog tips hebben om deze oplossing te verfijnen,
-laat dan zeker iets weten.
+geef ze zeker door.
