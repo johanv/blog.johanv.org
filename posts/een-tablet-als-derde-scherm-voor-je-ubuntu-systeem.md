@@ -10,7 +10,7 @@
 -->
 
 Op het werk beschik ik over een docking station, en op die manier hangen er twee
-externe schermen aan mijn laptop. En dat vind ik nu eens buitengewoon handig.
+externe schermen aan mijn laptop. dat vind ik nu eens buitengewoon handig.
 Een terminalvenster hier, broncode daar, een gelijkaarig
 codebestand ginder, een unit test nog ergens anders, en dan misschien nog
 een browser ook... De drie schermen zijn al gauw goed gevuld.
@@ -36,7 +36,7 @@ oplossing, maar het werkt.
 ## Dank je wel, Mike
 
 Ik baseerde me op een blog post uit
-[https://mikescodeoddities.blogspot.com/2015/04/android-tablet-as-second-ubuntu-screen.html](Mike's Coding Oddities).
+[Mike's Coding Oddities](https://mikescodeoddities.blogspot.com/2015/04/android-tablet-as-second-ubuntu-screen.html).
 Ik heb er wat aan moeten prutsen, aangezien ik een derde scherm nodig had,
 en Dhr. Mike een tweede.
 
@@ -53,7 +53,7 @@ HDMI-1. Het externe scherm staat rechts van mijn laptop, en ik wil de tablet
 rechts van het externe scherm. Zowel mijn laptop als mijn externe scherm
 hebben een resolutie van 1920x1080. De tablet heeft een resolutie van
 1920x1200. In praktijk zullen er van mijn tablet 1920x120 pixels ongebruikt
-worden. Wat jammer is.
+worden. Jammer. Maar helaas.
 
 (Het vinden van die namen van die outputs, eDP-1 en HDMI-1, vond ik niet
 vanzelfsprekend. Uiteindelijk is het me gelukt door het tooltje
@@ -62,7 +62,7 @@ en te runnen.)
 
 ## Het script
 
-Dit is nu het script dat ik gebruik:
+Ik gebruik nu het volgende script om mijn derde 'scherm' te activeren:
 
 ```
 #!/bin/bash
@@ -70,6 +70,8 @@ Dit is nu het script dat ik gebruik:
 sudo xrandr --fb 5760x1080 --output HDMI-1 --panning 3840x1080+1920+0/3840x1080+1920+0
 sleep 3
 sudo xrandr --fb 5760x1080 --output HDMI-1 --panning 1920x1080+1920+0/3840x1080+1920+0
+# OPGELET! Onbeveiligde server, ongeencrypteerde verbinding. Doe dit niet
+# op deze manier op een publiek of onbetrouwbaar netwerk.
 x11vnc -clip 1920x1080+3840+0 -nocursorshape -nocursorpos
 ```
 
@@ -90,7 +92,7 @@ Dan staat er `sleep 3`, en de regel daaronder beperkt het stuk dat zichtbaar kan
 zijn op het fysieke scherm tot 1920x1080. De muis kan verder naar rechts
 bewegen, maar dat zie je niet meer.
 
-Tenslotte start ik een vnc-server, die het onzichtbare stuk van het externe
+Tenslotte start ik een VNC-server, die het onzichtbare stuk van het externe
 scherm beschikbaar stelt.  Met `-nocursorshape` en `-nocursorpos` geef ik
 aan dat ik de cursor van de server (laptop) wil zien en gebruiken, en niet
 die van de client (tablet).
@@ -98,39 +100,50 @@ die van de client (tablet).
 Nu komt het er nog op neer om een VNC-client op de tablet te installeren.
 Ik gebruik
 [VNC viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android),
-maar er zijn er andere genoeg. Let wel op, die connectie is niet beveiligd
+maar er zijn er andere genoeg.
+
+**Let wel op**, de VNC-connectie is niet beveiligd
 en niet geëncrypteerd. Dat is OK om even te testen, of als je volledige
 controle hebt over alles wat op je netwerk gebeurt. Is dat niet het geval,
-gebruik dan ssl, en zet een wachtwoord op je VNC-connectie, en gebruik SSL
-voor encryptie. (Ik weet eigenlijk zelf nog niet hoe je dat doet. Maar
+gebruik dan ssl voor encryptie, en zet een wachtwoord op je VNC-connectie.
+(Ik weet eigenlijk zelf nog niet hoe je dat doet. Maar
 sla er de man-page van x11vnc eens op na, zoek naar `-ssl` en naar
 `-rfbauth`.)
 
 ## Ruimte voor verbetering
 
-Deze oplossing werkt redelijk goed, maar er zijn wat beperkingen. Allereerst
+Deze oplossing werkt redelijk goed, maar ze heeft haar beperkingen. Allereerst
 zijn je externe scherm en je tablet voor de Linuxomgeving samen één scherm.
 Dat heeft als vervelend gevolg dat als je een venster maximizet, dat venster
 verspreid te zien is over die twee schermen. Je kunt daar wel rondwerken
-door in plaats van je venster te maximizen 'snap left' en 'snap right' te
+door in plaats van je venster te maximizen 'dock left' en 'dock right' te
 gebruiken; de sneltoetsen daarvoor zijn superkey + pijl links en
 superkey + pijl rechts.
 
 Volgens mij moet het wel mogelijk zijn om je systeem te laten denken dat
 er echt drie schermen zijn, en dat je die dan alle drie apart kunt configureren
 (resolutie, oriëntatie, positie). Er bestaat een
-[dummy video driver voor xorg](https://packages.ubuntu.com/bionic/xserver-xorg-video-dummy),
+[dummy video driver voor xorg](https://packages.ubuntu.com/bionic/xserver-xorg-video-dummy)
 maar ik heb daar nog niet erg hard mee kunnen experimenteren. Bovendien ben ik
 wat terughoudend om met de Xorg-configuratie te prutsen, zeker omdat die
 tegenwoordig niet meer expliciet nodig is.
 
-Een tweede probleem is de vertraging waarmee het beeld op de tablet getoond
+Een tweede probleem dat ik ondervond,
+is de vertraging waarmee het beeld op de tablet getoond
 wordt. Ik ben er nog niet uit of dat komt door de latency van het
 netwerk, of dat de tablet gewoon traag rendert. Voor een terminalvenster is
 de vertraging aanvaardbaar, maar als je er iets fancy
 op wil runnen, zoals Hipchat (Hipchat? Fancy? Ik snap niet waarom een
 IM-toepassing zo veel tijd nodig heeft om te renderen, maar dat is een
 ander verhaal), dan is het niet zo handig.
+
+Nog een derde issue: de VNC server lijkt de 'key repeat functionality'
+soms uit te zetten. Ik wil zeggen: als je bijvoorbeeld op backspace duwt,
+en je houdt die ingedrukt, dan wordt er toch maar 1 karakter verwijderd,
+in plaats van te blijven verwijderen tot je de toets weer los laat.
+Mocht je dit ondervinden, typ een keer `xset r on`. Doet dat nog steeds niets,
+geef dat commando nog een aantal keer in, en dan zal het wel werken.
+(De log-output van je VNC-server vertelt hoe vaak je het moet doen.)
 
 ## Conclusie
 
