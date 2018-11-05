@@ -1,7 +1,7 @@
 <!--
 .. title: Getting rid of Google
 .. slug: getting-rid-of-google
-.. date: 2018-11-05 07:30:29 UTC+01:00
+.. date: 2018-11-05 21:26:29 UTC+01:00
 .. tags: google, grog
 .. category: 
 .. link: 
