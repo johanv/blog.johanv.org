@@ -2,7 +2,7 @@
 .. title: Getting rid of Google
 .. slug: getting-rid-of-google
 .. date: 2018-11-05 21:26:29 UTC+01:00
-.. tags: google, grog
+.. tags: google, grog, privacy, android
 .. category: 
 .. link: 
 .. description: Google verlaten is niet makkelijk. Vandaag zet ik de eerste stap.
@@ -35,7 +35,7 @@ definitieve scheiding zal komen. Maar ik moet ergens
 beginnen, en stap 1 is geworden: het besturingssysteem van mijn telefoon
 vervangen. Door [LineageOs](https://lineageos.org), een versie van Android, maar
 dan zonder Google. Ik had zoiets [vroeger al meer
-gedaan](https://blog.johanv.org/categories/cyanogenmod/), en dat is toen ook 
+gedaan](/categories/cyanogenmod/), en dat is toen ook 
 altijd vrij makkelijk gelukt.
 
 Het installeren van een nieuwe ROM is altijd wat spannend. Zeker omdat je
