@@ -13,9 +13,9 @@ Als volgende stap in de reeks &lsquo;[getting rid of
 Google](/categories/grog/)&rsquo;, gebruik ik een 
 alternatieve app store om toepassingen te installeren.
 
-![my LinageOS desktop](/galleries/grog/desktop.png)
-
 <!-- TEASER_END -->
+
+![my LinageOS desktop](/galleries/grog/desktop.png)
 
 Zoals ik [gisteren](/posts/getting-rid-of-google/) al vermeldde, is het vervelend
 dat je voor veel toepassingen langs de Google Play Store moet passeren, en kun je
