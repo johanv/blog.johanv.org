@@ -50,7 +50,8 @@ LineageOS](https://wiki.lineageos.org) legt stap voor stap uit wat je moet
 doen, en de tools die je nodig hebt (adb en fastboot) zitten gewoon in de
 repository's van Ubuntu. De enige moeilijkheid was om mijn telefoon in
 developer-modus te krijgen. Daarvoor moest ik via de instellingen naar 'over de
-telefoon', en daar een tiental keer op het Android-versienummer tikken.
+telefoon', en daar een tiental keer op het Android-versienummer 
+(of build-nummer, ik weet het niet meer precies) tikken.
 
 ## De app store
 
@@ -61,7 +62,8 @@ wat hacks om get zonder te doen, maar dat vond ik toch nog wat experimenteel
 voor een eerste stap. Bovendien zitten mijn agenda en al mijn contacten nog bij
 Google. Die moet ik nog verhuizen naar ergens anders, maar dat is voor later.
 
-Dus bij mijn eerste reboot in het nieuwe OS, gaf ik braaf mijn Google-credentials
+Dus bij mijn eerste reboot in het nieuwe OS (die eerste reboot duurt altijd lang, geen
+paniek. Latere reboots gaan altijd sneller), gaf ik braaf mijn Google-credentials
 in. Ik activeerde ondanks alles het aanmelden met mijn vingerafdruk (want als
 Google de vingerafdrukken bewaart, dan heeft het ze toch al), en installeerde
 WhatsApp. WhatsApp is van Facebook, nog zo'n evil company die al veel te veel
@@ -89,7 +91,7 @@ zijn. Hoe minder apps die per definitie uit Googles app store komen, hoe beter.
 
 Tot zover de eerste stap in mijn lange toch weg van Google. Hopelijk volgen er
 nog. Zo ja, zal ik erover bloggen. Zo nee, zal [getting rid of
-google](https://blog.johanv.org/categories/grog/) bij op mijn lijstje prijken van
+google](/categories/grog/) bij op mijn lijstje prijken van
 ambitieuze projecten waar uiteindelijk niets van terecht kwam.
 
 ## Merci, Paul
