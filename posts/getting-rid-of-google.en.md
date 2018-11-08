@@ -66,7 +66,7 @@ instead of to Google.
 
 Some other proprietary apps I use, are KBC Mobile (for paying things I buy online),
 Payconiq (for paying beer), and Itsme (for authenticating on the government's
-applications). I was happy to see that those did not complain about ithe
+applications). I was happy to see that those did not complain about the
 &lsquo;unofficial&rsquo; operating
 system. Even Telenet Yelo Play, which refused to work on a device I flashed with
 CyanogenMod some years ago, is now running fine.
