@@ -21,11 +21,11 @@ Zoals ik [gisteren](/posts/getting-rid-of-google/) al vermeldde, is het vervelen
 dat je voor veel toepassingen langs de Google Play Store moet passeren, en kun je
 dat enkel als je aangemeld bent met je Google-account.
 In een volgende stap om mij minder afhankelijk te maken van Google, wil ik apps
-gebruiken die ik uit een alternatieve play store kan installeren.
+gebruiken die ik uit een alternatieve store kan installeren.
 
 We hebben dus nodig:
 
-1. Een alternatieve play store
+1. Een alternatieve app store
 2. Bruikbare apps in die store
 
 ## F-Droid: Een alternatieve app store
@@ -35,11 +35,15 @@ Ik ken eigenlijk maar één alternatieve app store, en dat is
 (free/libre) software, en ik hoop dan maar dat we dan meteen ook goed zitten wat
 betreft privacy.
 
-De toepassingen in F-Droid zijn allemaal gratis, maar als je een vrije gift wilt
-doen voor zo'n app, vind je bij iedere app een link via dewelke dat gaat.
+De toepassingen in F-Droid zijn allemaal gratis, maar F-Droid maakt het je erg makkelijk
+als je de developers een gift wilt doen. Bij elke app vind je een link naar een platform
+waar je een betaling kunt doen ten voordele van die app.
 
 F-Droid installeren ging eigenlijk verbazend makkelijk. Ik had de &lsquo;LineageOS su
-add-on&rsquo; geflasht, om root access te krijgen, maar ik ben niet helemaal zeker of
+add-on&rsquo; geflasht, om root access te krijgen
+(zie de installatie-instructies voor jouw toestel op de [LineageOs
+wiki](https://wiki.lineageos.org/devices/)).
+Maar achteraf bekeken ben ik niet helemaal zeker of
 dat echt wel nodig was. Het enige dat ik moest doen, was met Firefox naar
 [https://f-droid.org](https://f-droid.org) surfen, op Download klikken, en
 Firefox toestemming geven om een app te installeren.
@@ -50,9 +54,10 @@ En daarmee had ik een tweede app store op mijn telefoon.
 
 Van de toepassingen die ik gebruik, zijn er maar een beperkt aantal beschikbaar
 in F-Droid, omdat veel van die toepassingen een proprietary license hebben.
-de truuk is om in F-Droid te zoeken naar functionaliteit, en niet naar een
-specifieke app. En in sommige gevallen vind je dan wel bruikbare toepassingen. Ik
-geef een overzicht van wat ik al installeerde.
+Maar wat je altijd kunt doen, is in F-Droid zoeken op functionaliteit die je wilt
+gebruiken, (in plaats van naar specifieke apps). 
+En in sommige gevallen vind je dan wel bruikbare toepassingen. Ik
+geef een paar voorbeelden van wat ik al installeerde.
 
 ### OpenLauncher
 
