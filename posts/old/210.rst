@@ -1,7 +1,7 @@
 .. title: Ik heb mijn fiets-gps-systeem gevonden
 .. slug: node-210
 .. date: 2013-08-16 21:09:40
-.. tags: google,android
+.. tags: google,android,fietsen
 .. link:
 .. description: 
 .. type: text
