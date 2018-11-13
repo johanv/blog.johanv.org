@@ -30,7 +30,7 @@ Leaving Google will not be easy, and I should take one step at the time, because
 want to break all my workflows at once. It will take time, and I probably will not be able
 to break up with Google completely. But I have to start somewhere, and as a first step, I
 will replace the OS on my phone. By [LineageOs](https://lineageos.org), a version of
-Android without Google. [I've done this before](/categories/cyanogenmod), and it never
+Android without Google. [I've done this before](/en/categories/cyanogenmod), and it never
 caused too much trouble.
 
 Installing a new ROM is always a little tricky. You get warnings all over the place about
@@ -80,7 +80,7 @@ Play Store, the better.
 
 This concludes the frist step I took in my journey away from Google. I hope more steps are
 to follow soon. If so, I will blog about it. If not, [getting rid of
-google](/categories/grog/) wil be added to my list of ambitious projects that didn't go
+google](/en/categories/grog/) wil be added to my list of ambitious projects that didn't go
 anhywhere.
 
 ## Thank you, Paul

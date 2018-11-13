@@ -10,13 +10,13 @@
 -->
 
 This is my next step in the series &lsquo;[getting rid of
-Google](/categories/grog/)&rsquo;: I want to download apps from an alternative store.
+Google](/en/categories/grog/)&rsquo;: I want to download apps from an alternative store.
 
 <!-- TEASER_END -->
 
 ![my LinageOS desktop](/galleries/grog/desktop.png)
 
-As I mentioned [in my previous post](/posts/getting-rid-of-google/), I don't like going via
+As I mentioned [in my previous post](/en/posts/getting-rid-of-google/), I don't like going via
 the Google Play Store to get my apps. So in this next step in the &lsquo;getting rid of
 Google&rsquo;-series
 I want to install and use apps from an alternative app store. So I need 
