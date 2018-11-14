@@ -38,7 +38,7 @@ the repositories:\
 ::
 
 
-  yum install mstmtp
+  yum install msmtp
 
 
 
