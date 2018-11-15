@@ -1,7 +1,7 @@
 .. title: Bing geeft overal ter wereld gecensureerde resultaten voor zoekopdrachten in vereenvoudigd Chinees
 .. slug: node-73
 .. date: 2009-11-26 13:57:20
-.. tags: microsoft,oudnieuws,bigbrother
+.. tags: microsoft,oudnieuws,censuur
 .. link:
 .. description: 
 .. type: text

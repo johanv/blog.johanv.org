@@ -1,7 +1,7 @@
 .. title: Franse assemblée nationale keurt internetfilter goed
 .. slug: node-111
 .. date: 2010-02-18 12:32:58
-.. tags: beleid,bigbrother,privacy
+.. tags: beleid,censuur,privacy
 .. link:
 .. description: 
 .. type: text

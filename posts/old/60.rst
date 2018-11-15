@@ -1,7 +1,7 @@
 .. title: Geen cookies meer zonder toestemming in Europa?
 .. slug: node-60
 .. date: 2009-11-13 19:25:09
-.. tags: overheid,bigbrother
+.. tags: overheid
 .. link:
 .. description: 
 .. type: text
