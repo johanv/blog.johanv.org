@@ -153,7 +153,7 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "hack"
+THEME = "johanv"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -1323,6 +1323,7 @@ UNSLUGIFY_TITLES = True
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
 # USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
