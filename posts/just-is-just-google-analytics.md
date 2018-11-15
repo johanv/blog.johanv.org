@@ -9,19 +9,20 @@
 .. type: text
 -->
 
-Plots zag ik het licht. Ik zal hier wel zitten verkondigen dat Google
-kwaadaardig is en al, terwijl jij, als bezoeker van mijn blog, getrackt wordt
-omdat ik Google Analytics gebruikte.
+Plots zag ik het licht. Ik hier maar verkondigen dat Google
+kwaadaardig is, en hoe ik niet meer getrackt wil worden. Maar intussen wel
+stiekem aan Google vertellen dat jij mijn blog aan het lezen bent, via Google
+Analytics. Dat is op zijn minst een beetje schijnheilig.
 
 Waarom had ik dat eigenlijk gedaan, Google analytics op mijn site gezet? Het
 enige dat ik af en toe bekeek, was het lijstje van de populairste pagina's.
-Dat kan net zo goed zonder analytics.
+Dat kan net zo goed zonder analytics. Weg ermee.
 
 ![Google Analytics bij het vuilnis](/galleries/grog/analytics-vuilnis.png)
 
 [Google Analytics
 weghalen](https://github.com/johanv/blog.johanv.org/commit/c6b5c49ef853984356cea989fac3c1d093bb7098)
-is niet meer dan een script verwijderen, samen met die 10 lijntjes javascript,
+is niet meer dan een script verwijderen. Maar samen met die 10 lijntjes javascript,
 kon ik ook de helft van mijn [privacy statement](/pages/privacy) weggooien. Dat
 was mooi meegenomen.
 
