@@ -30,7 +30,7 @@ We hebben dus nodig:
 
 ## F-Droid: Een alternatieve app store
 
-Ik ken eigenlijk maar één alternatieve app store, en dat is
+Ik heb eigenlijk maar één alternatieve app store ervaring, en dat is
 [F-Droid](https://f-droid.org). F-Droid is een app store die zich focust op vrije
 (free/libre) software, en ik hoop dan maar dat we dan meteen ook goed zitten wat
 betreft privacy.

@@ -26,7 +26,7 @@ I want to install and use apps from an alternative app store. So I need
 
 ## F-Droid: An alternative app store
 
-Actually I am only aware of one alternative app store for my phone, and that would be
+Actually I have only tried one alternative app store for my phone:
 [F-Droid](https://f-droid.org). F-Droid focuses on free/libre software, and I hope that
 the privacy isn't too bad either.
 
