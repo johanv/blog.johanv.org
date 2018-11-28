@@ -8,6 +8,7 @@
 
 You can contact me on:
 
+-  **mastodon:** https://mastodon.social/@johanv
 -  **twitter:** https://twitter.com/vohanj  - johanv was already taken ;(
 -  **github:** https://github.com/johanv
 -  **untappd:** https://untappd.com/user/johanv
