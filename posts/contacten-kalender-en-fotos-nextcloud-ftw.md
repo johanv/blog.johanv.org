@@ -47,7 +47,7 @@ te bewaren. En dat is wat ik vandaag ga doen.
 
 ## Hosted NextCloud
 
-Nextcloud is vrije software, onder de [GNU
+NextCloud is vrije software, onder de [GNU
 AGPL-licentie](https://nl.wikipedia.org/wiki/Affero_General_Public_License). 
 Dat wil vanalles
 zeggen, onder andere dat je die software op een eigen computer mag installeren zonder
@@ -59,17 +59,17 @@ plaats kan doen.
 
 Ik vond [YourOwnNet](https://yourownnet.net/nextcloud/). Ik heb geen speciale banden met
 dat bedrijf, maar ik zag op hun website dat ze al NextCloud-hosting aanbieden vanaf 5 EUR
-per jaar. Dat past binnen mijn budget.
+per jaar. Dat past binnen mijn budget.[^1]
 
 Als ik straks de gegevens van mijn contacten ga uploaden naar YourOwnNet, dan deel ik
 ze uiteraard ook met een firma. Maar ik denk dat dat minder kwaad kan dan ze te delen
 met Google. Ten eerste toont YourOwnNet me geen reclame, dus ze zullen mijn gegevens
-alvast niet gebruiken om me gericht reclame te sturen. En ten tweede zullen de meeste van
+alvast niet gebruiken om me gepersonaliseerde reclame te sturen. En ten tweede zullen de meeste van
 mijn contacten geen account hebben bij YourOwnNet, waardoor YourOwnNet minder makkelijk
 informatie aan elkaar kan linken. (Dat ligt bij Google al heel anders.)
 
 Ik vroeg een account aan bij YourOwnNet, en ik mag alvast 7 dagen gratis
-proberen.
+proberen.[^2]
 
 ## Contacten en agenda
 
@@ -135,7 +135,7 @@ NextCloud, in plaats van naar Google. Dat kan ook met de NextCloud app:
 hamburger, &lsquo;Automatisch uploaden&rsquo;, en dan het wolkje bij
 &lsquo;Camera&rsquo; aantikken.
 
-## En nu is het genoeg
+## Daaaag, Google
 
 Nu ik Google niet meer nodig heb voor het beheer van mijn contacten, kalender en
 foto's, heeft Google daar ook geen uitstaans meer mee. Tijd om perissies af te
@@ -155,11 +155,11 @@ niet veel van, we zullen dat wel zien.
 Nu vermoed ik wel dat als ik Google geen toegang meer geef tot mijn locatie,
 Google mijn telefoon ook niet meer kan vinden als ik weer eens vergeet waar ik
 hem heb laten liggen. Dat is een feature die ik waarschijnlijk wel ga missen,
-dus daarvoor heb ik nog een alternatief gezocht. En gevonden in een combinatie
-van [PhoneTrack](https://apps.nextcloud.com/apps/phonetrack) (die NextCloud-app
+dus daarvoor heb ik nog een alternatief gezocht. Ik kreeg iets werkende met
+[PhoneTrack](https://apps.nextcloud.com/apps/phonetrack) (die NextCloud-app
 heb ik wel moeten updaten) en
 [μlogger](https://github.com/bfabiszewski/ulogger-android) (app verkrijgbaar via
-F-Droid). De details daarvan beschrijf ik nog in een latere blog post.
+F-Droid), maar dat was toch niet helemaal wat het moest zijn.[^3]
 
 ## Dat zal het zijn voor vandaag
 
@@ -173,3 +173,17 @@ trial-periode.) Bijwerken doe ik alleszins niet meer.
 Mijn oude foto's staan voorlopig ook nog bij Google Photos. Dezelfde reden:
 Google heeft ze toch al. En voorlopig staan ze daar goed, ik heb niet de
 intentie om al mijn Google photo's naar NextCloud te verhuizen.
+
+[^1]: Uiteindelijk heb ik een 50GB-plan gekocht voor 20 EUR/jaar. Daardoor
+heb ik nu een dedicated NextCloud-instantie, en kon ik de probeeromgeving
+behouden als definitieve omgeving.
+[^2]: Een week later had ik nog steeds toegang tot de probeeromgeving, dus die
+zeven dagen zijn blijkbaar niet zo absoluut. Ik heb uiteindelijk zelf
+contact opgenomen met de vraag om mijn instantie definitief te maken.
+[^3]: Ik heb ook geëxperimenteerd met
+[FindMyPhone](https://f-droid.org/en/packages/se.erikofsweden.findmyphone/).
+Dit zag er veelbelovend uit: je stuurt een SMS naar je telefoon, en die stuurt
+dan een link terug naar zijn locatie. Alleen liep er consequent iets mis met
+het verzenden van die antwoorden; ik moest telkens &lsquo;probeer opnieuw&rsquo; 
+aantikken.
+Wat uiteraard niet zo praktisch is als je je telefoon niet meer weet liggen.

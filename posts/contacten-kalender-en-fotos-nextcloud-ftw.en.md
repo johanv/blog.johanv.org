@@ -15,7 +15,7 @@ phone back in 2010, I wasn't really interested in having a phone; I was looking
 for a convenient portable computing device. So I got myself a smartphone.
 
 I remember that I really enjoyed that the phone numbers of my contacts were
-stored in my Google account. This way I did not have to input them again after e.g.
+stored in my Google account. This way I didn't have to create a new contact list after
 flashing a new ROM. (And at once I could get rid of the hand written list I copied every
 year.)
 
@@ -38,11 +38,11 @@ NextCloud is often used to keep documents on some computer on the Internet, so
 that you can easily access those documents from all of your PC's, tablets and
 phones. This makes it comparable to DropBox, Google Drive and Microsoft
 OneDrive. Just like Google and Microsoft, NextCloud can also store your contacts
-and your calendar. Just what I need for today's case.
+and your calendar. Just what I need.
 
 ## Hosted NextCloud
 
-Nextcloud is free software, licensed under the [GNU
+NextCloud is free software, licensed under the [GNU
 AGPL license](https://en.wikipedia.org/wiki/GNU_Affero_General_Public_License). 
 This implies that I can install the software on one of my computers, without
 having to pay. Which is very nice, but then I would need a server that is always
@@ -52,20 +52,19 @@ for a hoster who can do all this for me.
 
 I decided to go with [YourOwnNet](https://yourownnet.net/nextcloud/). 
 I am not related in any way to this company, but their website told that they
-have NextCloud hosting from 5 EUR/year, which is affordable. So instead of
+have NextCloud hosting from 5 EUR/year, which is affordable.[^1] So instead of
 giving all my info to Google, I will give it to YourOwnNet.
 
 That might not be
 ideal either, but I think it is less problematic. My NextCloud-instance on
-YourOwnNet does not show ads, so it wil not show personalized ads either. Moreover most of
+YourOwnNet does not show ads, so it wil not show personalized ads. Moreover most of
 my contacts won't have a YourOwnNet-account, so YourOwnNet will have a harder
 time to link information to the relevant person.
 
 (I think NextCloud allows storing the data encrypted on the server as well, but
 I'm not sure I can do this for the cheap formula of 5 EUR/year.)
 
-I contacted YourOwnNet, I asked for an account, and now I have 7 days to try it
-out for free.
+I contacted YourOwnNet, I asked for an account, and I got a free trial for 7 days.[^2]
 
 ## Contacts and calendar
 
@@ -137,7 +136,7 @@ Camera-folder.
 ## Back off, Google!
 
 So now I don't need Google for my contacts, calendar and photos, so let's revoke
-some of the permissions of Google.
+some of Google's permissions.
 
 Via the settings of your phone, you can go to &lsquo;Apps and
 notifications&rsquo;, and then to &lsquo;App permissions&rsquo;. Here you can
@@ -152,11 +151,11 @@ I haven't noticed any problems for the time being.
 I guess that now I've denied Google the access to my location, Google will
 probably not find my phone when I have forgotten where I left it.
 So I searched for
-another alternative; I might have found something: a combination of
+another alternative; I first tried to set up a combination of
 [PhoneTrack](https://apps.nextcloud.com/apps/phonetrack) (a NextCloud-app
 I had to update) and
 [μlogger](https://github.com/bfabiszewski/ulogger-android) (app available in 
-F-Droid). I will blog about the details later.
+F-Droid), but it did not work very well.[^3]
 
 ## That will do for today
 
@@ -171,3 +170,17 @@ anymore.
 
 The same for my photos on Google Photos. They stay where they are; Google has
 them already. I have not the intention yet to move all my photos to nextcloud.
+
+[^1]: I ended up buying a 50 GB plan, for 20 EUR/year, so that I now have a
+dedicated NextCloud instance, and I could keep my trial environment. Otherwise
+I had to migrate again.
+[^2]: It seemed that I could use the trial for longer than 7 days, I contacted
+customer support myself to convert the trial instance to a permanent instance.
+[^3]: I also tried 
+[FindMyPhone](https://f-droid.org/en/packages/se.erikofsweden.findmyphone/),
+which looked promising: send an SMS to your phone, and it sends back a link to
+it's current location. But it seemed that sending out the replies consisently
+went wrong.
+The messages were generated, I had to tap 'retry' to actually get them out, which
+is of course no option when you don't know where your phone is. So I'm afraid
+that I will just have to remember where I put my phone.
