@@ -1,0 +1,30 @@
+image: registry.gitlab.com/johanv/blog/nikola
+
+stages:
+  - build
+  - deploy
+
+compile site:
+  stage: build
+  artifacts:
+    paths:
+      - output
+    expire_in: 2 days
+  script:
+    - nikola build
+
+publish site:
+  only:
+    - master
+  stage: deploy
+  dependencies:
+    - compile site
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - nikola deploy
+
