@@ -10,6 +10,7 @@ You can contact me on:
 
 -  **mastodon:** https://mastodon.social/@johanv
 -  **twitter:** https://twitter.com/vohanj  - johanv was already taken ;(
+-  **gitlab:** https://gitlab.com/johanv
 -  **github:** https://github.com/johanv
 -  **untappd:** https://untappd.com/user/johanv
 -  **facebook:** http://www.facebook.com/johan.vervloet
