@@ -648,7 +648,7 @@ REDIRECTIONS = []
 # }
 
 DEPLOY_COMMANDS = {'default': [
-    "rsync -pave ssh --delete output/ $TARGET_LOCATION",
+    "rsync --checksum -pave ssh --delete output/ $TARGET_LOCATION",
 ]}
 
 # github_deploy configuration
