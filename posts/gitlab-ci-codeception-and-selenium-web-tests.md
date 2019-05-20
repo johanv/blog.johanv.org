@@ -19,7 +19,21 @@ In a second attempt, I tried to use [Gitlab CI Services](https://docs.gitlab.com
 
 After days of swearing, I finally got it running. I think the networking problems were caused by the nginx-container I tried to use for the web tests. But actually I didn't need a container for nginx. It turned out I could just juse the php built-in development server to run the tests.
 
-So I ended up by adding  a service for selenium with chrome and  a service for mysql (the project I was trying this on, didn't really need other services), and I just added a `php -S` statement to the script that ran the tests, and that was all.
+So I ended up by adding  a service for selenium with chrome and  a service for mysql (the project I was trying this on, didn't really need other services), and I just added a `php -S` statement to the script that ran the tests, I had a running server.
 
-I created a small demo project on gitlab that runs a couple of browser tests [from the gitlab runners](https://gitlab.com/johanv/codeception-ci-demo/pipelines), for a small vue.js application with codeception. You can find the source code on gitlab: [https://gitlab.com/johanv/codeception-ci-demo](https://gitlab.com/johanv/codeception-ci-demo).
+I still needed a small hack, to make the browser in the selenium container actually find the webserver. I ended up using a `sed`-command on the configuration file of my test suite in codeception.
+
+For reference, here is a part of my `gitlab-ci.yml` file:
+
+```
+    - LOCAL_IP=$(ip route get 8.8.8.8 | awk -F"src " 'NR==1{split($2,a," ");print a[1]}')
+    - echo Local IP $LOCAL_IP
+    # Run the php built in server. Don't try to run nginx as a service, that only causes troubles. ;-)
+    - php -S 0.0.0.0:8080 -t public/ 2> /dev/null &
+    - sed -i "s/localhost:8080/$LOCAL_IP:8080/" tests/acceptance.suite.yml
+```
+
+Note that for this to work, I had to fiddle with the php container to have iproute2 installed.
+
+If you want to see how it actutally works; I created a [small demo project on gitlab](https://gitlab.com/johanv/codeception-ci-demo/pipelines) that uses codeception in gitlab-ci to run a couple of browser tests. You can find the source code on gitlab: [https://gitlab.com/johanv/codeception-ci-demo](https://gitlab.com/johanv/codeception-ci-demo).
 
