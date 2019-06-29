@@ -2,7 +2,7 @@
 .. title: gitlab-ci, codeception and selenium web tests
 .. slug: gitlab-ci-codeception-and-selenium-web-tests
 .. date: 2019-05-16 07:27:33 UTC+02:00
-.. tags: tests,ci
+.. tags: tests,ci,frontend
 .. category: 
 .. link: 
 .. description: 
