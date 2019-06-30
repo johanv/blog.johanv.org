@@ -2,7 +2,7 @@
 .. title: gitlab-ci and yarn
 .. slug: gitlab-ci-and-yarn
 .. date: 2019-06-29 21:02:12 UTC+02:00
-.. tags: tests,ci,frontend
+.. tags: tests,ci,frontend,yarn,docker
 .. category: 
 .. link: 
 .. description: 
