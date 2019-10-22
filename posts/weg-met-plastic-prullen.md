@@ -1,5 +1,5 @@
 <!--
-.. title: Weg met plastic prullen
+.. title: Plastic prullen
 .. slug: weg-met-plastic-prullen
 .. date: 2019-10-22 08:55:52 UTC+02:00
 .. tags: 
