@@ -13,7 +13,7 @@ Vanmorgen las ik in De Morgen een column waarin [Sofie Guns een pleidooi voert t
 
 Afgelopen weekend zijn we met de kinderen [zwerfvuil gaan opruimen in de gemeente](https://www.gva.be/cnt/dmf20191020_04672956/meer-dan-honderd-vrijwilligers-doen-mee-aan-opruimactie-zwerfvuil-er-ligt-toch-wel-meer-dan-ik-gedacht-had). We vonden voornamelijk sigarettenpeuken en lege drankblikjes naast de web, maar er zat toch ook een aanzienlijke hoeveelheid plastic in onze volle afvalzakken. Dus alle lof voor het pleidooi van Sofie Guns: er is al plasticafval genoeg op de wereld, we hebben geen exra rommel nodig.
 
-Na de opruimactie kregen de vrijwilligers een kom soep en een broodje, en nog een bedankje. In de vorm van... Gratis plastic rommel. Netjes ingepakt in plastic, u vriendelijk aangeboden door de Vlaamse overheid.
+Na de opruimactie kregen de vrijwilligers een kom soep en een broodje, en nog een bedankje. In de vorm van... Gratis plastic rommel. Ingepakt in plastic, u vriendelijk aangeboden door de Vlaamse overheid.
 
 ![plastic autoboompjes](/galleries/misc/rommel.jpg)
 
