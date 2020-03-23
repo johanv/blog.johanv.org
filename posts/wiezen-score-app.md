@@ -19,7 +19,7 @@ aankondiging is hier wel op zijn plaats, dacht ik zo.
 Wat betreft user interface, is er nog wel wat ruimte voor
 verbetering. Maar het is een coole toepassing, vind ik zelf
 toch, met een fijne event-sourced backend, en gitlab pipelines
-die nieuwe broncode automatisch testen. :nerd\_face:
+die nieuwe broncode automatisch testen. 🤓
 
 De score-app hanteert de
 [spelregels van het wiezen](https://www.rijkvanafdronk.be/spelregels)
