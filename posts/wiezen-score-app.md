@@ -1,7 +1,7 @@
 <!--
 .. title: Dikdikdik: een score app voor het wiezen
 .. slug: wiezen-score-app
-.. date: 2020-03-23 20:00:00 UTC+01:00
+.. date: 2020-03-23 17:03:00 UTC+01:00
 .. tags:
 .. category: wiezen,app,php,eventsourcing
 .. link:
