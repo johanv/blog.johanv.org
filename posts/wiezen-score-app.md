@@ -28,4 +28,4 @@ zoals die vastgelegd zijn door
 Een demo-versie van de toepassing is tot nader order beschikbaar
 op [score.rijkvanafdronk.be](https://score.rijkvanafdronk.be).
 
-![ik kan hem maar één keer halen](/galleries/misc/ikanemarenekerale.jpg)
+![ik kan hem maar één keer halen](/galleries/misc/ikanemorenekerale.jpg)
